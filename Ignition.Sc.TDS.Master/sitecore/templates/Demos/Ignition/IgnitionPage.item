@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {0ED048AF-E431-40E0-A8A5-3028367FC756}
+database: master
+path: /sitecore/templates/Demos/Ignition/IgnitionPage
+parent: {2464993C-2078-48C7-AABC-FDA4D62716B0}
+name: IgnitionPage
+master: {00000000-0000-0000-0000-000000000000}
+template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
+templatekey: Template
+
+----field----
+field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
+name: __Base template
+key: __base template
+content-length: 38
+
+{0935636A-EE07-442D-8930-87EC0CAE26A4}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{3B636D1C-3194-40A0-B722-4E69A1C6B5EF}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 40
+
+Applications/32x32/text_rich_colored.png
+----version----
+language: en
+version: 1
+revision: cfd373d6-4514-465d-bad7-b3774873ea28
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20160516T210152Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cfd373d6-4514-465d-bad7-b3774873ea28
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20160516T210409Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

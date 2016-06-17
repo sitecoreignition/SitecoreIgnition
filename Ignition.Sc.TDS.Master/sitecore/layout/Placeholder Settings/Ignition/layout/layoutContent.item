@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {8B8FBCB0-9BB6-4926-BC3B-BA9FDD255A53}
+database: master
+path: /sitecore/layout/Placeholder Settings/Ignition/layout/layoutContent
+parent: {B6C8EEA0-02A5-4A4B-994F-770B17CBCE5E}
+name: layoutContent
+master: {00000000-0000-0000-0000-000000000000}
+template: {5C547D4E-7111-4995-95B0-6B561751BF2E}
+templatekey: Placeholder
+
+----field----
+field: {7256BDAB-1FD2-49DD-B205-CB4873D2917C}
+name: Placeholder Key
+key: placeholder key
+content-length: 13
+
+layoutContent
+----version----
+language: en
+version: 1
+revision: fd435ef2-af81-40ab-961d-eb4f8fcb22e1
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20160516T193530Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fd435ef2-af81-40ab-961d-eb4f8fcb22e1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20160516T193530Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
