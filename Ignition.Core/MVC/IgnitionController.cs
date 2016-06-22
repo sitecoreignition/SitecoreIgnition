@@ -25,7 +25,7 @@ namespace Ignition.Core.Mvc
 		{
 			base.Initialize(requestContext);
 			SitecoreContext = Context;
-			if (RouteData.Values.ContainsKey(Constants.CoreConstants.SitecoreFallThroughRoute))
+			if (RouteData.Values.ContainsKey(CoreConstants.SitecoreFallThroughRoute))
 				Context.DatasourceItem = GetLayoutItem<IModelBase>(false, true) ?? new NullModel();
 			else
                 Context.DatasourceItem = new NullModel();

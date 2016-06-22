@@ -146,7 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\IgnoreAutomapAttribute.cs" />
-    <Compile Include="Constants\CoreConstants.cs" />
+    <Compile Include="CoreConstants.cs" />
     <Compile Include="Factories\IAgentFactory.cs" />
     <Compile Include="Factories\WindsorAgentFactory.cs" />
     <Compile Include="Factories\WindsorControllerFactory.cs" />
