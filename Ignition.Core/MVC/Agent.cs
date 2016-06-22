@@ -7,7 +7,7 @@ using Sitecore.Diagnostics;
 
 namespace Ignition.Core.Mvc
 {
-	public class Agent<TViewModel> where TViewModel : BaseViewModel, new()
+	public abstract class Agent<TViewModel> where TViewModel : BaseViewModel, new()
 	{
 		public string ViewPath => ViewModel.ViewPath;
 		public TViewModel ViewModel { get; protected set; }
@@ -32,9 +32,7 @@ namespace Ignition.Core.Mvc
 			ViewParameters = Context.ViewData;
 		}
 
-		public virtual void PopulateModel()
-		{
-		}
+	    public abstract void PopulateModel();
 
 		private void DataBind()
 		{
