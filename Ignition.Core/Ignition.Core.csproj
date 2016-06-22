@@ -193,7 +193,7 @@
     <Compile Include="MasterDatabaseType.cs" />
     <Compile Include="Mvc\Agent.cs" />
     <Compile Include="Mvc\BaseViewModel.cs" />
-    <Compile Include="Mvc\BaseController.cs" />
+    <Compile Include="Mvc\IgnitionController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="HtmlHelpers\ResourceType.cs" />
     <Compile Include="WebDatabaseType.cs" />

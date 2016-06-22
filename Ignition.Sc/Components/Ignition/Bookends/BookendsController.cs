@@ -4,7 +4,7 @@ using Ignition.Core.Repositories;
 
 namespace Ignition.Sc.Components.Ignition.Bookends
 {
-    public class BookendsController : BaseController
+    public class BookendsController : IgnitionController
     {
         public BookendsController(ItemContext context) : base(context)
         {

@@ -4,7 +4,7 @@ using Ignition.Core.Repositories;
 
 namespace Ignition.Sc.Components.Ignition.Metadata
 {
-    public class MetadataController : BaseController
+    public class MetadataController : IgnitionController
     {
         public MetadataController(ItemContext context) : base(context)
         {

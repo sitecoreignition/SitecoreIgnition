@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Glass.Mapper.Sc.Web.Mvc;
@@ -9,14 +8,14 @@ using Ignition.Core.Repositories;
 
 namespace Ignition.Core.Mvc
 {
-	public abstract class BaseController : GlassController
+	public abstract class IgnitionController : GlassController
 	{
 		public IAgentFactory AgentFactory { get; set; }
 		public IParamsBase RenderingParameters { get; set; }
 		public IModelBase RenderingItem { get; set; } 
 		protected ItemContext Context { get; set; }
 
-		protected BaseController(ItemContext context) : base(context)
+		protected IgnitionController(ItemContext context) : base(context)
 		{
 			if (context == null) throw new ArgumentNullException(nameof(context));
 			Context = context;
@@ -31,11 +30,6 @@ namespace Ignition.Core.Mvc
 			else
                 Context.DatasourceItem = new NullModel();
 			Context.RenderingParameters = new NullParams();
-		}
-
-		public override ActionResult Index()
-		{
-			return null;
 		}
 
 		#region GetViewResult Overloads
