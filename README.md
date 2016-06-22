@@ -7,7 +7,7 @@ Please note that Ignition is in beta and may still be a bit rough around the edg
 ## Get Started
 
 1. Setup a new Sitecore install on your machine.
-2. By default, Ignition uses `http:\\sitecoreignition.localhost` as the URL. Add this URL to your hosts file and add it to your site's IIS bindings.
+2. By default, Ignition uses `http:\\ignition.localhost` as the URL. Add this URL to your hosts file and add it to your site's IIS bindings.
 3. Clone the repository: `git clone https://github.com/sitecoreignition/SitecoreIgnition.git`.
 4. Copy the following Sitecore .dlls into the `_lib` folder:
 	* `Sitecore.ContentSearch.dll`
@@ -29,7 +29,7 @@ Please note that Ignition is in beta and may still be a bit rough around the edg
 6. Create a publishing profile called `Ignition.Sc` in the `Ignition.Sc` project.
 7. Create a publishing profile called `Ignition.Root` in the `Ignition.Root` project.
 8. Publish `Ignition.Sc` and then publish `Ignition.Root`.
-9. Navigate to the [Update Installation Wizard](http://sitecoreignition.localhost/sitecore/admin/updateinstallationwizard.aspx) and install the update packages found in the `SitecorePackages` folder.
+9. Navigate to the [Update Installation Wizard](http://ignition.localhost/sitecore/admin/updateinstallationwizard.aspx) and install the update packages found in the `SitecorePackages` folder.
 10. Publish your site and have fun!
 
 Ignition has been tested using Sitecore 8.0 Update-4 and above. Ignition probably works with any version of the Sitecore 7 and 8 .dlls but we have not confirmed.
