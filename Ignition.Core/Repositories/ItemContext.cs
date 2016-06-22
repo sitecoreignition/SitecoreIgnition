@@ -36,7 +36,7 @@ namespace Ignition.Core.Repositories
         public IModelBase DatasourceItem { get; set; }
         public IParamsBase RenderingParameters { get; set; }
         public string PlaceholderName { get; set; }
-        public Dictionary<string,object> ViewData { get; set; }
+        public object AgentParameters { get; set; }
         private ISitecoreService Service { get; }
         private ISitecoreContext Context { get; }
         private Language _language;

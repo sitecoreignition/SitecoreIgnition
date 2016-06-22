@@ -45,7 +45,7 @@ namespace Ignition.Core.Mvc
 			return GetViewResult<SimpleAgent<TViewModel>, TViewModel, NullParams>(new NullParams(), null);
 		}
 
-		protected ActionResult GetViewResult<TViewModel>(Dictionary<string, object> data) where TViewModel : BaseViewModel, new()
+		protected ActionResult GetViewResult<TViewModel>(object data) where TViewModel : BaseViewModel, new()
 		{
 			return GetViewResult<SimpleAgent<TViewModel>, TViewModel, NullParams>(new NullParams(), data);
 		}
@@ -65,14 +65,14 @@ namespace Ignition.Core.Mvc
 			return GetViewResult<TAgent, TViewModel, TParams>(param, null);
 		}
 
-		protected ActionResult GetViewResult<TAgent, TViewModel>(Dictionary<string, object> data)
+		protected ActionResult GetViewResult<TAgent, TViewModel>(object data)
 			where TAgent : Agent<TViewModel>
 			where TViewModel : BaseViewModel, new()
 		{
 			return GetViewResult<TAgent, TViewModel, NullParams>(new NullParams(), data);
 		}
 
-		protected ActionResult GetViewResult<TAgent, TViewModel, TParams>(TParams parameters, Dictionary<string, object> viewdata)
+		protected ActionResult GetViewResult<TAgent, TViewModel, TParams>(TParams parameters, object viewdata)
 			where TAgent : Agent<TViewModel>
 			where TViewModel : BaseViewModel, new()
 			where TParams : IParamsBase
@@ -82,7 +82,7 @@ namespace Ignition.Core.Mvc
 		    Context.ContextPage = GetContextItem<IPage>(true, true);
 		    Context.ModuleWrapperName = moduleName;
 		    Context.RenderingParameters = parameters;
-		    Context.ViewData = viewdata;
+		    Context.AgentParameters = viewdata;
 			var agent = AgentFactory.CreateAgent<TAgent, TViewModel>(Context);
 			agent.PopulateModel();
 			return View(agent.ViewPath, agent.ViewModel);

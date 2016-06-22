@@ -15,7 +15,7 @@ namespace Ignition.Core.Mvc
 		public IModelBase Datasource { get; set; }
 		public IPage ContextPage => ViewModel.ContextPage;
 		public IParamsBase RenderingParameters { get; set; }
-		protected object ViewParameters { get; set; }
+		protected object AgentParameters { get; set; }
 
 		public virtual void Initialize(ItemContext context)
 		{
@@ -29,7 +29,7 @@ namespace Ignition.Core.Mvc
 				ParentPlaceholderName = Context.PlaceholderName
 			};
 			DataBind();
-			ViewParameters = Context.ViewData;
+			AgentParameters = Context.AgentParameters;
 		}
 
 	    public abstract void PopulateModel();
