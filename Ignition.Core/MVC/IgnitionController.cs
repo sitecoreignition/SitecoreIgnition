@@ -32,41 +32,41 @@ namespace Ignition.Core.Mvc
 			Context.RenderingParameters = new NullParams();
 		}
 
-		#region GetViewResult Overloads
+		#region View Overloads
 
-		protected ActionResult GetViewResult<TViewModel>() where TViewModel : BaseViewModel, new()
+		protected ViewResult View<TViewModel>() where TViewModel : BaseViewModel, new()
 		{
-			return GetViewResult<SimpleAgent<TViewModel>, TViewModel, NullParams>(new NullParams(), null);
+			return View<SimpleAgent<TViewModel>, TViewModel, NullParams>(new NullParams(), null);
 		}
 
-		protected ActionResult GetViewResult<TViewModel>(object data) where TViewModel : BaseViewModel, new()
+		protected ViewResult View<TViewModel>(object data) where TViewModel : BaseViewModel, new()
 		{
-			return GetViewResult<SimpleAgent<TViewModel>, TViewModel, NullParams>(new NullParams(), data);
+			return View<SimpleAgent<TViewModel>, TViewModel, NullParams>(new NullParams(), data);
 		}
 
-		protected ActionResult GetViewResult<TAgent, TViewModel>()
+		protected ViewResult View<TAgent, TViewModel>()
 			where TAgent : Agent<TViewModel>
 			where TViewModel : BaseViewModel, new()
 		{
-			return GetViewResult<TAgent, TViewModel, NullParams>(new NullParams(), null);
+			return View<TAgent, TViewModel, NullParams>(new NullParams(), null);
 		}
 
-		protected ActionResult GetViewResult<TAgent, TViewModel, TParams>(TParams param)
+		protected ViewResult View<TAgent, TViewModel, TParams>(TParams param)
 			where TAgent : Agent<TViewModel>
 			where TViewModel : BaseViewModel, new()
 			where TParams : IParamsBase
 		{
-			return GetViewResult<TAgent, TViewModel, TParams>(param, null);
+			return View<TAgent, TViewModel, TParams>(param, null);
 		}
 
-		protected ActionResult GetViewResult<TAgent, TViewModel>(object data)
+		protected ViewResult View<TAgent, TViewModel>(object data)
 			where TAgent : Agent<TViewModel>
 			where TViewModel : BaseViewModel, new()
 		{
-			return GetViewResult<TAgent, TViewModel, NullParams>(new NullParams(), data);
+			return View<TAgent, TViewModel, NullParams>(new NullParams(), data);
 		}
 
-		protected ActionResult GetViewResult<TAgent, TViewModel, TParams>(TParams parameters, object viewdata)
+		protected ViewResult View<TAgent, TViewModel, TParams>(TParams parameters, object viewdata)
 			where TAgent : Agent<TViewModel>
 			where TViewModel : BaseViewModel, new()
 			where TParams : IParamsBase
@@ -81,7 +81,7 @@ namespace Ignition.Core.Mvc
 			agent.PopulateModel();
 			return View(agent.ViewPath, agent.ViewModel);
 		}
-
 		#endregion
+
 	}
 }

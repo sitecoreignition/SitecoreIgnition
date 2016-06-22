@@ -12,7 +12,7 @@ namespace Ignition.Sc.Components.Ignition.Frame
 
         public ActionResult IgnitionFrame()
         {
-            return GetViewResult<FrameViewModel>();
+            return View<FrameViewModel>();
         }
 
     }

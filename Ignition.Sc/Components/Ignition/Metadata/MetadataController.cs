@@ -12,36 +12,36 @@ namespace Ignition.Sc.Components.Ignition.Metadata
 
         public ActionResult Head()
         {
-            return GetViewResult<BaseViewModel>();
+            return View<BaseViewModel>();
         }
         public ActionResult Metadata()
         {
-            return GetViewResult<BaseViewModel>();
+            return View<BaseViewModel>();
         }
         public ActionResult Script()
         {
-            return GetViewResult<BaseViewModel>();
+            return View<BaseViewModel>();
         }
         public ActionResult Seo()
         {
-            return GetViewResult<BaseViewModel>();
+            return View<BaseViewModel>();
         }
         public ActionResult Style()
         {
-            return GetViewResult<BaseViewModel>();
+            return View<BaseViewModel>();
         }
         public ActionResult Taxonomy()
         {
-            return GetViewResult<BaseViewModel>();
+            return View<BaseViewModel>();
         }
         public ActionResult Analytics()
         {
-            return GetViewResult<BaseViewModel>();
+            return View<BaseViewModel>();
         }
 
         public ActionResult EE()
         {
-            return GetViewResult<BaseViewModel>();
+            return View<BaseViewModel>();
         }
     }
 }
