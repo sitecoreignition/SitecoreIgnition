@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Ignition.Core.Models;
 using Ignition.Core.Models.BaseModels;
+using Ignition.Core.Models.Page;
 
 namespace Ignition.Core.Mvc
 {
