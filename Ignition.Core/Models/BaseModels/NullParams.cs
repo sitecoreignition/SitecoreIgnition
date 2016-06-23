@@ -10,6 +10,60 @@ namespace Ignition.Core.Models.BaseModels
     [SitecoreType(AutoMap = false, TemplateId = "{00000000-0000-0000-0000-000000000000}")]
     public sealed class NullParams : IParamsBase
     {
+        public string FullPath
+        {
+            get { return "/"; }
+            set { throw new NotImplementedException(); }
+        }
+
+        public string FullUrl
+        {
+            get { return string.Empty; }
+            set { throw new NotImplementedException(); }
+        }
+
+        public Guid TemplateId
+        {
+            get { return Id; }
+            set { throw new NotImplementedException(); }
+        }
+
+        public string TemplateName
+        {
+            get { return string.Empty; }
+            set { throw new NotImplementedException(); }
+        }
+
+        public IEnumerable<IModelBase> BaseChildren
+        {
+            get { return new List<IModelBase>(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public IModelBase Parent
+        {
+            get { return new NullModel(); }
+            set { throw new NotImplementedException(); }
+        }
+
+        public string Sortorder
+        {
+            get { return "0"; }
+            set { throw new NotImplementedException(); }
+        }
+
+        public DateTime Created
+        {
+            get { return DateTime.MinValue; }
+            set { throw new NotImplementedException(); }
+        }
+
+        public DateTime Updated
+        {
+            get { return DateTime.MinValue; }
+            set { throw new NotImplementedException(); }
+        }
+
         public int CompareTo(IModelBase other)
         {
             return 0;
@@ -55,12 +109,6 @@ namespace Ignition.Core.Models.BaseModels
             set { throw new NotImplementedException(); }
         }
 
-        public string FullPath
-        {
-            get { return "/"; }
-            set { throw new NotImplementedException(); }
-        }
-
         public string Name
         {
             get { return "Null Item"; }
@@ -70,47 +118,6 @@ namespace Ignition.Core.Models.BaseModels
         public string Url
         {
             get { return string.Empty; }
-            set { throw new NotImplementedException(); }
-        }
-
-        public string FullUrl
-        {
-            get { return string.Empty; }
-            set { throw new NotImplementedException(); }
-        }
-
-        public Guid TemplateId
-        {
-            get { return Id; }
-            set { throw new NotImplementedException(); }
-        }
-
-        public string TemplateName
-        {
-            get { return string.Empty; }
-            set { throw new NotImplementedException(); }
-        }
-
-        public IEnumerable<IModelBase> BaseChildren
-        {
-            get { return new List<IModelBase>(); }
-            set { throw new NotImplementedException(); }
-        }
-        public IModelBase Parent { get { return new NullModel(); } set { throw new NotImplementedException(); } }
-        public string Sortorder
-        {
-            get { return "0"; }
-            set { throw new NotImplementedException(); }
-        }
-
-        public DateTime Created
-        {
-            get { return DateTime.MinValue; }
-            set { throw new NotImplementedException(); }
-        }
-        public DateTime Updated
-        {
-            get { return DateTime.MinValue; }
             set { throw new NotImplementedException(); }
         }
 
