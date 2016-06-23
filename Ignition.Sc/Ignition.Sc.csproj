@@ -293,7 +293,7 @@
     <Content Include="Components\Ignition\Metadata\Script.cshtml" />
     <Content Include="Components\Ignition\Metadata\Seo.cshtml" />
     <Content Include="Components\Ignition\Metadata\Taxonomy.cshtml" />
-    <Content Include="Components\Ignition\Metadata\EE.cshtml" />
+    <Content Include="Components\Ignition\Metadata\PageEdit.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>

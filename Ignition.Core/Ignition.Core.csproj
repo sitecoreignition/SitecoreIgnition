@@ -179,7 +179,7 @@
     <Compile Include="Models\Containers\INavFolder.cs" />
     <Compile Include="Models\Containers\IOptionFolder.cs" />
     <Compile Include="Models\Containers\ISettingsFolder.cs" />
-    <Compile Include="Models\Page\IMetaData.cs" />
+    <Compile Include="Models\Page\IMetadata.cs" />
     <Compile Include="Models\Page\INavigation.cs" />
     <Compile Include="Models\Page\IPage.cs" />
     <Compile Include="Models\Page\ITaxonomy.cs" />
