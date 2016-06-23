@@ -150,6 +150,7 @@
     <Compile Include="Factories\IAgentFactory.cs" />
     <Compile Include="Factories\WindsorAgentFactory.cs" />
     <Compile Include="Factories\WindsorControllerFactory.cs" />
+    <Compile Include="HtmlHelpers\RichTextHelper.cs" />
     <Compile Include="Installers\CoreInstaller.cs" />
     <Compile Include="HtmlHelpers\ComponentBlock.cs" />
     <Compile Include="HtmlHelpers\DynamicPlaceholder.cs" />

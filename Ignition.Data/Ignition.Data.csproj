@@ -120,6 +120,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExtensionMethods\IgnitionExtensions.cs" />
     <Compile Include="Fields\IAbstract.cs" />
     <Compile Include="Fields\IBackgroundImage.cs" />
     <Compile Include="Fields\IBackgroundImageAlternate.cs" />
