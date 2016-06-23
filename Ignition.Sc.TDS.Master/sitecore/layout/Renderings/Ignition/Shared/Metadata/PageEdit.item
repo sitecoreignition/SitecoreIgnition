@@ -2,12 +2,13 @@
 version: 1
 id: {C52A32DA-A268-4245-A5D0-481A7E38C995}
 database: master
-path: /sitecore/layout/Renderings/Ignition/Shared/EE/EE
-parent: {AC4081BD-AE1B-4554-AFA1-9E792873AF90}
-name: EE
+path: /sitecore/layout/Renderings/Ignition/Shared/Metadata/PageEdit
+parent: {CD0276A2-B009-43E8-9895-1D8A0D224C2E}
+name: PageEdit
 master: {00000000-0000-0000-0000-000000000000}
 template: {2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}
 templatekey: Controller rendering
+created: 20160617T153716:636017746362130000
 
 ----field----
 field: {E64AD073-DFCC-4D20-8C0B-FE5AA6226CD7}
@@ -20,13 +21,13 @@ Metadata
 field: {DED9E431-3604-4921-A4B3-A6EC7636A5B6}
 name: Controller Action
 key: controller action
-content-length: 2
+content-length: 8
 
-EE
+PageEdit
 ----version----
 language: en
 version: 1
-revision: 4753a0b2-ca31-4f6f-a0fb-7a8e76ec65da
+revision: 2a77838f-f29f-40e7-adc5-4f2e4b5a028b
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4753a0b2-ca31-4f6f-a0fb-7a8e76ec65da
+2a77838f-f29f-40e7-adc5-4f2e4b5a028b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160516T221638Z
+20160623T180536Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
