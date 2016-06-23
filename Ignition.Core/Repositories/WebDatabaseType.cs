@@ -1,6 +1,6 @@
 ﻿using Ignition.Core.Bases;
 
-namespace Ignition.Core
+namespace Ignition.Core.Repositories
 {
     public sealed class WebDatabaseType : IDatabaseType
     {
