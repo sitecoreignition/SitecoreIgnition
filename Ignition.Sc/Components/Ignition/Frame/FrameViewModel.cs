@@ -2,8 +2,7 @@
 
 namespace Ignition.Sc.Components.Ignition.Frame
 {
-    public class FrameViewModel : BaseViewModel
-    {
-        public override string ViewPath { get; set; }
-    }
+	public class FrameViewModel : BaseViewModel
+	{
+	}
 }
