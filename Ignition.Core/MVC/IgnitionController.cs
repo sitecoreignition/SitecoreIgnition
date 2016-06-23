@@ -38,47 +38,42 @@ namespace Ignition.Core.Mvc
 
 		protected ViewResult View<TViewModel>() where TViewModel : BaseViewModel, new()
 		{
-			return View<SimpleAgent<TViewModel>, TViewModel, NullParams>(new NullParams(), null);
-		}
-
-		protected ViewResult View<TViewModel>(object data) where TViewModel : BaseViewModel, new()
-		{
-			return View<SimpleAgent<TViewModel>, TViewModel, NullParams>(new NullParams(), data);
+			return View<SimpleAgent<TViewModel>, TViewModel, NullParams>(null);
 		}
 
 		protected ViewResult View<TAgent, TViewModel>()
 			where TAgent : Agent<TViewModel>
 			where TViewModel : BaseViewModel, new()
 		{
-			return View<TAgent, TViewModel, NullParams>(new NullParams(), null);
+			return View<TAgent, TViewModel, NullParams>(null);
 		}
 
-		protected ViewResult View<TAgent, TViewModel, TParams>(TParams param)
-			where TAgent : Agent<TViewModel>
-			where TViewModel : BaseViewModel, new()
-			where TParams : IParamsBase
-		{
-			return View<TAgent, TViewModel, TParams>(param, null);
-		}
-
-		protected ViewResult View<TAgent, TViewModel>(object data)
+		protected ViewResult View<TAgent, TViewModel>(object agentParameters)
 			where TAgent : Agent<TViewModel>
 			where TViewModel : BaseViewModel, new()
 		{
-			return View<TAgent, TViewModel, NullParams>(new NullParams(), data);
+			return View<TAgent, TViewModel, NullParams>(agentParameters);
 		}
 
-		protected ViewResult View<TAgent, TViewModel, TParams>(TParams parameters, object viewdata)
+	    protected ViewResult View<TAgent, TViewModel, TParams>()
+	        where TAgent : Agent<TViewModel>
+	        where TViewModel : BaseViewModel, new()
+	        where TParams : class, IParamsBase
+	    {
+            return View<TAgent, TViewModel, TParams>(null);
+        }
+
+	    protected ViewResult View<TAgent, TViewModel, TParams>(object agentParameters)
 			where TAgent : Agent<TViewModel>
 			where TViewModel : BaseViewModel, new()
-			where TParams : IParamsBase
+			where TParams : class, IParamsBase 
 		{
 			var moduleName = GetType().Name.Replace(GetType().Namespace ?? string.Empty, string.Empty).Replace("Controller", string.Empty);
 
 		    Context.ContextPage = GetContextItem<IPage>(true, true);
 		    Context.ModuleWrapperName = moduleName;
-		    Context.RenderingParameters = parameters;
-		    Context.AgentParameters = viewdata;
+		    Context.RenderingParameters = GetRenderingParameters<TParams>();
+		    Context.AgentParameters = agentParameters;
 			var agent = AgentFactory.CreateAgent<TAgent, TViewModel>(Context);
 			agent.PopulateModel();
 			return View(agent.ViewPath, agent.ViewModel);
