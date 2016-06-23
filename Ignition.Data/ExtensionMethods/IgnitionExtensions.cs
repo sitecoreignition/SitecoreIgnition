@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Web;
-using Castle.Core.Internal;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
+using Sitecore.Data.Managers;
 
 namespace Ignition.Data.ExtensionMethods
 {
@@ -49,13 +48,7 @@ namespace Ignition.Data.ExtensionMethods
         }
         public static IEnumerable<TemplateItem> GetAllMasters(this Item item)
         {
-            var nodes = new Stack<TemplateItem>(new[] { item.Template });
-            while (nodes.Any())
-            {
-                var node = nodes.Pop();
-                yield return node;
-                node.BaseTemplates.ForEach(a=>nodes.Push(a));
-            }
+            return TemplateManager.GetTemplate(item).GetBaseTemplates().Cast<TemplateItem>();
         }
     }
 }
