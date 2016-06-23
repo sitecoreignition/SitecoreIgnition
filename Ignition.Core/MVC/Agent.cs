@@ -38,18 +38,26 @@ namespace Ignition.Core.Mvc
 
 		private void DataBind()
 		{
-		    if (Datasource.GetType().CustomAttributes.Any(a => a.AttributeType == typeof (IgnoreAutomapAttribute))) return;
-			try
-			{
-				foreach (var prop in ViewModel.GetType().GetProperties()
-                    .Where(a => (typeof(IModelBase).IsAssignableFrom(a.PropertyType)) && !((typeof(IPage).IsAssignableFrom(a.PropertyType)) || (typeof(IParamsBase).IsAssignableFrom(a.PropertyType))
-                        || (a.CustomAttributes.Any(b => b.AttributeType != typeof(IgnoreAutomapAttribute))))))
-					prop.SetValue(ViewModel, Datasource);
-			}
-			catch (ArgumentNullException argumentNullException)
-			{
-				Log.Error("Databind Error", argumentNullException, this);
-			}
+            if (Datasource.GetType().GetCustomAttributes(typeof(IgnoreAutomapAttribute), true).Any()) return;
+		    try
+		    {
+		        foreach (var prop in ViewModel.GetType().GetProperties()
+		            .Where(
+		                a =>
+		                    typeof (IModelBase).IsAssignableFrom(a.PropertyType) &&
+		                    !(typeof (IPage).IsAssignableFrom(a.PropertyType) ||
+		                      typeof (IParamsBase).IsAssignableFrom(a.PropertyType)
+		                      || a.GetCustomAttributes(typeof(IgnoreAutomapAttribute), true).Any())))
+		            prop.SetValue(ViewModel, Datasource);
+		    }
+		    catch (ArgumentNullException argumentNullException)
+		    {
+		        Log.Error("Databind Error", argumentNullException, this);
+		    }
+		    catch (Exception ex)
+		    {
+                Log.Error("Databind Error", ex, this);
+            }
 		}
 	}
 }
