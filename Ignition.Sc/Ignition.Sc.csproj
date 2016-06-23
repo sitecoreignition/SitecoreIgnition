@@ -299,7 +299,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\Ignition\Bookends\BookendsController.cs" />
-    <Compile Include="Components\Ignition\Bookends\NavigationViewModel.cs" />
     <Compile Include="Components\Ignition\Frame\FrameAgent.cs" />
     <Compile Include="Components\Ignition\Frame\FrameController.cs" />
     <Compile Include="Components\Ignition\Frame\FrameViewModel.cs" />
