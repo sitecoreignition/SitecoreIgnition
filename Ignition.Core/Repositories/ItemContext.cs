@@ -6,6 +6,7 @@ using Glass.Mapper;
 using Glass.Mapper.Pipelines.ConfigurationResolver;
 using Glass.Mapper.Sc;
 using Ignition.Core.Models;
+using Ignition.Core.Models.BaseModels;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Data.Managers;

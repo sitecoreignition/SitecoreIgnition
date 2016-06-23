@@ -1,4 +1,5 @@
 ﻿using Glass.Mapper.Sc.Configuration.Attributes;
+using Ignition.Core.Models.BaseModels;
 
 namespace Ignition.Core.Models.Settings
 {

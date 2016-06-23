@@ -5,14 +5,14 @@ using Sitecore;
 using Sitecore.Data;
 using Sitecore.Globalization;
 
-namespace Ignition.Core.Models
+namespace Ignition.Core.Models.BaseModels
 {
     [SitecoreType(AutoMap = false, TemplateId = "{00000000-0000-0000-0000-000000000000}")]
-    public sealed class NullParams : IParamsBase
+    public sealed class NullModel : IModelBase
     {
         public int CompareTo(IModelBase other)
         {
-            return 0;
+            return -0;
         }
 
         public bool Equals(IModelBase other)
@@ -96,7 +96,9 @@ namespace Ignition.Core.Models
             get { return new List<IModelBase>(); }
             set { throw new NotImplementedException(); }
         }
+
         public IModelBase Parent { get { return new NullModel(); } set { throw new NotImplementedException(); } }
+
         public string Sortorder
         {
             get { return "0"; }
@@ -105,15 +107,14 @@ namespace Ignition.Core.Models
 
         public DateTime Created
         {
-            get { return DateTime.MinValue; }
-            set { throw new NotImplementedException(); }
+            get {  return DateTime.MinValue; }
+            set {  throw new NotImplementedException(); }
         }
         public DateTime Updated
         {
             get { return DateTime.MinValue; }
             set { throw new NotImplementedException(); }
         }
-
-        public string PlaceHolderName { get; set; }
     }
 }
+ 

@@ -4,6 +4,7 @@ using System.Web.Routing;
 using Glass.Mapper.Sc.Web.Mvc;
 using Ignition.Core.Factories;
 using Ignition.Core.Models;
+using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Repositories;
 
 namespace Ignition.Core.Mvc
