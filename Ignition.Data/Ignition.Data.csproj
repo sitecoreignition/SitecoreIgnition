@@ -122,12 +122,16 @@
   <ItemGroup>
     <Compile Include="Fields\IAbstract.cs" />
     <Compile Include="Fields\IBackgroundImage.cs" />
+    <Compile Include="Fields\IBackgroundImageAlternate.cs" />
     <Compile Include="Fields\IBoolean.cs" />
+    <Compile Include="Fields\IDateField1.cs" />
+    <Compile Include="Fields\IDateField2.cs" />
     <Compile Include="Fields\IEmailLink.cs" />
     <Compile Include="Fields\IHeading.cs" />
     <Compile Include="Fields\IImage.cs" />
     <Compile Include="Fields\IImage2.cs" />
     <Compile Include="Fields\IInternalLink.cs" />
+    <Compile Include="Fields\ILogo.cs" />
     <Compile Include="Fields\IPlainText.cs" />
     <Compile Include="Fields\IPrimaryLink.cs" />
     <Compile Include="Fields\IRichContent1.cs" />
