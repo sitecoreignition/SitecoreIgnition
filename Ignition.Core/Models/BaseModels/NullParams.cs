@@ -101,6 +101,7 @@ namespace Ignition.Core.Models.BaseModels
         public int Version
         {
             get { return -1; }
+            set { throw new NotImplementedException(); }
         }
 
         public string Path

@@ -1,5 +1,9 @@
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Serialization;
 using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Configuration.Attributes;
@@ -11,30 +15,40 @@ using Sitecore.Globalization;
 namespace Ignition.Core.Models.BaseModels
 {
     [SitecoreType(TemplateId = "{4C3CDC24-1610-4808-92A3-A221768AE3B2}", AutoMap = true)]
-    public interface IModelBase : IComparable<IModelBase>, IEquatable<IModelBase>
+    public class ModelBase : IModelBase
     {
         [SitecoreId, IndexField("_group")]
-        Guid Id { get; set; }
+        public virtual Guid Id { get; set; }
 
         [SitecoreInfo(SitecoreInfoType.Language), IndexField("_language")]
-        Language Language { get; set; }
+        public virtual Language Language { get; set; }
 
-        [TypeConverter(typeof (IndexFieldItemUriValueConverter)), XmlIgnore, IndexField("_uniqueid")]
-        ItemUri Uri { get; set; }
+        [TypeConverter(typeof(IndexFieldItemUriValueConverter)), XmlIgnore, IndexField("_uniqueid")]
+        public virtual ItemUri Uri { get; set; }
 
         [SitecoreInfo(SitecoreInfoType.DisplayName)]
-        string DisplayName { get; set; }
+        public virtual string DisplayName { get; set; }
 
         [SitecoreInfo(SitecoreInfoType.Version)]
-        int Version { get; set; }
+        public virtual int Version { get; set; }
 
         [SitecoreInfo(SitecoreInfoType.Path), IndexField("_path")]
-        string Path { get; set; }
+        public virtual string Path { get; set; }
 
         [SitecoreInfo(SitecoreInfoType.Name), IndexField("_name")]
-        string Name { get; set; }
+        public virtual string Name { get; set; }
 
         [SitecoreInfo(SitecoreInfoType.Url, UrlOptions = SitecoreInfoUrlOptions.LanguageEmbeddingNever)]
-        string Url { get; set; }
+        public virtual string Url { get; set; }
+
+        public int CompareTo(IModelBase other)
+        {
+            return Id.CompareTo(other.Id);
+        }
+
+        public bool Equals(IModelBase other)
+        {
+            return Id.Equals(other.Id);
+        }
     }
 }

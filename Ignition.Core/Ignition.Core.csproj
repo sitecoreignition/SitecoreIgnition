@@ -162,8 +162,10 @@
     <Compile Include="Models\BaseModels\INeedsChildren.cs" />
     <Compile Include="Models\BaseModels\INeedsParent.cs" />
     <Compile Include="Models\BaseModels\IParamsBase.cs" />
+    <Compile Include="Models\BaseModels\ModelBase.cs" />
     <Compile Include="Models\BaseModels\NullModel.cs" />
     <Compile Include="Models\BaseModels\NullParams.cs" />
+    <Compile Include="Models\BaseModels\ParamsBase.cs" />
     <Compile Include="Models\Containers\IContentFolder.cs" />
     <Compile Include="Models\Containers\INavFolder.cs" />
     <Compile Include="Models\Containers\IOptionFolder.cs" />
