@@ -42,14 +42,10 @@ namespace Ignition.Core.Mvc.ViewEngines
 
 		private static string GetExperienceEditorViewName(string viewName)
 		{
-			if (IsApplicationRelativePath(viewName))
-			{
-				return Regex.Replace(viewName, @"^(.*)\.(cshtml)$", "$1_EE.$2");
-			}
-			return viewName + "_EE";
+		    return IsApplicationRelativePath(viewName) ? Regex.Replace(viewName, @"^(.*)\.(cshtml)$", "$1.EE.$2") : $"{viewName}.EE";
 		}
 
-		private static bool IsApplicationRelativePath(string viewName)
+	    private static bool IsApplicationRelativePath(string viewName)
 		{
 			return viewName[0] == '~' || viewName[0] == '/';
 		}

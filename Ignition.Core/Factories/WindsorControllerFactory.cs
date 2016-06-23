@@ -27,7 +27,7 @@ namespace Ignition.Core.Factories
 			{
 				throw new HttpException(404, $"The controller for path '{requestContext.HttpContext.Request.Path}' could not be found.");
 			}
-			if (controllerType.BaseType == typeof(BaseController))
+			if (controllerType.BaseType == typeof(IgnitionController))
 			{
 				return (IController)_kernel.Resolve(controllerType);
 			}

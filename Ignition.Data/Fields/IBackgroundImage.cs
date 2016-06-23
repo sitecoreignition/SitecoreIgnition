@@ -1,13 +1,13 @@
 ﻿using Glass.Mapper.Sc.Configuration.Attributes;
 using Glass.Mapper.Sc.Fields;
-using Ignition.Core.Models;
+using Ignition.Core.Models.BaseModels;
 
 namespace Ignition.Data.Fields
 {
-    [SitecoreType(TemplateId= "{DF4EEF4E-4099-4EC3-BDB3-154EFE0648C4}", AutoMap=true)]
+    [SitecoreType(TemplateId = "{DF4EEF4E-4099-4EC3-BDB3-154EFE0648C4}", AutoMap = true)]
     public interface IBackgroundImage : IModelBase
     {
-        [SitecoreField(FieldId= "{688BBA82-CEB0-4EDD-9D32-AD0EA1F8F8F9}")]
+        [SitecoreField(FieldId = "{688BBA82-CEB0-4EDD-9D32-AD0EA1F8F8F9}")]
         Image BackgroundImage { get; set; }
     }
 }

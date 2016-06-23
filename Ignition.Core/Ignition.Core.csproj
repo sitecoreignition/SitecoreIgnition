@@ -146,10 +146,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\IgnoreAutomapAttribute.cs" />
-    <Compile Include="Constants\CoreConstants.cs" />
+    <Compile Include="CoreConstants.cs" />
     <Compile Include="Factories\IAgentFactory.cs" />
     <Compile Include="Factories\WindsorAgentFactory.cs" />
     <Compile Include="Factories\WindsorControllerFactory.cs" />
+    <Compile Include="HtmlHelpers\RichTextHelper.cs" />
     <Compile Include="Installers\CoreInstaller.cs" />
     <Compile Include="HtmlHelpers\ComponentBlock.cs" />
     <Compile Include="HtmlHelpers\DynamicPlaceholder.cs" />
@@ -157,17 +158,23 @@
     <Compile Include="HtmlHelpers\GetDynamicPlaceholderChromeData.cs" />
     <Compile Include="Extensions\GlassExtensions.cs" />
     <Compile Include="HtmlHelpers\ViewWrapper.cs" />
+    <Compile Include="Models\BaseModels\IModelBase.cs" />
+    <Compile Include="Models\BaseModels\IModelBaseWithMetadata.cs" />
+    <Compile Include="Models\BaseModels\INeedsChildren.cs" />
+    <Compile Include="Models\BaseModels\INeedsParent.cs" />
+    <Compile Include="Models\BaseModels\IParamsBase.cs" />
+    <Compile Include="Models\BaseModels\ModelBase.cs" />
+    <Compile Include="Models\BaseModels\NullModel.cs" />
+    <Compile Include="Models\BaseModels\NullParams.cs" />
+    <Compile Include="Models\BaseModels\ParamsBase.cs" />
     <Compile Include="Models\Containers\IContentFolder.cs" />
     <Compile Include="Models\Containers\INavFolder.cs" />
     <Compile Include="Models\Containers\IOptionFolder.cs" />
     <Compile Include="Models\Containers\ISettingsFolder.cs" />
-    <Compile Include="Models\IMetaData.cs" />
-    <Compile Include="Models\INavigation.cs" />
-    <Compile Include="Models\IPage.cs" />
-    <Compile Include="Models\IParamsBase.cs" />
-    <Compile Include="Models\ITaxonomy.cs" />
-    <Compile Include="Models\NullParams.cs" />
-    <Compile Include="Models\NullModel.cs" />
+    <Compile Include="Models\Page\IMetaData.cs" />
+    <Compile Include="Models\Page\INavigation.cs" />
+    <Compile Include="Models\Page\IPage.cs" />
+    <Compile Include="Models\Page\ITaxonomy.cs" />
     <Compile Include="Models\Settings\IDecimalSetting.cs" />
     <Compile Include="Models\Settings\IImageSetting.cs" />
     <Compile Include="Models\Settings\IIntSetting.cs" />
@@ -183,20 +190,18 @@
     <Compile Include="Mvc\SimpleAgent.cs" />
     <Compile Include="Mvc\ViewEngines\ExperienceEditorViewEngine.cs" />
     <Compile Include="HtmlHelpers\IGlassRenderHelper.cs" />
-    <Compile Include="ISiteSearchProvider.cs" />
     <Compile Include="Mvc\ViewEngines\FrameworkConventionsViewEngine.cs" />
     <Compile Include="Repositories\CacheItem.cs" />
     <Compile Include="Repositories\ItemContext.cs" />
     <Compile Include="HtmlHelpers\HtmlHelperExtension.cs" />
     <Compile Include="Bases\IDatabaseType.cs" />
-    <Compile Include="Models\IModelBase.cs" />
-    <Compile Include="MasterDatabaseType.cs" />
     <Compile Include="Mvc\Agent.cs" />
     <Compile Include="Mvc\BaseViewModel.cs" />
-    <Compile Include="Mvc\BaseController.cs" />
+    <Compile Include="Mvc\IgnitionController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="HtmlHelpers\ResourceType.cs" />
-    <Compile Include="WebDatabaseType.cs" />
+    <Compile Include="Repositories\MasterDatabaseType.cs" />
+    <Compile Include="Repositories\WebDatabaseType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

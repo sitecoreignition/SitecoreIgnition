@@ -4,7 +4,7 @@ using Ignition.Core.Repositories;
 
 namespace Ignition.Sc.Components.Ignition.Frame
 {
-    public class FrameController : BaseController
+    public class FrameController : IgnitionController
     {
         public FrameController(ItemContext context) : base(context)
         {
@@ -12,7 +12,7 @@ namespace Ignition.Sc.Components.Ignition.Frame
 
         public ActionResult IgnitionFrame()
         {
-            return GetViewResult<FrameViewModel>();
+            return View<FrameViewModel>();
         }
 
     }

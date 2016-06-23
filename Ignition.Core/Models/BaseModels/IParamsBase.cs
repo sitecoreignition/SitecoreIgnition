@@ -1,6 +1,6 @@
 ﻿using Glass.Mapper.Sc.Configuration.Attributes;
 
-namespace Ignition.Core.Models
+namespace Ignition.Core.Models.BaseModels
 {
     [SitecoreType(AutoMap = true, TemplateId = "{20FCB4C8-F9B2-41F6-9464-16BCC280ADC0}")]
     public interface IParamsBase : IModelBase

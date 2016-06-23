@@ -1,5 +1,6 @@
 using System;
 using Ignition.Core.Models;
+using Ignition.Core.Models.BaseModels;
 
 namespace Ignition.Core.Repositories
 {
