@@ -5,7 +5,6 @@ using System.Web.Routing;
 using Glass.Mapper;
 using Glass.Mapper.Pipelines.ConfigurationResolver;
 using Glass.Mapper.Sc;
-using Ignition.Core.Models;
 using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Models.Page;
 using Sitecore.Data;

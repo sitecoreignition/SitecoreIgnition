@@ -1,5 +1,4 @@
-﻿using System;
-using Glass.Mapper.Sc.Configuration.Attributes;
+﻿using Glass.Mapper.Sc.Configuration.Attributes;
 using Ignition.Core.Models.BaseModels;
 
 namespace Ignition.Core.Models.Settings
@@ -8,6 +7,6 @@ namespace Ignition.Core.Models.Settings
     public interface IDecimalSetting : IModelBase
     {
         [SitecoreField(FieldId="{D7E2526E-9703-4EC7-A7C1-449E7C1134F6}")]
-        Decimal DecimalSetting { get; set; }
+        decimal DecimalSetting { get; set; }
     }
 }
