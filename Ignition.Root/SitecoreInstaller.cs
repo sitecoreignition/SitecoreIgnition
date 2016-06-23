@@ -1,23 +1,15 @@
-using Castle.MicroKernel.Registration;
-using Castle.MicroKernel.SubSystems.Configuration;
-using Castle.Windsor;
 using Glass.Mapper.Sc;
-using Glass.Mapper.Sc.Web.Mvc;
-using Sitecore.Mvc.Controllers;
+using Ignition.Core.SimpleInjector;
+using SimpleInjector;
 
 namespace Ignition.Root
 {
-	public class SitecoreInstaller : IWindsorInstaller
+	public class SitecoreInstaller : SimpleInjectorInstaller
 	{
-		public void Install(IWindsorContainer container, IConfigurationStore store)
+		public override void Install(Container container)
 		{
-			container.Register(
-				Component.For<ISitecoreContext>().ImplementedBy<SitecoreContext>().LifestylePerWebRequest(),
-				Component.For<ISitecoreService>().ImplementedBy<SitecoreService>().LifestylePerWebRequest()
-					.DependsOn(Dependency.OnValue("databaseName", Constants.System.ProductionDatabaseName)),
-				Component.For<IGlassHtml>().ImplementedBy<GlassHtml>().LifestylePerWebRequest(),
-				Component.For<GlassController>(),
-				Component.For<SitecoreController>());
+			container.Register<ISitecoreContext>(() => new SitecoreContext(), Lifestyle.Scoped);
+			container.Register<ISitecoreService>(() => new SitecoreService(Constants.System.ProductionDatabaseName), Lifestyle.Scoped);
 		}
 	}
 }

@@ -1,6 +1,4 @@
-﻿using Castle.MicroKernel.Registration;
-
-namespace Ignition.Sc
+﻿namespace Ignition.Sc
 {
     public struct IgnitionConstants
     {
