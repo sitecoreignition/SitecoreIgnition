@@ -1,17 +1,15 @@
-using System.Web.Mvc;
-using Castle.MicroKernel.Registration;
-using Castle.MicroKernel.SubSystems.Configuration;
-using Castle.Windsor;
 using Ignition.Core.Mvc;
+using Ignition.Core.SimpleInjector;
+using SimpleInjector;
 
 namespace Ignition.Sc
 {
-	public class IgnitionScInstaller : IWindsorInstaller
+	public class IgnitionScInstaller : SimpleInjectorInstaller
 	{
-		public void Install(IWindsorContainer container, IConfigurationStore store)
+		public override void Install(Container container)
 		{
-			container.Register(Classes.FromThisAssembly().BasedOn<IController>().LifestyleTransient());
-			container.Register(Classes.FromThisAssembly().BasedOn(typeof(Agent<>)).LifestyleTransient());
+			container.RegisterMvcControllers(ThisAssembly);
+			container.RegisterAllConcreteTypesFor(typeof(Agent<>), ThisAssembly, Lifestyle.Transient);
 		}
 	}
 }

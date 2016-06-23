@@ -1,19 +1,18 @@
-﻿using Castle.MicroKernel.Registration;
-using Castle.MicroKernel.SubSystems.Configuration;
-using Castle.Windsor;
-using Ignition.Core.Factories;
+﻿using Ignition.Core.Factories;
 using Ignition.Core.Mvc;
 using Ignition.Core.Repositories;
+using Ignition.Core.SimpleInjector;
+using SimpleInjector;
 
 namespace Ignition.Core.Installers
 {
-	public class CoreInstaller : IWindsorInstaller
+	public class CoreInstaller : SimpleInjectorInstaller
 	{
-		public void Install(IWindsorContainer container, IConfigurationStore store)
+		public override void Install(Container container)
 		{
-			container.Register(Component.For<ItemContext>().LifestylePerWebRequest());
-			container.Register(Component.For<IAgentFactory>().ImplementedBy<WindsorAgentFactory>().LifestylePerWebRequest());
-			container.Register(Component.For(typeof(SimpleAgent<>)).LifestyleTransient());
+			container.Register<ItemContext>(Lifestyle.Scoped);
+			container.Register<IAgentFactory, SimpleInjectorAgentFactory>(Lifestyle.Scoped);
+			container.Register(typeof(SimpleAgent<>), new[] { ThisAssembly }, Lifestyle.Transient);
 		}
 	}
 }

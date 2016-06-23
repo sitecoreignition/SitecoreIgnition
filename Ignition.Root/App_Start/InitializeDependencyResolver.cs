@@ -1,8 +1,10 @@
 ﻿using System.Web.Mvc;
-using Castle.Windsor;
-using Ignition.Core.Factories;
 using Ignition.Core.Installers;
+using Ignition.Core.SimpleInjector;
 using Ignition.Sc;
+using SimpleInjector;
+using SimpleInjector.Integration.Web;
+using SimpleInjector.Integration.Web.Mvc;
 using Sitecore.Pipelines;
 
 namespace Ignition.Root.App_Start
@@ -16,17 +18,22 @@ namespace Ignition.Root.App_Start
 
 		public static void RegisterDependencyResolver(PipelineArgs args)
 		{
-			var container = CreateWindsorContainer();
-			ControllerBuilder.Current.SetControllerFactory(new WindsorControllerFactory(container.Kernel));
+			var container = CreateSimpleInjectorContainer();
+			DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
 		}
 
-		private static IWindsorContainer CreateWindsorContainer()
+		private static Container CreateSimpleInjectorContainer()
 		{
-			var container = new WindsorContainer();
+			var container = new Container();
+			container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
+			container.Options.PropertySelectionBehavior = new ImportPropertySelectionBehavior();
+			container.RegisterMvcIntegratedFilterProvider();
+
 			container.Install(new SitecoreInstaller());
 			container.Install(new CoreInstaller());
 			container.Install(new IgnitionScInstaller());
-			container.Install(new RootInstaller());
+
+			container.Verify();
 			return container;
 		}
 	}
