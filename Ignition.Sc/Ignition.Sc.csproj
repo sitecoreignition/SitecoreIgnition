@@ -303,7 +303,6 @@
     <Compile Include="Components\Ignition\Frame\FrameAgent.cs" />
     <Compile Include="Components\Ignition\Frame\FrameController.cs" />
     <Compile Include="Components\Ignition\Frame\FrameViewModel.cs" />
-    <Compile Include="Components\Ignition\Frame\IFrame.cs" />
     <Compile Include="Components\Ignition\Metadata\MetadataController.cs" />
     <Compile Include="IgnitionConstants.cs" />
     <Compile Include="IgnitionScInstaller.cs" />
