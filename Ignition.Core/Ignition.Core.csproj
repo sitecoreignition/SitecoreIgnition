@@ -164,7 +164,7 @@
     <Compile Include="HtmlHelpers\DynamicPlaceholder.cs" />
     <Compile Include="HtmlHelpers\GetDynamicKeyAllowedRenderings.cs" />
     <Compile Include="HtmlHelpers\GetDynamicPlaceholderChromeData.cs" />
-    <Compile Include="Extensions\GlassExtensions.cs" />
+    <Compile Include="HtmlHelpers\GlassHelper.cs" />
     <Compile Include="Models\BaseModels\IModelBase.cs" />
     <Compile Include="Models\BaseModels\IModelBaseWithMetadata.cs" />
     <Compile Include="Models\BaseModels\INeedsChildren.cs" />
@@ -196,7 +196,6 @@
     <Compile Include="Mvc\Routing\PublicRouteProvider.cs" />
     <Compile Include="Mvc\SimpleAgent.cs" />
     <Compile Include="Mvc\ViewEngines\ExperienceEditorViewEngine.cs" />
-    <Compile Include="HtmlHelpers\IGlassRenderHelper.cs" />
     <Compile Include="Mvc\ViewEngines\FrameworkConventionsViewEngine.cs" />
     <Compile Include="Repositories\CacheItem.cs" />
     <Compile Include="Repositories\ItemContext.cs" />
