@@ -196,7 +196,6 @@
     <Compile Include="Mvc\Routing\PublicRouteProvider.cs" />
     <Compile Include="Mvc\SimpleAgent.cs" />
     <Compile Include="Mvc\ViewEngines\ExperienceEditorViewEngine.cs" />
-    <Compile Include="HtmlHelpers\IGlassRenderHelper.cs" />
     <Compile Include="Mvc\ViewEngines\FrameworkConventionsViewEngine.cs" />
     <Compile Include="Repositories\CacheItem.cs" />
     <Compile Include="Repositories\ItemContext.cs" />
