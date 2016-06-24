@@ -4,14 +4,14 @@ namespace Ignition.Core.Extensions
 {
     public class GlassExtensions
     {
-        public static NameValueCollection CssClass(string cssClass)
+        public static object CssClass(string cssClass)
         {
-            return new NameValueCollection { { "class", cssClass } };
+            return new { @class = cssClass };
         }
 
-        public static NameValueCollection Image(string cssClass, int height, int width)
+        public static object Image(string cssClass, int height, int width)
         {
-            return new NameValueCollection { { "class", cssClass }, { "height", height.ToString() }, { "width", width.ToString() } };
+            return new { @class = cssClass, height = height.ToString(),  width = width.ToString() };
         }
 
         public static NameValueCollection Attribute(string attributeName, string attributeValue)
