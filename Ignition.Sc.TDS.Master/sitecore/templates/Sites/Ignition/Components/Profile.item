@@ -1,18 +1,19 @@
 ----item----
 version: 1
-id: {2464993C-2078-48C7-AABC-FDA4D62716B0}
+id: {3D7BC56D-094B-4CAC-A16C-20A096B3919D}
 database: master
-path: /sitecore/templates/Demos/Ignition
-parent: {E9867726-010C-4114-BCDC-AA108E2C5D60}
-name: Ignition
+path: /sitecore/templates/Sites/Ignition/Components/Profile
+parent: {841F331D-DBDB-4586-96B5-169D097AA1C6}
+name: Profile
 master: {00000000-0000-0000-0000-000000000000}
 template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
 templatekey: Template Folder
+created: 20160623T042148:636022525083470000
 
 ----version----
 language: en
 version: 1
-revision: 48103706-7bf6-4c31-86e7-d74863b47170
+revision: 403c2cdd-f513-4b8f-b852-c49c5d16cc9d
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,7 +21,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20160516T182456Z
+20160613T203159Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-48103706-7bf6-4c31-86e7-d74863b47170
+403c2cdd-f513-4b8f-b852-c49c5d16cc9d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160516T205009Z
+20160613T203159Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

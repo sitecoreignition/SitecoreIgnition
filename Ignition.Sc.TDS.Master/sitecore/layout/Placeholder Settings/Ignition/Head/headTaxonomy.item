@@ -8,6 +8,7 @@ name: headTaxonomy
 master: {00000000-0000-0000-0000-000000000000}
 template: {5C547D4E-7111-4995-95B0-6B561751BF2E}
 templatekey: Placeholder
+created: 20160622T222011:636022308112200000
 
 ----field----
 field: {7256BDAB-1FD2-49DD-B205-CB4873D2917C}
@@ -16,10 +17,17 @@ key: placeholder key
 content-length: 12
 
 headTaxonomy
+----field----
+field: {14D0728A-82F9-4B01-AB16-1FE1577CEDE2}
+name: Editable
+key: editable
+content-length: 0
+
+
 ----version----
 language: en
 version: 1
-revision: 0726cb18-de41-4610-8ec6-46eed3906be5
+revision: 9cb660e9-098c-4336-abf1-4ab756295a61
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +42,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0726cb18-de41-4610-8ec6-46eed3906be5
+9cb660e9-098c-4336-abf1-4ab756295a61
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160516T193645Z
+20160516T223312Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

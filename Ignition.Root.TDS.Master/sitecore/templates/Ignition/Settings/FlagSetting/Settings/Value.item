@@ -1,33 +1,33 @@
 ----item----
 version: 1
-id: {03005EB1-0FD2-4830-87ED-36CF20C8A112}
+id: {CD630B84-455D-4CC3-B9E7-453085AC0197}
 database: master
-path: /sitecore/layout/Placeholder Settings/Ignition/Head/headScript
-parent: {5A5D347B-105B-476E-9D79-5787C035EE76}
-name: headScript
+path: /sitecore/templates/Ignition/Settings/FlagSetting/Settings/Value
+parent: {854A2B42-A29C-4621-A22A-7B96886CE904}
+name: Value
 master: {00000000-0000-0000-0000-000000000000}
-template: {5C547D4E-7111-4995-95B0-6B561751BF2E}
-templatekey: Placeholder
-created: 20160622T222011:636022308111530000
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
+created: 20160623T043613:636022533737770000
 
 ----field----
-field: {7256BDAB-1FD2-49DD-B205-CB4873D2917C}
-name: Placeholder Key
-key: placeholder key
-content-length: 10
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 8
 
-headScript
+Checkbox
 ----field----
-field: {14D0728A-82F9-4B01-AB16-1FE1577CEDE2}
-name: Editable
-key: editable
-content-length: 0
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
 
-
+100
 ----version----
 language: en
 version: 1
-revision: b02e8d3e-2ecf-4b76-9729-6be1356a86c1
+revision: aba9aab0-2d58-41a2-a385-4d44132f0ee0
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -35,21 +35,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20160516T193653Z
+20160531T211052Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b02e8d3e-2ecf-4b76-9729-6be1356a86c1
+aba9aab0-2d58-41a2-a385-4d44132f0ee0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160516T223259Z
+20160531T211052Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

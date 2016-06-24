@@ -1,33 +1,27 @@
 ----item----
 version: 1
-id: {A1783599-E87A-45A0-A22C-6CD95A0075A0}
+id: {12687106-0218-41C4-98F7-FA475A85A01F}
 database: master
-path: /sitecore/templates/Ignition/Global/Footer/__Standard Values
-parent: {E87168A5-1870-4B7B-AFA2-D30642A35C2C}
-name: __Standard Values
+path: /sitecore/templates/Sites
+parent: {3C1715FE-6A13-4FCF-845F-DE308BA9741D}
+name: Sites
 master: {00000000-0000-0000-0000-000000000000}
-template: {E87168A5-1870-4B7B-AFA2-D30642A35C2C}
-templatekey: Footer
+template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
+templatekey: Template Folder
+created: 20160623T042144:636022525040630000
 
 ----version----
 language: en
 version: 1
-revision: 08235c20-5a9f-4fed-b125-53f0bbe0ce17
+revision: b1049275-19b5-4295-aa28-2d50df3c77eb
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20160424T200542Z
+20160610T194423Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-08235c20-5a9f-4fed-b125-53f0bbe0ce17
+b1049275-19b5-4295-aa28-2d50df3c77eb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160424T200542Z
+20160610T194423Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

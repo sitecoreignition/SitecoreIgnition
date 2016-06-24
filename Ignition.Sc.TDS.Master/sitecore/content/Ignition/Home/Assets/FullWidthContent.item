@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {17FB5B68-846B-489A-AE81-91C0432A575B}
+database: master
+path: /sitecore/content/Ignition/Home/Assets/FullWidthContent
+parent: {3B027135-26ED-49B7-BF07-DBA84D281EF5}
+name: FullWidthContent
+master: {00000000-0000-0000-0000-000000000000}
+template: {A4F43AFC-41A1-4BCD-92E8-6B39984A4579}
+templatekey: Content
+created: 20160623T042648:636022528080200000
+
+----version----
+language: en
+version: 1
+revision: 7ae2f398-5f1e-4f99-8a21-0670eec2549a
+
+----field----
+field: {13BA7DE9-6997-44AA-BA9F-36B16D41CE45}
+name: Abstract
+key: abstract
+content-length: 308
+
+Bacon ipsum dolor amet frankfurter sausage fatback meatloaf venison spare ribs. Tail kevin chicken, tongue chuck fatback swine bacon doner ribeye. Pork belly porchetta chuck, t-bone boudin venison shankle andouille jowl pork chop tongue ball tip. Doner meatloaf sausage capicola ball tip tail shankle salami.
+----field----
+field: {7DD87307-F0D1-4C76-B9D2-BACAF51AE316}
+name: Heading
+key: heading
+content-length: 28
+
+Bacon Ipsum Epluribus Piggum
+----field----
+field: {A3513117-630A-4830-86C0-A2F15164BE04}
+name: RichText1
+key: richtext1
+content-length: 308
+
+Bacon ipsum dolor amet frankfurter sausage fatback meatloaf venison spare ribs. Tail kevin chicken, tongue chuck fatback swine bacon doner ribeye. Pork belly porchetta chuck, t-bone boudin venison shankle andouille jowl pork chop tongue ball tip. Doner meatloaf sausage capicola ball tip tail shankle salami.
+----field----
+field: {3487FEB5-9DAB-49AA-B9DF-F97A877BA7ED}
+name: Subtitle
+key: subtitle
+content-length: 18
+
+All Hail the Bacon
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20160615T172219Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7ae2f398-5f1e-4f99-8a21-0670eec2549a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20160615T172436Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
