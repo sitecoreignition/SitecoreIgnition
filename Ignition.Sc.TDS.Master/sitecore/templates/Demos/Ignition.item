@@ -1,19 +1,18 @@
 ----item----
 version: 1
-id: {F5DA1CEA-123F-4900-8974-AFAB755551FD}
+id: {2464993C-2078-48C7-AABC-FDA4D62716B0}
 database: master
-path: /sitecore/templates/Sites/Ignition/Components/CallToAction/CallToActionIconSelector/Parameters
-parent: {98127972-D381-4DC7-8E3C-7233372EAC24}
-name: Parameters
+path: /sitecore/templates/Demos/Ignition
+parent: {E9867726-010C-4114-BCDC-AA108E2C5D60}
+name: Ignition
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
-created: 20160623T042146:636022525067200000
+template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
+templatekey: Template Folder
 
 ----version----
 language: en
 version: 1
-revision: c30b3aba-4b0d-4d07-9709-a35fa1804ca5
+revision: 48103706-7bf6-4c31-86e7-d74863b47170
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -21,7 +20,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20160608T003447Z
+20160516T182456Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -35,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c30b3aba-4b0d-4d07-9709-a35fa1804ca5
+48103706-7bf6-4c31-86e7-d74863b47170
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160608T013636Z
+20160516T205009Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,19 +1,18 @@
 ----item----
 version: 1
-id: {12687106-0218-41C4-98F7-FA475A85A01F}
+id: {E9867726-010C-4114-BCDC-AA108E2C5D60}
 database: master
-path: /sitecore/templates/Sites
+path: /sitecore/templates/Demos
 parent: {3C1715FE-6A13-4FCF-845F-DE308BA9741D}
-name: Sites
+name: Demos
 master: {00000000-0000-0000-0000-000000000000}
 template: {0437FEE2-44C9-46A6-ABE9-28858D9FEE8C}
 templatekey: Template Folder
-created: 20160623T042144:636022525040630000
 
 ----version----
 language: en
 version: 1
-revision: b1049275-19b5-4295-aa28-2d50df3c77eb
+revision: 12cac763-3393-4292-8adf-e8ed386faed6
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -21,7 +20,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20160610T194423Z
+20160513T181114Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -35,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b1049275-19b5-4295-aa28-2d50df3c77eb
+12cac763-3393-4292-8adf-e8ed386faed6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160610T194423Z
+20160513T181114Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
