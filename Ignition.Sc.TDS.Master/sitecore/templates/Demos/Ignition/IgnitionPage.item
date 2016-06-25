@@ -2,13 +2,12 @@
 version: 1
 id: {0ED048AF-E431-40E0-A8A5-3028367FC756}
 database: master
-path: /sitecore/templates/Sites/Ignition/IgnitionPage
+path: /sitecore/templates/Demos/Ignition/IgnitionPage
 parent: {2464993C-2078-48C7-AABC-FDA4D62716B0}
 name: IgnitionPage
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
-created: 20160622T222009:636022308097400000
 
 ----field----
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
