@@ -1,0 +1,14 @@
+﻿---
+ID: "5b595765-a270-4e97-a630-3dd1d9c002a8"
+Parent: "0bd9a101-ef97-459a-869c-be9caec1afbd"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Ignition/Shared/Bookends
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160515T201559Z

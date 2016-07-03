@@ -1,0 +1,71 @@
+﻿---
+ID: "0935636a-ee07-442d-8930-87ec0cae26a4"
+Parent: "ee25953c-4645-4ff4-9e2a-038001b519c2"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Ignition/Page/Page
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/text_rich_colored.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {2C0AB971-113B-4206-988B-DE77BE43E70D}
+    {E3FDC87F-C68A-49CA-88AE-283A947709A1}
+    {4B39EFA4-00EB-4C61-BD45-82FB2C72E810}
+    {1522097B-B91D-4E98-BBDB-AD197619765D}
+    {50634356-160A-47C2-A28F-AC4571ECBCBF}
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{618CFABD-9BF0-4181-B4DB-1F1257EBE9DD}">
+        <r
+          id="{0543D287-BEAD-4145-AE86-515E0FD2C157}"
+          ph="layoutHead"
+          uid="{1818240E-2A90-4EBC-8830-2F2EC44CAF94}" />
+        <r
+          ds="{DDDF4B78-6EB9-40E1-8FA0-50F6EFB324AA}"
+          id="{BE6E4647-83A9-4538-9457-708925755BD9}"
+          par=""
+          ph="layoutHeader"
+          uid="{6A3595AE-B53A-4BA9-93F3-694E8E389D82}" />
+        <r
+          id="{F0233951-4C85-4166-B31D-ED9C98FA9940}"
+          ph="layoutNav"
+          uid="{7C61EBC5-6FC5-4537-8F56-CD373E8C0D5F}" />
+        <r
+          ds="{D5425AB5-31BC-4E8B-8214-AFC08AE1FCE0}"
+          id="{3DEE422B-ACF0-428B-A6B4-FDEBF9A69E5F}"
+          par=""
+          ph="navLogin"
+          uid="{D93A6A42-62C7-4B4C-B0CC-0A206890BF9B}" />
+        <r
+          id="{C833CF56-F531-41BA-BD64-2C7FF5DF0ECC}"
+          ph="layoutFooter"
+          uid="{E6DA4C54-B4CB-4BAD-AFD9-EA3B615C238D}" />
+        <r
+          id="{F9A8BE6F-CA35-49D7-A609-FF7A6D622CD5}"
+          ph="layoutScripts"
+          uid="{7E8F4FE0-85C8-4750-A1B8-E9E936F1A56A}" />
+      </d>
+    </r>
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{4FB6DF14-C2FB-4EAC-A0F2-991542A4ADBA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150323T212003Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

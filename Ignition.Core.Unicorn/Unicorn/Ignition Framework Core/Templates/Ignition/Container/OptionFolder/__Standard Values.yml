@@ -1,0 +1,24 @@
+﻿---
+ID: "29e2e82f-629c-4bbc-ac19-451f1fc4ff03"
+Parent: "3b08a675-8c97-4d5f-baff-d50d8df30cc0"
+Template: "3b08a675-8c97-4d5f-baff-d50d8df30cc0"
+Path: /sitecore/templates/Ignition/Container/OptionFolder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {3B08A675-8C97-4D5F-BAFF-D50D8DF30CC0}
+    {2251DD1D-6255-428F-B751-9AFB34F20AFA}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150325T192050Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
