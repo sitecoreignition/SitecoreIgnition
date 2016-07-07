@@ -24,20 +24,21 @@ Please note that Ignition is in beta and may still be a bit rough around the edg
 9. Sync `Ignition.Sc.TDS.Master` with TDS.
 10. Open Sitecore, publish your site, and have fun!
 
-### If You Don't Have [Team Development for Sitecore](https://www.teamdevelopmentforsitecore.com/)
+### If You Use [Unicorn](https://github.com/kamsar/Unicorn) 
+6. Open the solution `Ignition.Unicorn.sln`.
+7. Create a publishing profile called `Ignition.Sc` in the `Ignition.Sc` project.
+8. Create a publishing profile called `Ignition.Root` in the `Ignition.Root` project.
+9. Create a publishing profile called `Ignition.Core.Unicorn` in the `Ignition.Core.Unicorn` project.
+10. Publish `Ignition.Sc`, then `Ignition.Root`, then `Ignition.Core.Unicorn`.
+11. Navigate to the [Unicorn Control Panel](http://ignition.localhost/unicorn.aspx) and sync the two Ignition configurations.
+12. Publish your site and have fun!
+
+### If you don't have either TDS or Unicorn
 
 6. Open the solution `Ignition.sln`.
 7. Create a publishing profile called `Ignition.Sc` in the `Ignition.Sc` project.
 8. Create a publishing profile called `Ignition.Root` in the `Ignition.Root` project.
 9. Publish `Ignition.Sc` and then publish `Ignition.Root`.
-
-### If You Use [Unicorn](https://github.com/kamsar/Unicorn) 
-10. Create a publishing profile called `Ignition.Core.Unicorn` in the `Ignition.Core.Unicorn` project.
-11. Publish `Ignition.Core.Unicorn`.
-12. Navigate to the [Unicorn Control Panel](http://ignition.localhost/unicorn.aspx) and sync the two Ignition configurations.
-13. Publish your site and have fun!
-
-### Otherwise...
 10. Navigate to the [Update Installation Wizard](http://ignition.localhost/sitecore/admin/updateinstallationwizard.aspx) and install the update packages found in the `SitecorePackages` folder.
 11. Publish your site and have fun!
 
