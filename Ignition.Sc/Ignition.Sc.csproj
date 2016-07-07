@@ -294,7 +294,6 @@
     <Content Include="Components\Ignition\Metadata\Seo.cshtml" />
     <Content Include="Components\Ignition\Metadata\Taxonomy.cshtml" />
     <Content Include="Components\Ignition\Metadata\EE.cshtml" />
-    <None Include="Properties\PublishProfiles\Ignition Local.pubxml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
