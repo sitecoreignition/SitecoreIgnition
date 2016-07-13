@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Ignition.Core.Unicorn")]
+[assembly: AssemblyTitle("Ignition.Unicorn")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Ignition.Core.Unicorn")]
+[assembly: AssemblyProduct("Ignition.Unicorn")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c0515f91-5c96-48cc-92c8-15795af0f97d")]
+[assembly: Guid("e476304f-d323-42ab-a09d-e2a22b6ca623")]
 
 // Version information for an assembly consists of the following four values:
 //
