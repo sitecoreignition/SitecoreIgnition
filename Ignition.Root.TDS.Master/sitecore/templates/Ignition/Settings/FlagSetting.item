@@ -1,13 +1,14 @@
 ----item----
 version: 1
-id: {E87168A5-1870-4B7B-AFA2-D30642A35C2C}
+id: {5B62BEA4-2A61-40EF-A43B-913AB1C7A411}
 database: master
-path: /sitecore/templates/Ignition/Global/Footer
-parent: {96B8FF3B-9222-4D96-B7BD-0F66F0EB460D}
-name: Footer
+path: /sitecore/templates/Ignition/Settings/FlagSetting
+parent: {2852B9EB-9CB6-4012-8497-76E75F384D61}
+name: FlagSetting
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
+created: 20160623T043546:636022533462770000
 
 ----field----
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
@@ -17,23 +18,16 @@ content-length: 38
 
 {4C3CDC24-1610-4808-92A3-A221768AE3B2}
 ----field----
-field: {F7D48A55-2158-4F02-9356-756654404F73}
-name: __Standard values
-key: __standard values
-content-length: 38
-
-{A1783599-E87A-45A0-A22C-6CD95A0075A0}
-----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 31
+content-length: 21
 
-WordProcessing/32x32/footer.png
+Apps/32x32/Flag-2.png
 ----version----
 language: en
 version: 1
-revision: 6f78bd45-212b-4d6b-9994-b4515a0d106b
+revision: ae87212d-7c51-4d9f-b909-dc8259756f09
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,7 +35,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20160424T200319Z
+20160531T210925Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6f78bd45-212b-4d6b-9994-b4515a0d106b
+ae87212d-7c51-4d9f-b909-dc8259756f09
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160424T200542Z
+20160531T210955Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

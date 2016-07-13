@@ -1,5 +1,4 @@
 ﻿using Glass.Mapper.Sc.Configuration.Attributes;
-using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Models.Page;
 
 namespace Ignition.Core.Models.Containers

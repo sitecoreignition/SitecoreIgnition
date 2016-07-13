@@ -110,8 +110,7 @@
     <Compile Include="HtmlHelpers\DynamicPlaceholder.cs" />
     <Compile Include="HtmlHelpers\GetDynamicKeyAllowedRenderings.cs" />
     <Compile Include="HtmlHelpers\GetDynamicPlaceholderChromeData.cs" />
-    <Compile Include="Extensions\GlassExtensions.cs" />
-    <Compile Include="HtmlHelpers\ViewWrapper.cs" />
+    <Compile Include="HtmlHelpers\GlassHelper.cs" />
     <Compile Include="Models\BaseModels\IModelBase.cs" />
     <Compile Include="Models\BaseModels\IModelBaseWithMetadata.cs" />
     <Compile Include="Models\BaseModels\INeedsChildren.cs" />
@@ -125,7 +124,7 @@
     <Compile Include="Models\Containers\INavFolder.cs" />
     <Compile Include="Models\Containers\IOptionFolder.cs" />
     <Compile Include="Models\Containers\ISettingsFolder.cs" />
-    <Compile Include="Models\Page\IMetaData.cs" />
+    <Compile Include="Models\Page\IMetadata.cs" />
     <Compile Include="Models\Page\INavigation.cs" />
     <Compile Include="Models\Page\IPage.cs" />
     <Compile Include="Models\Page\ITaxonomy.cs" />
@@ -143,7 +142,6 @@
     <Compile Include="Mvc\Routing\PublicRouteProvider.cs" />
     <Compile Include="Mvc\SimpleAgent.cs" />
     <Compile Include="Mvc\ViewEngines\ExperienceEditorViewEngine.cs" />
-    <Compile Include="HtmlHelpers\IGlassRenderHelper.cs" />
     <Compile Include="Mvc\ViewEngines\FrameworkConventionsViewEngine.cs" />
     <Compile Include="Repositories\CacheItem.cs" />
     <Compile Include="Repositories\ItemContext.cs" />

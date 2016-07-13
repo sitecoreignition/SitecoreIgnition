@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Ignition.Core.Attributes;
-using Ignition.Core.Models;
 using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Models.Page;
 using Ignition.Core.Repositories;

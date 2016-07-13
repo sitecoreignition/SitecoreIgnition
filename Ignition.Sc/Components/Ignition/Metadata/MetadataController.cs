@@ -39,7 +39,7 @@ namespace Ignition.Sc.Components.Ignition.Metadata
             return View<BaseViewModel>();
         }
 
-        public ActionResult EE()
+        public ActionResult PageEdit()
         {
             return View<BaseViewModel>();
         }
