@@ -267,7 +267,7 @@
     <Content Include="Assets\Ignition\less\lesshat.less" />
     <Content Include="Assets\Ignition\less\main.less" />
     <Content Include="Assets\Ignition\less\variables.less" />
-    <Content Include="Components\Ignition\Layout\IgnitionLayout.cshtml" />
+    <Content Include="Components\Layout\IgnitionLayout.cshtml" />
     <Content Include="Components\Web.config" />
     <Content Include="Html\fonts\fontawesome-webfont.eot" />
     <Content Include="Html\fonts\fontawesome-webfont.ttf" />
@@ -281,28 +281,28 @@
     <Content Include="Html\less\lesshat.less" />
     <Content Include="Html\less\main.less" />
     <Content Include="Html\less\variables.less" />
-    <Content Include="Components\Ignition\Frame\IgnitionFrame.cshtml" />
+    <Content Include="Components\Frame\IgnitionFrame.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Components\Ignition\Bookends\Header.cshtml" />
-    <Content Include="Components\Ignition\Bookends\Footer.cshtml" />
-    <Content Include="Components\Ignition\Bookends\FooterScript.cshtml" />
-    <Content Include="Components\Ignition\Metadata\Head.cshtml" />
-    <Content Include="Components\Ignition\Metadata\Metadata.cshtml" />
-    <Content Include="Components\Ignition\Metadata\Style.cshtml" />
-    <Content Include="Components\Ignition\Metadata\Script.cshtml" />
-    <Content Include="Components\Ignition\Metadata\Seo.cshtml" />
-    <Content Include="Components\Ignition\Metadata\Taxonomy.cshtml" />
-    <Content Include="Components\Ignition\Metadata\PageEdit.cshtml" />
+    <Content Include="Components\Bookends\Header.cshtml" />
+    <Content Include="Components\Bookends\Footer.cshtml" />
+    <Content Include="Components\Bookends\FooterScript.cshtml" />
+    <Content Include="Components\Metadata\Head.cshtml" />
+    <Content Include="Components\Metadata\Metadata.cshtml" />
+    <Content Include="Components\Metadata\Style.cshtml" />
+    <Content Include="Components\Metadata\Script.cshtml" />
+    <Content Include="Components\Metadata\Seo.cshtml" />
+    <Content Include="Components\Metadata\Taxonomy.cshtml" />
+    <Content Include="Components\Metadata\PageEdit.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\Ignition\Bookends\BookendsController.cs" />
-    <Compile Include="Components\Ignition\Frame\FrameAgent.cs" />
-    <Compile Include="Components\Ignition\Frame\FrameController.cs" />
-    <Compile Include="Components\Ignition\Frame\FrameViewModel.cs" />
-    <Compile Include="Components\Ignition\Metadata\MetadataController.cs" />
+    <Compile Include="Components\Bookends\BookendsController.cs" />
+    <Compile Include="Components\Frame\FrameAgent.cs" />
+    <Compile Include="Components\Frame\FrameController.cs" />
+    <Compile Include="Components\Frame\FrameViewModel.cs" />
+    <Compile Include="Components\Metadata\MetadataController.cs" />
     <Compile Include="IgnitionConstants.cs" />
     <Compile Include="IgnitionScInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

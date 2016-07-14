@@ -2,7 +2,7 @@
 using Ignition.Core.Mvc;
 using Ignition.Core.Repositories;
 
-namespace Ignition.Sc.Components.Ignition.Metadata
+namespace Ignition.Sc.Components.Metadata
 {
     public class MetadataController : IgnitionController
     {

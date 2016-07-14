@@ -2,7 +2,7 @@
 using Ignition.Core.Mvc;
 using Ignition.Core.Repositories;
 
-namespace Ignition.Sc.Components.Ignition.Frame
+namespace Ignition.Sc.Components.Frame
 {
     public class FrameController : IgnitionController
     {

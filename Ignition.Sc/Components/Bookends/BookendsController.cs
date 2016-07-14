@@ -2,7 +2,7 @@
 using Ignition.Core.Mvc;
 using Ignition.Core.Repositories;
 
-namespace Ignition.Sc.Components.Ignition.Bookends
+namespace Ignition.Sc.Components.Bookends
 {
     public class BookendsController : IgnitionController
     {
