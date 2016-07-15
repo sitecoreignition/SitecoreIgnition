@@ -10,7 +10,7 @@ namespace Ignition.Core.Installers
 	{
 		public override void Install(Container container)
 		{
-			container.Register<ItemContext>(Lifestyle.Scoped);
+			container.Register<AgentContext>(Lifestyle.Scoped);
 			container.Register<IAgentFactory, SimpleInjectorAgentFactory>(Lifestyle.Scoped);
 			container.Register<IViewModelDataBinder, DefaultViewModelDataBinder>(Lifestyle.Scoped);
 			container.Register(typeof(SimpleAgent<>), new[] { ThisAssembly }, Lifestyle.Transient);

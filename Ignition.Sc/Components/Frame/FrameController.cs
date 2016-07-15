@@ -6,7 +6,7 @@ namespace Ignition.Sc.Components.Frame
 {
     public class FrameController : IgnitionController
     {
-        public FrameController(ItemContext context) : base(context)
+        public FrameController(AgentContext agentContext) : base(agentContext)
         {
         }
 

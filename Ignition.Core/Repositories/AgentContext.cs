@@ -17,9 +17,9 @@ using Version = System.Version;
 
 namespace Ignition.Core.Repositories
 {
-    public class ItemContext : RequestContext, ISitecoreContext
+    public class AgentContext : RequestContext, ISitecoreContext
     {
-        public ItemContext(
+        public AgentContext(
             ISitecoreService service,
             ISitecoreContext context
             )

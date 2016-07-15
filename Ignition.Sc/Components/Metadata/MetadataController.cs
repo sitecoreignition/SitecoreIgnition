@@ -6,7 +6,7 @@ namespace Ignition.Sc.Components.Metadata
 {
     public class MetadataController : IgnitionController
     {
-        public MetadataController(ItemContext context) : base(context)
+        public MetadataController(AgentContext agentContext) : base(agentContext)
         {
         }
 

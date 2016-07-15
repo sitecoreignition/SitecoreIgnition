@@ -146,7 +146,7 @@
     <Compile Include="Mvc\ViewEngines\FrameworkConventionsViewEngine.cs" />
     <Compile Include="Mvc\DefaultViewModelDataBinder.cs" />
     <Compile Include="Repositories\CacheItem.cs" />
-    <Compile Include="Repositories\ItemContext.cs" />
+    <Compile Include="Repositories\AgentContext.cs" />
     <Compile Include="HtmlHelpers\HtmlHelperExtension.cs" />
     <Compile Include="Bases\IDatabaseType.cs" />
     <Compile Include="Mvc\Agent.cs" />

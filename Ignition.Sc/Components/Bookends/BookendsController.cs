@@ -6,7 +6,7 @@ namespace Ignition.Sc.Components.Bookends
 {
     public class BookendsController : IgnitionController
     {
-        public BookendsController(ItemContext context) : base(context)
+        public BookendsController(AgentContext agentContext) : base(agentContext)
         {
         }
 

@@ -16,23 +16,23 @@ namespace Ignition.Core.Mvc
 		public IAgentFactory AgentFactory { get; set; }
 		public IParamsBase RenderingParameters { get; set; }
 		public IModelBase RenderingItem { get; set; }
-		protected ItemContext Context { get; set; }
+		protected AgentContext AgentContext { get; set; }
 
-		protected IgnitionController(ItemContext context) : base(context)
+		protected IgnitionController(AgentContext agentContext) : base(agentContext)
 		{
-			if (context == null) throw new ArgumentNullException(nameof(context));
-			Context = context;
+			if (agentContext == null) throw new ArgumentNullException(nameof(agentContext));
+			AgentContext = agentContext;
 		}
 
 		protected override void Initialize(RequestContext requestContext)
 		{
 			base.Initialize(requestContext);
-			SitecoreContext = Context;
+			SitecoreContext = AgentContext;
 			if (RouteData.Values.ContainsKey(CoreConstants.SitecoreFallThroughRoute))
-				Context.DatasourceItem = GetLayoutItem<IModelBase>(false, true) ?? new NullModel();
+				AgentContext.DatasourceItem = GetLayoutItem<IModelBase>(false, true) ?? new NullModel();
 			else
-				Context.DatasourceItem = new NullModel();
-			Context.RenderingParameters = new NullParams();
+				AgentContext.DatasourceItem = new NullModel();
+			AgentContext.RenderingParameters = new NullParams();
 		}
 
 		#region View Overloads
@@ -71,11 +71,11 @@ namespace Ignition.Core.Mvc
 		{
 			var moduleName = GetType().Name.Replace(GetType().Namespace ?? string.Empty, string.Empty).Replace("Controller", string.Empty);
 
-			Context.ContextPage = GetContextItem<IPage>(true, true);
-			Context.ModuleWrapperName = moduleName;
-			Context.RenderingParameters = GetRenderingParameters<TParams>();
-			Context.AgentParameters = agentParameters;
-			var agent = AgentFactory.CreateAgent<TAgent, TViewModel>(Context);
+			AgentContext.ContextPage = GetContextItem<IPage>(true, true);
+			AgentContext.ModuleWrapperName = moduleName;
+			AgentContext.RenderingParameters = GetRenderingParameters<TParams>();
+			AgentContext.AgentParameters = agentParameters;
+			var agent = AgentFactory.CreateAgent<TAgent, TViewModel>(AgentContext);
 			agent.PopulateModel();
 			return View(agent.ViewPath, agent.ViewModel);
 		}
