@@ -6,12 +6,12 @@ namespace Ignition.Core.Mvc.ViewEngines
 	{
 		private readonly string[] _areaViewConventions =
 		{
-			"~/Areas/{2}/Components/Ignition/{1}/{0}.cshtml"
+			"~/Areas/{2}/Components/{1}/{0}.cshtml"
 		};
 
 		private readonly string[] _viewConventions =
 		{
-			"~/Components/Ignition/{1}/{0}.cshtml"
+			"~/Components/{1}/{0}.cshtml"
 		};
 
 		public FrameworkConventionsViewEngine()
