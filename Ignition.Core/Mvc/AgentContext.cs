@@ -1,16 +1,17 @@
 ﻿using System;
-using System.Web.Routing;
+using System.Web.Mvc;
 using Glass.Mapper.Sc;
 using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Models.Page;
 
 namespace Ignition.Core.Mvc
 {
-    public class AgentContext : RequestContext
+    public class AgentContext : ControllerContext
     {
         public ISitecoreContext SitecoreContext { get; set; }
 
-        public AgentContext(ISitecoreContext sitecoreContext)
+        public AgentContext(ControllerContext controllerContext, ISitecoreContext sitecoreContext)
+            : base(controllerContext)
         {
             if (sitecoreContext == null) throw new ArgumentNullException(nameof(sitecoreContext));
             SitecoreContext = sitecoreContext;
