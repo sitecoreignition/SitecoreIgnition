@@ -15,7 +15,7 @@ using Sitecore.SecurityModel;
 using Config = Glass.Mapper.Sc.Config;
 using Version = System.Version;
 
-namespace Ignition.Core.Repositories
+namespace Ignition.Core.Mvc
 {
     public class AgentContext : RequestContext, ISitecoreContext
     {

@@ -2,7 +2,6 @@
 using System.ComponentModel.Composition;
 using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Models.Page;
-using Ignition.Core.Repositories;
 
 namespace Ignition.Core.Mvc
 {

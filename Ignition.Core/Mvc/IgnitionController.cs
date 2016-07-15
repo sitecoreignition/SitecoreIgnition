@@ -6,7 +6,6 @@ using Glass.Mapper.Sc.Web.Mvc;
 using Ignition.Core.Factories;
 using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Models.Page;
-using Ignition.Core.Repositories;
 
 namespace Ignition.Core.Mvc
 {
