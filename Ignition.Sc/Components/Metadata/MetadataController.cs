@@ -1,15 +1,10 @@
 ﻿using System.Web.Mvc;
 using Ignition.Core.Mvc;
-using Ignition.Core.Repositories;
 
 namespace Ignition.Sc.Components.Metadata
 {
     public class MetadataController : IgnitionController
     {
-        public MetadataController(AgentContext agentContext) : base(agentContext)
-        {
-        }
-
         public ActionResult Head()
         {
             return View<BaseViewModel>();

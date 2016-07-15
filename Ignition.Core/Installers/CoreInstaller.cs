@@ -9,7 +9,6 @@ namespace Ignition.Core.Installers
 	{
 		public override void Install(Container container)
 		{
-			container.Register<AgentContext>(Lifestyle.Scoped);
 			container.Register<IAgentFactory, SimpleInjectorAgentFactory>(Lifestyle.Scoped);
             container.Register<ISitecoreServiceFactory, SitecoreServiceFactory>(Lifestyle.Scoped);
 			container.Register<IViewModelDataBinder, DefaultViewModelDataBinder>(Lifestyle.Scoped);

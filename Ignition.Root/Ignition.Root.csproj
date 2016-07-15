@@ -198,7 +198,6 @@
     <Compile Include="App_Start\InitializeViewEngines.cs" />
     <Compile Include="App_Start\InitializeRoutes.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="SitecoreInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
