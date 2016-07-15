@@ -12,22 +12,21 @@ namespace Ignition.Core.Mvc
         protected ISitecoreServiceFactory SitecoreServiceFactory { get; set; }
 
         [Import]
-		protected IViewModelDataBinder ViewModelDataBinder { get; set; }
+        protected IViewModelDataBinder ViewModelDataBinder { get; set; }
 
-		public string ViewPath => ViewModel.ViewPath;
+        public AgentContext AgentContext { get; private set; }
+	    public object AgentParameters => AgentContext.AgentParameters;
+        public IPage ContextPage => AgentContext.ContextPage;
+        public IModelBase Datasource => AgentContext.DatasourceItem;
+	    public IParamsBase RenderingParameters => AgentContext.RenderingParameters;
+        
 		public TViewModel ViewModel { get; protected set; }
-		public AgentContext AgentContext { get; private set; }
-		public IModelBase Datasource { get; set; }
-		public IPage ContextPage => ViewModel.ContextPage;
-		public IParamsBase RenderingParameters { get; set; }
-		protected object AgentParameters { get; set; }
+        public string ViewPath => ViewModel.ViewPath;
 
 		public virtual void Initialize(AgentContext agentContext)
 		{
 			if (agentContext == null) throw new ArgumentNullException(nameof(agentContext));
 			AgentContext = agentContext;
-			RenderingParameters = AgentContext.RenderingParameters;
-			Datasource = AgentContext.DatasourceItem;
 
 			ViewModel = new TViewModel
 			{
@@ -35,8 +34,6 @@ namespace Ignition.Core.Mvc
 				ParentPlaceholderName = AgentContext.PlaceholderName
 			};
 			ViewModelDataBinder.DataBind(ViewModel, Datasource);
-
-			AgentParameters = AgentContext.AgentParameters;
 		}
 
 	    public abstract void PopulateModel();
