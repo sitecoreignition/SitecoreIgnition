@@ -103,7 +103,9 @@
     <Compile Include="Attributes\IgnoreAutomapAttribute.cs" />
     <Compile Include="CoreConstants.cs" />
     <Compile Include="Factories\IAgentFactory.cs" />
+    <Compile Include="Factories\ISitecoreServiceFactory.cs" />
     <Compile Include="Factories\SimpleInjectorAgentFactory.cs" />
+    <Compile Include="Factories\SitecoreServiceFactory.cs" />
     <Compile Include="HtmlHelpers\RichTextHelper.cs" />
     <Compile Include="Installers\CoreInstaller.cs" />
     <Compile Include="HtmlHelpers\ComponentBlock.cs" />
