@@ -17,7 +17,7 @@ namespace Ignition.Core.Mvc
 		public IModelBase RenderingItem { get; set; }
 		protected AgentContext AgentContext { get; set; }
 
-		protected IgnitionController(AgentContext agentContext) : base(agentContext)
+		protected IgnitionController(AgentContext agentContext) : base(agentContext.SitecoreContext)
 		{
 			if (agentContext == null) throw new ArgumentNullException(nameof(agentContext));
 			AgentContext = agentContext;
@@ -26,7 +26,7 @@ namespace Ignition.Core.Mvc
 		protected override void Initialize(RequestContext requestContext)
 		{
 			base.Initialize(requestContext);
-			SitecoreContext = AgentContext;
+			SitecoreContext = AgentContext.SitecoreContext;
 			if (RouteData.Values.ContainsKey(CoreConstants.SitecoreFallThroughRoute))
 				AgentContext.DatasourceItem = GetLayoutItem<IModelBase>(false, true) ?? new NullModel();
 			else
