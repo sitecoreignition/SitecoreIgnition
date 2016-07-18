@@ -51,7 +51,6 @@ namespace Ignition.Core.Mvc
         {
             var agentContext = new AgentContext(ControllerContext, SitecoreContext)
             {
-                ModuleWrapperName = GetType().Name.Replace(GetType().Namespace ?? string.Empty, string.Empty).Replace("Controller", string.Empty),
                 ContextPage = GetContextItem<IPage>(true, true),
                 RenderingParameters = GetRenderingParameters<TParams>(),
                 AgentParameters = agentParameters
