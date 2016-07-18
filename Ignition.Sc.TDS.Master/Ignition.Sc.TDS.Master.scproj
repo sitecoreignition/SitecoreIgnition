@@ -39,21 +39,6 @@
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Jon' ">
-    <DebugSymbols>true</DebugSymbols>
-    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <OutputPath>.\bin\Jon\</OutputPath>
-    <InstallSitecoreConnector>False</InstallSitecoreConnector>
-    <DisableFileDeployment>False</DisableFileDeployment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Corey' ">
-    <DebugSymbols>true</DebugSymbols>
-    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <InstallSitecoreConnector>True</InstallSitecoreConnector>
-    <DisableFileDeployment>False</DisableFileDeployment>
-    <OutputPath>.\bin\Corey\</OutputPath>
-    <SitecoreAccessGuid>196f3b55-1bff-4a82-8150-a25b80513547</SitecoreAccessGuid>
-  </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
       <Value>$(AssemblyFileVersion)</Value>
