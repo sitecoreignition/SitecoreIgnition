@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Web.Routing;
 using Glass.Mapper.Sc;
-using Ignition.Core.Factories;
 using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Models.Page;
 
@@ -10,14 +9,11 @@ namespace Ignition.Core.Mvc
     public class AgentContext : RequestContext
     {
         public ISitecoreContext SitecoreContext { get; set; }
-        public ISitecoreServiceFactory SitecoreServiceFactory { get; set; }
 
-        public AgentContext(ISitecoreContext sitecoreContext, ISitecoreServiceFactory sitecoreServiceFactory)
+        public AgentContext(ISitecoreContext sitecoreContext)
         {
             if (sitecoreContext == null) throw new ArgumentNullException(nameof(sitecoreContext));
-            if (sitecoreServiceFactory == null) throw new ArgumentNullException(nameof(sitecoreServiceFactory));
             SitecoreContext = sitecoreContext;
-            SitecoreServiceFactory = sitecoreServiceFactory;
         }
 
         private IPage _homeItem;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.Composition;
+using Ignition.Core.Factories;
 using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Models.Page;
 
@@ -7,7 +8,10 @@ namespace Ignition.Core.Mvc
 {
 	public abstract class Agent<TViewModel> where TViewModel : BaseViewModel, new()
 	{
-		[Import]
+        [Import]
+        protected ISitecoreServiceFactory SitecoreServiceFactory { get; set; }
+
+        [Import]
 		protected IViewModelDataBinder ViewModelDataBinder { get; set; }
 
 		public string ViewPath => ViewModel.ViewPath;
