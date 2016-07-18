@@ -21,11 +21,26 @@ namespace Ignition.Core.Mvc
 
         public string ModuleWrapperName => Controller?.GetType().Name.Replace("Controller", string.Empty);
 
-        public AgentContext(ControllerContext controllerContext, ISitecoreContext sitecoreContext)
+        public AgentContext(ControllerContext controllerContext, ISitecoreContext sitecoreContext, IPage contextPage, IModelBase datasourceItem)
             : base(controllerContext)
         {
             if (sitecoreContext == null) throw new ArgumentNullException(nameof(sitecoreContext));
+            if (contextPage == null) throw new ArgumentNullException(nameof(contextPage));
+            if (datasourceItem == null) throw new ArgumentNullException(nameof(datasourceItem));
             SitecoreContext = sitecoreContext;
+            ContextPage = contextPage;
+            DatasourceItem = datasourceItem;
+        }
+
+        public AgentContext(AgentContext agentContext, IModelBase datasource = null)
+            : base(agentContext)
+        {
+            SitecoreContext = agentContext.SitecoreContext;
+            AgentParameters = agentContext.AgentParameters;
+            ContextPage = agentContext.ContextPage;
+            DatasourceItem = datasource ?? agentContext.DatasourceItem;
+            PlaceholderName = agentContext.PlaceholderName;
+            RenderingParameters = agentContext.RenderingParameters;
         }
     }
 }

@@ -45,20 +45,18 @@ namespace Ignition.Core.Mvc
         }
 
         protected ViewResult View<TAgent, TViewModel, TParams>(object agentParameters)
-        where TAgent : Agent<TViewModel>
-        where TViewModel : BaseViewModel, new()
-        where TParams : class, IParamsBase
+            where TAgent : Agent<TViewModel>
+            where TViewModel : BaseViewModel, new()
+            where TParams : class, IParamsBase
         {
-            var agentContext = new AgentContext(ControllerContext, SitecoreContext)
+            var contextPage = GetContextItem<IPage>(true, true);
+            var datasourceItem = GetDataSourceItem();
+            var renderingParameters = GetRenderingParameters<TParams>();
+            var agentContext = new AgentContext(ControllerContext, SitecoreContext, contextPage, datasourceItem)
             {
-                ContextPage = GetContextItem<IPage>(true, true),
-                RenderingParameters = GetRenderingParameters<TParams>(),
-                AgentParameters = agentParameters
+                AgentParameters = agentParameters,
+                RenderingParameters = renderingParameters
             };
-            if (RouteData.Values.ContainsKey(CoreConstants.SitecoreFallThroughRoute))
-                agentContext.DatasourceItem = GetLayoutItem<IModelBase>(false, true) ?? new NullModel();
-            else
-                agentContext.DatasourceItem = new NullModel();
 
             var agent = AgentFactory.CreateAgent<TAgent, TViewModel>(agentContext);
             agent.PopulateModel();
@@ -67,5 +65,14 @@ namespace Ignition.Core.Mvc
         }
 
         #endregion
+
+        protected IModelBase GetDataSourceItem()
+        {
+            if (RouteData.Values.ContainsKey(CoreConstants.SitecoreFallThroughRoute))
+            {
+                return GetLayoutItem<IModelBase>(false, true) ?? new NullModel();
+            }
+            return new NullModel();
+        }
     }
 }
