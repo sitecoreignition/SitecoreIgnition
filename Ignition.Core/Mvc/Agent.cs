@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.Composition;
+using Glass.Mapper.Sc;
 using Ignition.Core.Factories;
 using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Models.Page;
@@ -19,6 +20,7 @@ namespace Ignition.Core.Mvc
         public IPage ContextPage => AgentContext.ContextPage;
         public IModelBase Datasource => AgentContext.DatasourceItem;
 	    public IParamsBase RenderingParameters => AgentContext.RenderingParameters;
+	    public ISitecoreContext SitecoreContext => AgentContext.SitecoreContext;
         
 		public TViewModel ViewModel { get; protected set; }
         public string ViewPath => ViewModel.ViewPath;
