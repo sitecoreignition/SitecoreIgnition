@@ -8,14 +8,15 @@ name: IgnitionLayout
 master: {3F0E643C-3B9A-4E3F-961A-75057BA3C4E8}
 template: {3A45A723-64EE-4919-9D41-02FD40FD1466}
 templatekey: Layout
+created: 20160519T084128:635992440880000000
 
 ----field----
 field: {A036B2BC-BA04-44F6-A75F-BAE6CD242ABF}
 name: Path
 key: path
-content-length: 49
+content-length: 40
 
-/Components/Ignition/Layout/IgnitionLayout.cshtml
+/Components/Layout/IgnitionLayout.cshtml
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -148,7 +149,7 @@ sitecore\admin
 ----version----
 language: en
 version: 1
-revision: 58959bdc-3354-43cf-b466-e646c70b036d
+revision: ceae14de-9e0f-4703-80bb-95eb56b209c6
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -177,14 +178,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-58959bdc-3354-43cf-b466-e646c70b036d
+ceae14de-9e0f-4703-80bb-95eb56b209c6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20160516T212140Z
+20160714T153626Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

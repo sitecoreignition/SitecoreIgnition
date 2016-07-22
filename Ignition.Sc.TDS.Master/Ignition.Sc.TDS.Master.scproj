@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -34,21 +33,6 @@
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Jon' ">
-    <DebugSymbols>true</DebugSymbols>
-    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <OutputPath>.\bin\Jon\</OutputPath>
-    <InstallSitecoreConnector>False</InstallSitecoreConnector>
-    <DisableFileDeployment>False</DisableFileDeployment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Corey' ">
-    <DebugSymbols>true</DebugSymbols>
-    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <InstallSitecoreConnector>True</InstallSitecoreConnector>
-    <DisableFileDeployment>False</DisableFileDeployment>
-    <OutputPath>.\bin\Corey\</OutputPath>
-    <SitecoreAccessGuid>196f3b55-1bff-4a82-8150-a25b80513547</SitecoreAccessGuid>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">

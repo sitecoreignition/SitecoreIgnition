@@ -1,0 +1,17 @@
+﻿---
+ID: "3b875f0d-1984-4772-a934-b6bd53223238"
+Parent: "978c9a93-78c3-431d-9431-c6315fae127f"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Ignition/Settings/DecimalSetting/Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150512T233813Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\jon

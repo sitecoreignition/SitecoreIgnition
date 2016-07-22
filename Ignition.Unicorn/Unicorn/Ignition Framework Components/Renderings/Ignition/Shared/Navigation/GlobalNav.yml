@@ -1,0 +1,14 @@
+﻿---
+ID: "8c197a0d-17da-4aab-a323-5f34d39074a7"
+Parent: "3453e6a3-e7fb-416c-989b-e05c23b7898e"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Ignition/Shared/Navigation/GlobalNav
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160515T201651Z
