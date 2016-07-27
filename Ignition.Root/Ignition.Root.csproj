@@ -163,6 +163,7 @@
     </None>
     <None Include="Properties\PublishProfiles\Ignition.Root.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
+    <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.CI.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
