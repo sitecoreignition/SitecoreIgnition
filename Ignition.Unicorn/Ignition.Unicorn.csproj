@@ -104,7 +104,6 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
-    <None Include="Properties\PublishProfiles\Ignition.Unicorn.pubxml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
   </ItemGroup>
   <ItemGroup>

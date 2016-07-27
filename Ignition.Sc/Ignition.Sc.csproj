@@ -295,7 +295,6 @@
     <Content Include="Components\Metadata\Taxonomy.cshtml" />
     <Content Include="Components\Metadata\PageEdit.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
-    <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
