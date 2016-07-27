@@ -1,0 +1,26 @@
+﻿---
+ID: "17fb5b68-846b-489a-ae81-91c0432a575b"
+Parent: "3b027135-26ed-49b7-bf07-dba84d281ef5"
+Template: "a4f43afc-41a1-4bcd-92e8-6b39984a4579"
+Path: /sitecore/content/Ignition/Home/Assets/FullWidthContent
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "13ba7de9-6997-44aa-ba9f-36b16d41ce45"
+      Hint: Abstract
+      Value: "Bacon ipsum dolor amet frankfurter sausage fatback meatloaf venison spare ribs. Tail kevin chicken, tongue chuck fatback swine bacon doner ribeye. Pork belly porchetta chuck, t-bone boudin venison shankle andouille jowl pork chop tongue ball tip. Doner meatloaf sausage capicola ball tip tail shankle salami."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160615T172219Z
+    - ID: "3487feb5-9dab-49aa-b9df-f97a877ba7ed"
+      Hint: Subtitle
+      Value: All Hail the Bacon
+    - ID: "7dd87307-f0d1-4c76-b9d2-bacaf51ae316"
+      Hint: Heading
+      Value: Bacon Ipsum Epluribus Piggum
+    - ID: "a3513117-630a-4830-86c0-a2f15164be04"
+      Hint: RichText1
+      Value: "Bacon ipsum dolor amet frankfurter sausage fatback meatloaf venison spare ribs. Tail kevin chicken, tongue chuck fatback swine bacon doner ribeye. Pork belly porchetta chuck, t-bone boudin venison shankle andouille jowl pork chop tongue ball tip. Doner meatloaf sausage capicola ball tip tail shankle salami."
