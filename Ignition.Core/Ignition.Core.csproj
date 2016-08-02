@@ -120,6 +120,7 @@
     <Compile Include="Models\BaseModels\IParamsBase.cs" />
     <Compile Include="Models\BaseModels\ModelBase.cs" />
     <Compile Include="Models\BaseModels\NullModel.cs" />
+    <Compile Include="Models\BaseModels\NullPage.cs" />
     <Compile Include="Models\BaseModels\NullParams.cs" />
     <Compile Include="Models\BaseModels\ParamsBase.cs" />
     <Compile Include="Models\Containers\IContentFolder.cs" />
@@ -140,6 +141,7 @@
     <Compile Include="Models\System\IFile.cs" />
     <Compile Include="Models\System\IFolder.cs" />
     <Compile Include="Models\System\IMediaItem.cs" />
+    <Compile Include="Mvc\IgnitionControllerContext.cs" />
     <Compile Include="Mvc\IViewModelDataBinder.cs" />
     <Compile Include="Mvc\Routing\PublicRouteAttribute.cs" />
     <Compile Include="Mvc\Routing\PublicRouteProvider.cs" />
