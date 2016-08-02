@@ -14,7 +14,7 @@ namespace Ignition.Core.Mvc
         public IPage ContextPage { get; set; }
         public IModelBase DatasourceItem { get; set; }
         public string PlaceholderName { get; set; }
-        public IParamsBase RenderingParameters { get; set; }
+        public IParamsBase RenderingParameters { get; set; } = new NullParams();
 
         private IPage _homeItem;
         public IPage HomeItem => _homeItem ?? (_homeItem = SitecoreContext.GetHomeItem<IPage>(false, true));
