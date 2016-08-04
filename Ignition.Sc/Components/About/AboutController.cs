@@ -10,10 +10,6 @@ namespace Ignition.Sc.Components.About
 {
     public class AboutController : IgnitionController
     {
-        public AboutController(ItemContext context) : base(context)
-        {
-        }
-
         public ActionResult AboutPeopleGrid() => View<AboutPeopleGridViewModel>();
 
         public ActionResult AboutPeopleTile() => View<AboutPeopleTileViewModel>();
