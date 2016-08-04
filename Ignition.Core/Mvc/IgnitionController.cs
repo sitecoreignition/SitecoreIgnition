@@ -1,85 +1,78 @@
-﻿using System;
-using System.ComponentModel.Composition;
+﻿using System.ComponentModel.Composition;
 using System.Web.Mvc;
-using System.Web.Routing;
 using Glass.Mapper.Sc.Web.Mvc;
 using Ignition.Core.Factories;
 using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Models.Page;
-using Ignition.Core.Repositories;
 
 namespace Ignition.Core.Mvc
 {
-	public abstract class IgnitionController : GlassController
-	{
-		[Import]
-		public IAgentFactory AgentFactory { get; set; }
-		public IParamsBase RenderingParameters { get; set; }
-		public IModelBase RenderingItem { get; set; }
-		protected ItemContext Context { get; set; }
+    public abstract class IgnitionController : GlassController
+    {
+        [Import]
+        public IAgentFactory AgentFactory { get; set; }
 
-		protected IgnitionController(ItemContext context) : base(context)
-		{
-			if (context == null) throw new ArgumentNullException(nameof(context));
-			Context = context;
-		}
+        [Import]
+        public ISitecoreServiceFactory SitecoreServiceFactory { get; set; }
 
-		protected override void Initialize(RequestContext requestContext)
-		{
-			base.Initialize(requestContext);
-			SitecoreContext = Context;
-			if (RouteData.Values.ContainsKey(CoreConstants.SitecoreFallThroughRoute))
-				Context.DatasourceItem = GetLayoutItem<IModelBase>(false, true) ?? new NullModel();
-			else
-				Context.DatasourceItem = new NullModel();
-			Context.RenderingParameters = new NullParams();
-		}
+        #region View Overloads
 
-		#region View Overloads
+        protected ViewResult View<TViewModel>() where TViewModel : BaseViewModel, new()
+        {
+            return View<SimpleAgent<TViewModel>, TViewModel, NullParams>(null);
+        }
 
-		protected ViewResult View<TViewModel>() where TViewModel : BaseViewModel, new()
-		{
-			return View<SimpleAgent<TViewModel>, TViewModel, NullParams>(null);
-		}
+        protected ViewResult View<TAgent, TViewModel>()
+          where TAgent : Agent<TViewModel>
+          where TViewModel : BaseViewModel, new()
+        {
+            return View<TAgent, TViewModel, NullParams>(null);
+        }
 
-		protected ViewResult View<TAgent, TViewModel>()
-		  where TAgent : Agent<TViewModel>
-		  where TViewModel : BaseViewModel, new()
-		{
-			return View<TAgent, TViewModel, NullParams>(null);
-		}
+        protected ViewResult View<TAgent, TViewModel>(object agentParameters)
+          where TAgent : Agent<TViewModel>
+          where TViewModel : BaseViewModel, new()
+        {
+            return View<TAgent, TViewModel, NullParams>(agentParameters);
+        }
 
-		protected ViewResult View<TAgent, TViewModel>(object agentParameters)
-		  where TAgent : Agent<TViewModel>
-		  where TViewModel : BaseViewModel, new()
-		{
-			return View<TAgent, TViewModel, NullParams>(agentParameters);
-		}
+        protected ViewResult View<TAgent, TViewModel, TParams>()
+            where TAgent : Agent<TViewModel>
+            where TViewModel : BaseViewModel, new()
+            where TParams : class, IParamsBase
+        {
+            return View<TAgent, TViewModel, TParams>(null);
+        }
 
-		protected ViewResult View<TAgent, TViewModel, TParams>()
-			where TAgent : Agent<TViewModel>
-			where TViewModel : BaseViewModel, new()
-			where TParams : class, IParamsBase
-		{
-			return View<TAgent, TViewModel, TParams>(null);
-		}
+        protected ViewResult View<TAgent, TViewModel, TParams>(object agentParameters)
+            where TAgent : Agent<TViewModel>
+            where TViewModel : BaseViewModel, new()
+            where TParams : class, IParamsBase
+        {
+            var contextPage = GetContextItem<IPage>(true, true);
+            var datasourceItem = GetDataSourceItem();
+            var renderingParameters = GetRenderingParameters<TParams>();
+            var agentContext = new AgentContext(ControllerContext, SitecoreContext, contextPage, datasourceItem)
+            {
+                AgentParameters = agentParameters,
+                RenderingParameters = renderingParameters
+            };
 
-		protected ViewResult View<TAgent, TViewModel, TParams>(object agentParameters)
-		where TAgent : Agent<TViewModel>
-		where TViewModel : BaseViewModel, new()
-		where TParams : class, IParamsBase
-		{
-			var moduleName = GetType().Name.Replace(GetType().Namespace ?? string.Empty, string.Empty).Replace("Controller", string.Empty);
+            var agent = AgentFactory.CreateAgent<TAgent, TViewModel>(agentContext);
+            agent.PopulateModel();
 
-			Context.ContextPage = GetContextItem<IPage>(true, true);
-			Context.ModuleWrapperName = moduleName;
-			Context.RenderingParameters = GetRenderingParameters<TParams>();
-			Context.AgentParameters = agentParameters;
-			var agent = AgentFactory.CreateAgent<TAgent, TViewModel>(Context);
-			agent.PopulateModel();
-			return View(agent.ViewPath, agent.ViewModel);
-		}
-		#endregion
+            return View(agent.ViewPath, agent.ViewModel);
+        }
 
-	}
+        #endregion
+
+        protected IModelBase GetDataSourceItem()
+        {
+            if (RouteData.Values.ContainsKey(CoreConstants.SitecoreFallThroughRoute))
+            {
+                return GetLayoutItem<IModelBase>(false, true) ?? new NullModel();
+            }
+            return new NullModel();
+        }
+    }
 }
