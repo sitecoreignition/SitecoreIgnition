@@ -6,7 +6,7 @@ namespace Ignition.Core.Repositories
     {
         public string GetDatabaseName()
         {
-            return CoreConstants.Master;
+            return "master";
         }
     }
 }

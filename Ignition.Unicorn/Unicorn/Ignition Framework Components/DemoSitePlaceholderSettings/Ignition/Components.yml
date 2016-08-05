@@ -1,0 +1,14 @@
+﻿---
+ID: "64136157-7ed7-4a36-b8f7-e2a9668390ba"
+Parent: "a3c70432-be7e-430d-80e1-312bb35f847b"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/Ignition/Components
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160518T160523Z

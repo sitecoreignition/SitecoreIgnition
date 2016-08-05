@@ -1,0 +1,18 @@
+﻿---
+ID: "afd43968-4d69-495f-b23f-be3e4aab78de"
+Parent: "d6858504-01b0-44be-bceb-de0948815a1a"
+Template: "0a2847e6-9885-450b-b61e-f9e6528480ef"
+Path: /sitecore/content/Ignition/IgnitionLocalization
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/graph_claw.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T144353Z

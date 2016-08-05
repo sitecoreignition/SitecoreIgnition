@@ -1,0 +1,14 @@
+﻿---
+ID: "75d789d2-48db-4db3-9b98-ce7902f2c334"
+Parent: "0dc24bc6-7641-4403-89c5-d4ba9b07fbcd"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Content Editor/Ribbon/Home/Sorting
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142007Z

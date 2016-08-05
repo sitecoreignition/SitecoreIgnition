@@ -103,7 +103,9 @@
     <Compile Include="Attributes\IgnoreAutomapAttribute.cs" />
     <Compile Include="CoreConstants.cs" />
     <Compile Include="Factories\IAgentFactory.cs" />
+    <Compile Include="Factories\ISitecoreServiceFactory.cs" />
     <Compile Include="Factories\SimpleInjectorAgentFactory.cs" />
+    <Compile Include="Factories\SitecoreServiceFactory.cs" />
     <Compile Include="HtmlHelpers\RichTextHelper.cs" />
     <Compile Include="Installers\CoreInstaller.cs" />
     <Compile Include="HtmlHelpers\ComponentBlock.cs" />
@@ -118,6 +120,7 @@
     <Compile Include="Models\BaseModels\IParamsBase.cs" />
     <Compile Include="Models\BaseModels\ModelBase.cs" />
     <Compile Include="Models\BaseModels\NullModel.cs" />
+    <Compile Include="Models\BaseModels\NullPage.cs" />
     <Compile Include="Models\BaseModels\NullParams.cs" />
     <Compile Include="Models\BaseModels\ParamsBase.cs" />
     <Compile Include="Models\Containers\IContentFolder.cs" />
@@ -138,6 +141,7 @@
     <Compile Include="Models\System\IFile.cs" />
     <Compile Include="Models\System\IFolder.cs" />
     <Compile Include="Models\System\IMediaItem.cs" />
+    <Compile Include="Mvc\IgnitionControllerContext.cs" />
     <Compile Include="Mvc\IViewModelDataBinder.cs" />
     <Compile Include="Mvc\Routing\PublicRouteAttribute.cs" />
     <Compile Include="Mvc\Routing\PublicRouteProvider.cs" />
@@ -146,7 +150,7 @@
     <Compile Include="Mvc\ViewEngines\FrameworkConventionsViewEngine.cs" />
     <Compile Include="Mvc\DefaultViewModelDataBinder.cs" />
     <Compile Include="Repositories\CacheItem.cs" />
-    <Compile Include="Repositories\ItemContext.cs" />
+    <Compile Include="Mvc\AgentContext.cs" />
     <Compile Include="HtmlHelpers\HtmlHelperExtension.cs" />
     <Compile Include="Bases\IDatabaseType.cs" />
     <Compile Include="Mvc\Agent.cs" />

@@ -13,11 +13,11 @@ namespace Ignition.Core.Factories
 			_container = container;
 		}
 
-		public TViewAgent CreateAgent<TViewAgent, TViewModel>(ItemContext context)
+		public TViewAgent CreateAgent<TViewAgent, TViewModel>(AgentContext agentContext)
 			where TViewAgent : Agent<TViewModel> where TViewModel : BaseViewModel, new()
 		{
 			var agent = _container.GetInstance<TViewAgent>();
-			agent.Initialize(context);
+			agent.Initialize(agentContext);
 			return agent;
 		}
 	}
