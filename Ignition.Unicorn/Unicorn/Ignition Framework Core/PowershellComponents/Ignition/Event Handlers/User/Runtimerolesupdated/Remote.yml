@@ -1,0 +1,14 @@
+﻿---
+ID: "2d5d7409-cea1-4151-b74d-cc157ff905e7"
+Parent: "ba80ab15-9cbe-44d8-a02a-53794c10dbeb"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/User/Runtimerolesupdated/Remote
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142032Z

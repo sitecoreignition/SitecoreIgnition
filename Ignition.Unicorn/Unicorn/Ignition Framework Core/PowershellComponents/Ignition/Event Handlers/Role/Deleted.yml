@@ -1,0 +1,14 @@
+﻿---
+ID: "71305d8c-07cd-41c9-a046-40b5b3617bd0"
+Parent: "d75edfec-b48c-49f7-a09d-4a6e44a398b3"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Role/Deleted
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142033Z

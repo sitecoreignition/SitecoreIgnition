@@ -1,0 +1,14 @@
+﻿---
+ID: "49296bab-9ef1-475b-8ffb-7df02ae9a4c1"
+Parent: "487b9f81-d9d5-45f0-8653-7d8eca32c3d1"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Content Editor/Ribbon/Configure/Item Buckets
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142003Z
