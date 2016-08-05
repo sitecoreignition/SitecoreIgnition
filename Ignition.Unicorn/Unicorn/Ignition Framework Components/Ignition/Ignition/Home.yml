@@ -10,6 +10,41 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{9FFF9BE7-E8E9-4D07-9B19-18CB28CE4830}"
+              p:before="r[@uid='{F2AB7227-D5B0-4B09-8166-CF42F2F27DC5}']"
+              s:id="{8FF35D78-B35A-4A7B-993D-90CB95BD06C3}"
+              s:ph="layoutContent" />
+            <r
+              uid="{F2AB7227-D5B0-4B09-8166-CF42F2F27DC5}"
+              p:before="r[@uid='{E873286D-58D8-4001-B69B-0A510FF74335}']"
+              s:ds="{12698EDF-24B2-4584-8843-F080657FB0E0}"
+              s:id="{264E4B10-A182-4535-9D51-48C9481C68DD}"
+              s:par=""
+              s:ph="aboutpeoplegrid" />
+            <r
+              uid="{E873286D-58D8-4001-B69B-0A510FF74335}"
+              p:before="r[@uid='{970AA758-7938-4561-9A99-273E6AC6E70D}']"
+              s:ds="{1A9A466E-993C-4C08-8D8E-045736BAC52B}"
+              s:id="{264E4B10-A182-4535-9D51-48C9481C68DD}"
+              s:par=""
+              s:ph="aboutpeoplegrid" />
+            <r
+              uid="{970AA758-7938-4561-9A99-273E6AC6E70D}"
+              s:ds="{59FEAC21-8206-4C22-8E59-A8A607E09EEF}"
+              s:id="{264E4B10-A182-4535-9D51-48C9481C68DD}"
+              s:par=""
+              s:ph="aboutpeoplegrid" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20160516T211756Z
