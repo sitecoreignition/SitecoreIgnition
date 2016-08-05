@@ -1,0 +1,23 @@
+﻿---
+ID: "89b09c31-d29d-4d9f-932d-128231341c88"
+Parent: "10b2ddd0-f1d4-4150-b624-ef6a1eb19254"
+Template: "d7dd8bed-9750-4fe6-887e-0feb15f9dfb3"
+Path: /sitecore/content/Ignition/About/Assets/Luca Grammont
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160801T154639Z
+    - ID: "3487feb5-9dab-49aa-b9df-f97a877ba7ed"
+      Hint: Subtitle
+      Value: Project Manager
+    - ID: "5467c5af-07cf-4600-89e4-b1842761dc3f"
+      Hint: Image
+      Value: "<image mediaid=\"{85CB7177-647A-4BDF-9D6C-CCC9C69E85DB}\" />"
+    - ID: "7dd87307-f0d1-4c76-b9d2-bacaf51ae316"
+      Hint: Heading
+      Value: Luca Grammont

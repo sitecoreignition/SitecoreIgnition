@@ -1,0 +1,104 @@
+﻿---
+ID: "c6bed649-a04f-4d58-9f76-cfbdd60a6124"
+Parent: "d6858504-01b0-44be-bceb-de0948815a1a"
+Template: "0935636a-ee07-442d-8930-87ec0cae26a4"
+Path: /sitecore/content/Ignition/About
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{DEB6DB18-72A8-4B8E-9DEB-33BF18FE4ADB}"
+              p:before="r[@uid='{6A8FDBE5-8031-44A1-A186-37744F01C09F}']"
+              s:id="{0C33415B-381D-4009-8BA5-F1739311D10A}"
+              s:ph="layoutHead" />
+            <r
+              uid="{6A8FDBE5-8031-44A1-A186-37744F01C09F}"
+              p:before="r[@uid='{E995AF3A-3757-499D-BCE1-4D6D49317041}']"
+              s:id="{16EA6233-672E-4E9B-BFDC-CF30A8573DF4}"
+              s:ph="layoutFrame" />
+            <r
+              uid="{E995AF3A-3757-499D-BCE1-4D6D49317041}"
+              p:before="r[@uid='{8DFA5C9E-3B74-46D1-9869-A77ED584FB30}']"
+              s:id="{329F6E00-DB84-4CB9-81D5-8C846DB87962}"
+              s:ph="headMetadata" />
+            <r
+              uid="{8DFA5C9E-3B74-46D1-9869-A77ED584FB30}"
+              p:before="r[@uid='{90A8F31A-F1BA-4481-B4ED-A3A1B1FC2CF2}']"
+              s:id="{F73BCA0F-B161-47D3-8826-F44EF3F43BA5}"
+              s:ph="headSeo" />
+            <r
+              uid="{90A8F31A-F1BA-4481-B4ED-A3A1B1FC2CF2}"
+              p:before="r[@uid='{CFD285E4-FEBA-4F4D-BC31-6F9CA08BE96F}']"
+              s:id="{DDD0F7E7-3902-4DF1-8E76-DD40C5516AD4}"
+              s:ph="headTaxonomy" />
+            <r
+              uid="{CFD285E4-FEBA-4F4D-BC31-6F9CA08BE96F}"
+              p:before="r[@uid='{43279E3A-6F15-4E39-B8A3-D66DA6BE2EC5}']"
+              s:id="{C01FFB7A-D8DE-4052-8242-B36B80FA4B92}"
+              s:ph="headScript" />
+            <r
+              uid="{43279E3A-6F15-4E39-B8A3-D66DA6BE2EC5}"
+              p:before="r[@uid='{F625044B-9183-4FF1-90D0-5FB246F5C203}']"
+              s:id="{2E0E387E-FA9A-43BD-A475-855836F5ABB9}"
+              s:ph="headStyle" />
+            <r
+              uid="{F625044B-9183-4FF1-90D0-5FB246F5C203}"
+              p:before="r[@uid='{4392403B-1ED8-46CC-9E9F-559000D9BE57}']"
+              s:id="{C52A32DA-A268-4245-A5D0-481A7E38C995}"
+              s:ph="layoutExperienceEditor" />
+            <r
+              uid="{4392403B-1ED8-46CC-9E9F-559000D9BE57}"
+              p:before="r[@uid='{0E956E1F-A45A-49AA-BD00-143943C6E821}']"
+              s:ds=""
+              s:id="{FDD9A89A-29C5-4C9C-BD31-A17F4D1EE449}"
+              s:par=""
+              s:ph="layoutHeader" />
+            <r
+              uid="{0E956E1F-A45A-49AA-BD00-143943C6E821}"
+              p:before="r[@uid='{AA9DF114-F462-4B82-8D57-3EEBE98C8EE0}']"
+              s:id="{EB6C683D-948F-4052-B402-ADDB5ECFD552}"
+              s:ph="layoutFooter" />
+            <r
+              uid="{AA9DF114-F462-4B82-8D57-3EEBE98C8EE0}"
+              p:before="r[@uid='{589DB3C2-1085-4696-A722-643F35BDDE21}']"
+              s:id="{8FF35D78-B35A-4A7B-993D-90CB95BD06C3}"
+              s:ph="layoutContent" />
+            <r
+              uid="{589DB3C2-1085-4696-A722-643F35BDDE21}"
+              p:before="r[@uid='{95A47369-DD1A-4BAA-B748-A77BF51E8C51}']"
+              s:ds="{EC921600-4643-4B35-9799-6A559DE2E101}"
+              s:id="{264E4B10-A182-4535-9D51-48C9481C68DD}"
+              s:par=""
+              s:ph="aboutpeoplegrid" />
+            <r
+              uid="{95A47369-DD1A-4BAA-B748-A77BF51E8C51}"
+              p:before="r[@uid='{FACB4CFE-F7FB-4B63-B959-7018DA394645}']"
+              s:ds="{28526AA3-332D-447C-BDD1-24AE7C18D399}"
+              s:id="{264E4B10-A182-4535-9D51-48C9481C68DD}"
+              s:par=""
+              s:ph="aboutpeoplegrid" />
+            <r
+              uid="{FACB4CFE-F7FB-4B63-B959-7018DA394645}"
+              s:ds="{89B09C31-D29D-4D9F-932D-128231341C88}"
+              s:id="{264E4B10-A182-4535-9D51-48C9481C68DD}"
+              s:par=""
+              s:ph="aboutpeoplegrid" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160805T162024Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

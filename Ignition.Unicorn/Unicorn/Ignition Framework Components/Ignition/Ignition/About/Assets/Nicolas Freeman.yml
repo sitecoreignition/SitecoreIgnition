@@ -1,0 +1,23 @@
+﻿---
+ID: "ec921600-4643-4b35-9799-6a559de2e101"
+Parent: "10b2ddd0-f1d4-4150-b624-ef6a1eb19254"
+Template: "d7dd8bed-9750-4fe6-887e-0feb15f9dfb3"
+Path: /sitecore/content/Ignition/About/Assets/Nicolas Freeman
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160801T154639Z
+    - ID: "3487feb5-9dab-49aa-b9df-f97a877ba7ed"
+      Hint: Subtitle
+      Value: Web Developer
+    - ID: "5467c5af-07cf-4600-89e4-b1842761dc3f"
+      Hint: Image
+      Value: "<image mediaid=\"{EF13014D-89E5-402E-83C8-022538C465B6}\" />"
+    - ID: "7dd87307-f0d1-4c76-b9d2-bacaf51ae316"
+      Hint: Heading
+      Value: Nicolas Freeman
