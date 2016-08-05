@@ -1,0 +1,31 @@
+﻿---
+ID: "b0e9b25b-8826-4f96-a393-37b805c86c23"
+Parent: "841f331d-dbdb-4586-96b5-169d097aa1c6"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Sites/Ignition/Components/Slide
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Apps/32x32/Photos.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {4C3CDC24-1610-4808-92A3-A221768AE3B2}
+    {50634356-160A-47C2-A28F-AC4571ECBCBF}
+    {6CDD0A6B-9598-4504-89A6-FACD76D6AF29}
+    {0F38D202-D47C-4E9A-93E5-3B535AB63CF0}
+    {841E14B7-B05E-46EF-B17F-98046A6E661D}
+    {DF4EEF4E-4099-4EC3-BDB3-154EFE0648C4}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160518T162255Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

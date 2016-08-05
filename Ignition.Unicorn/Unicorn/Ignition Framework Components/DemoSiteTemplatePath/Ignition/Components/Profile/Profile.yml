@@ -1,0 +1,35 @@
+﻿---
+ID: "93f2a988-52dd-41a9-926b-bfc7391e8a70"
+Parent: "3d7bc56d-094b-4cac-a16c-20a096b3919d"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Sites/Ignition/Components/Profile/Profile
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Apps/32x32/Awards.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {6CDD0A6B-9598-4504-89A6-FACD76D6AF29}
+    {F89F2500-DF04-4FF8-B33A-FD58F331415C}
+    {DF4EEF4E-4099-4EC3-BDB3-154EFE0648C4}
+    {85308FC9-E558-4B44-96BA-036C7FDA356C}
+    {0F38D202-D47C-4E9A-93E5-3B535AB63CF0}
+    {60A77BBE-C64E-4BD8-AAE1-31B5A8E8AFE5}
+    {51D2D2E9-5C3F-4839-80F6-FD5601369633}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{71BE002E-1139-43DC-8A66-12BB5D401D2D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160613T203224Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
