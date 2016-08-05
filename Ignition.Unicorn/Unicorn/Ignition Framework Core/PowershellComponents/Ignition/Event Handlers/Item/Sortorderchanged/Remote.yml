@@ -1,0 +1,14 @@
+﻿---
+ID: "2a3105f8-b8e7-4f56-841a-ee28c1724eb9"
+Parent: "d7943bfc-d3d3-4f3b-81f9-f6d2a0dc35d5"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Item/Sortorderchanged/Remote
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142024Z

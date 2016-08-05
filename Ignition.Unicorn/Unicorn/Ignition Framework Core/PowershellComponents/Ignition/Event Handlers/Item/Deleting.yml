@@ -1,0 +1,14 @@
+﻿---
+ID: "aa642c3e-5738-4418-a6b1-7be07db1f79a"
+Parent: "135f3c02-c94b-4f06-b3d8-8d1324306a00"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Item/Deleting
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142021Z

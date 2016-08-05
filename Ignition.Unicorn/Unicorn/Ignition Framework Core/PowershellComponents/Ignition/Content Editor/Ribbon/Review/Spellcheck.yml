@@ -1,0 +1,14 @@
+﻿---
+ID: "f0fb4f75-c905-4b54-98f6-a862f5c74472"
+Parent: "cff42c0b-1c17-4f1b-b20d-9fbb553de36c"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Content Editor/Ribbon/Review/Spellcheck
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142011Z

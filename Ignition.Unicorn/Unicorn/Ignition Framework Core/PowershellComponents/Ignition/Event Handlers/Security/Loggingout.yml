@@ -1,0 +1,14 @@
+﻿---
+ID: "7d5cbdae-1545-4fa3-9800-0184ccf744cb"
+Parent: "378d7783-5004-4320-a929-c8f9f43ca5a8"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Security/Loggingout
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142029Z

@@ -1,0 +1,14 @@
+﻿---
+ID: "601306bf-51b6-4d29-99a0-d9a5c19a27bb"
+Parent: "2ec03e91-855f-4f48-8d7e-ff7cc695eeb5"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Item/Bucketing/Ending
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142045Z

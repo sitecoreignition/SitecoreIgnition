@@ -1,0 +1,14 @@
+﻿---
+ID: "5649790e-e36b-4098-bedb-9d039972a7f3"
+Parent: "0ede3b90-8dea-4c6f-82a5-cd7ee8c2d35d"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Sessionend/Postsessionend
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142038Z
