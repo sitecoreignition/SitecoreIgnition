@@ -294,10 +294,16 @@
     <Content Include="Components\Metadata\Seo.cshtml" />
     <Content Include="Components\Metadata\Taxonomy.cshtml" />
     <Content Include="Components\Metadata\PageEdit.cshtml" />
+    <Content Include="Components\About\AboutPeopleGrid.cshtml" />
+    <Content Include="Components\About\AboutPeopleTile.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\About\AboutController.cs" />
+    <Compile Include="Components\About\AboutPeopleGridViewModel.cs" />
+    <Compile Include="Components\About\AboutPeopleTileViewModel.cs" />
+    <Compile Include="Components\About\IAboutPeopleTile.cs" />
     <Compile Include="Components\Bookends\BookendsController.cs" />
     <Compile Include="Components\Frame\FrameAgent.cs" />
     <Compile Include="Components\Frame\FrameController.cs" />

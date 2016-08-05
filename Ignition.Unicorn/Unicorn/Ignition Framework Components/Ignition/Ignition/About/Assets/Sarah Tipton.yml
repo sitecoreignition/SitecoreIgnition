@@ -1,0 +1,23 @@
+﻿---
+ID: "28526aa3-332d-447c-bdd1-24ae7c18d399"
+Parent: "10b2ddd0-f1d4-4150-b624-ef6a1eb19254"
+Template: "d7dd8bed-9750-4fe6-887e-0feb15f9dfb3"
+Path: /sitecore/content/Ignition/About/Assets/Sarah Tipton
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160801T154639Z
+    - ID: "3487feb5-9dab-49aa-b9df-f97a877ba7ed"
+      Hint: Subtitle
+      Value: Web Designer
+    - ID: "5467c5af-07cf-4600-89e4-b1842761dc3f"
+      Hint: Image
+      Value: "<image mediaid=\"{7D35B306-887A-4D5C-922D-2B530EC8B810}\" />"
+    - ID: "7dd87307-f0d1-4c76-b9d2-bacaf51ae316"
+      Hint: Heading
+      Value: Sarah Tipton

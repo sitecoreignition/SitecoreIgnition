@@ -27,6 +27,11 @@
 			public struct Footer
 			{
 			}
+
+		    public struct About
+		    {
+		        public const string AboutPeopleGrid = "aboutpeoplegrid";
+		    }
 		}
 	}
 }
