@@ -1,1 +1,15 @@
-﻿
+﻿---
+TemplateItem: 
+  - TemplateName: CallToAction
+    MapItems:
+    - FieldName: Heading
+      MapTo: Title
+    - FieldName: Subtitle
+      MapTo: Subheading
+  - TemplateName: CallToAction2
+    MapItems:
+    - FieldName: Heading
+      MapTo: Title
+    - FieldName: Subtitle
+      MapTo: Subheading
+...

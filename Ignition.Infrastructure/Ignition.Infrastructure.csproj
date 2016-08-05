@@ -113,7 +113,9 @@
   <ItemGroup>
     <Compile Include="Pipelines\EditorFormatter.cs" />
     <Compile Include="Pipelines\FieldnameRewriter.cs" />
-    <Compile Include="Pipelines\MappingItem.cs" />
+    <Compile Include="Pipelines\MapItem.cs" />
+    <Compile Include="Pipelines\TemplateItem.cs" />
+    <Compile Include="Pipelines\TemplateMap.cs" />
     <Compile Include="Pipelines\YmlSettingsReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
