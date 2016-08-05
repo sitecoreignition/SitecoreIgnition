@@ -1,0 +1,18 @@
+﻿---
+ID: "d6858504-01b0-44be-bceb-de0948815a1a"
+Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
+Template: "ca13f381-3ec5-49e1-8dd8-57ca34549f09"
+Path: /sitecore/content/Ignition
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/switch_on.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160424T200819Z
