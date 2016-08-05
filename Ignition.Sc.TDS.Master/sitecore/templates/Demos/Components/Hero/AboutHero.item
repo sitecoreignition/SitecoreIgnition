@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {6538AB6D-3016-4708-8800-0735967EA67F}
+database: master
+path: /sitecore/templates/Demos/Components/Hero/AboutHero
+parent: {B741E81B-98C7-4D3E-B958-3B929AF6EF3D}
+name: AboutHero
+master: {00000000-0000-0000-0000-000000000000}
+template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
+templatekey: Template
+
+----field----
+field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
+name: __Base template
+key: __base template
+content-length: 116
+
+{6CDD0A6B-9598-4504-89A6-FACD76D6AF29}|{85308FC9-E558-4B44-96BA-036C7FDA356C}|{0F38D202-D47C-4E9A-93E5-3B535AB63CF0}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{DADED26E-B501-4C00-A632-E25BCF4DD8A0}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 22
+
+Office/32x32/books.png
+----version----
+language: en
+version: 1
+revision: d5c7e4ec-7e12-4222-b827-6ce8d681470e
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20160802T162936Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d5c7e4ec-7e12-4222-b827-6ce8d681470e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20160802T191403Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
