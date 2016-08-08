@@ -40,53 +40,48 @@ namespace Ignition.Infrastructure.Pipelines
 	    {
 		    var itemField = field.ItemField;
 		    var language = Arguments.Language;
-
+		    var customFieldMapping = false;
 		    var s = field.TemplateField.GetTitle(language);
 		    if (string.IsNullOrEmpty(s))
 			    s = field.TemplateField.IgnoreDictionaryTranslations ? itemField.Name : Translate.Text(itemField.Name);
-
-		    if (YmlSettingsReader.TemplateMap.TemplateItem.Any(a => a.TemplateName == s))
-		    {
+		    var template = field.ItemField.Item.TemplateName;
+			var item =
+					YmlSettingsReader.TemplateMap.TemplateItem.FirstOrDefault(a => a.TemplateName == template)?
+						.MapItems.FirstOrDefault(a => a.FieldName == s);
 			    
-		    }
-
-			var toolTip = itemField.ToolTip;
-
-			if (!string.IsNullOrEmpty(toolTip))
+			if (item != null)
 			{
-				var text = Translate.Text(toolTip);
-				if (text.EndsWith(".", StringComparison.InvariantCulture))
-					text = StringUtil.Left(text, text.Length - 1);
-				s = s + " - " + text;
+				s = $"<b>[Ignition-{s}]</b>: <span style=\"font-style: italic\">{item.MapTo}</span>";
+				customFieldMapping = true;
 			}
 
-			var str1 = HttpUtility.HtmlEncode(s);
-			var label =
-				field.ItemField.GetLabel(Arguments.IsAdministrator || Settings.ContentEditor.ShowFieldSharingLabels);
+			var toolTip = itemField.ToolTip;
+		    
+		    if (!string.IsNullOrEmpty(toolTip))
+		    {
+			    var text = Translate.Text(toolTip);
+			    if (text.EndsWith(".", StringComparison.InvariantCulture))
+				    text = StringUtil.Left(text, text.Length - 1);
+			    s = (customFieldMapping && !string.IsNullOrEmpty(item.ShortDescription)) ? $"{s} - <span style=\"font-style: italic\">{item.ShortDescription}</span>" : $"{s} - {text}";
+		    }
 
+			var str1 = customFieldMapping ? s : HttpUtility.HtmlEncode(s);
+
+		    var label = field.ItemField.GetLabel(Arguments.IsAdministrator || Settings.ContentEditor.ShowFieldSharingLabels);
 			if (!string.IsNullOrEmpty(label))
 				str1 = str1 + "<span class=\"scEditorFieldLabelAdministrator\"> [" + label + "]</span>";
-
 			var typeKey = itemField.TypeKey;
-
 			if (!string.IsNullOrEmpty(typeKey) && typeKey != "checkbox")
 				str1 += ":";
-
 			if (readOnly)
 				str1 = "<span class=\"scEditorFieldLabelDisabled\">" + str1 + "</span>";
-
 			var str2 = HttpUtility.HtmlAttributeEncode(itemField.HelpLink);
-
 			if (str2.Length > 0)
 				str1 = "<a class=\"scEditorFieldLabelLink\" href=\"" + str2 + "\" target=\"__help\">" + str1 + "</a>";
-
 			var str3 = string.Empty;
-
 			if (itemField.Description.Length > 0)
 				str3 = " title=\"" + HttpUtility.HtmlAttributeEncode(itemField.Description) + "\"";
-
 			var text1 = "<div class=\"" + "scEditorFieldLabel" + "\"" + str3 + ">" + str1 + "</div>";
-
 			AddLiteralControl(parent, text1);
 		}
 		#endregion
