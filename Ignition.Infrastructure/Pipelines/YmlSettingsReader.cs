@@ -1,26 +1,27 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using System.Web;
 using YamlDotNet.Serialization;
-using YamlDotNet.Serialization.NamingConventions;
 
 namespace Ignition.Infrastructure.Pipelines
 {
-	public class YmlSettingsReader
+	public static class YmlSettingsReader
 	{
-		public static void Main(string[] args)
+		private static TemplateMap _templateMap;
+		public static TemplateMap TemplateMap
 		{
-			var item = new YmlSettingsReader();
+			get
+			{
+				if (_templateMap != null) return _templateMap;
+				using (
+					var reader =
+						new StringReader(File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Config/FieldSettings.yml"))))
+				{
+					var deserializer = new Deserializer();
+					_templateMap = deserializer.Deserialize<TemplateMap>(reader);
+				}
+				return _templateMap;
+			} 
 		}
-		public TemplateMap TemplateMap { get; set; }
-		public YmlSettingsReader()
-		{
-			var reader = new StringReader(File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Config/FieldSettings.yml")));
-			var deserializer = new Deserializer();
-			TemplateMap = deserializer.Deserialize<TemplateMap>(reader);
-		}
+
 	}
 }

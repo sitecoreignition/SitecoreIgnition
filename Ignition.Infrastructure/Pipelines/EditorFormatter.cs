@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.UI;
@@ -33,7 +34,64 @@ namespace Ignition.Infrastructure.Pipelines
     /// </summary>
     public class EditorFormatter
     {
-        public EditorFormatter(RenderContentEditorArgs args)
+		#region Ignition Edit
+
+	    public void RenderLabel(Control parent, Editor.Field field, Item fieldType, bool readOnly)
+	    {
+		    var itemField = field.ItemField;
+		    var language = Arguments.Language;
+
+		    var s = field.TemplateField.GetTitle(language);
+		    if (string.IsNullOrEmpty(s))
+			    s = field.TemplateField.IgnoreDictionaryTranslations ? itemField.Name : Translate.Text(itemField.Name);
+
+		    if (YmlSettingsReader.TemplateMap.TemplateItem.Any(a => a.TemplateName == s))
+		    {
+			    
+		    }
+
+			var toolTip = itemField.ToolTip;
+
+			if (!string.IsNullOrEmpty(toolTip))
+			{
+				var text = Translate.Text(toolTip);
+				if (text.EndsWith(".", StringComparison.InvariantCulture))
+					text = StringUtil.Left(text, text.Length - 1);
+				s = s + " - " + text;
+			}
+
+			var str1 = HttpUtility.HtmlEncode(s);
+			var label =
+				field.ItemField.GetLabel(Arguments.IsAdministrator || Settings.ContentEditor.ShowFieldSharingLabels);
+
+			if (!string.IsNullOrEmpty(label))
+				str1 = str1 + "<span class=\"scEditorFieldLabelAdministrator\"> [" + label + "]</span>";
+
+			var typeKey = itemField.TypeKey;
+
+			if (!string.IsNullOrEmpty(typeKey) && typeKey != "checkbox")
+				str1 += ":";
+
+			if (readOnly)
+				str1 = "<span class=\"scEditorFieldLabelDisabled\">" + str1 + "</span>";
+
+			var str2 = HttpUtility.HtmlAttributeEncode(itemField.HelpLink);
+
+			if (str2.Length > 0)
+				str1 = "<a class=\"scEditorFieldLabelLink\" href=\"" + str2 + "\" target=\"__help\">" + str1 + "</a>";
+
+			var str3 = string.Empty;
+
+			if (itemField.Description.Length > 0)
+				str3 = " title=\"" + HttpUtility.HtmlAttributeEncode(itemField.Description) + "\"";
+
+			var text1 = "<div class=\"" + "scEditorFieldLabel" + "\"" + str3 + ">" + str1 + "</div>";
+
+			AddLiteralControl(parent, text1);
+		}
+		#endregion
+		#region Sitecore Decompile
+		public EditorFormatter(RenderContentEditorArgs args)
         {
             Arguments = args;
         }
@@ -258,56 +316,7 @@ namespace Ignition.Infrastructure.Pipelines
             RenderResizable(parent, field);
         }
 
-        public void RenderLabel(Control parent, Editor.Field field, Item fieldType, bool readOnly)
-        {
-            var itemField = field.ItemField;
-            var language = Arguments.Language;
-
-            var s = field.TemplateField.GetTitle(language);
-            if (string.IsNullOrEmpty(s))
-                s = field.TemplateField.IgnoreDictionaryTranslations ? itemField.Name : Translate.Text(itemField.Name);
-
-            var toolTip = itemField.ToolTip;
-
-            if (!string.IsNullOrEmpty(toolTip))
-            {
-                var text = Translate.Text(toolTip);
-                if (text.EndsWith(".", StringComparison.InvariantCulture))
-                    text = StringUtil.Left(text, text.Length - 1);
-                s = s + " - " + text;
-            }
-
-            var str1 = HttpUtility.HtmlEncode(s);
-            var label =
-                field.ItemField.GetLabel(Arguments.IsAdministrator || Settings.ContentEditor.ShowFieldSharingLabels);
-
-            if (!string.IsNullOrEmpty(label))
-                str1 = str1 + "<span class=\"scEditorFieldLabelAdministrator\"> [" + label + "]</span>";
-
-            var typeKey = itemField.TypeKey;
-
-            if (!string.IsNullOrEmpty(typeKey) && typeKey != "checkbox")
-                str1 += ":";
-
-            if (readOnly)
-                str1 = "<span class=\"scEditorFieldLabelDisabled\">" + str1 + "</span>";
-
-            var str2 = HttpUtility.HtmlAttributeEncode(itemField.HelpLink);
-
-            if (str2.Length > 0)
-                str1 = "<a class=\"scEditorFieldLabelLink\" href=\"" + str2 + "\" target=\"__help\">" + str1 + "</a>";
-
-            var str3 = string.Empty;
-
-            if (itemField.Description.Length > 0)
-                str3 = " title=\"" + HttpUtility.HtmlAttributeEncode(itemField.Description) + "\"";
-
-            var text1 = "<div class=\"" + "scEditorFieldLabel" + "\"" + str3 + ">" + str1 + "</div>";
-
-            AddLiteralControl(parent, text1);
-        }
-
-        public void RenderMarkerBegin(Control parent, string fieldControlID)
+		public void RenderMarkerBegin(Control parent, string fieldControlID)
         {
             var text =
                 "<table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"scEditorFieldMarker\"><tr><td id=\"FieldMarker" +
@@ -512,5 +521,6 @@ namespace Ignition.Infrastructure.Pipelines
 
             return flag;
         }
-    }
+		#endregion
+	}
 }

@@ -1,8 +1,8 @@
 ﻿---
 TemplateItem: 
-  - TemplateName: CallToAction
+  - TemplateName: Metadata
     MapItems:
-    - FieldName: Heading
+    - FieldName: PasgeTitle
       MapTo: Title
     - FieldName: Subtitle
       MapTo: Subheading
