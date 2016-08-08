@@ -12,7 +12,7 @@ namespace Ignition.Infrastructure.Pipelines
         {
             Assert.ArgumentNotNull(args, "args");
             var editorFormatter = new EditorFormatter(args);
-			var writer = new YmlSettingsReader();
+			//var writer = new YmlSettingsReader();
             editorFormatter.RenderSections(args.Parent, args.Sections, args.ReadOnly);
         }
     }
