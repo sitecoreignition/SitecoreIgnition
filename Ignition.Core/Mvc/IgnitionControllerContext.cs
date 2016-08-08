@@ -10,5 +10,9 @@ namespace Ignition.Core.Mvc
         {
             Context = context;
         }
+
+        public IgnitionControllerContext(ControllerContext context) : base(context)
+        {
+        }
     }
 }

@@ -20,8 +20,7 @@ namespace Ignition.Core.Mvc
         {
             get
             {
-                var context = (IgnitionControllerContext)ControllerContext;
-                context.Context = SitecoreContext;
+                var context = new IgnitionControllerContext(ControllerContext) {Context = SitecoreContext};
                 return context;
             }
         }
