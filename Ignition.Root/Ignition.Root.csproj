@@ -154,6 +154,12 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="App_Config\Include\Ignition.ContentEditor.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Config\FieldSettings.yml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\PublishProfiles\Ignition.Root.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
     <None Include="Web.CI.config">

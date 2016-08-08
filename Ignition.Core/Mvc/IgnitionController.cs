@@ -62,7 +62,7 @@ namespace Ignition.Core.Mvc
             var contextPage = GetContextItem<IPage>(true, true) ?? new NullPage();
             var datasourceItem = GetDataSourceItem();
             var renderingParameters = GetRenderingParameters<TParams>();
-            var agentContext = new AgentContext(IgnitionControllerContext, contextPage, datasourceItem)
+            var agentContext = new AgentContext(IgnitionControllerContext, SitecoreContext, contextPage, datasourceItem)
             {
                 AgentParameters = agentParameters,
                 RenderingParameters = renderingParameters
@@ -79,7 +79,7 @@ namespace Ignition.Core.Mvc
             where TAgent : Agent<TViewModel>
             where TViewModel : BaseViewModel, new()
         {
-            var agentContext = new AgentContext(IgnitionControllerContext, new NullPage(), SitecoreContext.GetItem<IModelBase>(itemId))
+            var agentContext = new AgentContext(IgnitionControllerContext, SitecoreContext, new NullPage(), SitecoreContext.GetItem<IModelBase>(itemId))
             {
                 AgentParameters = agentParameters,
             };
