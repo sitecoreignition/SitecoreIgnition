@@ -1,0 +1,14 @@
+﻿---
+ID: "7a1d5100-2e53-4c73-afc4-b1e4c99c0e6c"
+Parent: "a32685f7-2feb-40d9-b770-caf1642d3c72"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Content Editor/Ribbon/Developer/Create
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142005Z

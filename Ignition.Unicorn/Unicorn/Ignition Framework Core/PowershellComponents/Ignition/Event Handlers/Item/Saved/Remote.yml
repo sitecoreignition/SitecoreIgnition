@@ -1,0 +1,14 @@
+﻿---
+ID: "7b31556e-3634-4c6c-b49a-5df6936012c6"
+Parent: "a79ed4e3-d28a-452c-8447-c501db359b11"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Item/Saved/Remote
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142023Z

@@ -1,0 +1,14 @@
+﻿---
+ID: "35810bf4-49c0-420a-8cb6-d4a0f7eeeb5d"
+Parent: "7dd8f03e-5da5-4fd2-9b5e-28ded1dc531e"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Packageinstall/Items/Starting
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142040Z

@@ -1,0 +1,14 @@
+﻿---
+ID: "918d6c44-7f9e-4a67-95e5-90d42fa5b263"
+Parent: "5daffcd0-540f-4e75-948f-6f89f26999f6"
+Template: "2251dd1d-6255-428f-b751-9afb34f20afa"
+Path: /sitecore/system/Modules/Ignition/Configuration/SetupSite/SiteAlternateUrls
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T135612Z

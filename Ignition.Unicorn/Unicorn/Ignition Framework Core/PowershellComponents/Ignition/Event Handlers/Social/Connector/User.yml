@@ -1,0 +1,14 @@
+﻿---
+ID: "730079f4-6e8e-453a-9bff-3aeff228bab8"
+Parent: "612a7ecd-ef5c-41c6-a019-4d7f43991283"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Social/Connector/User
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142049Z
