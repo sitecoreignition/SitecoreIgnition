@@ -5,10 +5,12 @@ namespace Ignition.Core.Mvc
 {
     public class IgnitionControllerContext : ControllerContext
     {
-        public ISitecoreContext Context { get; set; }
-        public IgnitionControllerContext(ISitecoreContext context)
+	    private readonly ControllerContext _controllerContext;
+	    public ISitecoreContext Context { get; set; }
+        public IgnitionControllerContext(ControllerContext controllerContext, ISitecoreContext context) : base(controllerContext)
         {
-            Context = context;
+	        _controllerContext = controllerContext;
+	        Context = context;
         }
 
         public IgnitionControllerContext(ControllerContext context) : base(context)

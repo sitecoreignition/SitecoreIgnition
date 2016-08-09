@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.Composition;
+using System.Web.Mvc;
 using Glass.Mapper.Sc;
 using Ignition.Core.Models.BaseModels;
 using Ignition.Core.Models.Page;
@@ -21,8 +22,8 @@ namespace Ignition.Core.Mvc
 
         public string ModuleWrapperName => Controller?.GetType().Name.Replace("Controller", string.Empty);
 
-        public AgentContext(IgnitionControllerContext controllerContext, IPage contextPage, IModelBase datasourceItem, object agentParameters = null)
-            : base(controllerContext.Context)
+        public AgentContext(IgnitionControllerContext controllerContext, ISitecoreContext sitecoreContext, IPage contextPage, IModelBase datasourceItem, object agentParameters = null)
+            : base(controllerContext, sitecoreContext)
         {
             DatasourceItem = datasourceItem ?? new NullModel();
             AgentParameters = agentParameters;
