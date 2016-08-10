@@ -294,11 +294,15 @@
     <Content Include="Components\Metadata\Seo.cshtml" />
     <Content Include="Components\Metadata\Taxonomy.cshtml" />
     <Content Include="Components\Metadata\PageEdit.cshtml" />
+    <Content Include="Components\Breadcrumb\Breadcrumb.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Components\Bookends\BookendsController.cs" />
+    <Compile Include="Components\Breadcrumb\BreadcrumbController.cs" />
+    <Compile Include="Components\Breadcrumb\BreadcrumbViewModel.cs" />
+    <Compile Include="Components\Breadcrumb\IBreadcrumb.cs" />
     <Compile Include="Components\Frame\FrameAgent.cs" />
     <Compile Include="Components\Frame\FrameController.cs" />
     <Compile Include="Components\Frame\FrameViewModel.cs" />
