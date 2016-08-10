@@ -13,6 +13,10 @@ namespace Ignition.Sc.Components.About
             ViewModel.Heading = ds;
             ViewModel.Subtitle = ds;
             ViewModel.Image = ds;
+            ViewModel.FacebookLink = ds;
+            ViewModel.GitHubLink = ds;
+            ViewModel.TumblrLink = ds;
+            ViewModel.EditFrameItem = ds;
         }
     }
 }

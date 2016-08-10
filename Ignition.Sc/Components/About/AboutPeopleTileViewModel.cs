@@ -8,5 +8,9 @@ namespace Ignition.Sc.Components.About
         public IHeading Heading { get; set; }
         public ISubtitle Subtitle { get; set; }
         public IImage Image { get; set; }
+        public IPrimaryLink FacebookLink { get; set; }
+        public ISecondaryLink GitHubLink { get; set; }
+        public ITertiaryLink TumblrLink { get; set; }
+        public IAboutPeopleTile EditFrameItem { get; set; }
     }
 }

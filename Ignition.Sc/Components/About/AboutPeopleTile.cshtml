@@ -14,9 +14,21 @@
                     @Html.Glass().Editable(a => a.Heading.Heading)
                     <!-- Team Member Social Links -->
                     <span class="team-member-social">
-                        <a href="#"><i class="icon-facebook"></i></a>
-                        <a href="#"><i class="icon-github"></i></a>
-                        <a href="#"><i class="icon-tumblr"></i></a>
+                        @if (Html.Glass().IsInEditingMode)
+                        {
+                            using (Html.Glass().BeginEditFrame(Model.EditFrameItem, "Edit the Grid Links", a => a.PrimaryLink, a => a.SecondaryLink, a => a.TertiaryLink))
+                            {
+                                <i class="icon-facebook"></i>
+                                <i class="icon-github"></i>
+                                <i class="icon-tumblr"></i>
+                            }
+                        }
+                        else
+                        {
+                            <a href="@Model.FacebookLink.PrimaryLink.Url"><i class="icon-facebook"></i></a>
+                            <a href="@Model.GitHubLink.SecondaryLink.Url"><i class="icon-github"></i></a>
+                            <a href="@Model.TumblrLink.TertiaryLink.Url"><i class="icon-tumblr"></i></a>
+                        }
                     </span>
                 </li>
                 <li>@Html.Glass().Editable(a => a.Subtitle.Subtitle)</li>
