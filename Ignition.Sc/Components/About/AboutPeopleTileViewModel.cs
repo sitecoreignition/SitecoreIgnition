@@ -11,6 +11,5 @@ namespace Ignition.Sc.Components.About
         public IPrimaryLink FacebookLink { get; set; }
         public ISecondaryLink GitHubLink { get; set; }
         public ITertiaryLink TumblrLink { get; set; }
-        public IAboutPeopleTile EditFrameItem { get; set; }
     }
 }

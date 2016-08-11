@@ -16,7 +16,6 @@ namespace Ignition.Sc.Components.About
             ViewModel.FacebookLink = ds;
             ViewModel.GitHubLink = ds;
             ViewModel.TumblrLink = ds;
-            ViewModel.EditFrameItem = ds;
         }
     }
 }
