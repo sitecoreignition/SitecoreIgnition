@@ -1,0 +1,14 @@
+﻿---
+ID: "0a839cb8-58d4-41eb-9ba2-e066e5627220"
+Parent: "ef987e71-c8cf-471e-b08a-2c6febd03c2d"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Ignition/Components/Breadcrumb
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160810T163954Z
