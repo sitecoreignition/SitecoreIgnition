@@ -1,0 +1,35 @@
+﻿@using Glass.Mapper.Sc.Fields
+@model Ignition.Sc.Components.About.AboutPeopleTileViewModel
+
+<div class="col-md-4 col-sm-6">
+    <div class="team-member">
+        <!-- Team Member Photo -->
+        <div class="team-member-image">
+            @Html.Glass().RenderImage(Model, a => a.Image.Image, null, true)
+        </div>
+        <div class="team-member-info">
+            <ul>
+                <!-- Team Member Info & Social Links -->
+                <li class="team-member-name">
+                    @Html.Glass().Editable(a => a.Heading.Heading)
+                    <!-- Team Member Social Links -->
+                    <span class="team-member-social">
+                        @using (Html.Glass().BeginRenderLink(Model, a => a.FacebookLink.PrimaryLink, null, true))
+                        {
+                            <i class="icon-facebook"></i>
+                        }
+                        @using (Html.Glass().BeginRenderLink(Model, a => a.GitHubLink.SecondaryLink, null, true))
+                        {
+                            <i class="icon-github"></i>
+                        }
+                        @using (Html.Glass().BeginRenderLink(Model, a => a.TumblrLink.TertiaryLink, null, true))
+                        {
+                            <i class="icon-tumblr"></i>
+                        }
+                    </span>
+                </li>
+                <li>@Html.Glass().Editable(a => a.Subtitle.Subtitle)</li>
+            </ul>
+        </div>
+    </div>
+</div>
