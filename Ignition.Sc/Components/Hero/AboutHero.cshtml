@@ -1,0 +1,26 @@
+﻿@model Ignition.Sc.Components.Hero.AboutHeroViewModel
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                @Html.Glass().RenderImage(Model, a => a.Image.Image, new { @class = "img-responsive" }, true)
+            </div>
+            <div class="col-sm-8">
+                <h2>@Html.Glass().Editable(a => a.Heading.Heading)</h2>
+                @Html.Glass().Editable(a => a.RichContext1.RichText1)
+                <div class="clients-logo-wrapper text-center row">
+                    @foreach (var logoimage in Model.LogoImages)
+                    {
+                        <div class="col-lg-2 col-md-1 col-sm-3 col-xs-6">
+                            @using (Html.Glass().BeginRenderLink(logoimage, a => a.PrimaryLink, null, true))
+                            {
+                                @Html.Glass().RenderImage(logoimage, a => a.Image, null, true)
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
