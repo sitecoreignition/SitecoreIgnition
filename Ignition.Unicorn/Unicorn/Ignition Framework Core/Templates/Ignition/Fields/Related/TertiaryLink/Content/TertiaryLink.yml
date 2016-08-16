@@ -2,7 +2,7 @@
 ID: "9cf29720-7af2-4941-9eed-e436b42f681d"
 Parent: "c4e66035-7b95-4384-81bf-5dcb82b74737"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Ignition/Fields/Related/TertiaryLink/Content/Tertiary Link
+Path: /sitecore/templates/Ignition/Fields/Related/TertiaryLink/Content/TertiaryLink
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
