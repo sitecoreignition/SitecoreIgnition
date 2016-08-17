@@ -48,6 +48,10 @@
       <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="dotless.Core, Version=1.5.2.0, Culture=neutral, PublicKeyToken=96b446c9e63eae34, processorArchitecture=MSIL">
+      <HintPath>..\packages\dotless.1.5.2\lib\dotless.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Glass.Mapper, Version=4.0.11.63, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Glass.Mapper.Sc.4.0.11.63\lib\net45\Glass.Mapper.dll</HintPath>
       <Private>True</Private>

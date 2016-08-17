@@ -181,11 +181,17 @@
     <Content Include="Assets\Ignition\img\team\3.jpg" />
     <Content Include="Assets\Ignition\img\title-before.png" />
     <Content Include="Assets\Ignition\js\bootstrap.js" />
-    <Content Include="Assets\Ignition\js\bootstrap.min.js" />
+    <Content Include="Assets\Ignition\js\bootstrap.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Ignition\js\jquery-1.9.1.min.js" />
-    <Content Include="Assets\Ignition\js\jquery.easing.min.js" />
+    <Content Include="Assets\Ignition\js\jquery.easing.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Ignition\js\modernizr-2.6.2-respond-1.1.0.min.js" />
-    <Content Include="Assets\Ignition\js\scrolling-nav.js" />
+    <Content Include="Assets\Ignition\js\scrolling-nav.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Html\about-us.html" />
     <Content Include="Html\blog-post.html" />
     <Content Include="Html\blog.html" />
@@ -308,9 +314,11 @@
     <Compile Include="Components\About\AboutPeopleTileViewModel.cs" />
     <Compile Include="Components\About\IAboutPeopleTile.cs" />
     <Compile Include="Components\Bookends\BookendsController.cs" />
+    <Compile Include="Components\Bookends\HeaderViewModel.cs" />
     <Compile Include="Components\Breadcrumb\BreadcrumbController.cs" />
     <Compile Include="Components\Breadcrumb\BreadcrumbViewModel.cs" />
     <Compile Include="Components\Breadcrumb\IBreadcrumb.cs" />
+    <Compile Include="Components\Content\ContentController.cs" />
     <Compile Include="Components\Frame\FrameAgent.cs" />
     <Compile Include="Components\Frame\FrameController.cs" />
     <Compile Include="Components\Frame\FrameViewModel.cs" />
@@ -320,6 +328,7 @@
     <Compile Include="Components\Hero\IAboutHero.cs" />
     <Compile Include="Components\Hero\ILinkedImage.cs" />
     <Compile Include="Components\Metadata\MetadataController.cs" />
+    <Compile Include="Components\Shared\IIgnitionPage.cs" />
     <Compile Include="IgnitionConstants.cs" />
     <Compile Include="IgnitionScInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
