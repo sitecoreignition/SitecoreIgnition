@@ -133,6 +133,9 @@
     <Content Include="Assets\Ignition\css\font-awesome.min.css" />
     <Content Include="Assets\Ignition\css\icomoon-social.css" />
     <Content Include="Assets\Ignition\css\main.css" />
+    <Content Include="Assets\Ignition\css\main.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Ignition\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\Ignition\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Assets\Ignition\img\about-us.jpg" />
@@ -290,7 +293,9 @@
     <Content Include="Components\Frame\IgnitionFrame.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Components\Bookends\Header.cshtml" />
+    <Content Include="Components\Bookends\Header.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Components\Bookends\Footer.cshtml" />
     <Content Include="Components\Bookends\FooterScript.cshtml" />
     <Content Include="Components\Metadata\Head.cshtml" />
@@ -304,6 +309,8 @@
     <Content Include="Components\About\AboutPeopleGrid.cshtml" />
     <Content Include="Components\About\AboutPeopleTile.cshtml" />
     <Content Include="Components\Hero\AboutHero.cshtml" />
+    <Content Include="Components\Hero\HeroCarousel.cshtml" />
+    <Content Include="Components\Content\ContentBlock.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -314,10 +321,12 @@
     <Compile Include="Components\About\AboutPeopleTileViewModel.cs" />
     <Compile Include="Components\About\IAboutPeopleTile.cs" />
     <Compile Include="Components\Bookends\BookendsController.cs" />
+    <Compile Include="Components\Bookends\HeaderAgent.cs" />
     <Compile Include="Components\Bookends\HeaderViewModel.cs" />
     <Compile Include="Components\Breadcrumb\BreadcrumbController.cs" />
     <Compile Include="Components\Breadcrumb\BreadcrumbViewModel.cs" />
     <Compile Include="Components\Breadcrumb\IBreadcrumb.cs" />
+    <Compile Include="Components\Content\IContentBlock.cs" />
     <Compile Include="Components\Content\ContentController.cs" />
     <Compile Include="Components\Frame\FrameAgent.cs" />
     <Compile Include="Components\Frame\FrameController.cs" />
@@ -379,6 +388,9 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>lessc E:\Codelib\SitecoreIgnition\Ignition.Sc\Assets\Ignition\less\main.less E:\Codelib\SitecoreIgnition\Ignition.Sc\Assets\Ignition\css\main.css</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

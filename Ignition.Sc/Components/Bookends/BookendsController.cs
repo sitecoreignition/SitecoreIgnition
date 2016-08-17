@@ -7,7 +7,7 @@ namespace Ignition.Sc.Components.Bookends
     {
         public ActionResult Header()
         {
-            return View<BaseViewModel>();
+            return View<HeaderAgent, HeaderViewModel>();
         }
 
         public ActionResult Footer()

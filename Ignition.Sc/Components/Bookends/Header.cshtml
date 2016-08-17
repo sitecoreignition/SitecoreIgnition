@@ -1,7 +1,9 @@
-﻿@using Ignition.Sc.Components.Shared
-@model Ignition.Core.Mvc.BaseViewModel
-@{ var root = Html.Glass().SitecoreContext.GetHomeItem<IIgnitionPage>();}
-<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+﻿@using Ignition.Core.Models.Settings
+@using Ignition.Sc.Components.Shared
+@using Sitecore.Diagnostics
+@model Ignition.Sc.Components.Bookends.HeaderViewModel
+@{ var headerClass = Html.Glass().IsInEditingMode ? "navbar-fixed-top" : string.Empty;}
+<header class="@Html.Raw($"navbar navbar-inverse {headerClass}")" role="banner">
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -10,21 +12,26 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="/"><img src="/Assets/Ignition/img/logo.png" alt="Basica"></a>
+			<a class="navbar-brand" href="/">@Html.Glass().RenderImage(Model.Logo, a => a.ImageSetting, null, true, true)</a>
+
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 
-				<li class="@(Model.ContextPage.Id == root.Id ? "active" : string.Empty)"><a href="/">Home</a></li>
-				@foreach (var item in root.BaseChildren.OfType<IIgnitionPage>())
+				<li class="@(Model.ContextPage.Id == Model.HomePage.Id ? "active" : string.Empty)"><a href="/">Home</a></li>
+				@foreach (var item in Model.HomePage.BaseChildren.OfType<IIgnitionPage>())
 				{
 
 					var hasChildren = !item.HideChildrenFromNavigation && item.BaseChildren.OfType<IIgnitionPage>().Any(a => !a.HideFromNavigation);
 					<li @(hasChildren ? @"class=""dropdown""" : string.Empty)>
-						<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty) @(hasChildren ? "dropdown-toggle" : string.Empty)"
-						   href="@(item.Url)">@(item.NavigationTitle ?? item.Name)</a>
+
 						@if (hasChildren)
 						{
+							<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty) dropdown-toggle"
+							   href="@(item.Url)">
+								@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name))<i class="icon-angle-down">
+								</i>
+							</a>
 							<ul class="dropdown-menu">
 								@foreach (var subitem in item.BaseChildren.OfType<IIgnitionPage>())
 								{
@@ -34,6 +41,11 @@
 								<li><a href="#">Privacy Policy</a></li>
 								<li><a href="#">Terms of Use</a></li>
 							</ul>
+						}
+						else
+						{
+							<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty)"
+							   href="@(item.Url)">@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name))</a>
 						}
 					</li>
 				}

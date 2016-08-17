@@ -1,42 +1,32 @@
-﻿@using Ignition.Sc
+﻿@using Ignition.Core.Models.System
+@using Ignition.Sc
+@using Ignition.Sc.Components.Content
 @model Ignition.Core.Mvc.BaseViewModel
-
+@{
+	var content = Html.Glass().SitecoreContext.GetItem<IFolder>("{9D2DD8A5-29F2-4BDC-87D5-B0E70F64C1A2}");
+	var left = content.BaseChildren.Where(a => a.Name == "FooterLeft").Cast<IContentBlock>();
+	var middle = content.BaseChildren.Where(a => a.Name == "FooterMiddle").Cast<IContentBlock>();
+	var right = content.BaseChildren.Where(a => a.Name == "FooterRight").Cast<IContentBlock>();
+}
 <!-- Footer -->
 <div class="footer">
-    <div class="container">
+	<div class="container">
 
-        <div class="row">
+		<div class="row">
 
-            <div class="col-footer col-md-4 col-xs-6">
-                <h3>Contact Us</h3>
-                <p class="contact-us-details">
-                    <b>Address:</b> 123 Downtown Avenue, Manhattan, New York, United States of America<br />
-                    <b>Phone:</b> +1 123 45678910<br />
-                    <b>Fax:</b> +1 123 45678910<br />
-                    <b>Email:</b> <a href="mailto:info@yourcompanydomain.com">info@yourcompanydomain.com</a>
-                </p>
-            </div>
-            <div class="col-footer col-md-4 col-xs-6">
-                <h3>Our Social Networks</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
-                <div>
-                    <img src="/Assets/Ignition/img/icons/facebook.png" width="32" alt="Facebook">
-                    <img src="/Assets/Ignition/img/icons/twitter.png" width="32" alt="Twitter">
-                    <img src="/Assets/Ignition/img/icons/linkedin.png" width="32" alt="LinkedIn">
-                    <img src="/Assets/Ignition/img/icons/rss.png" width="32" alt="RSS Feed">
-                </div>
-            </div>
-            <div class="col-footer col-md-4 col-xs-6">
-                <h3>About Our Company</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="footer-copyright">&copy; 2014 <a href="http://www.vactualart.com/portfolio-item/basica-a-free-html5-template/">Basica</a> Bootstrap HTML Template. By <a href="http://www.vactualart.com">Vactual Art</a>.</div>
-            </div>
-        </div>
-    </div>
+
+			@Html.Sitecore().Rendering("{6F69AB8F-3DFB-4E9A-9AD5-DF7A732D707D}", left)
+			@Html.Sitecore().Rendering("{6F69AB8F-3DFB-4E9A-9AD5-DF7A732D707D}", middle)
+			@Html.Sitecore().Rendering("{6F69AB8F-3DFB-4E9A-9AD5-DF7A732D707D}", right)
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-copyright">Design &copy; 2014 <a href="http://www.vactualart.com/portfolio-item/basica-a-free-html5-template/">Basica</a> Bootstrap HTML Template. By <a href="http://www.vactualart.com">Vactual Art</a>.
+				</div>
+				<div class="footer-copyright">Site Build &copy; 2016 <a href="http://www.github.com/SitecoreIgnition/SitecoteIgnition">Sitecore Ignition</a> Demo Site licensed under MIT by <a href="http://www.perficient.com">Sitecore Ignition</a>.</div>
+			</div>
+		</div>
+	</div>
 </div>
 @Html.RenderResources(ResourceType.Js)
 @Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Layout.LayoutFooterScript)
