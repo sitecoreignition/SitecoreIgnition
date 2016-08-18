@@ -1,0 +1,14 @@
+﻿---
+ID: "8adf873d-e0b6-4726-90ac-062c7db0a96d"
+Parent: "ef987e71-c8cf-471e-b08a-2c6febd03c2d"
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522"
+Path: /sitecore/layout/Renderings/Ignition/Components/News
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160818T213026Z
