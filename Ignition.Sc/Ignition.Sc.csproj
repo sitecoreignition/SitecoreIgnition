@@ -332,6 +332,8 @@
     <Compile Include="Components\Frame\FrameViewModel.cs" />
     <Compile Include="Components\Hero\AboutHeroAgent.cs" />
     <Compile Include="Components\Hero\AboutHeroViewModel.cs" />
+    <Compile Include="Components\Hero\HeroCarouselAgent.cs" />
+    <Compile Include="Components\Hero\HeroCarouselViewModel.cs" />
     <Compile Include="Components\Hero\HeroController.cs" />
     <Compile Include="Components\Hero\IAboutHero.cs" />
     <Compile Include="Components\Hero\ILinkedImage.cs" />
