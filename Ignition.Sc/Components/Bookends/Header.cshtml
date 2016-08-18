@@ -27,15 +27,15 @@
 
 						@if (hasChildren)
 						{
-							<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty) dropdown-toggle"
-							   href="@(item.Url)">
-								@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name))<i class="icon-angle-down">
+							<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty) dropdown-toggle" data-toggle="dropdown"
+							   href="#">
+								@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name)<i class="icon-angle-down">
 								</i>
 							</a>
 							<ul class="dropdown-menu">
 								@foreach (var subitem in item.BaseChildren.OfType<IIgnitionPage>())
 								{
-									<li><a href="@subitem.Url">@(subitem.NavigationTitle ?? subitem.Name)</a></li>
+									<li><a href="@subitem.Url">@(!string.IsNullOrEmpty(subitem.NavigationTitle) ? subitem.NavigationTitle : subitem.Name)</a></li>
 								}
 								<li class="divider"></li>
 								<li><a href="#">Privacy Policy</a></li>
@@ -45,7 +45,7 @@
 						else
 						{
 							<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty)"
-							   href="@(item.Url)">@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name))</a>
+							   href="@(item.Url)">@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name)</a>
 						}
 					</li>
 				}

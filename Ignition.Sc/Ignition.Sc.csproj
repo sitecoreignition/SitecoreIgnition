@@ -133,9 +133,6 @@
     <Content Include="Assets\Ignition\css\font-awesome.min.css" />
     <Content Include="Assets\Ignition\css\icomoon-social.css" />
     <Content Include="Assets\Ignition\css\main.css" />
-    <Content Include="Assets\Ignition\css\main.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Assets\Ignition\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\Ignition\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Assets\Ignition\img\about-us.jpg" />
