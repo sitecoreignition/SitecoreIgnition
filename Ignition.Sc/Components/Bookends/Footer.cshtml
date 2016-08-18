@@ -1,13 +1,6 @@
 ﻿@using Ignition.Core.Models.System
 @using Ignition.Sc
 @using Ignition.Sc.Components.Content
-@model Ignition.Core.Mvc.BaseViewModel
-@{
-	var content = Html.Glass().SitecoreContext.GetItem<IFolder>("{9D2DD8A5-29F2-4BDC-87D5-B0E70F64C1A2}");
-	var left = content.BaseChildren.Where(a => a.Name == "FooterLeft").Cast<IContentBlock>();
-	var middle = content.BaseChildren.Where(a => a.Name == "FooterMiddle").Cast<IContentBlock>();
-	var right = content.BaseChildren.Where(a => a.Name == "FooterRight").Cast<IContentBlock>();
-}
 <!-- Footer -->
 <div class="footer">
 	<div class="container">
@@ -15,9 +8,7 @@
 		<div class="row">
 
 
-			@Html.Sitecore().Rendering("{6F69AB8F-3DFB-4E9A-9AD5-DF7A732D707D}", left)
-			@Html.Sitecore().Rendering("{6F69AB8F-3DFB-4E9A-9AD5-DF7A732D707D}", middle)
-			@Html.Sitecore().Rendering("{6F69AB8F-3DFB-4E9A-9AD5-DF7A732D707D}", right)
+			@Html.Sitecore().Placeholder("footerContent")
 		</div>
 		<div class="row">
 			<div class="col-md-12">

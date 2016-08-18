@@ -44,8 +44,7 @@
 						}
 						else
 						{
-							<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty)"
-							   href="@(item.Url)">@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name)</a>
+							<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty)" href="@(item.Url)">@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name)</a>
 						}
 					</li>
 				}
