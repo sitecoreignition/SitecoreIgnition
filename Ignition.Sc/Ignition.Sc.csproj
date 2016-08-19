@@ -327,6 +327,10 @@
     <Compile Include="Components\News\FeaturedNewsViewModel.cs" />
     <Compile Include="Components\News\IFeaturedNews.cs" />
     <Compile Include="Components\News\IFeaturedNewsItem.cs" />
+    <Compile Include="Components\News\ILatestNews.cs" />
+    <Compile Include="Components\News\ILatestNewsItem.cs" />
+    <Compile Include="Components\News\LatestNewsAgent.cs" />
+    <Compile Include="Components\News\LatestNewsViewModel.cs" />
     <Compile Include="Components\News\NewsController.cs" />
     <Compile Include="Components\News\NewsGridViewModel.cs" />
     <Compile Include="IgnitionConstants.cs" />
