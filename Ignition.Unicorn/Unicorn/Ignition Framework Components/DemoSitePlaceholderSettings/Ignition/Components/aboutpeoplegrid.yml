@@ -1,0 +1,22 @@
+﻿---
+ID: "9812bf32-5ea6-4756-9e93-b6107870d771"
+Parent: "64136157-7ed7-4a36-b8f7-e2a9668390ba"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Ignition/Components/aboutpeoplegrid
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: aboutpeoplegrid
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{C71A046B-3CE2-4FA0-863D-A22B5FB9F263}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160819T164225Z
