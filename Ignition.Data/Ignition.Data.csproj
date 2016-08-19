@@ -87,9 +87,9 @@
     <Compile Include="Fields\ILogo.cs" />
     <Compile Include="Fields\IPlainText.cs" />
     <Compile Include="Fields\IPrimaryLink.cs" />
-    <Compile Include="Fields\IRichContent1.cs" />
-    <Compile Include="Fields\IRichContent2.cs" />
-    <Compile Include="Fields\IRichContent3.cs" />
+    <Compile Include="Fields\ICopy1.cs" />
+    <Compile Include="Fields\ICopy2.cs" />
+    <Compile Include="Fields\ICopy3.cs" />
     <Compile Include="Fields\ISecondaryLink.cs" />
     <Compile Include="Fields\ISingleLineText.cs" />
     <Compile Include="Fields\ISingleReference.cs" />

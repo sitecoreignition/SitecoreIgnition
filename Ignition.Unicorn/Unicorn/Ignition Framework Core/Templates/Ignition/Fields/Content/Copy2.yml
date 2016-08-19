@@ -2,7 +2,7 @@
 ID: "4c1eb66b-798d-4d31-a6bb-d7cbb4405057"
 Parent: "fb751dff-8d6a-4cb0-b689-bd6923685f51"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Ignition/Fields/Content/RichContent2
+Path: /sitecore/templates/Ignition/Fields/Content/Copy2
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"

@@ -1,8 +1,8 @@
 ﻿---
-ID: "72336a73-1d2b-40eb-a959-dcdc00ed9686"
-Parent: "4c1eb66b-798d-4d31-a6bb-d7cbb4405057"
+ID: "ffd44a2b-afc2-4b10-9399-5ad2d6fde91e"
+Parent: "5f8d5e76-8178-43aa-be0d-aa8f34472fec"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Ignition/Fields/Content/RichContent2/Content
+Path: /sitecore/templates/Ignition/Fields/Content/Copy3/Content
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20150326T140943Z
+      Value: 20150326T141014Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: sitecore\admin
