@@ -9,5 +9,7 @@ namespace Ignition.Sc.Components.News
         public IHeading Heading { get; set; }
 
         public IEnumerable<IFeaturedNewsItem> FeatureNewsItems { get; set; }
+
+        public IFeaturedNews EditFrameItem { get; set; }
     }
 }

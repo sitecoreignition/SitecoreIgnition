@@ -11,6 +11,7 @@ namespace Ignition.Sc.Components.News
 
             ViewModel.Heading = ds;
             ViewModel.FeatureNewsItems = ds.FeatureNewsItems;
+            ViewModel.EditFrameItem = ds;
         }
     }
 }

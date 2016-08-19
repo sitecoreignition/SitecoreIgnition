@@ -2,6 +2,13 @@
 
 <div class="col-sm-6 featured-news">
     <h2>@Html.Glass().Editable(a => a.Heading.Heading)</h2>
+    @if (Html.Glass().IsInEditingMode)
+    {
+        using (Html.Glass().BeginEditFrame(Model.EditFrameItem, "Edit News List", a => a.FeatureNewsItems))
+        {
+            <span>Click here to edit featured news item list</span>     
+        }
+    }
     @foreach (var newsitem in Model.FeatureNewsItems)
     {
         <div class="row">

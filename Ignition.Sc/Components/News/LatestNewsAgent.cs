@@ -12,6 +12,7 @@ namespace Ignition.Sc.Components.News
 
             ViewModel.Heading = ds;
             ViewModel.LatestNewsItems = ds.LatestNewsItems;
+            ViewModel.EditFrameItem = ds;
         }
     }
 }

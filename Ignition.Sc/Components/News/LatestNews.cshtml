@@ -2,6 +2,13 @@
 
 <div class="col-sm-6 latest-news">
     <h2>@Html.Glass().Editable(Model, a => a.Heading.Heading)</h2>
+    @if (Html.Glass().IsInEditingMode)
+    {
+        using (Html.Glass().BeginEditFrame(Model.EditFrameItem, "Edit News List", a => a.LatestNewsItems))
+        {
+            <span>Click here to edit latest news item list</span>
+        }
+    }
     @foreach (var latestnews in Model.LatestNewsItems)
     {
         <div class="row">

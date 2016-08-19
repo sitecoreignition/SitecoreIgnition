@@ -9,5 +9,7 @@ namespace Ignition.Sc.Components.News
         public IHeading Heading { get; set; }
 
         public IEnumerable<ILatestNewsItem> LatestNewsItems { get; set; }
+
+        public ILatestNews EditFrameItem { get; set; }
     }
 }
