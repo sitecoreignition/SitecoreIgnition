@@ -1,0 +1,29 @@
+﻿---
+ID: "f9bd3ba6-3836-453a-8b91-01e45f53ea75"
+Parent: "014543a0-2ead-4bd4-bfff-0e5bc5a2f40e"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Sites/Ignition/Components/Product/ProductSummary
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/cabinet2.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {AA715605-C3E3-46EC-BDCB-CBB1365E0D1B}
+    {D1AEF8A0-99FC-4090-8F9B-79EC12B52116}
+    {F92858EF-FD23-4B23-91FF-5F2517DCF5BB}
+    {6CDD0A6B-9598-4504-89A6-FACD76D6AF29}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160822T225240Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

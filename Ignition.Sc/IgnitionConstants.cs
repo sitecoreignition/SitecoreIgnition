@@ -33,6 +33,11 @@
 		        public const string AboutPeopleGrid = "aboutpeoplegrid";
 
 		    }
+
+		    public struct Product
+		    {
+		        public const string ProductSummary = "productsummary";
+		    }
 		}
 	}
 }
