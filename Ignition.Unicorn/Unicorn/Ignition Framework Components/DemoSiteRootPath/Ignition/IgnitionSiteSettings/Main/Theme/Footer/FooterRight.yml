@@ -16,7 +16,7 @@ Languages:
       Hint: Heading
       Value: About our Company
     - ID: "a3513117-630a-4830-86c0-a2f15164be04"
-      Hint: RichText1
+      Hint: Copy1
       Value: |
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
         

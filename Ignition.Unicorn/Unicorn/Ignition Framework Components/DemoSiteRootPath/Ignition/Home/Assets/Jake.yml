@@ -1,0 +1,14 @@
+﻿---
+ID: "43104051-7532-4b20-aead-265bdb189233"
+Parent: "3b027135-26ed-49b7-bf07-dba84d281ef5"
+Template: "1ee6b463-ab7d-4364-8526-2a2477928e4e"
+Path: /sitecore/content/Ignition/Home/Assets/Jake
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160824T174318Z

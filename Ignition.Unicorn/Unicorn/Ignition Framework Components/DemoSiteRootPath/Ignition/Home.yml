@@ -4,7 +4,6 @@ Parent: "d6858504-01b0-44be-bceb-de0948815a1a"
 Template: "0ed048af-e431-40e0-a8a5-3028367fc756"
 Path: /sitecore/content/Ignition/Home
 DB: master
-BranchID: "0244e83c-647a-4040-8672-a6c936182e40"
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
@@ -29,14 +28,9 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{B09BB885-FCE6-4BF0-9110-2DCF89328576}"
+              uid="{70F35260-2F02-4550-8D34-3478629E2B50}"
               p:before="*"
-              s:id="{820418B9-CC5B-4993-BC8F-A36BDA5934C5}"
-              s:ph="/layoutFrame/layoutContent/contentLeft_b0727cdb-6733-472c-854e-8c3f2a7ae6f5" />
-            <r
-              uid="{B0727CDB-6733-472C-854E-8C3F2A7AE6F5}"
-              p:after="r[@uid='{B09BB885-FCE6-4BF0-9110-2DCF89328576}']"
-              s:id="{6ECF58D9-DBD9-4DBF-95DC-161F303CD683}"
+              s:id="{4B8B5388-9DFC-43C9-ACF1-41D229B4B0FD}"
               s:ph="/layoutFrame/layoutContent" />
           </d>
         </r>
