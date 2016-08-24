@@ -10,5 +10,10 @@ namespace Ignition.Sc.Components.Frame
             return View<FrameViewModel>();
         }
 
+	    public ActionResult FiftyFiftyFrame()
+	    {
+		    return View<FrameViewModel>();
+	    }
+
     }
 }

@@ -8,6 +8,9 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: Office/32x32/graph_claw.png
+- ID: "cd72e892-d8bb-487c-9eb1-6a57c48c72cc"
+  Hint: Fallback Domain
+  Value: "{AFD43968-4D69-495F-B23F-BE3E4AAB78DE}"
 Languages:
 - Language: en
   Versions:

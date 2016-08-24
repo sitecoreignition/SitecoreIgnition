@@ -9,7 +9,8 @@ SharedFields:
   Hint: __Masters
   Type: TreelistEx
   Value: |
-    {0244E83C-647A-4040-8672-A6C936182E40}
+    {981DE9BA-D3E1-41EC-BFE5-44FC2A08113D}
+    {F714C9A4-CBC3-48F3-9FC9-5C130C7019F1}
     {9BF079D5-5B92-4F52-B327-D7AFC2C711E8}
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
@@ -58,13 +59,27 @@ SharedFields:
           ph="layoutHeader"
           uid="{4392403B-1ED8-46CC-9E9F-559000D9BE57}" />
         <r
+          ds="{FCD47378-A1BF-454F-A97D-BA773CBECA86}"
           id="{EB6C683D-948F-4052-B402-ADDB5ECFD552}"
+          par=""
           ph="layoutFooter"
           uid="{0E956E1F-A45A-49AA-BD00-143943C6E821}" />
         <r
-          id="{247944E7-25F3-4815-B7B7-5C902169D4DE}"
-          ph="layoutHeader"
-          uid="{90F2548D-A816-4005-A8D6-C1C1D452A874}" />
+          id="{6F69AB8F-3DFB-4E9A-9AD5-DF7A732D707D}"
+          ph="footerContent"
+          uid="{EADF3070-C466-466D-AA99-CCA9AF0C1C6A}" />
+        <r
+          ds="{6A864D6E-A056-45F6-8529-981395CAC90C}"
+          id="{6F69AB8F-3DFB-4E9A-9AD5-DF7A732D707D}"
+          par=""
+          ph="footerContent"
+          uid="{37EEF235-CF89-4262-82E0-3AB2A15AA00E}" />
+        <r
+          ds="{3D1A0212-9E86-4B70-995C-95718B330719}"
+          id="{6F69AB8F-3DFB-4E9A-9AD5-DF7A732D707D}"
+          par=""
+          ph="footerContent"
+          uid="{2D0A16B3-974B-4194-AF54-F7A2A69C9E95}" />
       </d>
     </r>
 Languages:

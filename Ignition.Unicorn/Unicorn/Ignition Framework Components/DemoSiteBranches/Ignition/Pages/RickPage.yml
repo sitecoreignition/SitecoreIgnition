@@ -1,0 +1,17 @@
+﻿---
+ID: "57a8da11-5c7c-44ce-854e-fcfdb971a704"
+Parent: "7c3d59a6-76fc-4626-b8ac-815ce9c433d1"
+Template: "35e75c72-4985-4e09-88c3-0eac6cd1e64f"
+Path: /sitecore/templates/Branches/Ignition/Pages/RickPage
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160823T152100Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
