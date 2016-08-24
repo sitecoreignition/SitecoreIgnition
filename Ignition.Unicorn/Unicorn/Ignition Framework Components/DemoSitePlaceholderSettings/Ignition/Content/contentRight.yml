@@ -1,13 +1,13 @@
 ﻿---
-ID: "2bdd5545-c4e2-404f-bf5c-d73eb431a5f9"
+ID: "9247c750-8593-406d-9fb0-89bf6dfbba2b"
 Parent: "f90282c6-a47b-4ccf-b3cd-7c57e5b66f45"
 Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
-Path: /sitecore/layout/Placeholder Settings/Ignition/Content/contentMain
+Path: /sitecore/layout/Placeholder Settings/Ignition/Content/contentRight
 DB: master
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
-  Value: contentMain
+  Value: contentRight
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Type: TreelistEx
@@ -28,4 +28,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160609T164433Z
+      Value: 20160822T182152Z

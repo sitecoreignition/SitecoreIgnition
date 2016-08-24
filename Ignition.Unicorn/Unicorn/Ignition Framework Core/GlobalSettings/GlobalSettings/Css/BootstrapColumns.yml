@@ -1,8 +1,8 @@
 ﻿---
-ID: "5dac055d-7927-4e82-b4dc-461f685162c8"
-Parent: "4055d2f7-53f3-4d8a-88b0-4e0f03a19eda"
+ID: "6d9b2118-5202-4d58-837b-707a7f23e1e9"
+Parent: "c715df69-6ba6-482b-87d7-bbd9b714941c"
 Template: "3b08a675-8c97-4d5f-baff-d50d8df30cc0"
-Path: /sitecore/content/Ignition/IgnitionSiteSettings/Main/OptionFolder
+Path: /sitecore/content/GlobalSettings/Css/BootstrapColumns
 DB: master
 Languages:
 - Language: en
@@ -11,4 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160629T203119Z
+      Value: 20160822T173436Z

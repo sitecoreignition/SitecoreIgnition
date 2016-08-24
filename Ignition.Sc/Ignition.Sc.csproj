@@ -311,6 +311,16 @@
     <Content Include="Components\Content\ContentBlock.cshtml" />
     <Content Include="package.json" />
     <Content Include="Components\Hero\_CarouselSlide.cshtml" />
+    <Content Include="Components\Frame\FortySixtyFrame.cshtml" />
+    <Content Include="Components\Frame\FiftyFiftyFrame.cshtml" />
+    <Content Include="Components\Frame\SixtyFortyFrame.cshtml" />
+    <Content Include="Components\Frame\TwoColumnLeftFrame.cshtml" />
+    <Content Include="Components\Frame\TwoColumnRightFrame.cshtml" />
+    <Content Include="Components\Frame\FullWidthFrame.cshtml" />
+    <Content Include="Components\Frame\ThreeColumnSidebars.cshtml" />
+    <Content Include="Components\Frame\ThreeColumnEqual.cshtml" />
+    <Content Include="Components\Frame\FlexibleRowFrame.cshtml" />
+    <Content Include="Components\Frame\FlexibleColumnFrame.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -331,6 +341,7 @@
     <Compile Include="Components\Frame\FrameAgent.cs" />
     <Compile Include="Components\Frame\FrameController.cs" />
     <Compile Include="Components\Frame\FrameViewModel.cs" />
+    <Compile Include="Components\Frame\IBootstrapColumns.cs" />
     <Compile Include="Components\Hero\AboutHeroAgent.cs" />
     <Compile Include="Components\Hero\AboutHeroViewModel.cs" />
     <Compile Include="Components\Hero\HeroCarouselAgent.cs" />

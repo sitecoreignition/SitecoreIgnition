@@ -1,8 +1,8 @@
 ﻿---
-ID: "33ec6385-b52e-4c09-a759-e6383f4f052c"
-Parent: "cc7cabb6-32e8-4b78-8699-709ac4d4d1a3"
+ID: "86412754-f28f-41bc-8c45-895f634a1b30"
+Parent: "da64629f-730e-49a2-b1ac-61c9c96e4829"
 Template: "9bf079d5-5b92-4f52-b327-d7afc2c711e8"
-Path: /sitecore/templates/Branches/Ignition/Pages/HomePage/$name/Assets
+Path: /sitecore/templates/Branches/Ignition/Pages/DetailPage/$name/Assets
 DB: master
 Languages:
 - Language: en
@@ -15,4 +15,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160516T211415Z
+      Value: 20160823T152024Z

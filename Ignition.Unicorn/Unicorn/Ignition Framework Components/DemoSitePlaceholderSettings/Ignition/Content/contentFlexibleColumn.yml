@@ -1,18 +1,17 @@
 ﻿---
-ID: "2bdd5545-c4e2-404f-bf5c-d73eb431a5f9"
+ID: "c7b32242-e8a0-41c7-a616-3d193427ef9e"
 Parent: "f90282c6-a47b-4ccf-b3cd-7c57e5b66f45"
 Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
-Path: /sitecore/layout/Placeholder Settings/Ignition/Content/contentMain
+Path: /sitecore/layout/Placeholder Settings/Ignition/Content/contentFlexibleColumn
 DB: master
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
-  Value: contentMain
+  Value: contentFlexibleColumn
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Type: TreelistEx
   Value: |
-    {32FB5D6B-1909-4232-BFF7-ED0E129538E7}
     {820418B9-CC5B-4993-BC8F-A36BDA5934C5}
     {C71A046B-3CE2-4FA0-863D-A22B5FB9F263}
     {A55076E1-417B-4102-AFB2-041BE4EA61B6}
@@ -28,4 +27,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160609T164433Z
+      Value: 20160822T182130Z

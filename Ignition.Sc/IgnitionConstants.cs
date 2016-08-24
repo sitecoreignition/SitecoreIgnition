@@ -28,7 +28,15 @@
 			{
 			}
 
-		    public struct About
+			public struct Content
+			{
+				public const string Main = "contentMain";
+				public const string Left = "contentLeft";
+				public const string Right = "contentRight";
+				public const string FlexibleCol = "contentFlexibleColumn";
+				public const string FlexibleRow = "contentFlexibleRow";
+			}
+			public struct About
 		    {
 		        public const string AboutPeopleGrid = "aboutpeoplegrid";
 
