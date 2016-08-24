@@ -20,6 +20,29 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{B09BB885-FCE6-4BF0-9110-2DCF89328576}"
+              p:before="*"
+              s:id="{820418B9-CC5B-4993-BC8F-A36BDA5934C5}"
+              s:ph="/layoutFrame/layoutContent/contentLeft_b0727cdb-6733-472c-854e-8c3f2a7ae6f5" />
+            <r
+              uid="{B0727CDB-6733-472C-854E-8C3F2A7AE6F5}"
+              p:after="r[@uid='{B09BB885-FCE6-4BF0-9110-2DCF89328576}']"
+              s:id="{6ECF58D9-DBD9-4DBF-95DC-161F303CD683}"
+              s:ph="/layoutFrame/layoutContent" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20160516T211756Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: 

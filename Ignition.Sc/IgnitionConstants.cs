@@ -41,6 +41,12 @@
 		        public const string AboutPeopleGrid = "aboutpeoplegrid";
 
 		    }
+
+		    public struct News
+		    {
+		        public const string FeaturedNews = "featurednews";
+		        public const string LatestNews = "latestnews";
+		    }
 		}
 	}
 }

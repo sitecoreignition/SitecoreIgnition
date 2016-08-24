@@ -1,20 +1,17 @@
 ﻿---
-ID: "f1a7d3ef-d89e-4556-bb70-502494dbb525"
-Parent: "f90282c6-a47b-4ccf-b3cd-7c57e5b66f45"
+ID: "07527e79-70bd-41e7-9830-7e101a148dcd"
+Parent: "64136157-7ed7-4a36-b8f7-e2a9668390ba"
 Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
-Path: /sitecore/layout/Placeholder Settings/Ignition/Content/contentRow
+Path: /sitecore/layout/Placeholder Settings/Ignition/Components/featurednews
 DB: master
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
-  Value: contentRow
+  Value: featurednews
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Type: TreelistEx
-  Value: |
-    {A55076E1-417B-4102-AFB2-041BE4EA61B6}
-    {20443FC4-804E-4A89-9D95-82A621B7C47C}
-    {081D3602-3164-4D35-B94C-3FE2AF4F2A0B}
+  Value: "{D2A7983E-D4AD-4B84-B51D-6AD2FD1ED835}"
 Languages:
 - Language: en
   Versions:
@@ -22,4 +19,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160613T190034Z
+      Value: 20160818T222622Z

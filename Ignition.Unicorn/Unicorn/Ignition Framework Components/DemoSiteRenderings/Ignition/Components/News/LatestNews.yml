@@ -1,25 +1,25 @@
 ﻿---
-ID: "e00dbb16-65f8-4fd6-9bfd-384a96f00d97"
-Parent: "0a839cb8-58d4-41eb-9ba2-e066e5627220"
+ID: "176d4b7b-a4fc-4596-a077-47078b9b9522"
+Parent: "8adf873d-e0b6-4726-90ac-062c7db0a96d"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Ignition/Components/Breadcrumb/Breadcrumb
+Path: /sitecore/layout/Renderings/Ignition/Components/News/LatestNews
 DB: master
 SharedFields:
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Sites/Ignition/Components/Breadcrumbs/Breadcrumb
+  Value: /sitecore/templates/Sites/Ignition/Components/News/LatestNews
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: ./Assets
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
-  Value: "<image mediaid=\"{4FB4DE71-0C4F-40B6-8162-EF19A4E214A4}\" />"
+  Value: "<image mediaid=\"{DD295099-89DA-484B-AB87-98E86B903DFB}\" />"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: Breadcrumb
+  Value: LatestNews
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Breadcrumb
+  Value: News
 Languages:
 - Language: en
   Versions:
@@ -27,4 +27,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160810T164020Z
+      Value: 20160818T213154Z

@@ -321,6 +321,9 @@
     <Content Include="Components\Frame\ThreeColumnEqual.cshtml" />
     <Content Include="Components\Frame\FlexibleRowFrame.cshtml" />
     <Content Include="Components\Frame\FlexibleColumnFrame.cshtml" />
+    <Content Include="Components\News\FeaturedNews.cshtml" />
+    <Content Include="Components\News\LatestNews.cshtml" />
+    <Content Include="Components\News\NewsGrid.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -354,6 +357,16 @@
     <Compile Include="Components\Hero\ILinkedImage.cs" />
     <Compile Include="Components\Metadata\MetadataController.cs" />
     <Compile Include="Components\Shared\IIgnitionPage.cs" />
+    <Compile Include="Components\News\FeaturedNewsAgent.cs" />
+    <Compile Include="Components\News\FeaturedNewsViewModel.cs" />
+    <Compile Include="Components\News\IFeaturedNews.cs" />
+    <Compile Include="Components\News\IFeaturedNewsItem.cs" />
+    <Compile Include="Components\News\ILatestNews.cs" />
+    <Compile Include="Components\News\ILatestNewsItem.cs" />
+    <Compile Include="Components\News\LatestNewsAgent.cs" />
+    <Compile Include="Components\News\LatestNewsViewModel.cs" />
+    <Compile Include="Components\News\NewsController.cs" />
+    <Compile Include="Components\News\NewsGridViewModel.cs" />
     <Compile Include="IgnitionConstants.cs" />
     <Compile Include="IgnitionScInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
