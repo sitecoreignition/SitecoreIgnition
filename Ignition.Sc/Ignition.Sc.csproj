@@ -298,6 +298,8 @@
     <Content Include="Components\About\AboutPeopleGrid.cshtml" />
     <Content Include="Components\About\AboutPeopleTile.cshtml" />
     <Content Include="Components\Hero\AboutHero.cshtml" />
+    <Content Include="Components\Product\ProductDetail.cshtml" />
+    <Content Include="Components\Product\ProductSummary.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -320,6 +322,13 @@
     <Compile Include="Components\Hero\IAboutHero.cs" />
     <Compile Include="Components\Hero\ILinkedImage.cs" />
     <Compile Include="Components\Metadata\MetadataController.cs" />
+    <Compile Include="Components\Product\IProductDetail.cs" />
+    <Compile Include="Components\Product\IProductSummary.cs" />
+    <Compile Include="Components\Product\ProductController.cs" />
+    <Compile Include="Components\Product\ProductDetailAgent.cs" />
+    <Compile Include="Components\Product\ProductDetailsViewModel.cs" />
+    <Compile Include="Components\Product\ProductSummaryAgent.cs" />
+    <Compile Include="Components\Product\ProductSummaryViewModel.cs" />
     <Compile Include="IgnitionConstants.cs" />
     <Compile Include="IgnitionScInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
