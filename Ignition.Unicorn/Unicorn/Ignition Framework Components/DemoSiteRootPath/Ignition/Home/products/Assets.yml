@@ -1,0 +1,19 @@
+﻿---
+ID: "8b3c856f-d34d-496e-8723-9ec4eb90efac"
+Parent: "43aaca3a-7ae7-440d-9d5c-a07571701cfc"
+Template: "9bf079d5-5b92-4f52-b327-d7afc2c711e8"
+Path: /sitecore/content/Ignition/Home/products/Assets
+DB: master
+BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Local Assets
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160817T150626Z

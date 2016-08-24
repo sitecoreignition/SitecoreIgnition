@@ -9,8 +9,7 @@ namespace Ignition.Core.HtmlHelpers
     {
         public static HtmlString DynamicPlaceholder(this Sitecore.Mvc.Helpers.SitecoreHelper helper, string dynamicKey)
         {
-            var currentRenderingId = RenderingContext.Current.Rendering.UniqueId;
-            return helper.Placeholder($"{dynamicKey}_{currentRenderingId}");
+            return helper.Placeholder($"{dynamicKey}_{RenderingContext.Current.Rendering.UniqueId}");
         }
     }
 }

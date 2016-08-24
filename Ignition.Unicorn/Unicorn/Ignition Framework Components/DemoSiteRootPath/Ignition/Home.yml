@@ -6,6 +6,12 @@ Path: /sitecore/content/Ignition/Home
 DB: master
 BranchID: "0244e83c-647a-4040-8672-a6c936182e40"
 SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {981DE9BA-D3E1-41EC-BFE5-44FC2A08113D}
+    {F714C9A4-CBC3-48F3-9FC9-5C130C7019F1}
 - ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
   Hint: __Security
   Value: "ar|sitecore\Analytics Management Reporting|pe|+item:read|"

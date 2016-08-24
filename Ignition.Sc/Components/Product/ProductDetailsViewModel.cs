@@ -9,6 +9,6 @@ namespace Ignition.Sc.Components.Product
 
         public IHeading Heading { get; set; }
 
-        public IRichContent1 RichContent { get; set; }
+        public ICopy1 RichContent { get; set; }
     }
 }

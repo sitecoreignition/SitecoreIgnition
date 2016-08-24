@@ -1,0 +1,31 @@
+﻿---
+ID: "9247c750-8593-406d-9fb0-89bf6dfbba2b"
+Parent: "f90282c6-a47b-4ccf-b3cd-7c57e5b66f45"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Ignition/Content/contentRight
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: contentRight
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {32FB5D6B-1909-4232-BFF7-ED0E129538E7}
+    {820418B9-CC5B-4993-BC8F-A36BDA5934C5}
+    {C71A046B-3CE2-4FA0-863D-A22B5FB9F263}
+    {A55076E1-417B-4102-AFB2-041BE4EA61B6}
+    {20443FC4-804E-4A89-9D95-82A621B7C47C}
+    {081D3602-3164-4D35-B94C-3FE2AF4F2A0B}
+    {6F69AB8F-3DFB-4E9A-9AD5-DF7A732D707D}
+    {A0F32EF0-4E79-4DF1-9AA6-2D2C9E042FFB}
+    {99821746-D91F-448A-9FF8-60DA49BBB3EB}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160822T182152Z
