@@ -42,10 +42,14 @@
 
 		    }
 
-		    public struct News
+			public struct News
 		    {
 		        public const string FeaturedNews = "featurednews";
 		        public const string LatestNews = "latestnews";
+		    }
+			public struct Product
+		    {
+		        public const string ProductSummary = "productsummary";
 		    }
 		}
 	}

@@ -1,0 +1,6 @@
+﻿@model Ignition.Sc.Components.Product.ProductSummaryViewModel
+
+<h3>@Html.Glass().Editable(Model, a => a.Heading.Heading)</h3>
+<p><strong>Client: </strong>@Html.Glass().Editable(Model, a => a.SingleLineText.SingleLineText)</p>
+<p><strong>Date: </strong>@Html.Glass().Editable(Model, a => a.DateField1.DateField1, a => a.DateField1.DateField1.ToString("MMMM dd',' yyyy"))</p>
+<p><strong>Tags: </strong>@Html.Glass().Editable(Model, a => a.PlainText.PlainText)</p>

@@ -307,6 +307,8 @@
     <Content Include="Components\About\AboutPeopleGrid.cshtml" />
     <Content Include="Components\About\AboutPeopleTile.cshtml" />
     <Content Include="Components\Hero\AboutHero.cshtml" />
+    <Content Include="Components\Product\ProductDetail.cshtml" />
+    <Content Include="Components\Product\ProductSummary.cshtml" />
     <Content Include="Components\Hero\HeroCarousel.cshtml" />
     <Content Include="Components\Content\ContentBlock.cshtml" />
     <Content Include="package.json" />
@@ -356,6 +358,13 @@
     <Compile Include="Components\Hero\ICarouselSlide.cs" />
     <Compile Include="Components\Hero\ILinkedImage.cs" />
     <Compile Include="Components\Metadata\MetadataController.cs" />
+    <Compile Include="Components\Product\IProductDetail.cs" />
+    <Compile Include="Components\Product\IProductSummary.cs" />
+    <Compile Include="Components\Product\ProductController.cs" />
+    <Compile Include="Components\Product\ProductDetailAgent.cs" />
+    <Compile Include="Components\Product\ProductDetailsViewModel.cs" />
+    <Compile Include="Components\Product\ProductSummaryAgent.cs" />
+    <Compile Include="Components\Product\ProductSummaryViewModel.cs" />
     <Compile Include="Components\Shared\IIgnitionPage.cs" />
     <Compile Include="Components\News\FeaturedNewsAgent.cs" />
     <Compile Include="Components\News\FeaturedNewsViewModel.cs" />
