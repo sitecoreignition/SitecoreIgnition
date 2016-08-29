@@ -30,7 +30,7 @@ Please note that Ignition is in beta and may still be a bit rough around the edg
 7. Create a publishing profile called `Ignition.Sc` in the `Ignition.Sc` project.
 8. Create a publishing profile called `Ignition.Root` in the `Ignition.Root` project.
 9. Create a publishing profile called `Ignition.Unicorn` in the `Ignition.Unicorn` project.
-10. Publish `Ignition.Sc`, then `Ignition.Root`, then `Ignition.Core.Unicorn`.
+10. Publish `Ignition.Sc`, then `Ignition.Root`, then `Ignition.Unicorn`.
 11. Navigate to the [Unicorn Control Panel](http://ignition.localhost/unicorn.aspx) and sync the two Ignition configurations.
 12. Publish your site and have fun!
 
