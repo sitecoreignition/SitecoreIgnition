@@ -1,0 +1,19 @@
+﻿---
+ID: "9b88bd17-2a6a-4b66-ac73-ce39eef2ad16"
+Parent: "b14c314d-28eb-48eb-a39f-d52131c8d404"
+Template: "b14c314d-28eb-48eb-a39f-d52131c8d404"
+Path: /sitecore/templates/Sites/Ignition/Components/Service/ServiceGrid/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{319DE28B-2587-4356-8D5D-F2204858FC71}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160830T212322Z

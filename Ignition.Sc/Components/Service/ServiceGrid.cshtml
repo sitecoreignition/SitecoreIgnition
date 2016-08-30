@@ -12,22 +12,22 @@
             }
             @foreach (var servicecard in Model.ServiceCards)
             {
-                if (Html.Glass().IsInEditingMode)
-                {
-                    using (Html.Glass().BeginEditFrame(servicecard,"Edit Icon Class", a => a.IconClass))
-                    {
-                        <span>Click here to edit selected icon class</span>
-                    }
-                }
-                <div class="col-md-4 col-sm-6">
+               <div class="col-md-4 col-sm-6">
                     <div class="service-wrapper">
+                        @if (Html.Glass().IsInEditingMode)
+                        {
+                        using (Html.Glass().BeginEditFrame(servicecard,"Edit Icon Class", a => a.IconClass))
+                        {
+                        <span>Click here to edit selected icon class</span>
+                        }
+                        }
                         <i class="@servicecard.IconClass.StringSetting"></i>
                         <h3>@Html.Glass().Editable(servicecard, a => a.Heading)</h3>
                         <p>@Html.Glass().Editable(servicecard, a => a.PlainText)</p>
                         <a href="#" class="btn">@Html.Glass().Editable(servicecard, a => a.SingleLineText)</a>
                     </div>
                 </div>
-                }
+             }
 
             @*<i class="icon-calendar"></i>
             <i class="icon-briefcase"></i>
