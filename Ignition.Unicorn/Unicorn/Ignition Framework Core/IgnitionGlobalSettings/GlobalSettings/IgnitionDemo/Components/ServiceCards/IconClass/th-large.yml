@@ -1,0 +1,17 @@
+﻿---
+ID: "2e67fc68-b84f-49c4-9529-5864aa8df5ba"
+Parent: "cf6f73bb-966f-406c-ba00-e87f67bc4ce7"
+Template: "4dcc294f-d5ec-4607-917a-e4a3b80ec624"
+Path: "/sitecore/content/GlobalSettings/IgnitionDemo/Components/ServiceCards/IconClass/th-large"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0dbdc181-2cd0-4fea-b8f1-763888684f41"
+      Hint: StringSetting
+      Value: "icon-th-large"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160830T203811Z

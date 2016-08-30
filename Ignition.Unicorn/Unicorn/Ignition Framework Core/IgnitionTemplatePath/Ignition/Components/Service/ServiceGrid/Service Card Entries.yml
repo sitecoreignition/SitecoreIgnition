@@ -1,0 +1,17 @@
+﻿---
+ID: "1a720289-ac0e-4e60-b7dd-46e864a50426"
+Parent: "b14c314d-28eb-48eb-a39f-d52131c8d404"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Sites/Ignition/Components/Service/ServiceGrid/Service Card Entries
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160830T204639Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
