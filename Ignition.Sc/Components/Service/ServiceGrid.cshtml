@@ -1,0 +1,33 @@
+﻿@model Ignition.Sc.Components.Service.ServiceGridViewModel
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            @if (Html.Glass().IsInEditingMode)
+            {
+                using (Html.Glass().BeginEditFrame(Model.EditFrameItem, "Edit Service Card List", a => a.ServiceCards))
+                {
+                    <span>Click here to edit service card list</span>
+                }
+            }
+            @foreach (var servicecard in Model.ServiceCards)
+            {
+               <div class="col-md-4 col-sm-6">
+                    <div class="service-wrapper">
+                        @if (Html.Glass().IsInEditingMode)
+                        {
+                        using (Html.Glass().BeginEditFrame(servicecard,"Edit Icon Class", a => a.IconClass))
+                        {
+                        <span>Click here to edit selected icon class</span>
+                        }
+                        }
+                        <i class="@servicecard.IconClass.StringSetting"></i>
+                        <h3>@Html.Glass().Editable(servicecard, a => a.Heading)</h3>
+                        <p>@Html.Glass().Editable(servicecard, a => a.PlainText)</p>
+                        @Html.Glass().RenderLink(servicecard, a => a.PrimaryLink, new { @class = "btn" }, true)
+                    </div>
+                </div>
+             }
+        </div>
+    </div>
+</div>

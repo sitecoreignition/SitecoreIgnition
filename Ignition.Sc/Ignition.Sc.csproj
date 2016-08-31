@@ -326,6 +326,7 @@
     <Content Include="Components\News\FeaturedNews.cshtml" />
     <Content Include="Components\News\LatestNews.cshtml" />
     <Content Include="Components\News\NewsGrid.cshtml" />
+    <Content Include="Components\Service\ServiceGrid.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -365,6 +366,11 @@
     <Compile Include="Components\Product\ProductDetailsViewModel.cs" />
     <Compile Include="Components\Product\ProductSummaryAgent.cs" />
     <Compile Include="Components\Product\ProductSummaryViewModel.cs" />
+    <Compile Include="Components\Service\IServiceCard.cs" />
+    <Compile Include="Components\Service\IServiceGrid.cs" />
+    <Compile Include="Components\Service\ServiceAgent.cs" />
+    <Compile Include="Components\Service\ServiceController.cs" />
+    <Compile Include="Components\Service\ServiceGridViewModel.cs" />
     <Compile Include="Components\Shared\IIgnitionPage.cs" />
     <Compile Include="Components\News\FeaturedNewsAgent.cs" />
     <Compile Include="Components\News\FeaturedNewsViewModel.cs" />

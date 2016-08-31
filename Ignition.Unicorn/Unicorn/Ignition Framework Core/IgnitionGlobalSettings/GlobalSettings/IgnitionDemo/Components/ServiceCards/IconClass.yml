@@ -1,0 +1,14 @@
+﻿---
+ID: "cf6f73bb-966f-406c-ba00-e87f67bc4ce7"
+Parent: "857ecd0e-aac3-481f-bd24-23f41ce438e5"
+Template: "19bea9fa-08c7-4d8f-b1b8-08ca5d288b87"
+Path: /sitecore/content/GlobalSettings/IgnitionDemo/Components/ServiceCards/IconClass
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160830T203757Z

@@ -1,0 +1,24 @@
+﻿---
+ID: "4391ded9-8c09-448f-8c3f-6d5c56a57dff"
+Parent: "058aab3b-dd87-4868-810c-a6610b87a7e6"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Sites/Ignition/Components/Service/ServiceCard/Icon Class Setting/IconClass
+DB: master
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "{CF6F73BB-966F-406C-BA00-E87F67BC4CE7}"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Droplink
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160830T205308Z
