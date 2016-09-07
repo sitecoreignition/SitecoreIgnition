@@ -10,7 +10,7 @@ SharedFields:
   Value: ~/Components/Content/ContentBlock.cshtml
 - ID: "ddab263e-b42e-419a-aa6f-081b7393ca38"
   Hint: Model
-  Value: /sitecore/layout/Models/Components/ContentBlock
+  Value: 
 Languages:
 - Language: en
   Versions:
