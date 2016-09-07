@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Sitecore.Diagnostics;
+﻿using Sitecore.Diagnostics;
 using Sitecore.Shell.Applications.ContentEditor.Pipelines.RenderContentEditor;
 namespace Ignition.Infrastructure.Pipelines
 {
@@ -12,7 +8,6 @@ namespace Ignition.Infrastructure.Pipelines
         {
             Assert.ArgumentNotNull(args, "args");
             var editorFormatter = new EditorFormatter(args);
-			//var writer = new YmlSettingsReader();
             editorFormatter.RenderSections(args.Parent, args.Sections, args.ReadOnly);
         }
     }

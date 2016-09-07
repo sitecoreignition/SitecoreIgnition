@@ -1,0 +1,37 @@
+﻿@model Ignition.Sc.Components.News.FeaturedNewsViewModel
+
+<div class="col-sm-6 featured-news">
+    <h2>@Html.Glass().Editable(a => a.Heading.Heading)</h2>
+    @if (Html.Glass().IsInEditingMode)
+    {
+        using (Html.Glass().BeginEditFrame(Model.EditFrameItem, "Edit News List", a => a.FeatureNewsItems))
+        {
+            <span>Click here to edit featured news item list</span>     
+        }
+    }
+    @foreach (var newsitem in Model.FeatureNewsItems)
+    {
+        <div class="row">
+            <div class="col-xs-4">
+                @using (Html.Glass().BeginRenderLink(newsitem, a => a.PrimaryLink, null, true))
+                {
+                    @Html.Glass().RenderImage(newsitem, a => a.Image, null, true)
+                }
+            </div>
+            <div class="col-xs-8">
+                <div class="caption">
+                    @using (Html.Glass().BeginRenderLink(newsitem, a => a.PrimaryLink, null, true))
+                    {
+                        @Html.Glass().Editable(newsitem, a => a.Heading)
+                    }
+                </div>
+                <div class="date">
+                    @Html.Glass().Editable(newsitem, a => a.DateField1, a => a.DateField1.ToString("dd MMM yyyy"))
+                </div>
+                <div class="intro">
+                    @Html.Glass().Editable(newsitem, a => a.PlainText)&nbsp;@Html.Glass().RenderLink(newsitem, a => a.PrimaryLink, null, true)
+                </div>
+            </div>
+        </div>
+    }
+</div>

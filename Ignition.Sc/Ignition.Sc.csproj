@@ -181,11 +181,18 @@
     <Content Include="Assets\Ignition\img\team\3.jpg" />
     <Content Include="Assets\Ignition\img\title-before.png" />
     <Content Include="Assets\Ignition\js\bootstrap.js" />
-    <Content Include="Assets\Ignition\js\bootstrap.min.js" />
+    <Content Include="Assets\Ignition\js\bootstrap.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Ignition\js\jquery-1.9.1.min.js" />
-    <Content Include="Assets\Ignition\js\jquery.easing.min.js" />
+    <Content Include="Assets\Ignition\js\jquery.easing.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Ignition\js\modernizr-2.6.2-respond-1.1.0.min.js" />
-    <Content Include="Assets\Ignition\js\scrolling-nav.js" />
+    <Content Include="Assets\Ignition\js\scrolling-nav.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gulpfile.js" />
     <Content Include="Html\about-us.html" />
     <Content Include="Html\blog-post.html" />
     <Content Include="Html\blog.html" />
@@ -284,7 +291,9 @@
     <Content Include="Components\Frame\IgnitionFrame.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Components\Bookends\Header.cshtml" />
+    <Content Include="Components\Bookends\Header.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Components\Bookends\Footer.cshtml" />
     <Content Include="Components\Bookends\FooterScript.cshtml" />
     <Content Include="Components\Metadata\Head.cshtml" />
@@ -294,15 +303,79 @@
     <Content Include="Components\Metadata\Seo.cshtml" />
     <Content Include="Components\Metadata\Taxonomy.cshtml" />
     <Content Include="Components\Metadata\PageEdit.cshtml" />
+    <Content Include="Components\Breadcrumb\Breadcrumb.cshtml" />
+    <Content Include="Components\About\AboutPeopleGrid.cshtml" />
+    <Content Include="Components\About\AboutPeopleTile.cshtml" />
+    <Content Include="Components\Hero\AboutHero.cshtml" />
+    <Content Include="Components\Product\ProductDetail.cshtml" />
+    <Content Include="Components\Product\ProductSummary.cshtml" />
+    <Content Include="Components\Hero\HeroCarousel.cshtml" />
+    <Content Include="Components\Content\ContentBlock.cshtml" />
+    <Content Include="package.json" />
+    <Content Include="Components\Hero\_CarouselSlide.cshtml" />
+    <Content Include="Components\Frame\FortySixtyFrame.cshtml" />
+    <Content Include="Components\Frame\FiftyFiftyFrame.cshtml" />
+    <Content Include="Components\Frame\SixtyFortyFrame.cshtml" />
+    <Content Include="Components\Frame\TwoColumnLeftFrame.cshtml" />
+    <Content Include="Components\Frame\TwoColumnRightFrame.cshtml" />
+    <Content Include="Components\Frame\FullWidthFrame.cshtml" />
+    <Content Include="Components\Frame\ThreeColumnSidebars.cshtml" />
+    <Content Include="Components\Frame\ThreeColumnEqual.cshtml" />
+    <Content Include="Components\Frame\FlexibleRowFrame.cshtml" />
+    <Content Include="Components\Frame\FlexibleColumnFrame.cshtml" />
+    <Content Include="Components\News\FeaturedNews.cshtml" />
+    <Content Include="Components\News\LatestNews.cshtml" />
+    <Content Include="Components\News\NewsGrid.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\About\AboutController.cs" />
+    <Compile Include="Components\About\AboutPeopleGridViewModel.cs" />
+    <Compile Include="Components\About\AboutPeopleTileAgent.cs" />
+    <Compile Include="Components\About\AboutPeopleTileViewModel.cs" />
+    <Compile Include="Components\About\IAboutPeopleTile.cs" />
     <Compile Include="Components\Bookends\BookendsController.cs" />
+    <Compile Include="Components\Bookends\HeaderAgent.cs" />
+    <Compile Include="Components\Bookends\HeaderViewModel.cs" />
+    <Compile Include="Components\Breadcrumb\BreadcrumbController.cs" />
+    <Compile Include="Components\Breadcrumb\BreadcrumbViewModel.cs" />
+    <Compile Include="Components\Breadcrumb\IBreadcrumb.cs" />
+    <Compile Include="Components\Content\IContentBlock.cs" />
+    <Compile Include="Components\Content\ContentController.cs" />
     <Compile Include="Components\Frame\FrameAgent.cs" />
     <Compile Include="Components\Frame\FrameController.cs" />
     <Compile Include="Components\Frame\FrameViewModel.cs" />
+    <Compile Include="Components\Frame\IBootstrapColumns.cs" />
+    <Compile Include="Components\Hero\AboutHeroAgent.cs" />
+    <Compile Include="Components\Hero\AboutHeroViewModel.cs" />
+    <Compile Include="Components\Hero\HeroCarouselAgent.cs" />
+    <Compile Include="Components\Hero\HeroCarouselSlideViewModel.cs" />
+    <Compile Include="Components\Hero\HeroCarouselViewModel.cs" />
+    <Compile Include="Components\Hero\HeroController.cs" />
+    <Compile Include="Components\Hero\IAboutHero.cs" />
+    <Compile Include="Components\Hero\ICarousel.cs" />
+    <Compile Include="Components\Hero\ICarouselSlide.cs" />
+    <Compile Include="Components\Hero\ILinkedImage.cs" />
     <Compile Include="Components\Metadata\MetadataController.cs" />
+    <Compile Include="Components\Product\IProductDetail.cs" />
+    <Compile Include="Components\Product\IProductSummary.cs" />
+    <Compile Include="Components\Product\ProductController.cs" />
+    <Compile Include="Components\Product\ProductDetailAgent.cs" />
+    <Compile Include="Components\Product\ProductDetailsViewModel.cs" />
+    <Compile Include="Components\Product\ProductSummaryAgent.cs" />
+    <Compile Include="Components\Product\ProductSummaryViewModel.cs" />
+    <Compile Include="Components\Shared\IIgnitionPage.cs" />
+    <Compile Include="Components\News\FeaturedNewsAgent.cs" />
+    <Compile Include="Components\News\FeaturedNewsViewModel.cs" />
+    <Compile Include="Components\News\IFeaturedNews.cs" />
+    <Compile Include="Components\News\IFeaturedNewsItem.cs" />
+    <Compile Include="Components\News\ILatestNews.cs" />
+    <Compile Include="Components\News\ILatestNewsItem.cs" />
+    <Compile Include="Components\News\LatestNewsAgent.cs" />
+    <Compile Include="Components\News\LatestNewsViewModel.cs" />
+    <Compile Include="Components\News\NewsController.cs" />
+    <Compile Include="Components\News\NewsGridViewModel.cs" />
     <Compile Include="IgnitionConstants.cs" />
     <Compile Include="IgnitionScInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -353,6 +426,10 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

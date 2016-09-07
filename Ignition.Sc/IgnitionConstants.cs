@@ -27,6 +27,30 @@
 			public struct Footer
 			{
 			}
+
+			public struct Content
+			{
+				public const string Main = "contentMain";
+				public const string Left = "contentLeft";
+				public const string Right = "contentRight";
+				public const string FlexibleCol = "contentFlexibleColumn";
+				public const string FlexibleRow = "contentFlexibleRow";
+			}
+			public struct About
+		    {
+		        public const string AboutPeopleGrid = "aboutpeoplegrid";
+
+		    }
+
+			public struct News
+		    {
+		        public const string FeaturedNews = "featurednews";
+		        public const string LatestNews = "latestnews";
+		    }
+			public struct Product
+		    {
+		        public const string ProductSummary = "productsummary";
+		    }
 		}
 	}
 }

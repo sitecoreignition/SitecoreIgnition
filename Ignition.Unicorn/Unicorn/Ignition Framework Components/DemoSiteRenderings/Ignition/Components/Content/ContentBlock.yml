@@ -1,0 +1,21 @@
+﻿---
+ID: "6f69ab8f-3dfb-4e9a-9ad5-df7a732d707d"
+Parent: "93a203e1-576b-45dd-a13f-d578de992129"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Ignition/Components/Content/ContentBlock
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: ~/Components/Content/ContentBlock.cshtml
+- ID: "ddab263e-b42e-419a-aa6f-081b7393ca38"
+  Hint: Model
+  Value: /sitecore/layout/Models/Components/ContentBlock
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160817T202714Z

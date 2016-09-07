@@ -1,0 +1,23 @@
+﻿---
+ID: "fcd47378-a1bf-454f-a97d-ba773cbeca86"
+Parent: "9d2dd8a5-29f2-4bdc-87d5-b0e70f64c1a2"
+Template: "d2c513b3-9ca7-490f-a1ed-58505b7b9ca1"
+Path: /sitecore/content/Ignition/IgnitionSiteSettings/Main/Theme/Footer/FooterLeft
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160817T203122Z
+    - ID: "7dd87307-f0d1-4c76-b9d2-bacaf51ae316"
+      Hint: Heading
+      Value: Contact Us
+    - ID: "a3513117-630a-4830-86c0-a2f15164be04"
+      Hint: Copy1
+      Value: |
+        <b>Address:</b> 1040 Crown Pointe Pkwy #200, Dunwoody, GA 30338<br>
+        <b>Phone:</b> +1 (678) 825-0156<br>
+        <b>Email:</b> <a href="mailto:ignition@sitecoreignition.com">ignition@sitecoreignition.com</a>

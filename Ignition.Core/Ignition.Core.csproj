@@ -143,6 +143,7 @@
     <Compile Include="Models\System\IFile.cs" />
     <Compile Include="Models\System\IFolder.cs" />
     <Compile Include="Models\System\IMediaItem.cs" />
+    <Compile Include="Mvc\ViewEngines\GetViewRenderer.cs" />
     <Compile Include="Mvc\IgnitionControllerContext.cs" />
     <Compile Include="Mvc\IViewModelDataBinder.cs" />
     <Compile Include="Mvc\Routing\PublicRouteAttribute.cs" />
@@ -164,6 +165,7 @@
     <Compile Include="Repositories\WebDatabaseType.cs" />
     <Compile Include="SimpleInjector\ContainerExtensions.cs" />
     <Compile Include="SimpleInjector\ImportPropertySelectionBehavior.cs" />
+    <Compile Include="SimpleInjector\MostResolvableConstructorBehavior.cs" />
     <Compile Include="SimpleInjector\SimpleInjectorInstaller.cs" />
   </ItemGroup>
   <ItemGroup>
