@@ -17,6 +17,9 @@ SharedFields:
     {4B39EFA4-00EB-4C61-BD45-82FB2C72E810}
     {1522097B-B91D-4E98-BBDB-AD197619765D}
     {50634356-160A-47C2-A28F-AC4571ECBCBF}
+- ID: "a791f095-2521-4b4d-bef9-21dda221f608"
+  Hint: __Style
+  Value: 
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
