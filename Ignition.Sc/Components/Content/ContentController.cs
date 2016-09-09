@@ -13,5 +13,7 @@ namespace Ignition.Sc.Components.Content
 		{
 			return null;
 		}
+
+	    public ActionResult ContentBlurb() => View<ContentBlurbViewModel>();
 	}
 }
