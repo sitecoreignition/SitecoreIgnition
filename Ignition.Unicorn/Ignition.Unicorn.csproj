@@ -96,7 +96,7 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.IgnitionSc.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.SharedSecret.config.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.SharedSecret.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Deployed.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.DataProvider.config" />
