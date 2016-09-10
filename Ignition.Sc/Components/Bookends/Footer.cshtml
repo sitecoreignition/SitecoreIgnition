@@ -1,0 +1,23 @@
+﻿@using Ignition.Core.Models.System
+@using Ignition.Sc
+@using Ignition.Sc.Components.Content
+<!-- Footer -->
+<div class="footer">
+	<div class="container">
+
+		<div class="row">
+
+
+			@Html.Sitecore().Placeholder("footerContent")
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-copyright">Design &copy; 2014 <a href="http://www.vactualart.com/portfolio-item/basica-a-free-html5-template/">Basica</a> Bootstrap HTML Template. By <a href="http://www.vactualart.com">Vactual Art</a>.<br/>
+					Site Build &copy; 2016 <a href="http://www.github.com/SitecoreIgnition/SitecoteIgnition">Sitecore Ignition</a> Demo Site licensed under MIT by <a href="http://www.perficient.com">Sitecore Ignition</a>.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+@Html.RenderResources(ResourceType.Js)
+@Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Layout.LayoutFooterScript)

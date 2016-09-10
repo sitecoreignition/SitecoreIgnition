@@ -8,7 +8,7 @@ using Sitecore.Globalization;
 namespace Ignition.Core.Models.BaseModels
 {
     [SitecoreType(AutoMap = false, TemplateId = "{00000000-0000-0000-0000-000000000000}")]
-    public sealed class NullModel : IModelBase
+    public class NullModel : IModelBase
     {
         public string FullPath
         {

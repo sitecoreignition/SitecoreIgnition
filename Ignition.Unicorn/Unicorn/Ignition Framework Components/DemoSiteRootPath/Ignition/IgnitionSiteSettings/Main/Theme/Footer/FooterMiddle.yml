@@ -1,0 +1,27 @@
+﻿---
+ID: "6a864d6e-a056-45f6-8529-981395cac90c"
+Parent: "9d2dd8a5-29f2-4bdc-87d5-b0e70f64c1a2"
+Template: "d2c513b3-9ca7-490f-a1ed-58505b7b9ca1"
+Path: /sitecore/content/Ignition/IgnitionSiteSettings/Main/Theme/Footer/FooterMiddle
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160817T203129Z
+    - ID: "7dd87307-f0d1-4c76-b9d2-bacaf51ae316"
+      Hint: Heading
+      Value: Our Social Networks
+    - ID: "a3513117-630a-4830-86c0-a2f15164be04"
+      Hint: Copy1
+      Value: |
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+        <div>
+          <img src="/Assets/Ignition/img/icons/facebook.png" width="32" alt="Facebook">
+          <img src="/Assets/Ignition/img/icons/twitter.png" width="32" alt="Twitter">
+          <img src="/Assets/Ignition/img/icons/linkedin.png" width="32" alt="LinkedIn">
+          <img src="/Assets/Ignition/img/icons/rss.png" width="32" alt="RSS Feed">
+        </div>

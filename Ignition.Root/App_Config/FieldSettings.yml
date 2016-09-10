@@ -1,0 +1,16 @@
+﻿---
+TemplateItem: 
+  - TemplateName: IgnitionPage
+    MapItems:
+    - FieldName: PageTitle
+      MapTo: Page Title
+      ShortDescription: The modified title of the page that appears in the browser
+    - FieldName: PageDescription
+      MapTo: Meta Description
+  - TemplateName: Metadata
+    MapItems:
+    - FieldName: PageTitle
+      MapTo: Title
+    - FieldName: Subtitle
+      MapTo: Subheading
+...

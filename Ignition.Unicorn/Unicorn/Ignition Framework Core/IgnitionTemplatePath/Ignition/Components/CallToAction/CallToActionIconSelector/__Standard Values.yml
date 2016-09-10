@@ -1,0 +1,14 @@
+﻿---
+ID: "c08b2a7e-8629-44c7-8281-45cb47979b10"
+Parent: "98127972-d381-4dc7-8e3c-7233372eac24"
+Template: "98127972-d381-4dc7-8e3c-7233372eac24"
+Path: /sitecore/templates/Sites/Ignition/Components/CallToAction/CallToActionIconSelector/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160613T191734Z

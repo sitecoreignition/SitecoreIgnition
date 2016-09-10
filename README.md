@@ -14,23 +14,34 @@ Please note that Ignition is in beta and may still be a bit rough around the edg
 	* `Sitecore.ContentSearch.Linq.dll`
 	* `Sitecore.Kernel.dll`
 	* `Sitecore.Mvc.dll`
+	* `Sitecore.Client.dll`
+5. Update App_Config/Include/Folder.config file in `Ignition.Root` project to set the dataFolder and solutionFolder variables to your local data/solution folder paths.
 
 ### If You Have [Team Development for Sitecore](https://www.teamdevelopmentforsitecore.com/)
 
-5. Open the solution `Ignition.Tds.sln`.
-6. Do a full build.
-7. Sync `Ignition.Root.TDS.Master` with TDS.
-8. Sync `Ignition.Sc.TDS.Master` with TDS.
-9. Open Sitecore, publish your site, and have fun!
+6. Open the solution `Ignition.Tds.sln`.
+7. Do a full build.
+8. Sync `Ignition.Root.TDS.Master` with TDS.
+9. Sync `Ignition.Sc.TDS.Master` with TDS.
+10. Open Sitecore, publish your site, and have fun!
 
-### If You Don't Have [Team Development for Sitecore](https://www.teamdevelopmentforsitecore.com/)
+### If You Use [Unicorn](https://github.com/kamsar/Unicorn) 
+6. Open the solution `Ignition.Unicorn.sln`.
+7. Create a publishing profile called `Ignition.Sc` in the `Ignition.Sc` project.
+8. Create a publishing profile called `Ignition.Root` in the `Ignition.Root` project.
+9. Create a publishing profile called `Ignition.Unicorn` in the `Ignition.Unicorn` project.
+10. Publish `Ignition.Sc`, then `Ignition.Root`, then `Ignition.Unicorn`.
+11. Navigate to the [Unicorn Control Panel](http://ignition.localhost/unicorn.aspx) and sync the two Ignition configurations.
+12. Publish your site and have fun!
 
-5. Open the solution `Ignition.sln`.
-6. Create a publishing profile called `Ignition.Sc` in the `Ignition.Sc` project.
-7. Create a publishing profile called `Ignition.Root` in the `Ignition.Root` project.
-8. Publish `Ignition.Sc` and then publish `Ignition.Root`.
-9. Navigate to the [Update Installation Wizard](http://ignition.localhost/sitecore/admin/updateinstallationwizard.aspx) and install the update packages found in the `SitecorePackages` folder.
-10. Publish your site and have fun!
+### If you don't have either TDS or Unicorn
+
+6. Open the solution `Ignition.sln`.
+7. Create a publishing profile called `Ignition.Sc` in the `Ignition.Sc` project.
+8. Create a publishing profile called `Ignition.Root` in the `Ignition.Root` project.
+9. Publish `Ignition.Sc` and then publish `Ignition.Root`.
+10. Navigate to the [Update Installation Wizard](http://ignition.localhost/sitecore/admin/updateinstallationwizard.aspx) and install the update packages found in the `SitecorePackages` folder.
+11. Publish your site and have fun!
 
 Ignition has been tested using Sitecore 8.0 Update-4 and above. Ignition probably works with any version of the Sitecore 7 and 8 .dlls but we have not confirmed.
 

@@ -1,0 +1,14 @@
+﻿---
+ID: "63a66d01-7717-4546-8436-729a76844be1"
+Parent: "1b5da86c-eeae-45d4-94c4-a51fecd255bc"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Page Editor
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142052Z

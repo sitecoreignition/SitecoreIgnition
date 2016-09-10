@@ -27,9 +27,9 @@ namespace Ignition.Root.App_Start
 			var container = new Container();
 			container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
 			container.Options.PropertySelectionBehavior = new ImportPropertySelectionBehavior();
-			container.RegisterMvcIntegratedFilterProvider();
-
-			container.Install(new SitecoreInstaller());
+            container.Options.ConstructorResolutionBehavior = new MostResolvableConstructorBehavior(container);
+            container.RegisterMvcIntegratedFilterProvider();
+            
 			container.Install(new CoreInstaller());
 			container.Install(new IgnitionScInstaller());
 

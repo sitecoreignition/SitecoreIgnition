@@ -1,0 +1,31 @@
+﻿@using Ignition.Sc
+@model Ignition.Sc.Components.Product.ProductDetailsViewModel
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <!-- Product Image & Available Colors -->
+            <div class="col-sm-6">
+                <div class="product-image-large">
+                    @Html.Glass().Editable(Model, a => a.Image.Image)
+                </div>
+                <div class="colors">
+                    <span class="color-white"></span>
+                    <span class="color-black"></span>
+                    <span class="color-blue"></span>
+                    <span class="color-orange"></span>
+                    <span class="color-green"></span>
+                </div>
+            </div>
+            <!-- End Product Image & Available Colors -->
+            <!-- Product Summary & Options -->
+            <div class="col-sm-6 product-details">
+                <h2>@Html.Glass().Editable(Model, a => a.Heading.Heading)</h2>
+                @Html.Glass().Editable(Model, a => a.RichContent.RichText1)
+                @Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Product.ProductSummary)
+            </div>
+            <!-- End Product Summary & Options -->
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿@model Ignition.Sc.Components.News.LatestNewsViewModel
+
+<div class="col-sm-6 latest-news">
+    <h2>@Html.Glass().Editable(Model, a => a.Heading.Heading)</h2>
+    @if (Html.Glass().IsInEditingMode)
+    {
+        using (Html.Glass().BeginEditFrame(Model.EditFrameItem, "Edit News List", a => a.LatestNewsItems))
+        {
+            <span>Click here to edit latest news item list</span>
+        }
+    }
+    @foreach (var latestnews in Model.LatestNewsItems)
+    {
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="caption">
+                    @using (Html.Glass().BeginRenderLink(latestnews, a => a.PrimaryLink, null, true))
+                    {
+                        @Html.Glass().Editable(latestnews, a => a.Heading)
+                    }
+                </div>
+                <div class="date">
+                    @Html.Glass().Editable(latestnews, a => a.DateField1, a => a.DateField1.ToString("dd MMM yyyy"))
+                </div>
+                <div class="intro">
+                    @Html.Glass().Editable(latestnews, a => a.PlainText)&nbsp;@Html.Glass().RenderLink(latestnews, a => a.PrimaryLink, null, true)
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,14 @@
+﻿---
+ID: "ee0c8cdd-f14d-4c1a-b99d-6e89dc788298"
+Parent: "8313b33c-1a66-4b72-bbdc-67900850aa27"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Content Editor/Ribbon/Analyze/Behavior
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142002Z
