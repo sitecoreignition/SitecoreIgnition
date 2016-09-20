@@ -9,12 +9,15 @@ Please note that Ignition is in beta and may still be a bit rough around the edg
 1. Setup a new Sitecore install on your machine.
 2. By default, Ignition uses `http:\\ignition.localhost` as the URL. Add this URL to your hosts file and add it to your site's IIS bindings.
 3. Clone the repository: `git clone https://github.com/sitecoreignition/SitecoreIgnition.git`.
-4. Copy the following Sitecore .dlls into the `_lib` folder:
+4. Add the following nuget package source to the Nuget Package Source listing: `https://sitecore.myget.org/F/sc-packages/api/v3/index.json`.  This step is performed in VS 2015 by clicking Tools, Nuget Package Manager, Package Manager Settings.  The DLLs this package references for Ignition are the following:
+	
 	* `Sitecore.ContentSearch.dll`
 	* `Sitecore.ContentSearch.Linq.dll`
 	* `Sitecore.Kernel.dll`
 	* `Sitecore.Mvc.dll`
 	* `Sitecore.Client.dll`
+	
+	Note: These DLLs can also be added to the `_lib` folder as an alternative if accessing the nuget package source does not work.
 5. Update App_Config/Include/Folder.config file in `Ignition.Root` project to set the dataFolder and solutionFolder variables to your local data/solution folder paths.
 
 ### If You Have [Team Development for Sitecore](https://www.teamdevelopmentforsitecore.com/)
