@@ -17,7 +17,7 @@ Please note that Ignition is in beta and may still be a bit rough around the edg
 	* `Sitecore.Mvc.dll`
 	* `Sitecore.Client.dll`
 	
-	Note: These DLLs can also be added to the `_lib` folder as an alternative if accessing the nuget package source does not work.  The references to these DLLs in each Ignition project in the solution would also need to be updated.
+	Note: These DLLs can also be added to the `_lib` folder as an alternative.  The references to these DLLs in each Ignition project in the solution would also need to be updated.
 5. Update App_Config/Include/Folder.config file in `Ignition.Root` project to set the dataFolder and solutionFolder variables to your local data/solution folder paths.
 
 ### If You Have [Team Development for Sitecore](https://www.teamdevelopmentforsitecore.com/)
