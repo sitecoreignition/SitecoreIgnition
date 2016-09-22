@@ -5,43 +5,29 @@ Ignition is an open source development accelerator designed by the team at [Perf
 Please note that Ignition is in beta and may still be a bit rough around the edges. We are diligently adding new features and polish to the project and we happily accept your thoughts, feature requests, and pull requests.
 
 ## Get Started
+Note: Sitecore Ignition now ships preconfigured for Unicorn as its default serialization tool. You can easily include TDS or any other serialization method in your own implementation.
 
 1. Setup a new Sitecore install on your machine.
 2. By default, Ignition uses `http:\\ignition.localhost` as the URL. Add this URL to your hosts file and add it to your site's IIS bindings.
 3. Clone the repository: `git clone https://github.com/sitecoreignition/SitecoreIgnition.git`.
-4. Copy the following Sitecore .dlls into the `_lib` folder:
+4. Add the following nuget package source to the Nuget Package Source listing: `https://sitecore.myget.org/F/sc-packages/api/v3/index.json`.  This step is performed in VS 2015 by clicking Tools, Nuget Package Manager, Package Manager Settings.  The DLLs this package references for Ignition are the following:
+	
 	* `Sitecore.ContentSearch.dll`
 	* `Sitecore.ContentSearch.Linq.dll`
 	* `Sitecore.Kernel.dll`
 	* `Sitecore.Mvc.dll`
 	* `Sitecore.Client.dll`
+	
+	Note: These DLLs can also be added to the `_lib` folder as an alternative.  The references to these DLLs in each Ignition project in the solution would also need to be updated.
 5. Update App_Config/Include/Folder.config file in `Ignition.Root` project to set the dataFolder and solutionFolder variables to your local data/solution folder paths.
-
-### If You Have [Team Development for Sitecore](https://www.teamdevelopmentforsitecore.com/)
-
-6. Open the solution `Ignition.Tds.sln`.
-7. Do a full build.
-8. Sync `Ignition.Root.TDS.Master` with TDS.
-9. Sync `Ignition.Sc.TDS.Master` with TDS.
-10. Open Sitecore, publish your site, and have fun!
-
-### If You Use [Unicorn](https://github.com/kamsar/Unicorn) 
 6. Open the solution `Ignition.Unicorn.sln`.
 7. Create a publishing profile called `Ignition.Sc` in the `Ignition.Sc` project.
 8. Create a publishing profile called `Ignition.Root` in the `Ignition.Root` project.
 9. Create a publishing profile called `Ignition.Unicorn` in the `Ignition.Unicorn` project.
-10. Publish `Ignition.Sc`, then `Ignition.Root`, then `Ignition.Core.Unicorn`.
+10. Publish `Ignition.Sc`, then `Ignition.Root`, then `Ignition.Unicorn`.
 11. Navigate to the [Unicorn Control Panel](http://ignition.localhost/unicorn.aspx) and sync the two Ignition configurations.
 12. Publish your site and have fun!
 
-### If you don't have either TDS or Unicorn
-
-6. Open the solution `Ignition.sln`.
-7. Create a publishing profile called `Ignition.Sc` in the `Ignition.Sc` project.
-8. Create a publishing profile called `Ignition.Root` in the `Ignition.Root` project.
-9. Publish `Ignition.Sc` and then publish `Ignition.Root`.
-10. Navigate to the [Update Installation Wizard](http://ignition.localhost/sitecore/admin/updateinstallationwizard.aspx) and install the update packages found in the `SitecorePackages` folder.
-11. Publish your site and have fun!
 
 Ignition has been tested using Sitecore 8.0 Update-4 and above. Ignition probably works with any version of the Sitecore 7 and 8 .dlls but we have not confirmed.
 
