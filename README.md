@@ -7,6 +7,8 @@ Please note that Ignition is in beta and may still be a bit rough around the edg
 ## Get Started
 Note: Sitecore Ignition now ships preconfigured for Unicorn as its default serialization tool. You can easily include TDS or any other serialization method in your own implementation.
 
+IMPORTANT!: Ignition uses the new Sitecore Nuget feed for sitecore binary references. Be sure to add https://sitecore.myget.org/F/sc-packages/api/v3/index.json to your Visual Studio Nuget sources.
+
 1. Setup a new Sitecore install on your machine.
 2. By default, Ignition uses `http:\\ignition.localhost` as the URL. Add this URL to your hosts file and add it to your site's IIS bindings.
 3. Clone the repository: `git clone https://github.com/sitecoreignition/SitecoreIgnition.git`.
