@@ -1,0 +1,14 @@
+﻿---
+ID: "22b9164a-b6fc-4e12-9cc4-ff54066b279e"
+Parent: "4055d2f7-53f3-4d8a-88b0-4e0f03a19eda"
+Template: "19bea9fa-08c7-4d8f-b1b8-08ca5d288b87"
+Path: /sitecore/content/Ignition/IgnitionSiteSettings/Main/Theme
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160817T185711Z

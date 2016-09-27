@@ -1,0 +1,14 @@
+﻿---
+ID: "6d9b2118-5202-4d58-837b-707a7f23e1e9"
+Parent: "c715df69-6ba6-482b-87d7-bbd9b714941c"
+Template: "3b08a675-8c97-4d5f-baff-d50d8df30cc0"
+Path: /sitecore/content/GlobalSettings/Css/BootstrapColumns
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160822T173436Z

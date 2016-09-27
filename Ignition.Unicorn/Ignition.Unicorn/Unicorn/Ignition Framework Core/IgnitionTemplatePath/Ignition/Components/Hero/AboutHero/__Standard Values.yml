@@ -1,0 +1,21 @@
+﻿---
+ID: "daded26e-b501-4c00-a632-e25bcf4dd8a0"
+Parent: "6538ab6d-3016-4708-8800-0735967ea67f"
+Template: "6538ab6d-3016-4708-8800-0735967ea67f"
+Path: /sitecore/templates/Sites/Ignition/Components/Hero/AboutHero/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {85308FC9-E558-4B44-96BA-036C7FDA356C}
+    {97F58184-24C4-4296-979E-288AA210BC69}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160802T191403Z

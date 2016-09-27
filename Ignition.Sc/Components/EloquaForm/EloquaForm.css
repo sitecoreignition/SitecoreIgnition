@@ -1,0 +1,46 @@
+﻿﻿.eloqua-form-group-horizontal {}
+.eloqua-form-group {margin-bottom:15px} .eloqua-form-group div {display:block}
+.eloquaLabel {display:inline; padding-top:5px}
+.eloqua-form-group-vertical label.eloquaLabel {display:inline-block;max-width:100%;margin-bottom:5px;font-weight:700}
+.eloqua-form-group-vertical input.eloquaField,
+.eloqua-form-group-vertical select.eloquaField
+ {
+    display:block;
+    width:100%;
+    height:34px; 
+    padding: 6px 12px; 
+    font-size:14px; 
+    color:#555;
+    background-color:#fff;
+    border:1px solid #ccc;
+    border-radius:4px}
+.eloqua-validation-message {display:none;}
+.eloqua-validation-message .show{display:block;}
+.eloqua-w2 {width:16.66666667%}
+.eloqua-w10 {width:83.33333333%}
+.has-eloqua-error{}
+ 
+ 
+.has-eloqua-error .help-block,
+.has-eloqua-error .eloqua-validation-message,
+.has-eloqua-error .eloquaLabel,
+.has-eloqua-error .radio,
+.has-eloqua-error .checkbox,
+.has-eloqua-error .radio-inline,
+.has-eloqua-error .checkbox-inline,
+.has-eloqua-error.radio label,
+.has-eloqua-error.checkbox label,
+.has-eloqua-error.radio-inline label,
+.has-eloqua-error.checkbox-inline label {
+  color: #a94442;
+}
+.has-eloqua-error .eloquaField {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+ 
+.has-eloqua-error .eloqua-validation-message
+{
+    display:block;
+}

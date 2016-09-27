@@ -1,0 +1,22 @@
+﻿---
+ID: "c028b493-6cfe-41b0-801e-16a771e2e60f"
+Parent: "4a442a3d-4fec-4743-abbe-621d8a869095"
+Template: "0ed048af-e431-40e0-a8a5-3028367fc756"
+Path: /sitecore/content/Ignition/Home/blog
+DB: master
+BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Blog
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160817T150632Z
+    - ID: "56666e5e-afb9-49f6-a950-1d065b9fe35c"
+      Hint: NavigationTitle
+      Value: Blog

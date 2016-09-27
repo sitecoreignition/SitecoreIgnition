@@ -1,0 +1,14 @@
+﻿---
+ID: "a9426b29-ef2a-4cdb-97ca-1feb73697e15"
+Parent: "fb751dff-8d6a-4cb0-b689-bd6923685f51"
+Template: "239f9cf4-e5a0-44e0-b342-0f32cd4c6d8b"
+Path: /sitecore/templates/Ignition/Fields/Content/Copy2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160926T153646Z

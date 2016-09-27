@@ -1,0 +1,17 @@
+﻿---
+ID: "28d41c2b-3885-4c06-aee7-4170d0cae54b"
+Parent: "5546a63f-aa8d-43c5-abae-c89518085558"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Ignition/Settings/ImageSetting/Settings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150512T233656Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\jon

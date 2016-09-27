@@ -1,0 +1,782 @@
+﻿<style type="text/css" media="screen">
+	/* RESET */ .elq-form * {
+		margin: 0;
+		padding: 0;
+	}
+
+	.elq-form input, textarea {
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+	}
+
+	.elq-form button, input[type=reset], input[type=button], input[type=submit], input[type=checkbox], input[type=radio], select {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	/* GENERIC */ .elq-form input {
+		height: 16px;
+		line-height: 16px;
+	}
+
+	.elq-form .item-padding {
+		padding: 6px 5px 9px 9px;
+	}
+
+	.elq-form .pp-group {
+		padding: 0px 5px 0px 9px;
+	}
+
+	.elq-form .pp-field {
+		padding: 6px 0px 9px 0px;
+	}
+
+	.elq-form .field-wrapper.individual {
+		float: left;
+		width: 100%;
+		clear: both;
+	}
+
+	.elq-form .field-p {
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+
+	.elq-form .zIndex-fix {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	.elq-form .field-design {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	.elq-form .no-fields-prompt {
+		float: left;
+		width: 100%;
+		height: 150px;
+		padding-top: 50px;
+		clear: both;
+	}
+	/* SECTION BREAKS */ .elq-form .section-break {
+		float: left;
+		width: 97%;
+		margin-right: 2%;
+		margin-left: 1%;
+		padding-bottom: 6px;
+	}
+
+		.elq-form .section-break .heading {
+			width: 100%;
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+		}
+	/* LABEL */ .elq-form .required {
+		color: red !important;
+		display: inline;
+		float: none;
+		font-weight: bold;
+		margin: 0pt 0pt 0pt;
+		padding: 0pt 0pt 0pt;
+	}
+	/* FIELD GROUP */ .elq-form .field-group {
+		float: left;
+		clear: both;
+	}
+
+		.elq-form .field-group.large {
+			width: 100%;
+		}
+
+		.elq-form .field-group.medium {
+			width: 51%;
+		}
+
+		.elq-form .field-group.small {
+			width: 31%;
+		}
+
+		.elq-form .field-group .label {
+			float: left;
+			width: 97%;
+			margin-right: 2%;
+			margin-left: 1%;
+			padding-bottom: 6px;
+			font-weight: bold;
+		}
+
+		.elq-form .field-group .field-style {
+			float: left;
+		}
+
+	.elq-form .progressive-profile .pp-inner {
+		float: left;
+		clear: both;
+	}
+
+		.elq-form .progressive-profile .pp-inner.large {
+			width: 100%;
+		}
+
+		.elq-form .progressive-profile .pp-inner.medium {
+			width: 51%;
+		}
+
+		.elq-form .progressive-profile .pp-inner.small {
+			width: 31%;
+		}
+	/* RADIO */ .elq-form .radio-option {
+		display: inline-block;
+	}
+
+		.elq-form .radio-option .label {
+			display: block;
+			float: left;
+			padding-right: 10px;
+			padding-left: 22px;
+			text-indent: -22px;
+		}
+
+		.elq-form .radio-option .input {
+			vertical-align: middle;
+			margin-right: 7px;
+		}
+
+		.elq-form .radio-option .inner {
+			vertical-align: middle;
+		}
+	/* CHECKBOX */ .elq-form .checkbox-span {
+		display: inline-block;
+	}
+
+	.elq-form .checkbox-label {
+		margin-left: 4px;
+	}
+	/* INPUT */ .elq-form .accept-default {
+		width: 100%;
+	}
+	/* SIZING */ .elq-form .field-style {
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+
+		.elq-form .field-style._25 {
+			width: 21%;
+		}
+
+		.elq-form .field-style._50 {
+			width: 46%;
+		}
+
+		.elq-form .field-style._50_left {
+			clear: left;
+			width: 46%;
+		}
+
+		.elq-form .field-style._75 {
+			width: 71%;
+		}
+
+		.elq-form .field-style._100 {
+			width: 96%;
+		}
+
+	.elq-form .field-size-top-small {
+		width: 30%;
+	}
+
+	.elq-form .field-size-top-medium {
+		width: 75%;
+	}
+
+	.elq-form .field-size-top-large {
+		width: 100%;
+	}
+
+	.elq-form .field-size-left-small {
+		width: 21%;
+	}
+
+	.elq-form .field-size-left-medium {
+		width: 46%;
+	}
+
+	.elq-form .field-size-left-large {
+		width: 60%;
+	}
+	/* INSTRUCTIONS */ .elq-form .instructions.default {
+		color: #444444;
+		display: block;
+		font-size: 10px;
+		padding: 6px 0pt 3px;
+	}
+
+	.elq-form .instructions.group {
+		float: left;
+		width: 97%;
+		margin-right: 2%;
+		margin-left: 2%;
+		padding: 6px 0pt 3px;
+		color: #444444;
+		display: block;
+		font-size: 10px;
+	}
+
+	.elq-form .instructions.left-single {
+		margin: 0 0 0 33%;
+	}
+
+	.elq-form .instructions-other {
+		margin: 0;
+	}
+	/* POSITIONING */ .elq-form .label-position.left {
+		display: block;
+		line-height: 150%;
+		padding: 1px 0pt 3px;
+		float: left;
+		width: 31%;
+		margin: 0pt 15px 0pt 0pt;
+		word-wrap: break-word;
+	}
+
+	.elq-form .label-position.top {
+		display: block;
+		line-height: 150%;
+		padding: 1px 0pt 3px;
+		white-space: nowrap;
+	}
+
+	.elq-form .label-position.alignment-left {
+		text-align: left;
+	}
+
+	.elq-form .label-position.alignment-right {
+		text-align: right;
+	}
+	/* LIST ORDER */ .elq-form .list-order {
+		display: block;
+	}
+
+		.elq-form .list-order.oneColumn {
+			margin: 0pt 7px 0pt 0pt;
+			width: 100%;
+			clear: both;
+		}
+
+		.elq-form .list-order.twoColumn {
+			float: left;
+			margin: 0pt 7px 0pt 0pt;
+			width: 38%;
+		}
+
+		.elq-form .list-order.threeColumn {
+			float: left;
+			margin: 0pt 7px 0pt 0pt;
+			width: 30%;
+		}
+
+		.elq-form .list-order.oneColumnLeft {
+			float: left;
+			margin: 0pt 7px 0pt 0pt;
+			width: 100%;
+		}
+
+		.elq-form .list-order.twoColumnLeft {
+			float: left;
+			margin: 0pt 7px 0pt 0pt;
+			width: 38%;
+		}
+
+		.elq-form .list-order.threeColumnLeft {
+			float: left;
+			margin: 0pt 7px 0pt 0pt;
+			width: 30%;
+		}
+	/* GRID STYLE */ .elq-form .grid-style {
+		display: inline;
+		float: left;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+		.elq-form .grid-style._25 {
+			width: 21%;
+		}
+
+		.elq-form .grid-style._50 {
+			width: 46%;
+		}
+
+		.elq-form .grid-style._75 {
+			width: 71%;
+		}
+
+		.elq-form .grid-style._100 {
+			width: 96%;
+		}
+</style>
+<div>
+	@*<form method="post" name="Sitecore-DemoForm" action="https://s1162309230.t.eloqua.com/e/f2"
+		  onsubmit="setTimeout(function () { if (document.querySelector) { var s = document.querySelector('form#form33 input[type=submit]'); if (s) { s.disabled = true; } } }, 100);
+		return true;" id="form33" class="elq-form">*@
+	@{
+		var dictionary = new Dictionary<string, string> {{"onsubmit", @"setTimeout(function () { if (document.querySelector) { var s = document.querySelector('form#form33 input[type=submit]'); if (s) { s.disabled = true; } } }, 100);return true;"}, {"class", "elq-form"}};
+	}
+	@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post, dictionary))
+	{
+		@Html.Sitecore().FormHandler("EloquaForm", "EloquaFormPost")
+
+		<input value="Sitecore-DemoForm" type="hidden" name="elqFormName" />
+		<input value="1162309230" type="hidden" name="elqSiteId" />
+		<input name="elqCampaignId" type="hidden" />
+		<div id="formElement0" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+			<div class="field-wrapper">
+			</div>
+			<div class="individual field-wrapper">
+				<div class="_100 field-style">
+					<p class="field-p">
+						<label for="field0" class="label-position top ">
+							First Name
+						</label>
+						<input id="field0" name="firstName" type="text" value="" class="field-size-top-large" />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="formElement1" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+			<div class="field-wrapper">
+			</div>
+			<div class="individual field-wrapper">
+				<div class="_100 field-style">
+					<p class="field-p">
+						<label for="field1" class="label-position top ">
+							Last Name
+						</label>
+						<input id="field1" name="lastName" type="text" value="" class="field-size-top-large" />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="formElement2" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+			<div class="field-wrapper">
+			</div>
+			<div class="individual field-wrapper">
+				<div class="_100 field-style">
+					<p class="field-p">
+						<label for="field2" class="label-position top ">
+							Email Address
+						</label>
+						<input id="field2" name="emailAddress" type="text" value="" class="field-size-top-large" />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="formElement3" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+			<div class="field-wrapper">
+			</div>
+			<div class="individual field-wrapper">
+				<div class="_100 field-style">
+					<p class="field-p">
+						<label for="field3" class="label-position top ">
+							Account Name
+						</label>
+						<input id="field3" name="company" type="text" value="" class="field-size-top-large" />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="formElement4" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+			<div class="field-wrapper">
+			</div>
+			<div class="individual field-wrapper">
+				<div class="_100 field-style">
+					<p class="field-p">
+						<label for="field4" class="label-position top ">
+							Address 1
+						</label>
+						<input id="field4" name="address1" type="text" value="" class="field-size-top-large" />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="formElement5" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+			<div class="field-wrapper">
+			</div>
+			<div class="individual field-wrapper">
+				<div class="_100 field-style">
+					<p class="field-p">
+						<label for="field5" class="label-position top ">
+							City
+						</label>
+						<input id="field5" name="city" type="text" value="" class="field-size-top-large" />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="formElement6" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+			<div class="field-wrapper">
+			</div>
+			<div class="individual field-wrapper">
+				<div class="_100 field-style">
+					<p class="field-p">
+						<label for="field6" class="label-position top ">
+							State or Province
+						</label>
+						<select id="field6" name="stateProv" class="field-size-top-large">
+							<option value="" selected="selected">
+								Please Select…
+							</option>
+							<option value="AK">
+								Alaska
+							</option>
+							<option value="AL">
+								Alabama
+							</option>
+							<option value="AR">
+								Arkansas
+							</option>
+							<option value="AS">
+								American Samoa
+							</option>
+							<option value="AZ">
+								Arizona
+							</option>
+							<option value="CA">
+								California
+							</option>
+							<option value="CO">
+								Colorado
+							</option>
+							<option value="CT">
+								Connecticut
+							</option>
+							<option value="DC">
+								D.C.
+							</option>
+							<option value="DE">
+								Delaware
+							</option>
+							<option value="FL">
+								Florida
+							</option>
+							<option value="FM">
+								Micronesia
+							</option>
+							<option value="GA">
+								Georgia
+							</option>
+							<option value="GU">
+								Guam
+							</option>
+							<option value="HI">
+								Hawaii
+							</option>
+							<option value="IA">
+								Iowa
+							</option>
+							<option value="ID">
+								Idaho
+							</option>
+							<option value="IL">
+								Illinois
+							</option>
+							<option value="IN">
+								Indiana
+							</option>
+							<option value="KS">
+								Kansas
+							</option>
+							<option value="KY">
+								Kentucky
+							</option>
+							<option value="LA">
+								Louisiana
+							</option>
+							<option value="MA">
+								Massachusetts
+							</option>
+							<option value="MD">
+								Maryland
+							</option>
+							<option value="ME">
+								Maine
+							</option>
+							<option value="MH">
+								Marshall Islands
+							</option>
+							<option value="MI">
+								Michigan
+							</option>
+							<option value="MN">
+								Minnesota
+							</option>
+							<option value="MO">
+								Missouri
+							</option>
+							<option value="MP">
+								Marianas
+							</option>
+							<option value="MS">
+								Mississippi
+							</option>
+							<option value="MT">
+								Montana
+							</option>
+							<option value="NC">
+								North Carolina
+							</option>
+							<option value="ND">
+								North Dakota
+							</option>
+							<option value="NE">
+								Nebraska
+							</option>
+							<option value="NH">
+								New Hampshire
+							</option>
+							<option value="NJ">
+								New Jersey
+							</option>
+							<option value="NM">
+								New Mexico
+							</option>
+							<option value="NV">
+								Nevada
+							</option>
+							<option value="NY">
+								New York
+							</option>
+							<option value="OH">
+								Ohio
+							</option>
+							<option value="OK">
+								Oklahoma
+							</option>
+							<option value="OR">
+								Oregon
+							</option>
+							<option value="PA">
+								Pennsylvania
+							</option>
+							<option value="PR">
+								Puerto Rico
+							</option>
+							<option value="PW">
+								Palau
+							</option>
+							<option value="RI">
+								Rhode Island
+							</option>
+							<option value="SC">
+								South Carolina
+							</option>
+							<option value="SD">
+								South Dakota
+							</option>
+							<option value="TN">
+								Tennessee
+							</option>
+							<option value="TX">
+								Texas
+							</option>
+							<option value="UT">
+								Utah
+							</option>
+							<option value="VA">
+								Virginia
+							</option>
+							<option value="VI">
+								Virgin Islands
+							</option>
+							<option value="VT">
+								Vermont
+							</option>
+							<option value="WA">
+								Washington
+							</option>
+							<option value="WI">
+								Wisconsin
+							</option>
+							<option value="WV">
+								West Virginia
+							</option>
+							<option value="WY">
+								Wyoming
+							</option>
+							<option value="AA">
+								Military Americas
+							</option>
+							<option value="AE">
+								Military Europe/ME/Canada
+							</option>
+							<option value="AP">
+								Military Pacific
+							</option>
+							<option value="AB">
+								Alberta
+							</option>
+							<option value="MB">
+								Manitoba
+							</option>
+							<option value="BC">
+								British Columbia
+							</option>
+							<option value="NB">
+								New Brunswick
+							</option>
+							<option value="NL">
+								Newfoundland and Labrador
+							</option>
+							<option value="NS">
+								Nova Scotia
+							</option>
+							<option value="NT">
+								Northwest Territories
+							</option>
+							<option value="NU">
+								Nunavut
+							</option>
+							<option value="ON">
+								Ontario
+							</option>
+							<option value="PE">
+								Prince Edward Island
+							</option>
+							<option value="QC">
+								Quebec
+							</option>
+							<option value="SK">
+								Saskatchewan
+							</option>
+							<option value="YT">
+								Yukon Territory
+							</option>
+						</select>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="formElement7" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+			<div class="field-wrapper">
+			</div>
+			<div class="individual field-wrapper">
+				<div class="_100 field-style">
+					<p class="field-p">
+						<label for="field7" class="label-position top ">
+							Zip or Postal Code
+						</label>
+						<input id="field7" name="zipPostal" type="text" value="" class="field-size-top-large" />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="formElement8" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+			<div class="field-wrapper">
+			</div>
+			<div class="individual field-wrapper">
+				<div class="_100 field-style">
+					<p class="field-p">
+						<input type="submit" value="Submit" class="submit-button" style="font-size: 100%; height: 24px; width: 100px" />
+					</p>
+				</div>
+			</div>
+		</div>
+	}
+	<script src="https://img03.en25.com/i/livevalidation_standalone.compressed.js" type="text/javascript">
+	</script>
+	<style type="text/css" media="screen">
+		.LV_validation_message {
+			font-weight: bold;
+			margin: 0 0 0 5px;
+		}
+
+		.LV_valid {
+			color: #00CC00;
+			display: none;
+		}
+
+		.LV_invalid {
+			color: #CC0000;
+			font-size: 10px;
+		}
+
+		.LV_valid_field, input.LV_valid_field:hover, input.LV_valid_field:active, textarea.LV_valid_field:hover, textarea.LV_valid_field:active {
+			outline: 1px solid #00CC00;
+		}
+
+		.LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active {
+			outline: 1px solid #CC0000;
+		}
+	</style>
+	<script type="text/javascript">
+		var dom0 = document.querySelector('#form33 #field0');
+		var field0 = new LiveValidation(dom0, {
+			validMessage: "", onlyOnBlur: false, wait: 300
+		}
+									   );
+		var dom1 = document.querySelector('#form33 #field1');
+		var field1 = new LiveValidation(dom1, {
+			validMessage: "", onlyOnBlur: false, wait: 300
+		}
+									   );
+		var dom2 = document.querySelector('#form33 #field2');
+		var field2 = new LiveValidation(dom2, {
+			validMessage: "", onlyOnBlur: false, wait: 300
+		}
+									   );
+		var dom3 = document.querySelector('#form33 #field3');
+		var field3 = new LiveValidation(dom3, {
+			validMessage: "", onlyOnBlur: false, wait: 300
+		}
+									   );
+		var dom4 = document.querySelector('#form33 #field4');
+		var field4 = new LiveValidation(dom4, {
+			validMessage: "", onlyOnBlur: false, wait: 300
+		}
+									   );
+		var dom5 = document.querySelector('#form33 #field5');
+		var field5 = new LiveValidation(dom5, {
+			validMessage: "", onlyOnBlur: false, wait: 300
+		}
+									   );
+		var dom6 = document.querySelector('#form33 #field6');
+		var field6 = new LiveValidation(dom6, {
+			validMessage: "", onlyOnBlur: false, wait: 300
+		}
+									   );
+		var dom7 = document.querySelector('#form33 #field7');
+		var field7 = new LiveValidation(dom7, {
+			validMessage: "", onlyOnBlur: false, wait: 300
+		}
+									   );
+		function resetSubmitButton(e) {
+			var submitButtons = e.target.form.getElementsByClassName('submit-button');
+			for (var i = 0; i < submitButtons.length; i++) {
+				submitButtons[i].disabled = false;
+			}
+		}
+		function addChangeHandler(elements) {
+			for (var i = 0; i < elements.length; i++) {
+				elements[i].addEventListener('change', resetSubmitButton);
+			}
+		}
+		var form = document.getElementById('form33');
+		addChangeHandler(form.getElementsByTagName('input'));
+		addChangeHandler(form.getElementsByTagName('select'));
+		addChangeHandler(form.getElementsByTagName('textarea'));
+	</script>
+</div>

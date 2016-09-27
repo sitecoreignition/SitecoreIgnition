@@ -1,0 +1,28 @@
+﻿---
+ID: "4b8b5388-9dfc-43c9-acf1-41d229b4b0fd"
+Parent: "6be84aa4-bfeb-417b-bbd3-64fc42ea8583"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Ignition/Frames/PageLayout/FiftyFiftyFrame
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Control/32x32/splitter_ver_b.png
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: ~/Components/Frame/FiftyFiftyFrame.cshtml
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: "<image mediaid=\"{9D6C4939-A14A-4D4B-92F4-D3E4EB094973}\" />"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "50:50 Split"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160822T182656Z

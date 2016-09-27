@@ -1,0 +1,23 @@
+﻿---
+ID: "2b6cef7f-a22a-439a-aeb8-15ff26fd673b"
+Parent: "3b027135-26ed-49b7-bf07-dba84d281ef5"
+Template: "6538ab6d-3016-4708-8800-0735967ea67f"
+Path: /sitecore/content/Ignition/Home/Assets/Coffee Hero
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160916T145810Z
+    - ID: "5467c5af-07cf-4600-89e4-b1842761dc3f"
+      Hint: Image
+      Value: "<image mediaid=\"{DB854E88-4293-4D0B-9623-85F58FCAB7D6}\" />"
+    - ID: "7dd87307-f0d1-4c76-b9d2-bacaf51ae316"
+      Hint: Heading
+      Value: "How many cups of coffee have I had today?"
+    - ID: "a3513117-630a-4830-86c0-a2f15164be04"
+      Hint: Copy1
+      Value: <p>I have had <b>3</b> cups of coffee today.</p>

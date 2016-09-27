@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Mocks", "Ignition.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.IntegrationTests", "Ignition.IntegrationTests\Ignition.IntegrationTests.csproj", "{76E9EB04-27AC-4E56-A085-E5BA6EEA4608}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JLL.SP2013.Internet.Eloqua", "Jll\JLL.SP2013.Internet.Eloqua.csproj", "{5C72529A-69F6-425A-8A0E-F9BC989BB00D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +84,10 @@ Global
 		{76E9EB04-27AC-4E56-A085-E5BA6EEA4608}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76E9EB04-27AC-4E56-A085-E5BA6EEA4608}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76E9EB04-27AC-4E56-A085-E5BA6EEA4608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C72529A-69F6-425A-8A0E-F9BC989BB00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C72529A-69F6-425A-8A0E-F9BC989BB00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C72529A-69F6-425A-8A0E-F9BC989BB00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C72529A-69F6-425A-8A0E-F9BC989BB00D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,5 +107,6 @@ Global
 		{A1829C5E-2C9F-4DAA-8413-C58B74C5D494} = {D052C4CF-949A-419C-869F-8907D3F386EA}
 		{A0FD44F8-8139-44DD-94CA-2B491F53C82C} = {D052C4CF-949A-419C-869F-8907D3F386EA}
 		{76E9EB04-27AC-4E56-A085-E5BA6EEA4608} = {D052C4CF-949A-419C-869F-8907D3F386EA}
+		{5C72529A-69F6-425A-8A0E-F9BC989BB00D} = {875AC49E-F05E-48DB-A5FF-83ACBB09A9FD}
 	EndGlobalSection
 EndGlobal

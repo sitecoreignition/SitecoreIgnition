@@ -1,0 +1,28 @@
+﻿---
+ID: "ca13f381-3ec5-49e1-8dd8-57ca34549f09"
+Parent: "96b8ff3b-9222-4d96-b7bd-0f66f0eb460d"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Ignition/Global/Site Container
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Core3/32x32/move_to_folder_h.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{4C3CDC24-1610-4808-92A3-A221768AE3B2}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{3FACEB6F-49B4-4B02-A7AE-82BE4A07EB7F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151109T190050Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

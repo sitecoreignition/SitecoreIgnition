@@ -1,0 +1,19 @@
+﻿---
+ID: "0faca6f3-4df3-4d03-bb45-766ab3f83b58"
+Parent: "35a29fdf-d52e-473d-afe0-4d1ba7aaa1bb"
+Template: "35a29fdf-d52e-473d-afe0-4d1ba7aaa1bb"
+Path: /sitecore/templates/Sites/Ignition/Components/Hero/Carousel/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{43798756-1389-421B-AAC8-0A6AC99273FA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160818T192211Z
