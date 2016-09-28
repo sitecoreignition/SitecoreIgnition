@@ -11,12 +11,12 @@ namespace Ignition.Sc.Components.EloquaForm
 	{
 		public static string GetAuthString()
 		{
-			return $"Basic {Convert.ToBase64String(Encoding.UTF8.GetBytes("perficientpartner\\jon.upchurch:gd151Waite"))}";
+			return $"Basic {Convert.ToBase64String(Encoding.UTF8.GetBytes("perficientpartner\\jon.upchurch:Perficient1"))}";
 		}
 
 		public static EloquaRestServiceClient GetEloquaClient()
 		{
-			return new EloquaRestServiceClient("perficientpartner", "jon.upchurch", "gd151Waite");
+			return new EloquaRestServiceClient("perficientpartner", "jon.upchurch", "Perficient1");
 		}
 	}
 }
