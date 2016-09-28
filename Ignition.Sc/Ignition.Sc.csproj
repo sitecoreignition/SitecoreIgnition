@@ -88,6 +88,12 @@
       <HintPath>..\packages\SimpleInjector.Integration.Web.Mvc.3.2.2\lib\net40\SimpleInjector.Integration.Web.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Sitecore.Analytics">
+      <HintPath>..\_lib\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics.Model">
+      <HintPath>..\_lib\Sitecore.Analytics.Model.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Client, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\_lib\Sitecore.Client.dll</HintPath>
@@ -107,6 +113,9 @@
     <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\_lib\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc.Analytics">
+      <HintPath>..\_lib\Sitecore.Mvc.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.DynamicData" />
@@ -354,6 +363,7 @@
     <Content Include="Components\Content\ContentBlurb.cshtml" />
     <Content Include="Components\EloquaForm\EloquaForm.cshtml" />
     <Content Include="Components\EloquaForm\EloquaFormStatic.cshtml" />
+    <Content Include="Components\EloquaForm\EloquaPersonalize.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.config" />
@@ -374,13 +384,15 @@
     <Compile Include="Components\Content\IContentBlock.cs" />
     <Compile Include="Components\Content\ContentController.cs" />
     <Compile Include="Components\Content\IContentBlurb.cs" />
+    <Compile Include="Components\EloquaForm\EloquaAuthHelper.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormAgent.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormController.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormInfo.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormRequestModel.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormViewModel.cs" />
+    <Compile Include="Components\EloquaForm\EloquaPersonalAgent.cs" />
+    <Compile Include="Components\EloquaForm\EloquaPersonalViewModel.cs" />
     <Compile Include="Components\EloquaForm\EloquaRestFormPost.cs" />
-    <Compile Include="Components\EloquaForm\IEloquaForm.cs" />
     <Compile Include="Components\Frame\FrameAgent.cs" />
     <Compile Include="Components\Frame\FrameController.cs" />
     <Compile Include="Components\Frame\FrameViewModel.cs" />

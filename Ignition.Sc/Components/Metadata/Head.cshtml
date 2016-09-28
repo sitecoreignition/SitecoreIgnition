@@ -1,5 +1,7 @@
 ﻿@using Ignition.Sc
+@using Sitecore.Mvc.Analytics.Extensions
 <head>
+	@Html.Sitecore().VisitorIdentification() 
 	@Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Head.HeadMetadata)
 	@Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Head.HeadStyle)
 	@Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Head.HeadScript)

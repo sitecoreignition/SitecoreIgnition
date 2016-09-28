@@ -1,0 +1,19 @@
+﻿---
+ID: "f84e0883-e7a6-46c4-95a2-d35d6c6332f8"
+Parent: "ebc5c5f3-20f9-41f0-8ad2-c0f28785bc9e"
+Template: "9bf079d5-5b92-4f52-b327-d7afc2c711e8"
+Path: /sitecore/content/Ignition/Home/FormDemo/ThankYou/Assets
+DB: master
+BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Local Assets
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160927T163414Z

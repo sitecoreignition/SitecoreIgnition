@@ -1,12 +1,7 @@
 ﻿@model Ignition.Sc.Components.Content.ContentBlurbViewModel
 
-<div class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>@Html.Glass().Editable(Model, a => a.Heading.Heading)</h2>
-                @Html.Glass().Editable(Model, a => a.Copy1.Copy1)
-            </div>
-        </div>
-    </div>
+
+<div class="col-sm-12">
+    <h2>@Html.Glass().Editable(Model, a => a.Heading.Heading)</h2>
+    @Html.Glass().Editable(Model, a => a.Copy1.Copy1)
 </div>

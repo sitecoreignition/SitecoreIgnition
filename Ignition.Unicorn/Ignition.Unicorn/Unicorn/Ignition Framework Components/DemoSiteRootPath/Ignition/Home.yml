@@ -28,15 +28,15 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{46E35172-CD41-4394-A155-FC46060D87B8}"
+              uid="{F342994B-1F7B-4B04-A546-18C2537B3D34}"
               p:before="*"
+              s:id="{09230707-891E-46EB-8CAF-3248DDE44DC4}"
+              s:ph="/layoutFrame/layoutContent/contentMain" />
+            <r
+              uid="{02DC972E-3C5F-4AA9-B0E2-55AD2BEC1062}"
+              p:after="r[@uid='{F342994B-1F7B-4B04-A546-18C2537B3D34}']"
               s:id="{9C3F334B-4CD3-4AC2-A4FF-866A143755C2}"
               s:ph="/layoutFrame/layoutContent" />
-            <r
-              uid="{B320912D-8C18-4530-A9C8-AA5D14E26B28}"
-              p:after="*[1=2]"
-              s:id="{D691FE75-388D-4CBB-8C51-40B237FE0423}"
-              s:ph="contentMain" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"

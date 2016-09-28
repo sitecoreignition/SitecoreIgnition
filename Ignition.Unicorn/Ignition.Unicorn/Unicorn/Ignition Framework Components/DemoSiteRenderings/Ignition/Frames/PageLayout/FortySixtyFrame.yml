@@ -10,7 +10,7 @@ SharedFields:
   Value: Control/32x32/splitter_ver_b.png
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
-  Value: ~/Components/Frame/FiftyFiftyFrame.cshtml
+  Value: ~/Components/Frame/FortySixtyFrame.cshtml
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: "<image mediaid=\"{FCC45A28-2434-483C-A07B-5AAEC945282E}\" />"

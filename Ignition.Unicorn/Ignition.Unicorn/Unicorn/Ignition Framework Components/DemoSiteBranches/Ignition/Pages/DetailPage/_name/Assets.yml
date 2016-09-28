@@ -1,0 +1,18 @@
+﻿---
+ID: "86412754-f28f-41bc-8c45-895f634a1b30"
+Parent: "da64629f-730e-49a2-b1ac-61c9c96e4829"
+Template: "9bf079d5-5b92-4f52-b327-d7afc2c711e8"
+Path: /sitecore/templates/Branches/Ignition/Pages/DetailPage/$name/Assets
+DB: master
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Local Assets
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160823T152024Z

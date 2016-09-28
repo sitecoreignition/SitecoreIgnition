@@ -1,0 +1,23 @@
+﻿---
+ID: "c79d3b4c-7e77-4708-a605-8d11b2190b1b"
+Parent: "f84e0883-e7a6-46c4-95a2-d35d6c6332f8"
+Template: "1ee6b463-ab7d-4364-8526-2a2477928e4e"
+Path: /sitecore/content/Ignition/Home/FormDemo/ThankYou/Assets/Thanks
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160927T201104Z
+    - ID: "3487feb5-9dab-49aa-b9df-f97a877ba7ed"
+      Hint: Subtitle
+      Value: "Someone will reach out to you within 1-2 business days."
+    - ID: "5467c5af-07cf-4600-89e4-b1842761dc3f"
+      Hint: Image
+      Value: "<image mediaid=\"{05F33674-CD98-469B-B30C-057D91FFE51B}\" ></image>"
+    - ID: "7dd87307-f0d1-4c76-b9d2-bacaf51ae316"
+      Hint: Heading
+      Value: "Thanks for your submission!"
