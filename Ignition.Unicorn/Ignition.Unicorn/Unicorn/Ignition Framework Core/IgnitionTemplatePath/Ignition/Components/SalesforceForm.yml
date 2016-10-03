@@ -1,0 +1,27 @@
+﻿---
+ID: "53fb41e4-dac9-4666-89f3-6634de850bbb"
+Parent: "841f331d-dbdb-4586-96b5-169d097aa1c6"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Sites/Ignition/Components/SalesforceForm
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Business/32x32/note_edit.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {6CDD0A6B-9598-4504-89A6-FACD76D6AF29}
+    {F92858EF-FD23-4B23-91FF-5F2517DCF5BB}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160930T180049Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

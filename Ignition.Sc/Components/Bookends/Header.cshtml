@@ -19,7 +19,7 @@
 			<ul class="nav navbar-nav navbar-right">
 
 				<li class="@(Model.ContextPage.Id == Model.HomePage.Id ? "active" : string.Empty)"><a href="/">Home</a></li>
-				@foreach (var item in Model.HomePage.BaseChildren.OfType<IIgnitionPage>())
+				@foreach (var item in Model.HomePage.BaseChildren.OfType<IIgnitionPage>().Where(a=>!a.HideFromNavigation))
 				{
 
 					var hasChildren = !item.HideChildrenFromNavigation && item.BaseChildren.OfType<IIgnitionPage>().Any(a => !a.HideFromNavigation);

@@ -2,7 +2,7 @@
 ID: "c3e4d086-eb2c-45c8-b757-9d64a4072028"
 Parent: "177f2ead-fc53-4f91-a389-d9b87c998b13"
 Template: "9bf079d5-5b92-4f52-b327-d7afc2c711e8"
-Path: /sitecore/content/Ignition/Home/services/Assets
+Path: /sitecore/content/Ignition/Home/events/Assets
 DB: master
 BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
 Languages:

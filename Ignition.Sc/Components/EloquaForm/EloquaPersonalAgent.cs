@@ -18,7 +18,7 @@ namespace Ignition.Sc.Components.EloquaForm
 				var request =
 					(HttpWebRequest)
 						WebRequest.Create($"https://secure.p03.eloqua.com/api/REST/1.0/data/contacts?depth=complete&search={email}");
-				request.Headers.Add("Authorization", EloquaAuthHelper.GetAuthString());
+				request.Headers.Add("Authorization", EloquaAuthProvider.GetAuthString());
 				var result = new StreamReader(request.GetResponse().GetResponseStream() ?? new MemoryStream()).ReadToEnd();
 				dynamic forminfo = System.Web.Helpers.Json.Decode(result);
 				if (forminfo.Elements.Length > 0)

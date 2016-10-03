@@ -5,6 +5,10 @@ Template: "0ed048af-e431-40e0-a8a5-3028367fc756"
 Path: /sitecore/content/Ignition/Home/FormDemo
 DB: master
 BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
 Languages:
 - Language: en
   Versions:

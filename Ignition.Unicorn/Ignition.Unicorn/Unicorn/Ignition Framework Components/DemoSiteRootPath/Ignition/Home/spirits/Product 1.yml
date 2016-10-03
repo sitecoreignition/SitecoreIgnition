@@ -1,8 +1,8 @@
 ﻿---
-ID: "be636311-7c1e-40f8-885a-e76d6394ce77"
+ID: "b3addd2f-e4c2-472c-b1b3-5d7fa7b21ba9"
 Parent: "43aaca3a-7ae7-440d-9d5c-a07571701cfc"
 Template: "0ed048af-e431-40e0-a8a5-3028367fc756"
-Path: /sitecore/content/Ignition/Home/products/Product 2
+Path: /sitecore/content/Ignition/Home/spirits/Product 1
 DB: master
 BranchID: "f714c9a4-cbc3-48f3-9fc9-5c130c7019f1"
 SharedFields:
@@ -16,4 +16,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160817T161537Z
+      Value: 20160817T161526Z

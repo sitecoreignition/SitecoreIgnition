@@ -1,0 +1,3 @@
+﻿@model Ignition.Sc.Components.SalesforceForm.SalesforceFormViewModel
+<h3>@Html.Glass().Editable(Model, a => a.Title.Heading)</h3>
+<div>@Html.Raw(Model.FormContent.PlainText)</div>

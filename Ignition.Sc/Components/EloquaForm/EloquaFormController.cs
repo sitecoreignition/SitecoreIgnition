@@ -23,15 +23,15 @@ namespace Ignition.Sc.Components.EloquaForm
 		public ActionResult EloquaFormPost()
 		{
 			var request = (HttpWebRequest)WebRequest.Create("https://secure.p03.eloqua.com/API/REST/1.0/assets/form/33");
-			request.Headers.Add("Authorization", EloquaAuthHelper.GetAuthString());
+			request.Headers.Add("Authorization", EloquaAuthProvider.GetAuthString());
 			var result = new StreamReader(request.GetResponse().GetResponseStream() ?? new MemoryStream()).ReadToEnd();
-
+			
 			dynamic formInfo = System.Web.Helpers.Json.Decode(result);
 
 			var fieldMaps = new Dictionary<string, string>();
 			foreach (var item in formInfo.Elements) { fieldMaps.Add(item.htmlName ?? "error", item.id); }
 
-			var client = EloquaAuthHelper.GetEloquaClient();
+			var client = EloquaAuthProvider.GetEloquaClient();
 			var dict = CastToDictionary(Request.Form);
 			var formdata = new FormData
 			{

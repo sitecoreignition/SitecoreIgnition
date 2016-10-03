@@ -1,23 +1,26 @@
 ﻿---
-ID: "3b027135-26ed-49b7-bf07-dba84d281ef5"
+ID: "43aaca3a-7ae7-440d-9d5c-a07571701cfc"
 Parent: "4a442a3d-4fec-4743-abbe-621d8a869095"
-Template: "9bf079d5-5b92-4f52-b327-d7afc2c711e8"
-Path: /sitecore/content/Ignition/Home/Assets
+Template: "0ed048af-e431-40e0-a8a5-3028367fc756"
+Path: /sitecore/content/Ignition/Home/spirits
 DB: master
-BranchID: "0244e83c-647a-4040-8672-a6c936182e40"
+BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 0
+  Value: 400
 Languages:
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
     Hint: __Display name
-    Value: Local Assets
+    Value: Spirits
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160516T211756Z
+      Value: 20160817T150626Z
+    - ID: "56666e5e-afb9-49f6-a950-1d065b9fe35c"
+      Hint: NavigationTitle
+      Value: Products

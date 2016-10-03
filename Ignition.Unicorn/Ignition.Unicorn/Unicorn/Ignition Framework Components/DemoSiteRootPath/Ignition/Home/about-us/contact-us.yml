@@ -1,0 +1,41 @@
+﻿---
+ID: "bcd5ae23-2feb-4deb-83f6-a7eed8b2998a"
+Parent: "db3a01e6-c4bb-47d0-9597-038c7311b361"
+Template: "0ed048af-e431-40e0-a8a5-3028367fc756"
+Path: "/sitecore/content/Ignition/Home/about-us/contact-us"
+DB: master
+BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Contact Us
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{2117D4E9-3EBC-4AB1-A5D8-58991C84935F}"
+              p:before="*"
+              s:id="{0C34D9DD-004A-4DD8-9086-C4943FED4C27}"
+              s:ph="/layoutFrame/layoutContent" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160817T150639Z
+    - ID: "56666e5e-afb9-49f6-a950-1d065b9fe35c"
+      Hint: NavigationTitle
+      Value: Contact Us

@@ -7,7 +7,7 @@ using JLL.SP2013.Internet.Eloqua.Client;
 
 namespace Ignition.Sc.Components.EloquaForm
 {
-	public static class EloquaAuthHelper
+	public static class EloquaAuthProvider
 	{
 		public static string GetAuthString()
 		{

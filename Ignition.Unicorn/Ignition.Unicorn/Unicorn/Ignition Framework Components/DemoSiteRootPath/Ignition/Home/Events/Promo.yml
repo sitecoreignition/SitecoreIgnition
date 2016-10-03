@@ -1,0 +1,15 @@
+﻿---
+ID: "c6e2a299-514b-4d03-9001-381be0c83178"
+Parent: "177f2ead-fc53-4f91-a389-d9b87c998b13"
+Template: "0ed048af-e431-40e0-a8a5-3028367fc756"
+Path: /sitecore/content/Ignition/Home/events/Promo
+DB: master
+BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160929T184652Z

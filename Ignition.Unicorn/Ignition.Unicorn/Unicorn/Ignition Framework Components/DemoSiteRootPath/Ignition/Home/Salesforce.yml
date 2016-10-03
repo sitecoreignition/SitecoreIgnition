@@ -1,16 +1,12 @@
 ﻿---
-ID: "bcd5ae23-2feb-4deb-83f6-a7eed8b2998a"
+ID: "80f84cc6-77f3-4214-83df-2cbb5351845c"
 Parent: "4a442a3d-4fec-4743-abbe-621d8a869095"
 Template: "0ed048af-e431-40e0-a8a5-3028367fc756"
-Path: "/sitecore/content/Ignition/Home/contact-us"
+Path: /sitecore/content/Ignition/Home/Salesforce
 DB: master
 BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
 Languages:
 - Language: en
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: Contact Us
   Versions:
   - Version: 1
     Fields:
@@ -23,20 +19,17 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{2117D4E9-3EBC-4AB1-A5D8-58991C84935F}"
+              uid="{78CCE89B-A96D-4154-81AC-DED6F870CDB8}"
               p:before="*"
-              s:id="{0C34D9DD-004A-4DD8-9086-C4943FED4C27}"
+              s:id="{6ECF58D9-DBD9-4DBF-95DC-161F303CD683}"
               s:ph="/layoutFrame/layoutContent" />
             <r
-              uid="{4DDDCFE8-F7B3-4564-ABD2-53B957E34E0D}"
+              uid="{35B5F795-082E-410A-802C-ED5FD2A33D63}"
               p:after="*[1=2]"
-              s:id="{703E96F0-8719-495F-A590-DFD37C919CBC}"
+              s:id="{AFED6CFD-B5EE-4341-BF90-30ACBB4AE981}"
               s:ph="contentRight" />
           </d>
         </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160817T150639Z
-    - ID: "56666e5e-afb9-49f6-a950-1d065b9fe35c"
-      Hint: NavigationTitle
-      Value: Contact Us
+      Value: 20160930T181008Z

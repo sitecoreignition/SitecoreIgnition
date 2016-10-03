@@ -15,7 +15,7 @@ namespace Ignition.Sc.Components.EloquaForm
 		public override void PopulateModel()
 		{
 			var request = (HttpWebRequest)WebRequest.Create("https://secure.p03.eloqua.com/API/REST/1.0/assets/form/33");
-			request.Headers.Add("Authorization", EloquaAuthHelper.GetAuthString());
+			request.Headers.Add("Authorization", EloquaAuthProvider.GetAuthString());
 			var result = new StreamReader(request.GetResponse().GetResponseStream() ?? new MemoryStream()).ReadToEnd();
 			dynamic formInfo = System.Web.Helpers.Json.Decode(result);
 			var doc = new HtmlDocument();

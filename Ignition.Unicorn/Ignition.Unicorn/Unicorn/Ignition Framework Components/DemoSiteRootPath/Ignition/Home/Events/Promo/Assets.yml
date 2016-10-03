@@ -1,8 +1,8 @@
 ﻿---
-ID: "1b893ef6-3bdd-4148-9078-3784c3e2c385"
-Parent: "63600aae-d83e-4b5c-b6f8-989977e5c5aa"
+ID: "b3b19430-763e-42bf-92a3-d9019e847d6a"
+Parent: "c6e2a299-514b-4d03-9001-381be0c83178"
 Template: "9bf079d5-5b92-4f52-b327-d7afc2c711e8"
-Path: /sitecore/content/Ignition/Home/portfolio/Assets
+Path: /sitecore/content/Ignition/Home/events/Promo/Assets
 DB: master
 BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
 Languages:
@@ -16,4 +16,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160817T150615Z
+      Value: 20160929T184652Z
