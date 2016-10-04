@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.Composition;
 using System.Web.Mvc;
+using System.Web.Routing;
 using Glass.Mapper.Sc.Web.Mvc;
 using Ignition.Core.Factories;
 using Ignition.Core.Models.BaseModels;
@@ -16,7 +17,7 @@ namespace Ignition.Core.Mvc
         [Import]
         public ISitecoreServiceFactory SitecoreServiceFactory { get; set; }
 
-        public IgnitionControllerContext IgnitionControllerContext => new IgnitionControllerContextFactory().GetInstance(ControllerContext, SitecoreContext);
+        public IgnitionControllerContext IgnitionControllerContext => new IgnitionControllerContextFactory().GetInstance(IgnitionControllerContext, SitecoreContext);
 
 	    #region View Overloads
         protected ViewResult View<TViewModel>() where TViewModel : BaseViewModel, new()
