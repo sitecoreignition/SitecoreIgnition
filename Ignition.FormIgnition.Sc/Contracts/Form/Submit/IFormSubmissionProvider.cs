@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Ignition.FormIgnition.Sc.Contracts
+namespace Ignition.FormIgnition.Sc.Contracts.Form.Submit
 {
 	public interface IFormSubmissionProvider
 	{

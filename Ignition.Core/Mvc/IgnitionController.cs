@@ -17,7 +17,7 @@ namespace Ignition.Core.Mvc
         [Import]
         public ISitecoreServiceFactory SitecoreServiceFactory { get; set; }
 
-        public IgnitionControllerContext IgnitionControllerContext => new IgnitionControllerContextFactory().GetInstance(IgnitionControllerContext, SitecoreContext);
+        public IgnitionControllerContext IgnitionControllerContext => new IgnitionControllerContextFactory().GetInstance(ControllerContext, SitecoreContext);
 
 	    #region View Overloads
         protected ViewResult View<TViewModel>() where TViewModel : BaseViewModel, new()

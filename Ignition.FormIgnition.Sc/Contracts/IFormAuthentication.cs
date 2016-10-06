@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Ignition.FormIgnition.Sc.Contracts
 {
-	public interface IAuthentication
+	public interface IFormAuthentication
 	{
 		string UserName { get; set; }
 		string Password { get; }
-		void SetPassword();
+		void SetPassword(string value);
 		string BusinessUnit { get; set; }
 		void UpdateFromCookie();
 	}
