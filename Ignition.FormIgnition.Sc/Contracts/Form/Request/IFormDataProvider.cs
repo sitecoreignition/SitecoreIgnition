@@ -1,7 +1,9 @@
-﻿namespace Ignition.FormIgnition.Sc.Contracts.Form.Request
+﻿using HtmlAgilityPack;
+
+namespace Ignition.FormIgnition.Sc.Contracts.Form.Request
 {
 	public interface IFormDataProvider
 	{
-		string GetForm(IFormAuthentication auth, string formId);
+		HtmlDocument GetForm(string formId);
 	}
 }

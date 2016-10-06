@@ -9,14 +9,27 @@ namespace Ignition.Sc.Components.EloquaForm
 {
 	public class EloquaFormDataProvider : IFormDataProvider
 	{
-		public string GetForm(IFormAuthentication auth, string formId)
+		private readonly EloquaFormAuthentication _authentication;
+		private readonly EloquaFormConfiguration _configuration;
+
+		public EloquaFormDataProvider(EloquaFormAuthentication authentication, EloquaFormConfiguration configuration)
 		{
-			var request = (HttpWebRequest)WebRequest.Create("https://secure.p03.eloqua.com/API/REST/1.0/assets/form/33");
-			request.Headers.Add("Authorization", auth.GetAuthString());
+			if (authentication == null) throw new ArgumentNullException(nameof(authentication));
+			if (configuration == null) throw new ArgumentNullException(nameof(configuration));
+			_authentication = authentication;
+			_configuration = configuration;
+		}
+
+		public HtmlDocument GetForm(string formId)
+		{
+			
+			var request = (HttpWebRequest)WebRequest.Create($"{_authentication.BaseApiUrl}{_configuration.FormUrl}");
+			request.Headers.Add("Authorization", _authentication.GetAuthString());
 			var result = new StreamReader(request.GetResponse().GetResponseStream() ?? new MemoryStream()).ReadToEnd();
 			dynamic formInfo = System.Web.Helpers.Json.Decode(result);
 			var doc = new HtmlDocument();
 			doc.LoadHtml(formInfo.Html);
+			return doc;
 		}
 	}
 }

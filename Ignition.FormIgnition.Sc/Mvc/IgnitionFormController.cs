@@ -15,12 +15,10 @@ namespace Ignition.FormIgnition.Sc.Mvc
 	/// <summary>
 	/// 
 	/// </summary>
-	public class IgnitionFormController : IgnitionController
+	public abstract class IgnitionFormController : IgnitionController
 	{
-		[Import]
-		protected IFormConfiguration Configuration { get; set; }
-		[Import]
-		protected IFormAuthentication FormAuthentication { get; set; }
+		protected abstract IFormConfiguration Configuration { get; set; }
+		protected abstract IFormAuthentication FormAuthentication { get; set; }
 		#region Form Overloads
 
 		/// <summary>
@@ -30,20 +28,20 @@ namespace Ignition.FormIgnition.Sc.Mvc
 		/// <typeparam name="TFormProcessor"></typeparam>
 		/// <typeparam name="TAgent"></typeparam>
 		/// <typeparam name="TViewModel"></typeparam>
-		/// <param name="formProvider"></param>
+		/// <param name="formAuthProvider"></param>
 		/// <param name="processor"></param>
 		/// <param name="formId"></param>
 		/// <returns></returns>
-		public ViewResult Form<TFormDataProvider, TFormProcessor, TAgent, TViewModel>(TFormDataProvider formProvider, TFormProcessor processor, string formId)
+		public ViewResult Form<TFormDataProvider, TFormProcessor, TAgent, TViewModel>(IFormAuthentication formAuthProvider, TFormDataProvider dataProvider, TFormProcessor processor, string formId)
 			where TFormDataProvider : IFormDataProvider
 			where TFormProcessor : IFormHtmlProcessor
 			where TAgent : Agent<TViewModel>
 			where TViewModel : BaseViewModel, new()
 		{
-			if (formProvider == null) throw new ArgumentNullException(nameof(formProvider));
+			if (formAuthProvider == null) throw new ArgumentNullException(nameof(formAuthProvider));
 			if (processor == null) throw new ArgumentNullException(nameof(processor));
 
-			return View<TAgent, TViewModel>(processor.GetHtmlFormRaw(formProvider.GetForm(FormAuthentication, formId)));
+			return View<TAgent, TViewModel>(processor.GetHtmlFormRaw(dataProvider.GetForm(formId), ControllerContext.HttpContext));
 		}
 
 		#endregion

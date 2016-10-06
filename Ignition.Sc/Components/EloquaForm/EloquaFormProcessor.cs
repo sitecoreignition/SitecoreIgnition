@@ -12,8 +12,7 @@ namespace Ignition.Sc.Components.EloquaForm
 {
 	public class EloquaFormProcessor : IFormHtmlProcessor
 	{
-
-		public string GetHtmlFormRaw(string data, HttpContext context)
+		public string GetHtmlFormRaw(HtmlAgilityPack.HtmlDocument data, HttpContextBase context)
 		{
 			throw new NotImplementedException();
 		}
