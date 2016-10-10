@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using Ignition.FormIgnition.Sc.Contracts;
+using Ignition.FormIgnition.Sc.Contracts.Form;
 
 namespace Ignition.Sc.Components.EloquaForm
 {

@@ -352,12 +352,12 @@
     <Compile Include="Components\EloquaForm\EloquaFormAgent.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormAuthentication.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormController.cs" />
-    <Compile Include="Components\EloquaForm\EloquaFormDataProvider.cs" />
-    <Compile Include="Components\EloquaForm\EloquaFormProcessor.cs" />
+    <Compile Include="Components\EloquaForm\EloquaFormRequestDataProvider.cs" />
+    <Compile Include="Components\EloquaForm\EloquaFormRequestProcessor.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormConfiguration.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormSubmissionProvider.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormSubmitFailedHandler.cs" />
-    <Compile Include="Components\EloquaForm\EloquaFormSubmitProcessor.cs" />
+    <Compile Include="Components\EloquaForm\EloquaFormSubmissionSubmitProcessor.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormViewModel.cs" />
     <Compile Include="Components\EloquaForm\IEloquaForm.cs" />
     <Compile Include="Components\Frame\FrameAgent.cs" />

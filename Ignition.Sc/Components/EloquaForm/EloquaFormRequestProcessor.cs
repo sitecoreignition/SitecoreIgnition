@@ -10,7 +10,7 @@ using HtmlDocument = Sitecore.WordOCX.HtmlDocument.HtmlDocument;
 
 namespace Ignition.Sc.Components.EloquaForm
 {
-	public class EloquaFormProcessor : IFormHtmlProcessor
+	public class EloquaFormRequestProcessor : IFormRequestHtmlProcessor
 	{
 		public string GetHtmlFormRaw(HtmlAgilityPack.HtmlDocument data, HttpContextBase context)
 		{

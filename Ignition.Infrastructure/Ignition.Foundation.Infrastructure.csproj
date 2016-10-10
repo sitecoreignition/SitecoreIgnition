@@ -7,8 +7,8 @@
     <ProjectGuid>{6301E806-D84B-4678-AB6E-AACA3689113A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ignition.Infrastructure</RootNamespace>
-    <AssemblyName>Ignition.Infrastructure</AssemblyName>
+    <RootNamespace>Ignition.Foundation.Infrastructure</RootNamespace>
+    <AssemblyName>Ignition.Foundation.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

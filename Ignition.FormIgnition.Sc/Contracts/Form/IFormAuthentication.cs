@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ignition.FormIgnition.Sc.Contracts
+﻿namespace Ignition.FormIgnition.Sc.Contracts.Form
 {
 	public interface IFormAuthentication
 	{
@@ -15,5 +9,6 @@ namespace Ignition.FormIgnition.Sc.Contracts
 		void UpdateFromCookie();
 		string BaseApiUrl { get; set; }
 		string GetForm(IFormAuthentication formAuthentication, string formId);
+		string GetBase64AuthString { get; }
 	}
 }

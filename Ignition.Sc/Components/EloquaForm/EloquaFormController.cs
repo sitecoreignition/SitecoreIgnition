@@ -14,29 +14,31 @@ namespace Ignition.Sc.Components.EloquaForm
 		protected sealed override IFormAuthentication FormAuthentication { get; set; }
 
 		[Import]
-		public EloquaFormDataProvider FormDataProvider { get; set; }
+		public EloquaFormRequestDataProvider FormRequestDataProvider { get; set; }
 		[Import]
-		public EloquaFormProcessor FormProcessor { get; set; }
+		public EloquaFormRequestProcessor FormRequestProcessor { get; set; }
 		[Import]
-		public EloquaFormSubmitProcessor FormSubmitProcessor { get; set; }
+		public EloquaFormSubmissionSubmitProcessor FormSubmissionSubmitProcessor { get; set; }
 		[Import]
 		public EloquaFormSubmissionProvider FormSubmissionProvider { get; set; }
 		[Import]
 		public EloquaFormSubmitFailedHandler FormSubmitFailed { get; set; }
 
-		public EloquaFormController(EloquaFormAuthentication authentication)
+		public EloquaFormController(EloquaFormAuthentication authentication)     
 		{
 			FormAuthentication = authentication;
 		}
+
 		public ActionResult DisplayForm()
 		{
-			return Form<EloquaFormDataProvider, EloquaFormProcessor, EloquaFormAgent, EloquaFormViewModel>(
-				FormAuthentication, new EloquaFormProcessor(), DataSourceItem.CastTo<IOption>()?.DataValue);
+			return Form<EloquaFormRequestDataProvider, EloquaFormRequestProcessor, EloquaFormAgent, EloquaFormViewModel>(
+				FormAuthentication, new EloquaFormRequestDataProvider(FormAuthentication,Configuration as EloquaFormAuthentication), new EloquaFormRequestProcessor(), DataSourceItem.CastTo<IOption>()?.DataValue);
 		}
+
 		[HttpPost]
 		public ActionResult PostForm()
 		{
-			return Submit(FormSubmitProcessor, FormSubmissionProvider, FormSubmitFailed);
+			return Submit(FormSubmissionSubmitProcessor, FormSubmissionProvider, FormSubmitFailed);
 		}
 	}
 }

@@ -7,8 +7,8 @@
     <ProjectGuid>{A2A67CBB-5A2A-4207-BFF6-0CD348379245}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ignition.Data</RootNamespace>
-    <AssemblyName>Ignition.Data</AssemblyName>
+    <RootNamespace>Ignition.Foundation.Data</RootNamespace>
+    <AssemblyName>Ignition.Foundation.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -93,9 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ignition.Core\Ignition.Core.csproj">
+    <ProjectReference Include="..\Ignition.Core\Ignition.Foundation.Core.csproj">
       <Project>{A11ADF09-8215-4A20-8EDD-894C969E0669}</Project>
-      <Name>Ignition.Core</Name>
+      <Name>Ignition.Foundation.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

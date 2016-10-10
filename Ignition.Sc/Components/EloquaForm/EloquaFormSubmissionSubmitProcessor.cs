@@ -4,7 +4,7 @@ using Ignition.FormIgnition.Sc.Contracts.Form.Submit;
 
 namespace Ignition.Sc.Components.EloquaForm
 {
-	public class EloquaFormSubmitProcessor : IFormDataProcessor
+	public class EloquaFormSubmissionSubmitProcessor : IFormSubmissionDataProcessor
 	{
 		public Dictionary<string, string> ProcessSubmission(Dictionary<string, string> submission)
 		{

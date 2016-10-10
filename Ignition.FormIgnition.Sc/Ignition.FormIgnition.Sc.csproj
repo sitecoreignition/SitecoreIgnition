@@ -165,17 +165,13 @@
   <ItemGroup>
     <Compile Include="Bases\IgnitionFormCondition.cs" />
     <Compile Include="Bases\IgnitionFormAction.cs" />
-    <Compile Include="Contracts\IFormAuthentication.cs" />
-    <Compile Include="Contracts\Form\Submit\IFormFailedSubmitProcessor.cs" />
+    <Compile Include="Contracts\Form\IFormEndpoint.cs" />
+    <Compile Include="Contracts\Form\IFormGetProcessor.cs" />
+    <Compile Include="Contracts\Form\IFormPostProcessor.cs" />
+    <Compile Include="Contracts\Form\IFormAuthentication.cs" />
     <Compile Include="Contracts\Form\IFormConfiguration.cs" />
-    <Compile Include="Contracts\Form\Submit\IFormDataProcessor.cs" />
-    <Compile Include="Contracts\Form\Request\IFormDataProvider.cs" />
-    <Compile Include="Contracts\Form\Request\IFormHtmlProcessor.cs" />
     <Compile Include="Contracts\Personalization\IFormRuleAction.cs" />
     <Compile Include="Contracts\Personalization\IFormRuleCondition.cs" />
-    <Compile Include="Contracts\Form\Submit\IFormSubmissionProvider.cs" />
-    <Compile Include="Contracts\IPersonalizationDataConsumerProvider.cs" />
-    <Compile Include="Contracts\IPersonalizationDataUpdateProvider.cs" />
     <Compile Include="Mvc\IgnitionFormController.cs" />
     <Compile Include="Mvc\IgnitionFormViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

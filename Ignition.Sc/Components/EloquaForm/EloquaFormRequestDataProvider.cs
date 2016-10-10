@@ -7,12 +7,12 @@ using Ignition.FormIgnition.Sc.Contracts.Form.Request;
 
 namespace Ignition.Sc.Components.EloquaForm
 {
-	public class EloquaFormDataProvider : IFormDataProvider
+	public class EloquaFormRequestDataProvider : IFormRequestDataProvider
 	{
 		private readonly EloquaFormAuthentication _authentication;
 		private readonly EloquaFormConfiguration _configuration;
 
-		public EloquaFormDataProvider(EloquaFormAuthentication authentication, EloquaFormConfiguration configuration)
+		public EloquaFormRequestDataProvider(EloquaFormAuthentication authentication, EloquaFormConfiguration configuration)
 		{
 			if (authentication == null) throw new ArgumentNullException(nameof(authentication));
 			if (configuration == null) throw new ArgumentNullException(nameof(configuration));

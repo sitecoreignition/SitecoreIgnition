@@ -1,5 +1,4 @@
 ﻿using Ignition.Core.Mvc;
-using Ignition.Core.Repositories;
 
 namespace Ignition.Core.Factories
 {

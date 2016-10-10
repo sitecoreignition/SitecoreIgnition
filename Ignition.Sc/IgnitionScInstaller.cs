@@ -14,10 +14,10 @@ namespace Ignition.Sc
 		{
 			container.RegisterMvcControllers(ThisAssembly);
 			container.RegisterAllConcreteTypesFor(typeof(Agent<>), ThisAssembly, Lifestyle.Transient);
-			container.RegisterAllConcreteTypesFor(typeof(IFormHtmlProcessor), ThisAssembly, Lifestyle.Transient);
-			container.RegisterAllConcreteTypesFor(typeof(IFormDataProvider), ThisAssembly, Lifestyle.Transient);
-			container.RegisterAllConcreteTypesFor(typeof(IFormFailedSubmitProcessor), ThisAssembly, Lifestyle.Transient);
-			container.RegisterAllConcreteTypesFor(typeof(IFormDataProcessor), ThisAssembly, Lifestyle.Transient);
+			container.RegisterAllConcreteTypesFor(typeof(IFormRequestHtmlProcessor), ThisAssembly, Lifestyle.Transient);
+			container.RegisterAllConcreteTypesFor(typeof(IFormRequestDataProvider), ThisAssembly, Lifestyle.Transient);
+			container.RegisterAllConcreteTypesFor(typeof(IFormSubmitFailedProcessor), ThisAssembly, Lifestyle.Transient);
+			container.RegisterAllConcreteTypesFor(typeof(IFormSubmissionDataProcessor), ThisAssembly, Lifestyle.Transient);
 			container.RegisterAllConcreteTypesFor(typeof(IFormSubmissionProvider), ThisAssembly, Lifestyle.Transient);
 			container.RegisterAllConcreteTypesFor(typeof(IFormConfiguration), ThisAssembly, Lifestyle.Transient);
 			container.RegisterAllConcreteTypesFor(typeof(IFormRuleAction), ThisAssembly, Lifestyle.Transient);
