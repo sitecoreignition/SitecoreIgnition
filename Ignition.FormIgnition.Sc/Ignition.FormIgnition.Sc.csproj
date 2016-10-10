@@ -178,9 +178,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Ignition.Core\Ignition.Core.csproj">
+    <ProjectReference Include="..\Ignition.Core\Ignition.Foundation.Core.csproj">
       <Project>{A11ADF09-8215-4A20-8EDD-894C969E0669}</Project>
-      <Name>Ignition.Core</Name>
+      <Name>Ignition.Foundation.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

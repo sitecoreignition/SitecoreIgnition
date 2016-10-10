@@ -64,6 +64,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.188\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Kamsar.WebConsole, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kamsar.WebConsole.1.2.2.0\lib\net40\Kamsar.WebConsole.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MicroCHAP, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicroCHAP.1.2.1.0\lib\net45\MicroCHAP.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -72,6 +80,18 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Rainbow, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rainbow.Core.1.3.1\lib\net45\Rainbow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Rainbow.Storage.Sc, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rainbow.Storage.Sc.1.3.1\lib\net45\Rainbow.Storage.Sc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Rainbow.Storage.Yaml, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rainbow.Storage.Yaml.1.3.1\lib\net45\Rainbow.Storage.Yaml.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="SimpleInjector, Version=3.2.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInjector.3.2.2\lib\net45\SimpleInjector.dll</HintPath>
@@ -141,6 +161,10 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="Unicorn, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unicorn.Core.3.2.0\lib\net45\Unicorn.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
       <HintPath>..\packages\WebActivatorEx.2.1.0\lib\net40\WebActivatorEx.dll</HintPath>
       <Private>True</Private>
@@ -149,8 +173,8 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="App_Config\Domain.config" />
-    <Content Include="App_Config\Include\Domain\DomainPatch.config" />
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.config" />
+    <Content Include="App_Config\Include\Ignition\Ignition.config" />
+    <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.config" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -161,9 +185,23 @@
     <Content Include="App_Config\FieldSettings.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="App_Config\Include\z.Glass.Mapper.Sc.ViewRender.config.exclude" />
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.Start.config" />
-    <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
+    <Content Include="App_Config\Include\Glass\z.Glass.Mapper.Sc.ViewRender.config.exclude" />
+    <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.Start.config" />
+    <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.CodeFirst.config.exclude" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.IgnitionRoot.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.DataProvider.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
+    <Content Include="App_Config\Include\Rainbow.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.SharedSecret.config.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Deployed.config.disabled" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.NewItemsOnly.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.example" />
     <None Include="Properties\PublishProfiles\Ignition.Root.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
     <None Include="Web.CI.config">
@@ -204,17 +242,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ignition.Core\Ignition.Core.csproj">
+    <ProjectReference Include="..\Ignition.Core\Ignition.Foundation.Core.csproj">
       <Project>{a11adf09-8215-4a20-8edd-894c969e0669}</Project>
-      <Name>Ignition.Core</Name>
+      <Name>Ignition.Foundation.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ignition.Data\Ignition.Data.csproj">
+    <ProjectReference Include="..\Ignition.Data\Ignition.Foundation.Data.csproj">
       <Project>{a2a67cbb-5a2a-4207-bff6-0cd348379245}</Project>
-      <Name>Ignition.Data</Name>
+      <Name>Ignition.Foundation.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ignition.Infrastructure\Ignition.Infrastructure.csproj">
+    <ProjectReference Include="..\Ignition.Infrastructure\Ignition.Foundation.Infrastructure.csproj">
       <Project>{6301e806-d84b-4678-ab6e-aaca3689113a}</Project>
-      <Name>Ignition.Infrastructure</Name>
+      <Name>Ignition.Foundation.Infrastructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ignition.Sc\Ignition.Sc.csproj">
       <Project>{6937D0B9-3F0C-4A2F-8B07-62A7809A2161}</Project>
