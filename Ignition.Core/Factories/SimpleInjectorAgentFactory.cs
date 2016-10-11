@@ -1,8 +1,7 @@
-﻿using Ignition.Core.Mvc;
-using Ignition.Core.Repositories;
+﻿using Ignition.Foundation.Core.Mvc;
 using SimpleInjector;
 
-namespace Ignition.Core.Factories
+namespace Ignition.Foundation.Core.Factories
 {
 	public class SimpleInjectorAgentFactory : IAgentFactory
 	{

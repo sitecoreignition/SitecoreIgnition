@@ -1,7 +1,7 @@
 ﻿using Glass.Mapper.Sc.Configuration.Attributes;
-using Ignition.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.BaseModels;
 
-namespace Ignition.Core.Models.Page
+namespace Ignition.Foundation.Core.Models.Page
 {
     [SitecoreType(TemplateId = "{2C0AB971-113B-4206-988B-DE77BE43E70D}", AutoMap = true)]
     public interface IMetadata : IModelBase

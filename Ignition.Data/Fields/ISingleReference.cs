@@ -1,7 +1,7 @@
 ﻿using Glass.Mapper.Sc.Configuration.Attributes;
-using Ignition.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.BaseModels;
 
-namespace Ignition.Data.Fields
+namespace Ignition.Foundation.Data.Fields
 {
     [SitecoreType(TemplateId = "{D6BC5A2C-7E68-4D82-B20E-5F8EE0D51E41}")]
     public interface ISingleReference : IModelBase

@@ -1,7 +1,6 @@
-﻿using System;
-using Ignition.Core.Mvc;
+﻿using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Sc.Components.Product
+namespace Ignition.Project.IgnitionDemo.Sc.Components.Product
 {
     public class ProductSummaryAgent : Agent<ProductSummaryViewModel>
     {

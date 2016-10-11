@@ -13,10 +13,10 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ignition.Root</RootNamespace>
-    <AssemblyName>Ignition.Root</AssemblyName>
+    <RootNamespace>Ignition.Project.CompositionRoot</RootNamespace>
+    <AssemblyName>Ignition.Project.CompositionRoot</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -254,9 +254,9 @@
       <Project>{6301e806-d84b-4678-ab6e-aaca3689113a}</Project>
       <Name>Ignition.Foundation.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ignition.Sc\Ignition.Sc.csproj">
+    <ProjectReference Include="..\Ignition.Sc\Ignition.Project.IgnitionDemo.Sc.csproj">
       <Project>{6937D0B9-3F0C-4A2F-8B07-62A7809A2161}</Project>
-      <Name>Ignition.Sc</Name>
+      <Name>Ignition.Project.IgnitionDemo.Sc</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
@@ -277,7 +277,15 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50215</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50215/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://ignition</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

@@ -5,7 +5,7 @@ using Sitecore;
 using Sitecore.Data;
 using Sitecore.Globalization;
 
-namespace Ignition.Core.Models.BaseModels
+namespace Ignition.Foundation.Core.Models.BaseModels
 {
     [SitecoreType(AutoMap = false, TemplateId = "{00000000-0000-0000-0000-000000000000}")]
     public class NullModel : IModelBase

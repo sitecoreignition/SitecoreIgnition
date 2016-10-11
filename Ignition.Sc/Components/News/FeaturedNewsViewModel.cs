@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Ignition.Core.Mvc;
-using Ignition.Data.Fields;
+using Ignition.Foundation.Core.Mvc;
+using Ignition.Foundation.Data.Fields;
 
-namespace Ignition.Sc.Components.News
+namespace Ignition.Project.IgnitionDemo.Sc.Components.News
 {
     public class FeaturedNewsViewModel : BaseViewModel
     {

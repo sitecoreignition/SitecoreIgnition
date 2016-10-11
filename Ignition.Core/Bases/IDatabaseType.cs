@@ -1,4 +1,4 @@
-﻿namespace Ignition.Core.Bases
+﻿namespace Ignition.Foundation.Core.Bases
 {
     public interface IDatabaseType
     {

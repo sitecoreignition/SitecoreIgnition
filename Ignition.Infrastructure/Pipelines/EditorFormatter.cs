@@ -25,7 +25,7 @@ using Control = System.Web.UI.Control;
 using Memo = Sitecore.Shell.Applications.ContentEditor.Memo;
 using WebControl = Sitecore.Web.UI.WebControl;
 
-namespace Ignition.Infrastructure.Pipelines
+namespace Ignition.Foundation.Infrastructure.Pipelines
 {
     /// <summary>
     ///Formatter for rendering the editor

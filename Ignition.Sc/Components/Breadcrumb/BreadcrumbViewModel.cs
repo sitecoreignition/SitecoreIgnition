@@ -1,7 +1,7 @@
-﻿using Ignition.Core.Mvc;
-using Ignition.Data.Fields;
+﻿using Ignition.Foundation.Core.Mvc;
+using Ignition.Foundation.Data.Fields;
 
-namespace Ignition.Sc.Components.Breadcrumb
+namespace Ignition.Project.IgnitionDemo.Sc.Components.Breadcrumb
 {
     public class BreadcrumbViewModel : BaseViewModel
     {

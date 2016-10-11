@@ -2,7 +2,7 @@
 using System.Web;
 using YamlDotNet.Serialization;
 
-namespace Ignition.Infrastructure.Pipelines
+namespace Ignition.Foundation.Infrastructure.Pipelines
 {
 	public static class YmlSettingsReader
 	{

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Ignition.Core.Models.Settings;
-using Ignition.Core.Mvc;
-using Ignition.Sc.Components.Shared;
+﻿using Ignition.Foundation.Core.Models.Settings;
+using Ignition.Foundation.Core.Mvc;
+using Ignition.Project.IgnitionDemo.Sc.Components.Shared;
 
-namespace Ignition.Sc.Components.Bookends
+namespace Ignition.Project.IgnitionDemo.Sc.Components.Bookends
 {
 	public class HeaderAgent : Agent<HeaderViewModel>
 	{

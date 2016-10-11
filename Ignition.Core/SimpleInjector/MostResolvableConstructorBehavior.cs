@@ -9,7 +9,7 @@ using SimpleInjector.Advanced;
 /// </summary>
 
 
-namespace Ignition.Core.SimpleInjector
+namespace Ignition.Foundation.Core.SimpleInjector
 {
     public class MostResolvableConstructorBehavior : IConstructorResolutionBehavior
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 using Glass.Mapper.Sc.Configuration.Attributes;
-using Ignition.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.BaseModels;
 
-namespace Ignition.Data.Fields
+namespace Ignition.Foundation.Data.Fields
 {
     [SitecoreType(TemplateId = "{E4606498-4A6D-4C37-BEA7-7C50973C9C8C}")]
     public interface IDateField2 : IModelBase

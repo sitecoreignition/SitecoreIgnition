@@ -1,8 +1,8 @@
 ﻿using System.IO;
 using Glass.Mapper.Sc.Configuration.Attributes;
-using Ignition.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.BaseModels;
 
-namespace Ignition.Core.Models.System
+namespace Ignition.Foundation.Core.Models.System
 {
     [SitecoreType(TemplateId = "{962B53C4-F93B-4DF9-9821-415C867B8903}", AutoMap = true)]
     public interface IFile : IModelBase

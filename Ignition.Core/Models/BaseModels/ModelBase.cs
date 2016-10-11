@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Configuration.Attributes;
@@ -12,7 +8,7 @@ using Sitecore.ContentSearch.Converters;
 using Sitecore.Data;
 using Sitecore.Globalization;
 
-namespace Ignition.Core.Models.BaseModels
+namespace Ignition.Foundation.Core.Models.BaseModels
 {
     [SitecoreType(TemplateId = "{4C3CDC24-1610-4808-92A3-A221768AE3B2}", AutoMap = true)]
     public class ModelBase : IModelBase

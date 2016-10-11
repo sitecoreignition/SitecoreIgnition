@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Glass.Mapper.Sc.Fields;
-using Ignition.Core.Models.Page;
-using Ignition.Core.Models.Settings;
+using Ignition.Foundation.Core.Models.Page;
+using Ignition.Foundation.Core.Models.Settings;
 
-namespace Ignition.Core.Models.BaseModels
+namespace Ignition.Foundation.Core.Models.BaseModels
 {
     public class NullPage : NullModel, IPage
     {

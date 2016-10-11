@@ -1,8 +1,8 @@
 ﻿using System.Web.Mvc;
 using Glass.Mapper.Sc;
-using Ignition.Core.Mvc;
+using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Core.Factories
+namespace Ignition.Foundation.Core.Factories
 {
 	public class IgnitionControllerContextFactory : IIgnitionControllerContextFactory
 	{

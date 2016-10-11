@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Ignition.Infrastructure.Pipelines
+namespace Ignition.Foundation.Infrastructure.Pipelines
 {
 	public class TemplateMap
 	{

@@ -1,4 +1,4 @@
-﻿namespace Ignition.Infrastructure.Pipelines
+﻿namespace Ignition.Foundation.Infrastructure.Pipelines
 {
 	public class MapItem
 	{

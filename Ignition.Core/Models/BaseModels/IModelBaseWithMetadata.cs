@@ -3,7 +3,7 @@ using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Configuration.Attributes;
 using Sitecore.ContentSearch;
 
-namespace Ignition.Core.Models.BaseModels
+namespace Ignition.Foundation.Core.Models.BaseModels
 {
     [SitecoreType]
     public interface IModelBaseWithMetadata

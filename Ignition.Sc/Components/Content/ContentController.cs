@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Ignition.Core.Mvc;
+﻿using System.Web.Mvc;
+using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Sc.Components.Content
+namespace Ignition.Project.IgnitionDemo.Sc.Components.Content
 {
 	public class ContentController: IgnitionController
 	{

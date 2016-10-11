@@ -1,4 +1,4 @@
-﻿namespace Ignition.Root
+﻿namespace Ignition.Project.CompositionRoot
 {
     public struct Constants
     {

@@ -1,6 +1,6 @@
-using Ignition.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.BaseModels;
 
-namespace Ignition.Core.Mvc
+namespace Ignition.Foundation.Core.Mvc
 {
 	public interface IViewModelDataBinder
 	{

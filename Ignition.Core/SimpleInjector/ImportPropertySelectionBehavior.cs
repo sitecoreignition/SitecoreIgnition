@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using SimpleInjector.Advanced;
 
-namespace Ignition.Core.SimpleInjector
+namespace Ignition.Foundation.Core.SimpleInjector
 {
 	public class ImportPropertySelectionBehavior : IPropertySelectionBehavior
 	{

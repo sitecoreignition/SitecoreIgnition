@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Glass.Mapper.Sc.Configuration.Attributes;
 
-namespace Ignition.Core.Models.BaseModels
+namespace Ignition.Foundation.Core.Models.BaseModels
 {
     [SitecoreType]
     public interface INeedsChildren

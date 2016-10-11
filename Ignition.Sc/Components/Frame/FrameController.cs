@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
-using Ignition.Core.Mvc;
+using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Sc.Components.Frame
+namespace Ignition.Project.IgnitionDemo.Sc.Components.Frame
 {
     public class FrameController : IgnitionController
     {

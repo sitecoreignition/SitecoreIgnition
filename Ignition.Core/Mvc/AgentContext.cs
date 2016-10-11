@@ -1,10 +1,9 @@
 ﻿using System.ComponentModel.Composition;
-using System.Web.Mvc;
 using Glass.Mapper.Sc;
-using Ignition.Core.Models.BaseModels;
-using Ignition.Core.Models.Page;
+using Ignition.Foundation.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.Page;
 
-namespace Ignition.Core.Mvc
+namespace Ignition.Foundation.Core.Mvc
 {
     public class AgentContext : IgnitionControllerContext
     {

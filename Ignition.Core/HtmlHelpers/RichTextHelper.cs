@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Ignition.Core.HtmlHelpers
+namespace Ignition.Foundation.Core.HtmlHelpers
 {
     public static class RichTextHelper
     {

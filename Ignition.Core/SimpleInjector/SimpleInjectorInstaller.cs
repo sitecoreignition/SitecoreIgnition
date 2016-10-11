@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using SimpleInjector;
 
-namespace Ignition.Core.SimpleInjector
+namespace Ignition.Foundation.Core.SimpleInjector
 {
 	public abstract class SimpleInjectorInstaller
 	{

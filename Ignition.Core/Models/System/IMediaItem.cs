@@ -1,6 +1,6 @@
 ﻿using Glass.Mapper.Sc.Configuration.Attributes;
 
-namespace Ignition.Core.Models.System
+namespace Ignition.Foundation.Core.Models.System
 {
     [SitecoreType(TemplateId = "{F1828A2C-7E5D-4BBD-98CA-320474871548}", AutoMap = true)]
     public interface IMediaItem : IFile

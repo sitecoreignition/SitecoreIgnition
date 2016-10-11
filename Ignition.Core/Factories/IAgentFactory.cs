@@ -1,6 +1,6 @@
-﻿using Ignition.Core.Mvc;
+﻿using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Core.Factories
+namespace Ignition.Foundation.Core.Factories
 {
 	public interface IAgentFactory
 	{

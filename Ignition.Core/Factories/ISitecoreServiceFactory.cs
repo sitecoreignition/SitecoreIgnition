@@ -1,7 +1,7 @@
 ﻿using Glass.Mapper.Sc;
-using Ignition.Core.Bases;
+using Ignition.Foundation.Core.Bases;
 
-namespace Ignition.Core.Factories
+namespace Ignition.Foundation.Core.Factories
 {
     public interface ISitecoreServiceFactory
     {

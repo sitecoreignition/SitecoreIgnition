@@ -1,8 +1,8 @@
-using Ignition.Core.Mvc;
-using Ignition.Core.SimpleInjector;
+using Ignition.Foundation.Core.Mvc;
+using Ignition.Foundation.Core.SimpleInjector;
 using SimpleInjector;
 
-namespace Ignition.Sc
+namespace Ignition.Project.IgnitionDemo.Sc
 {
 	public class IgnitionScInstaller : SimpleInjectorInstaller
 	{

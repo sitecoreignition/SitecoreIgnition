@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using Glass.Mapper.Sc;
 
-namespace Ignition.Core.Mvc
+namespace Ignition.Foundation.Core.Mvc
 {
     public class IgnitionControllerContext : ControllerContext
     {

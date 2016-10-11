@@ -8,7 +8,7 @@ using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Pipelines.GetPlaceholderRenderings;
 
-namespace Ignition.Core.HtmlHelpers
+namespace Ignition.Foundation.Core.HtmlHelpers
 {
     public class GetDynamicKeyAllowedRenderings : GetAllowedRenderings
     {

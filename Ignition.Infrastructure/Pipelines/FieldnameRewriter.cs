@@ -1,6 +1,7 @@
 ﻿using Sitecore.Diagnostics;
 using Sitecore.Shell.Applications.ContentEditor.Pipelines.RenderContentEditor;
-namespace Ignition.Infrastructure.Pipelines
+
+namespace Ignition.Foundation.Infrastructure.Pipelines
 {
     public class FieldnameRewriter 
     {

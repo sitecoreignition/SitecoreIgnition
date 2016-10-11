@@ -6,7 +6,7 @@ using Glass.Mapper.Sc.Configuration.Attributes;
 using Glass.Mapper.Sc.IoC;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
-namespace Ignition.Root.App_Start
+namespace Ignition.Project.CompositionRoot
 {
 	public static class GlassMapperScCustom
 	{

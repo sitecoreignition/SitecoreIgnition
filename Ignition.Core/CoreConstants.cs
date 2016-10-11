@@ -1,4 +1,4 @@
-﻿namespace Ignition.Core
+﻿namespace Ignition.Foundation.Core
 {
     public struct CoreConstants
     {

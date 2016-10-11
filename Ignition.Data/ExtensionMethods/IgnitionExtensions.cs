@@ -7,7 +7,7 @@ using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Data.Managers;
 
-namespace Ignition.Data.ExtensionMethods
+namespace Ignition.Foundation.Data.ExtensionMethods
 {
     public static class IgnitionExtensions
     {

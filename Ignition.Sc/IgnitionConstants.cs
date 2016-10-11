@@ -1,4 +1,4 @@
-﻿namespace Ignition.Sc
+﻿namespace Ignition.Project.IgnitionDemo.Sc
 {
 	public struct IgnitionConstants
 	{

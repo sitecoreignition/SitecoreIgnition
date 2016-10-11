@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using SimpleInjector;
 
-namespace Ignition.Core.SimpleInjector
+namespace Ignition.Foundation.Core.SimpleInjector
 {
 	public static class ContainerExtensions
 	{

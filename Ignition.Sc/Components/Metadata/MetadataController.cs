@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
-using Ignition.Core.Mvc;
+using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Sc.Components.Metadata
+namespace Ignition.Project.IgnitionDemo.Sc.Components.Metadata
 {
     public class MetadataController : IgnitionController
     {

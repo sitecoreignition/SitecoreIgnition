@@ -1,8 +1,8 @@
 ﻿using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Configuration.Attributes;
-using Ignition.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.BaseModels;
 
-namespace Ignition.Data.Fields
+namespace Ignition.Foundation.Data.Fields
 {
     [SitecoreType(TemplateId = "{5F8D5E76-8178-43AA-BE0D-AA8F34472FEC}")]
     public interface ICopy3 : IModelBase

@@ -1,7 +1,7 @@
 using System;
-using Ignition.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.BaseModels;
 
-namespace Ignition.Core.Repositories
+namespace Ignition.Foundation.Core.Repositories
 {
     public class CacheItem
     {

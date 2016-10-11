@@ -1,13 +1,13 @@
 ﻿using System.Web.Mvc;
-using Ignition.Core.Installers;
-using Ignition.Core.SimpleInjector;
-using Ignition.Sc;
+using Ignition.Foundation.Core.Installers;
+using Ignition.Foundation.Core.SimpleInjector;
+using Ignition.Project.IgnitionDemo.Sc;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
 using SimpleInjector.Integration.Web.Mvc;
 using Sitecore.Pipelines;
 
-namespace Ignition.Root.App_Start
+namespace Ignition.Project.CompositionRoot
 {
 	public class InitializeDependencyResolver
 	{

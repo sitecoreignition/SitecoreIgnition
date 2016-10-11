@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
-using Ignition.Core.Attributes;
-using Ignition.Core.Models.BaseModels;
-using Ignition.Core.Models.Page;
+using Ignition.Foundation.Core.Attributes;
+using Ignition.Foundation.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.Page;
 using Sitecore.Diagnostics;
 
-namespace Ignition.Core.Mvc
+namespace Ignition.Foundation.Core.Mvc
 {
 	public class DefaultViewModelDataBinder : IViewModelDataBinder
 	{

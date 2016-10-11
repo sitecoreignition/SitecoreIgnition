@@ -1,9 +1,9 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
-using Ignition.Core.Mvc.Routing;
+using Ignition.Foundation.Core.Mvc.Routing;
 using Sitecore.Pipelines;
 
-namespace Ignition.Root.App_Start
+namespace Ignition.Project.CompositionRoot
 {
 	public class InitializeRoutes
 	{

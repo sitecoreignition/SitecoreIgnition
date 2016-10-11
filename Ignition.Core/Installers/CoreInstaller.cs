@@ -1,9 +1,9 @@
-﻿using Ignition.Core.Factories;
-using Ignition.Core.Mvc;
-using Ignition.Core.SimpleInjector;
+﻿using Ignition.Foundation.Core.Factories;
+using Ignition.Foundation.Core.Mvc;
+using Ignition.Foundation.Core.SimpleInjector;
 using SimpleInjector;
 
-namespace Ignition.Core.Installers
+namespace Ignition.Foundation.Core.Installers
 {
 	public class CoreInstaller : SimpleInjectorInstaller
 	{

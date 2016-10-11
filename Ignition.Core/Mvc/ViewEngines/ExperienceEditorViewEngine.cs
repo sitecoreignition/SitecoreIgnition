@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using System.Web.Mvc;
 
-namespace Ignition.Core.Mvc.ViewEngines
+namespace Ignition.Foundation.Core.Mvc.ViewEngines
 {
 	public class ExperienceEditorViewEngine : IViewEngine
 	{

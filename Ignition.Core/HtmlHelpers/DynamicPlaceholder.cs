@@ -3,7 +3,7 @@
 using System.Web;
 using Sitecore.Mvc.Presentation;
 
-namespace Ignition.Core.HtmlHelpers
+namespace Ignition.Foundation.Core.HtmlHelpers
 {
     public static class SitecoreHelper
     {

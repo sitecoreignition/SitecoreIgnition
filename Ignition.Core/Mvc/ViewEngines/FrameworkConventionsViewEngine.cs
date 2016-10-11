@@ -1,6 +1,6 @@
 using System.Web.Mvc;
 
-namespace Ignition.Core.Mvc.ViewEngines
+namespace Ignition.Foundation.Core.Mvc.ViewEngines
 {
 	public class FrameworkConventionsViewEngine : RazorViewEngine
 	{

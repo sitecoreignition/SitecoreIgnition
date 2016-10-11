@@ -1,4 +1,4 @@
-﻿namespace Ignition.Core.HtmlHelpers
+﻿namespace Ignition.Foundation.Core.HtmlHelpers
 {
     public static class ResourceType
     {

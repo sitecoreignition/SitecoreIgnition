@@ -1,6 +1,6 @@
-﻿using Ignition.Core.Mvc;
+﻿using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Sc.Components.News
+namespace Ignition.Project.IgnitionDemo.Sc.Components.News
 {
     public class FeaturedNewsAgent : Agent<FeaturedNewsViewModel>
     {

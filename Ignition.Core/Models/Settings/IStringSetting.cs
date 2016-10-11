@@ -1,7 +1,7 @@
 ﻿using Glass.Mapper.Sc.Configuration.Attributes;
-using Ignition.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.BaseModels;
 
-namespace Ignition.Core.Models.Settings
+namespace Ignition.Foundation.Core.Models.Settings
 {
     [SitecoreType(TemplateId = "{4DCC294F-D5EC-4607-917A-E4A3B80EC624}")]
     public interface IStringSetting : IModelBase

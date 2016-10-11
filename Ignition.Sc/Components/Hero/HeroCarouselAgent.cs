@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Ignition.Core.Mvc;
+using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Sc.Components.Hero
+namespace Ignition.Project.IgnitionDemo.Sc.Components.Hero
 {
 	public class HeroCarouselAgent : Agent<HeroCarouselViewModel>
 	{

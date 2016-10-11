@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using System.Web.Mvc.Routing;
 
-namespace Ignition.Core.Mvc.Routing
+namespace Ignition.Foundation.Core.Mvc.Routing
 {
 	public class PublicRouteProvider : DefaultDirectRouteProvider
 	{

@@ -1,13 +1,12 @@
 ﻿using System;
 using System.ComponentModel.Composition;
 using System.Web.Mvc;
-using System.Web.Routing;
 using Glass.Mapper.Sc.Web.Mvc;
-using Ignition.Core.Factories;
-using Ignition.Core.Models.BaseModels;
-using Ignition.Core.Models.Page;
+using Ignition.Foundation.Core.Factories;
+using Ignition.Foundation.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.Page;
 
-namespace Ignition.Core.Mvc
+namespace Ignition.Foundation.Core.Mvc
 {
     public abstract class IgnitionController : GlassController
     {

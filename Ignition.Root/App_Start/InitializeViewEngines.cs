@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
-using Ignition.Core.Mvc.ViewEngines;
+using Ignition.Foundation.Core.Mvc.ViewEngines;
 using Sitecore.Pipelines;
 
-namespace Ignition.Root.App_Start
+namespace Ignition.Project.CompositionRoot
 {
 	public class InitializeViewEngines
 	{
