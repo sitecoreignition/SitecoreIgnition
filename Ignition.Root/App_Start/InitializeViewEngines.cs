@@ -14,8 +14,6 @@ namespace Ignition.Project.CompositionRoot
 
 		public static void RegisterViewEngines(ViewEngineCollection viewEngines)
 		{
-			viewEngines.Insert(0, new FrameworkConventionsViewEngine());
-
 			var razorViewEngines = viewEngines.OfType<RazorViewEngine>().Reverse();
 			foreach (var razorViewEngine in razorViewEngines)
 			{

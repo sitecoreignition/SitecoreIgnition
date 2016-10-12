@@ -3,7 +3,7 @@
 using System.Web;
 using Sitecore.Mvc.Presentation;
 
-namespace Ignition.Foundation.Core.HtmlHelpers
+namespace Ignition.Foundation.Core.DynamicPlaceholders
 {
     public static class SitecoreHelper
     {

@@ -297,11 +297,6 @@
     <Content Include="Components\Frame\IgnitionFrame.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Components\Bookends\Header.cshtml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Components\Bookends\Footer.cshtml" />
-    <Content Include="Components\Bookends\FooterScript.cshtml" />
     <Content Include="Components\Metadata\Head.cshtml" />
     <Content Include="Components\Metadata\Metadata.cshtml" />
     <Content Include="Components\Metadata\Style.cshtml" />
@@ -344,9 +339,6 @@
     <Compile Include="Components\About\AboutPeopleTileAgent.cs" />
     <Compile Include="Components\About\AboutPeopleTileViewModel.cs" />
     <Compile Include="Components\About\IAboutPeopleTile.cs" />
-    <Compile Include="Components\Bookends\BookendsController.cs" />
-    <Compile Include="Components\Bookends\HeaderAgent.cs" />
-    <Compile Include="Components\Bookends\HeaderViewModel.cs" />
     <Compile Include="Components\Breadcrumb\BreadcrumbController.cs" />
     <Compile Include="Components\Breadcrumb\BreadcrumbViewModel.cs" />
     <Compile Include="Components\Breadcrumb\IBreadcrumb.cs" />

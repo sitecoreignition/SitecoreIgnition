@@ -1,8 +1,9 @@
-﻿using Ignition.Foundation.Core.Models.Settings;
+﻿using Ignition.Feature.Structure.ViewModels;
+using Ignition.Foundation.Core.Models.Settings;
 using Ignition.Foundation.Core.Mvc;
-using Ignition.Project.IgnitionDemo.Sc.Components.Shared;
+using Ignition.Sc.Components.Shared;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.Bookends
+namespace Ignition.Feature.Structure.Agents
 {
 	public class HeaderAgent : Agent<HeaderViewModel>
 	{

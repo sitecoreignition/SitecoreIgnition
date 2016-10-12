@@ -7,7 +7,7 @@ using Sitecore.Pipelines.GetChromeData;
 using Sitecore.Web.UI.PageModes;
 using Debug = System.Diagnostics.Debug;
 
-namespace Ignition.Foundation.Core.HtmlHelpers
+namespace Ignition.Foundation.Core.DynamicPlaceholders
 {
     public class GetDynamicPlaceholderChromeData : GetChromeDataProcessor
     {

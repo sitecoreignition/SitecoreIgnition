@@ -1,9 +1,11 @@
 ﻿using System.Web.Mvc;
+using Ignition.Feature.Structure.Agents;
+using Ignition.Feature.Structure.ViewModels;
 using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.Bookends
+namespace Ignition.Feature.Structure.Controllers
 {
-    public class BookendsController : IgnitionController
+    public class StructureController : IgnitionController
     {
         public ActionResult Header()
         {

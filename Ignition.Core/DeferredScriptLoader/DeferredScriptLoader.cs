@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using System.Web.WebPages;
 
-namespace Ignition.Foundation.Core.HtmlHelpers
+namespace Ignition.Foundation.Core.DeferredScriptLoader
 {
     public static class DeferredScriptLoader
     {
