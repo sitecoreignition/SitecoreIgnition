@@ -7,19 +7,9 @@ namespace Ignition.Feature.Structure.Controllers
 {
     public class StructureController : IgnitionController
     {
-        public ActionResult Header()
-        {
-            return View<HeaderAgent, HeaderViewModel>();
-        }
-
-        public ActionResult Footer()
-        {
-            return View<BaseViewModel>();
-        }
-
-        public ActionResult FooterScript()
-        {
-            return View<BaseViewModel>();
-        }
-    }
+        public ActionResult Header() => View<HeaderAgent, HeaderViewModel>();
+	    public ActionResult Footer() => View<BaseViewModel>();
+	    public ActionResult FooterScript() => View<BaseViewModel>();
+	    public ActionResult Breadcrumb() => View<BreadcrumbViewModel>();
+	}
 }
