@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Ignition.Feature.Metadata")]
+[assembly: AssemblyTitle("Ignition.Feature.FeatureCore")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Ignition.Feature.Metadata")]
+[assembly: AssemblyProduct("Ignition.Feature.FeatureCore")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fd5fd121-9b77-4e58-ba27-6f865346de6c")]
+[assembly: Guid("b1846bdb-5bbf-4482-ac05-57de7df04476")]
 
 // Version information for an assembly consists of the following four values:
 //
