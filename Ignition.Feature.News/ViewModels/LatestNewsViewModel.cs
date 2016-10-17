@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using Ignition.Feature.News.Models;
 using Ignition.Foundation.Core.Mvc;
 using Ignition.Foundation.Data.Fields;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.News
+namespace Ignition.Feature.News.ViewModels
 {
     public class LatestNewsViewModel : BaseViewModel
     {

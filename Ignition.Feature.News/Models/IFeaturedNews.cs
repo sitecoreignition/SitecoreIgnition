@@ -3,7 +3,7 @@ using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Configuration.Attributes;
 using Ignition.Foundation.Data.Fields;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.News
+namespace Ignition.Feature.News.Models
 {
     [SitecoreType(TemplateId = "{A3D6BEA6-8A51-4301-AD06-56DF0910B811}", AutoMap = true)]
     public interface IFeaturedNews : IHeading

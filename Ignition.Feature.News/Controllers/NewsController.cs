@@ -1,7 +1,9 @@
 ﻿using System.Web.Mvc;
+using Ignition.Feature.News.Agents;
+using Ignition.Feature.News.ViewModels;
 using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.News
+namespace Ignition.Feature.News.Controllers
 {
     public class NewsController : IgnitionController
     {

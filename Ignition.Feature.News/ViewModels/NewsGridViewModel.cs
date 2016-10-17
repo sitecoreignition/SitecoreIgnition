@@ -1,6 +1,6 @@
 ﻿using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.News
+namespace Ignition.Feature.News.ViewModels
 {
     public class NewsGridViewModel : BaseViewModel
     {

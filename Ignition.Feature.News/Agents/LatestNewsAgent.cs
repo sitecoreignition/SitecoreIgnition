@@ -1,6 +1,8 @@
-﻿using Ignition.Foundation.Core.Mvc;
+﻿using Ignition.Feature.News.Models;
+using Ignition.Feature.News.ViewModels;
+using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.News
+namespace Ignition.Feature.News.Agents
 {
     public class LatestNewsAgent : Agent<LatestNewsViewModel>
     {

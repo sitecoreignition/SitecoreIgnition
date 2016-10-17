@@ -323,9 +323,6 @@
     <Content Include="Components\Frame\ThreeColumnEqual.cshtml" />
     <Content Include="Components\Frame\FlexibleRowFrame.cshtml" />
     <Content Include="Components\Frame\FlexibleColumnFrame.cshtml" />
-    <Content Include="Components\News\FeaturedNews.cshtml" />
-    <Content Include="Components\News\LatestNews.cshtml" />
-    <Content Include="Components\News\NewsGrid.cshtml" />
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.IgnitionSc.config">
       <SubType>Designer</SubType>
@@ -365,17 +362,6 @@
     <Compile Include="Components\Product\ProductSummaryAgent.cs" />
     <Compile Include="Components\Product\ProductSummaryViewModel.cs" />
     <Compile Include="Components\Shared\IIgnitionPage.cs" />
-    <Compile Include="Components\News\FeaturedNewsAgent.cs" />
-    <Compile Include="Components\News\FeaturedNewsViewModel.cs" />
-    <Compile Include="Components\News\IFeaturedNews.cs" />
-    <Compile Include="Components\News\IFeaturedNewsItem.cs" />
-    <Compile Include="Components\News\ILatestNews.cs" />
-    <Compile Include="Components\News\ILatestNewsItem.cs" />
-    <Compile Include="Components\News\LatestNewsAgent.cs" />
-    <Compile Include="Components\News\LatestNewsViewModel.cs" />
-    <Compile Include="Components\News\NewsController.cs" />
-    <Compile Include="Components\News\NewsGridViewModel.cs" />
-    <Compile Include="IgnitionConstants.cs" />
     <Compile Include="IgnitionScInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
