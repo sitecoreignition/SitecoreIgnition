@@ -1,6 +1,6 @@
 ﻿using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.Hero
+namespace Ignition.Feature.Content.ViewModels
 {
 	public class HeroCarouselViewModel : BaseViewModel
 	{

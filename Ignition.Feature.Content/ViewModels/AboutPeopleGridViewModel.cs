@@ -1,6 +1,6 @@
 ﻿using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.About
+namespace Ignition.Feature.Content.ViewModels
 {
     public class AboutPeopleGridViewModel : BaseViewModel
     {

@@ -3,7 +3,7 @@ using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Configuration.Attributes;
 using Ignition.Foundation.Data.Fields;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.Hero
+namespace Ignition.Feature.Content.Models
 {
     [SitecoreType(TemplateId = "{6538AB6D-3016-4708-8800-0735967EA67F}", AutoMap = true)]
     public interface IAboutHero : IHeading, IImage, ICopy1

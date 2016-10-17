@@ -1,7 +1,7 @@
 ﻿using Ignition.Foundation.Core.Mvc;
 using Ignition.Foundation.Data.Fields;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.About
+namespace Ignition.Feature.Content.ViewModels
 {
     public class AboutPeopleTileViewModel : BaseViewModel
     {

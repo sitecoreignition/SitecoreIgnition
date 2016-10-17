@@ -1,11 +1,12 @@
 ﻿using System;
 using Glass.Mapper.Sc.Fields;
+using Ignition.Feature.Content.Models;
 using Ignition.Foundation.Core.Models.BaseModels;
 using Ignition.Foundation.Core.Mvc;
 using Sitecore.Data;
 using Sitecore.Globalization;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.Hero
+namespace Ignition.Feature.Content.ViewModels
 {
 	public class HeroCarouselSlideViewModel : BaseViewModel, ICarouselSlide
 	{

@@ -310,7 +310,6 @@
     <Content Include="Components\Product\ProductDetail.cshtml" />
     <Content Include="Components\Product\ProductSummary.cshtml" />
     <Content Include="Components\Hero\HeroCarousel.cshtml" />
-    <Content Include="Components\Content\ContentBlock.cshtml" />
     <Content Include="package.json" />
     <Content Include="Components\Hero\_CarouselSlide.cshtml" />
     <Content Include="Components\Frame\FortySixtyFrame.cshtml" />
@@ -337,8 +336,6 @@
     <Compile Include="Components\About\AboutPeopleTileAgent.cs" />
     <Compile Include="Components\About\AboutPeopleTileViewModel.cs" />
     <Compile Include="Components\About\IAboutPeopleTile.cs" />
-    <Compile Include="Components\Content\IContentBlock.cs" />
-    <Compile Include="Components\Content\ContentController.cs" />
     <Compile Include="Components\Frame\FrameAgent.cs" />
     <Compile Include="Components\Frame\FrameController.cs" />
     <Compile Include="Components\Frame\FrameViewModel.cs" />

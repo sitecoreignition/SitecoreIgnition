@@ -1,6 +1,8 @@
-﻿using Ignition.Foundation.Core.Mvc;
+﻿using Ignition.Feature.Content.Models;
+using Ignition.Feature.Content.ViewModels;
+using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.About
+namespace Ignition.Feature.Content.Agents
 {
     public class AboutPeopleTileAgent : Agent<AboutPeopleTileViewModel>
     {

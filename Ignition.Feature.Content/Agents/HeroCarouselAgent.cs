@@ -1,7 +1,8 @@
 ﻿using System;
+using Ignition.Feature.Content.ViewModels;
 using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.Hero
+namespace Ignition.Feature.Content.Agents
 {
 	public class HeroCarouselAgent : Agent<HeroCarouselViewModel>
 	{
