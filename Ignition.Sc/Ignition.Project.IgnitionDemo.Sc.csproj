@@ -304,7 +304,6 @@
     <Content Include="Components\Metadata\Seo.cshtml" />
     <Content Include="Components\Metadata\Taxonomy.cshtml" />
     <Content Include="Components\Metadata\PageEdit.cshtml" />
-    <Content Include="Components\Breadcrumb\Breadcrumb.cshtml" />
     <Content Include="Components\About\AboutPeopleGrid.cshtml" />
     <Content Include="Components\About\AboutPeopleTile.cshtml" />
     <Content Include="Components\Hero\AboutHero.cshtml" />
@@ -328,7 +327,9 @@
     <Content Include="Components\News\LatestNews.cshtml" />
     <Content Include="Components\News\NewsGrid.cshtml" />
     <Content Include="App_Config\Include\Rainbow.config" />
-    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.IgnitionSc.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.IgnitionSc.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
@@ -339,9 +340,6 @@
     <Compile Include="Components\About\AboutPeopleTileAgent.cs" />
     <Compile Include="Components\About\AboutPeopleTileViewModel.cs" />
     <Compile Include="Components\About\IAboutPeopleTile.cs" />
-    <Compile Include="Components\Breadcrumb\BreadcrumbController.cs" />
-    <Compile Include="Components\Breadcrumb\BreadcrumbViewModel.cs" />
-    <Compile Include="Components\Breadcrumb\IBreadcrumb.cs" />
     <Compile Include="Components\Content\IContentBlock.cs" />
     <Compile Include="Components\Content\ContentController.cs" />
     <Compile Include="Components\Frame\FrameAgent.cs" />
