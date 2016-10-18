@@ -182,10 +182,6 @@
       <Project>{a2a67cbb-5a2a-4207-bff6-0cd348379245}</Project>
       <Name>_Ignition.Foundation.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ignition.Feature.FeatureCore\_Ignition.Feature.Core.csproj">
-      <Project>{b1846bdb-5bbf-4482-ac05-57de7df04476}</Project>
-      <Name>_Ignition.Feature.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Ignition.Infrastructure\_Ignition.Foundation.Infrastructure.csproj">
       <Project>{6301e806-d84b-4678-ab6e-aaca3689113a}</Project>
       <Name>_Ignition.Foundation.Infrastructure</Name>
