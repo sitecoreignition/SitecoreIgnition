@@ -280,7 +280,6 @@
     <Content Include="Assets\Ignition\less\lesshat.less" />
     <Content Include="Assets\Ignition\less\main.less" />
     <Content Include="Assets\Ignition\less\variables.less" />
-    <Content Include="Components\Layout\IgnitionLayout.cshtml" />
     <Content Include="Components\Web.config" />
     <Content Include="Html\fonts\fontawesome-webfont.eot" />
     <Content Include="Html\fonts\fontawesome-webfont.ttf" />
@@ -296,13 +295,6 @@
     <Content Include="Html\less\variables.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Components\Metadata\Head.cshtml" />
-    <Content Include="Components\Metadata\Metadata.cshtml" />
-    <Content Include="Components\Metadata\Style.cshtml" />
-    <Content Include="Components\Metadata\Script.cshtml" />
-    <Content Include="Components\Metadata\Seo.cshtml" />
-    <Content Include="Components\Metadata\Taxonomy.cshtml" />
-    <Content Include="Components\Metadata\PageEdit.cshtml" />
     <Content Include="Components\Product\ProductDetail.cshtml" />
     <Content Include="Components\Product\ProductSummary.cshtml" />
     <Content Include="package.json" />
@@ -315,7 +307,6 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\Metadata\MetadataController.cs" />
     <Compile Include="Components\Product\IProductDetail.cs" />
     <Compile Include="Components\Product\IProductSummary.cs" />
     <Compile Include="Components\Product\ProductController.cs" />
@@ -323,11 +314,13 @@
     <Compile Include="Components\Product\ProductDetailsViewModel.cs" />
     <Compile Include="Components\Product\ProductSummaryAgent.cs" />
     <Compile Include="Components\Product\ProductSummaryViewModel.cs" />
-    <Compile Include="Components\Shared\IIgnitionPage.cs" />
+    <Compile Include="Models\IIgnitionPage.cs" />
     <Compile Include="IgnitionScInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Components\Shared\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ignition.Core\Ignition.Foundation.Core.csproj">
       <Project>{a11adf09-8215-4a20-8edd-894c969e0669}</Project>
