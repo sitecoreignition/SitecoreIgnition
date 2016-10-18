@@ -4,9 +4,9 @@ using Ignition.Foundation.Core.SimpleInjector;
 using SimpleInjector;
 using SimpleInjector.Packaging;
 
-namespace Ignition.Project.IgnitionDemo.Sc
+namespace Ignition.Feature.FeatureCore
 {
-	public class IgnitionScInstaller : IPackage
+	public class IgnitionFeatureCoreInstaller : IPackage
 	{
 		public void RegisterServices(Container container)
 		{

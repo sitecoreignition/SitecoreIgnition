@@ -4,9 +4,9 @@ using Ignition.Foundation.Core.SimpleInjector;
 using SimpleInjector;
 using SimpleInjector.Packaging;
 
-namespace Ignition.Project.IgnitionDemo.Sc
+namespace Ignition.Feature.News
 {
-	public class IgnitionScInstaller : IPackage
+	public class IgnitionNewsInstaller : IPackage
 	{
 		public void RegisterServices(Container container)
 		{

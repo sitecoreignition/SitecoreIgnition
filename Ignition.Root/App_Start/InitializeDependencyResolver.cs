@@ -1,7 +1,6 @@
-﻿using System.Web.Mvc;
-using Ignition.Foundation.Core.Installers;
+﻿using System;
+using System.Web.Mvc;
 using Ignition.Foundation.Core.SimpleInjector;
-using Ignition.Project.IgnitionDemo.Sc;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
 using SimpleInjector.Integration.Web.Mvc;
@@ -29,12 +28,11 @@ namespace Ignition.Project.CompositionRoot
 			container.Options.PropertySelectionBehavior = new ImportPropertySelectionBehavior();
             container.Options.ConstructorResolutionBehavior = new MostResolvableConstructorBehavior(container);
             container.RegisterMvcIntegratedFilterProvider();
-            
-			container.Install(new CoreInstaller());
-			container.Install(new IgnitionScInstaller());
+			container.RegisterPackages(AppDomain.CurrentDomain.GetAssemblies());
 
 			container.Verify();
 			return container;
 		}
 	}
+	
 }

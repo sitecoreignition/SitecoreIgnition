@@ -60,6 +60,22 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="SimpleInjector, Version=3.2.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.3.2.3\lib\net45\SimpleInjector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.Web, Version=3.2.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.3.2.3\lib\net40\SimpleInjector.Integration.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.Web.Mvc, Version=3.2.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.Mvc.3.2.3\lib\net40\SimpleInjector.Integration.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SimpleInjector.Packaging, Version=3.2.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Packaging.3.2.3\lib\net40-client\SimpleInjector.Packaging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Sitecore.Analytics">
       <HintPath>..\_lib\Sitecore.Analytics.dll</HintPath>
     </Reference>
@@ -140,11 +156,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IgnitionConstants.cs" />
+    <Compile Include="FeatureConstants.cs" />
+    <Compile Include="IgnitionFeatureCoreInstaller.cs" />
+    <Compile Include="Models\IIgnitionPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Config\Include\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ignition.Core\Ignition.Foundation.Core.csproj">
+      <Project>{a11adf09-8215-4a20-8edd-894c969e0669}</Project>
+      <Name>Ignition.Foundation.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignition.Data\Ignition.Foundation.Data.csproj">
+      <Project>{a2a67cbb-5a2a-4207-bff6-0cd348379245}</Project>
+      <Name>Ignition.Foundation.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignition.Infrastructure\Ignition.Foundation.Infrastructure.csproj">
+      <Project>{6301e806-d84b-4678-ab6e-aaca3689113a}</Project>
+      <Name>Ignition.Foundation.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
