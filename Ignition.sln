@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_FeatureTemplate", "_Featur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Ignition.Feature.FeatureCore", "Ignition.Feature.FeatureCore\_Ignition.Feature.FeatureCore.csproj", "{B1846BDB-5BBF-4482-AC05-57DE7DF04476}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Feature.Product", "Ignition.Feature.Product\Ignition.Feature.Product.csproj", "{2C446DD2-DA5C-49FA-A6C0-74AF17A64F16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{B1846BDB-5BBF-4482-AC05-57DE7DF04476}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1846BDB-5BBF-4482-AC05-57DE7DF04476}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1846BDB-5BBF-4482-AC05-57DE7DF04476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C446DD2-DA5C-49FA-A6C0-74AF17A64F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C446DD2-DA5C-49FA-A6C0-74AF17A64F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C446DD2-DA5C-49FA-A6C0-74AF17A64F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C446DD2-DA5C-49FA-A6C0-74AF17A64F16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,5 +135,6 @@ Global
 		{EEFCBD25-2201-4229-A9A2-FA89B84FD3B1} = {1AF91020-DA7C-47F5-A2C2-D5A91B95FA90}
 		{E47B8A34-36A5-4D73-8887-8B6648FBD276} = {1AF91020-DA7C-47F5-A2C2-D5A91B95FA90}
 		{B1846BDB-5BBF-4482-AC05-57DE7DF04476} = {1AF91020-DA7C-47F5-A2C2-D5A91B95FA90}
+		{2C446DD2-DA5C-49FA-A6C0-74AF17A64F16} = {1AF91020-DA7C-47F5-A2C2-D5A91B95FA90}
 	EndGlobalSection
 EndGlobal

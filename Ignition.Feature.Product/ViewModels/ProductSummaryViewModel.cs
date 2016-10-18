@@ -1,7 +1,7 @@
 ﻿using Ignition.Foundation.Core.Mvc;
 using Ignition.Foundation.Data.Fields;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.Product
+namespace Ignition.Feature.Product.ViewModels
 {
     public class ProductSummaryViewModel : BaseViewModel
     {

@@ -295,8 +295,6 @@
     <Content Include="Html\less\variables.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Components\Product\ProductDetail.cshtml" />
-    <Content Include="Components\Product\ProductSummary.cshtml" />
     <Content Include="package.json" />
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.IgnitionSc.config">
@@ -307,13 +305,6 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\Product\IProductDetail.cs" />
-    <Compile Include="Components\Product\IProductSummary.cs" />
-    <Compile Include="Components\Product\ProductController.cs" />
-    <Compile Include="Components\Product\ProductDetailAgent.cs" />
-    <Compile Include="Components\Product\ProductDetailsViewModel.cs" />
-    <Compile Include="Components\Product\ProductSummaryAgent.cs" />
-    <Compile Include="Components\Product\ProductSummaryViewModel.cs" />
     <Compile Include="Models\IIgnitionPage.cs" />
     <Compile Include="IgnitionScInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

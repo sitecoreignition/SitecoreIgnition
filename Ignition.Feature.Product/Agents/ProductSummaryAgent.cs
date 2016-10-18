@@ -1,6 +1,8 @@
-﻿using Ignition.Foundation.Core.Mvc;
+﻿using Ignition.Feature.Product.Models;
+using Ignition.Feature.Product.ViewModels;
+using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.Product
+namespace Ignition.Feature.Product.Agents
 {
     public class ProductSummaryAgent : Agent<ProductSummaryViewModel>
     {
