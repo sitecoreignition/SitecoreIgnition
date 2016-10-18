@@ -143,6 +143,17 @@
     </Content>
     <Content Include="Views\Breadcrumb.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\FiftyFiftyFrame.cshtml" />
+    <Content Include="Views\FlexibleColumnFrame.cshtml" />
+    <Content Include="Views\FlexibleRowFrame.cshtml" />
+    <Content Include="Views\FortySixtyFrame.cshtml" />
+    <Content Include="Views\FullWidthFrame.cshtml" />
+    <Content Include="Views\IgnitionFrame.cshtml" />
+    <Content Include="Views\SixtyFortyFrame.cshtml" />
+    <Content Include="Views\ThreeColumnSidebars.cshtml" />
+    <Content Include="Views\ThreeColumnEqual.cshtml" />
+    <Content Include="Views\TwoColumnLeftFrame.cshtml" />
+    <Content Include="Views\TwoColumnRightFrame.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -156,9 +167,11 @@
   <ItemGroup>
     <Compile Include="Agents\HeaderAgent.cs" />
     <Compile Include="Controllers\StructureController.cs" />
+    <Compile Include="Models\IBootstrapColumns.cs" />
     <Compile Include="Models\IBreadcrumb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\BreadcrumbViewModel.cs" />
+    <Compile Include="ViewModels\FrameViewModel.cs" />
     <Compile Include="ViewModels\HeaderViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

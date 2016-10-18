@@ -294,7 +294,6 @@
     <Content Include="Html\less\lesshat.less" />
     <Content Include="Html\less\main.less" />
     <Content Include="Html\less\variables.less" />
-    <Content Include="Components\Frame\IgnitionFrame.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Components\Metadata\Head.cshtml" />
@@ -304,24 +303,9 @@
     <Content Include="Components\Metadata\Seo.cshtml" />
     <Content Include="Components\Metadata\Taxonomy.cshtml" />
     <Content Include="Components\Metadata\PageEdit.cshtml" />
-    <Content Include="Components\About\AboutPeopleGrid.cshtml" />
-    <Content Include="Components\About\AboutPeopleTile.cshtml" />
-    <Content Include="Components\Hero\AboutHero.cshtml" />
     <Content Include="Components\Product\ProductDetail.cshtml" />
     <Content Include="Components\Product\ProductSummary.cshtml" />
-    <Content Include="Components\Hero\HeroCarousel.cshtml" />
     <Content Include="package.json" />
-    <Content Include="Components\Hero\_CarouselSlide.cshtml" />
-    <Content Include="Components\Frame\FortySixtyFrame.cshtml" />
-    <Content Include="Components\Frame\FiftyFiftyFrame.cshtml" />
-    <Content Include="Components\Frame\SixtyFortyFrame.cshtml" />
-    <Content Include="Components\Frame\TwoColumnLeftFrame.cshtml" />
-    <Content Include="Components\Frame\TwoColumnRightFrame.cshtml" />
-    <Content Include="Components\Frame\FullWidthFrame.cshtml" />
-    <Content Include="Components\Frame\ThreeColumnSidebars.cshtml" />
-    <Content Include="Components\Frame\ThreeColumnEqual.cshtml" />
-    <Content Include="Components\Frame\FlexibleRowFrame.cshtml" />
-    <Content Include="Components\Frame\FlexibleColumnFrame.cshtml" />
     <Content Include="App_Config\Include\Rainbow.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.IgnitionSc.config">
       <SubType>Designer</SubType>
@@ -331,25 +315,6 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\About\AboutController.cs" />
-    <Compile Include="Components\About\AboutPeopleGridViewModel.cs" />
-    <Compile Include="Components\About\AboutPeopleTileAgent.cs" />
-    <Compile Include="Components\About\AboutPeopleTileViewModel.cs" />
-    <Compile Include="Components\About\IAboutPeopleTile.cs" />
-    <Compile Include="Components\Frame\FrameAgent.cs" />
-    <Compile Include="Components\Frame\FrameController.cs" />
-    <Compile Include="Components\Frame\FrameViewModel.cs" />
-    <Compile Include="Components\Frame\IBootstrapColumns.cs" />
-    <Compile Include="Components\Hero\AboutHeroAgent.cs" />
-    <Compile Include="Components\Hero\AboutHeroViewModel.cs" />
-    <Compile Include="Components\Hero\HeroCarouselAgent.cs" />
-    <Compile Include="Components\Hero\HeroCarouselSlideViewModel.cs" />
-    <Compile Include="Components\Hero\HeroCarouselViewModel.cs" />
-    <Compile Include="Components\Hero\HeroController.cs" />
-    <Compile Include="Components\Hero\IAboutHero.cs" />
-    <Compile Include="Components\Hero\ICarousel.cs" />
-    <Compile Include="Components\Hero\ICarouselSlide.cs" />
-    <Compile Include="Components\Hero\ILinkedImage.cs" />
     <Compile Include="Components\Metadata\MetadataController.cs" />
     <Compile Include="Components\Product\IProductDetail.cs" />
     <Compile Include="Components\Product\IProductSummary.cs" />

@@ -1,6 +1,6 @@
 ﻿using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Project.IgnitionDemo.Sc.Components.Frame
+namespace Ignition.Feature.Structure.ViewModels
 {
 	public class FrameViewModel : BaseViewModel
 	{

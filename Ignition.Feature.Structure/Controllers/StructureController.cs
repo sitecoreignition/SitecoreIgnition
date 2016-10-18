@@ -11,5 +11,6 @@ namespace Ignition.Feature.Structure.Controllers
 	    public ActionResult Footer() => View<BaseViewModel>();
 	    public ActionResult FooterScript() => View<BaseViewModel>();
 	    public ActionResult Breadcrumb() => View<BreadcrumbViewModel>();
-	}
+		public ActionResult IgnitionFrame() => View<FrameViewModel>();
+    }
 }
