@@ -150,12 +150,12 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\ContentBlock.cshtml" />
-    <Content Include="Views\AboutPeopleGrid.cshtml" />
-    <Content Include="Views\AboutPeopleTile.cshtml" />
-    <Content Include="Views\_CarouselSlide.cshtml" />
-    <Content Include="Views\AboutHero.cshtml" />
-    <Content Include="Views\HeroCarousel.cshtml" />
+    <Content Include="Views\Content\ContentBlock.cshtml" />
+    <Content Include="Views\Content\AboutPeopleGrid.cshtml" />
+    <Content Include="Views\Content\AboutPeopleTile.cshtml" />
+    <Content Include="Views\Content\_CarouselSlide.cshtml" />
+    <Content Include="Views\Content\AboutHero.cshtml" />
+    <Content Include="Views\Content\HeroCarousel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -189,21 +189,21 @@
     <Folder Include="App_Config\Include\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ignition.Core\Ignition.Foundation.Core.csproj">
+    <ProjectReference Include="..\Ignition.Core\_Ignition.Foundation.Core.csproj">
       <Project>{a11adf09-8215-4a20-8edd-894c969e0669}</Project>
-      <Name>Ignition.Foundation.Core</Name>
+      <Name>_Ignition.Foundation.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ignition.Data\Ignition.Foundation.Data.csproj">
+    <ProjectReference Include="..\Ignition.Data\_Ignition.Foundation.Data.csproj">
       <Project>{a2a67cbb-5a2a-4207-bff6-0cd348379245}</Project>
-      <Name>Ignition.Foundation.Data</Name>
+      <Name>_Ignition.Foundation.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ignition.Feature.FeatureCore\_Ignition.Feature.FeatureCore.csproj">
+    <ProjectReference Include="..\Ignition.Feature.FeatureCore\_Ignition.Feature.Core.csproj">
       <Project>{b1846bdb-5bbf-4482-ac05-57de7df04476}</Project>
-      <Name>_Ignition.Feature.FeatureCore</Name>
+      <Name>_Ignition.Feature.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ignition.Infrastructure\Ignition.Foundation.Infrastructure.csproj">
+    <ProjectReference Include="..\Ignition.Infrastructure\_Ignition.Foundation.Infrastructure.csproj">
       <Project>{6301e806-d84b-4678-ab6e-aaca3689113a}</Project>
-      <Name>Ignition.Foundation.Infrastructure</Name>
+      <Name>_Ignition.Foundation.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

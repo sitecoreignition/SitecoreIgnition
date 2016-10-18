@@ -13,8 +13,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ignition.Feature.FeatureCore</RootNamespace>
-    <AssemblyName>Ignition.Feature.FeatureCore</AssemblyName>
+    <RootNamespace>Ignition.Feature.Core</RootNamespace>
+    <AssemblyName>Ignition.Feature.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -50,6 +50,12 @@
     <Reference Include="Glass.Mapper, Version=4.2.1.188, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.188\lib\net45\Glass.Mapper.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc">
+      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.188\lib\100\Glass.Mapper.Sc.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc.Mvc">
+      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.188\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
@@ -145,6 +151,23 @@
     <Content Include="packages.config" />
     <Content Include="Views\Shared\IgnitionLayout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Core\Breadcrumb.cshtml" />
+    <Content Include="Views\Core\FiftyFiftyFrame.cshtml" />
+    <Content Include="Views\Core\FlexibleColumnFrame.cshtml" />
+    <Content Include="Views\Core\FlexibleRowFrame.cshtml" />
+    <Content Include="Views\Core\Footer.cshtml" />
+    <Content Include="Views\Core\FooterScript.cshtml" />
+    <Content Include="Views\Core\FortySixtyFrame.cshtml" />
+    <Content Include="Views\Core\FullWidthFrame.cshtml" />
+    <Content Include="Views\Core\Header.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Core\IgnitionFrame.cshtml" />
+    <Content Include="Views\Core\SixtyFortyFrame.cshtml" />
+    <Content Include="Views\Core\ThreeColumnEqual.cshtml" />
+    <Content Include="Views\Core\ThreeColumnSidebars.cshtml" />
+    <Content Include="Views\Core\TwoColumnLeftFrame.cshtml" />
+    <Content Include="Views\Core\TwoColumnRightFrame.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -156,26 +179,33 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agents\HeaderAgent.cs" />
+    <Compile Include="Controllers\CoreController.cs" />
     <Compile Include="FeatureConstants.cs" />
     <Compile Include="IgnitionFeatureCoreInstaller.cs" />
+    <Compile Include="Models\IBootstrapColumns.cs" />
+    <Compile Include="Models\IBreadcrumb.cs" />
     <Compile Include="Models\IIgnitionPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\BreadcrumbViewModel.cs" />
+    <Compile Include="ViewModels\FrameViewModel.cs" />
+    <Compile Include="ViewModels\HeaderViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Config\Include\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ignition.Core\Ignition.Foundation.Core.csproj">
+    <ProjectReference Include="..\Ignition.Core\_Ignition.Foundation.Core.csproj">
       <Project>{a11adf09-8215-4a20-8edd-894c969e0669}</Project>
-      <Name>Ignition.Foundation.Core</Name>
+      <Name>_Ignition.Foundation.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ignition.Data\Ignition.Foundation.Data.csproj">
+    <ProjectReference Include="..\Ignition.Data\_Ignition.Foundation.Data.csproj">
       <Project>{a2a67cbb-5a2a-4207-bff6-0cd348379245}</Project>
-      <Name>Ignition.Foundation.Data</Name>
+      <Name>_Ignition.Foundation.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ignition.Infrastructure\Ignition.Foundation.Infrastructure.csproj">
+    <ProjectReference Include="..\Ignition.Infrastructure\_Ignition.Foundation.Infrastructure.csproj">
       <Project>{6301e806-d84b-4678-ab6e-aaca3689113a}</Project>
-      <Name>Ignition.Foundation.Infrastructure</Name>
+      <Name>_Ignition.Foundation.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

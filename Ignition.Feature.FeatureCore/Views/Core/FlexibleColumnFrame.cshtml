@@ -1,0 +1,14 @@
+﻿@using System.Text
+@using Castle.Core.Internal
+@using Ignition.Feature.Core.Models
+@using Ignition.Foundation.Core.DynamicPlaceholders
+@using Ignition.Foundation.Core.HtmlHelpers
+@using Ignition.Project.IgnitionDemo.Sc
+@inherits GlassView<Ignition.Project.IgnitionDemo.Sc.Components.Frame.FrameViewModel>
+@{
+	var classes = new StringBuilder();
+	GetRenderingParameters<IBootstrapColumns>().ColumnClasses.ForEach(a => classes.Append($"{a.Name} "));
+}
+	<div class="@classes.ToString()">
+		@Html.Sitecore().DynamicPlaceholder(IgnitionConstants.Placeholders.Content.FlexibleCol)
+	</div>

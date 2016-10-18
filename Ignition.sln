@@ -5,11 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Ignition.Foundation", "1-Ignition.Foundation", "{1659CB1D-D361-4970-BE66-25E8969B2851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Foundation.Core", "Ignition.Core\Ignition.Foundation.Core.csproj", "{A11ADF09-8215-4A20-8EDD-894C969E0669}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Ignition.Foundation.Core", "Ignition.Core\_Ignition.Foundation.Core.csproj", "{A11ADF09-8215-4A20-8EDD-894C969E0669}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Foundation.Data", "Ignition.Data\Ignition.Foundation.Data.csproj", "{A2A67CBB-5A2A-4207-BFF6-0CD348379245}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Ignition.Foundation.Data", "Ignition.Data\_Ignition.Foundation.Data.csproj", "{A2A67CBB-5A2A-4207-BFF6-0CD348379245}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Foundation.Infrastructure", "Ignition.Infrastructure\Ignition.Foundation.Infrastructure.csproj", "{6301E806-D84B-4678-AB6E-AACA3689113A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Ignition.Foundation.Infrastructure", "Ignition.Infrastructure\_Ignition.Foundation.Infrastructure.csproj", "{6301E806-D84B-4678-AB6E-AACA3689113A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Project.CompositionRoot", "Ignition.Root\Ignition.Project.CompositionRoot.csproj", "{9DC2D289-775B-47A4-BCCA-79A433A091DA}"
 EndProject
@@ -37,15 +37,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{35D4D2BB-E705-4FEC-AAD2-7DB15EA88717}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Feature.Structure", "Ignition.Feature.Structure\Ignition.Feature.Structure.csproj", "{5003EDAC-1BB8-408E-82D4-6E125001917B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Feature.Content", "Ignition.Feature.Content\Ignition.Feature.Content.csproj", "{3D0F977F-AE32-465C-9EB4-C0FBF70803FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Feature.News", "Ignition.Feature.News\Ignition.Feature.News.csproj", "{EEFCBD25-2201-4229-A9A2-FA89B84FD3B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_FeatureTemplate", "_FeatureTemplate\_FeatureTemplate.csproj", "{E47B8A34-36A5-4D73-8887-8B6648FBD276}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "__FeatureTemplate", "_FeatureTemplate\__FeatureTemplate.csproj", "{E47B8A34-36A5-4D73-8887-8B6648FBD276}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Ignition.Feature.FeatureCore", "Ignition.Feature.FeatureCore\_Ignition.Feature.FeatureCore.csproj", "{B1846BDB-5BBF-4482-AC05-57DE7DF04476}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_Ignition.Feature.Core", "Ignition.Feature.FeatureCore\_Ignition.Feature.Core.csproj", "{B1846BDB-5BBF-4482-AC05-57DE7DF04476}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ignition.Feature.Product", "Ignition.Feature.Product\Ignition.Feature.Product.csproj", "{2C446DD2-DA5C-49FA-A6C0-74AF17A64F16}"
 EndProject
@@ -87,10 +85,6 @@ Global
 		{76E9EB04-27AC-4E56-A085-E5BA6EEA4608}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76E9EB04-27AC-4E56-A085-E5BA6EEA4608}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76E9EB04-27AC-4E56-A085-E5BA6EEA4608}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5003EDAC-1BB8-408E-82D4-6E125001917B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5003EDAC-1BB8-408E-82D4-6E125001917B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5003EDAC-1BB8-408E-82D4-6E125001917B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5003EDAC-1BB8-408E-82D4-6E125001917B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3D0F977F-AE32-465C-9EB4-C0FBF70803FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3D0F977F-AE32-465C-9EB4-C0FBF70803FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D0F977F-AE32-465C-9EB4-C0FBF70803FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -130,7 +124,6 @@ Global
 		{AB9AE2D9-A23B-4607-ABE4-123B667BF5A4} = {1659CB1D-D361-4970-BE66-25E8969B2851}
 		{156386CB-F37D-47C4-B8C7-98250EA303C1} = {1659CB1D-D361-4970-BE66-25E8969B2851}
 		{35D4D2BB-E705-4FEC-AAD2-7DB15EA88717} = {1659CB1D-D361-4970-BE66-25E8969B2851}
-		{5003EDAC-1BB8-408E-82D4-6E125001917B} = {1AF91020-DA7C-47F5-A2C2-D5A91B95FA90}
 		{3D0F977F-AE32-465C-9EB4-C0FBF70803FD} = {1AF91020-DA7C-47F5-A2C2-D5A91B95FA90}
 		{EEFCBD25-2201-4229-A9A2-FA89B84FD3B1} = {1AF91020-DA7C-47F5-A2C2-D5A91B95FA90}
 		{E47B8A34-36A5-4D73-8887-8B6648FBD276} = {1AF91020-DA7C-47F5-A2C2-D5A91B95FA90}

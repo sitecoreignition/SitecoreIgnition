@@ -4,7 +4,7 @@ using Ignition.Foundation.Core.SimpleInjector;
 using SimpleInjector;
 using SimpleInjector.Packaging;
 
-namespace Ignition.Feature.FeatureCore
+namespace Ignition.Feature.Core
 {
 	public class IgnitionFeatureCoreInstaller : IPackage
 	{

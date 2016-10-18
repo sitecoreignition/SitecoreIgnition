@@ -1,4 +1,4 @@
-﻿namespace Ignition.Feature.FeatureCore
+﻿namespace Ignition.Feature.Core
 {
 	public struct FeatureConstants
 	{
