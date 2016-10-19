@@ -84,7 +84,7 @@ namespace Ignition.Foundation.Core.Mvc
 
         protected IModelBase GetDataSourceItem()
         {
-            if (RouteData.Values.ContainsKey(CoreConstants.SitecoreFallThroughRoute))
+            if (RouteData.Values.ContainsKey(FoundationCoreConstants.SitecoreFallThroughRoute))
             {
                 return GetLayoutItem<IModelBase>(false, true) ?? new NullModel();
             }

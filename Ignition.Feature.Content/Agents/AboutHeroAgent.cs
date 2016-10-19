@@ -11,10 +11,6 @@ namespace Ignition.Feature.Content.Agents
             var ds = Datasource as IAboutHero;
 
             if (ds == null) return;
-
-            ViewModel.Image = ds;
-            ViewModel.Heading = ds;
-            ViewModel.RichContext1 = ds;
             ViewModel.LogoImages = ds.LogoImages;
         }
     }

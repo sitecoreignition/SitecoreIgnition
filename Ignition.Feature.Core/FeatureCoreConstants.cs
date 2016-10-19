@@ -1,6 +1,6 @@
 ﻿namespace Ignition.Feature.Core
 {
-	public struct FeatureConstants
+	public struct FeatureCoreConstants
 	{
 		public struct Placeholders
 		{

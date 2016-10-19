@@ -183,7 +183,7 @@
   <ItemGroup>
     <Compile Include="Agents\HeaderAgent.cs" />
     <Compile Include="Controllers\CoreController.cs" />
-    <Compile Include="FeatureConstants.cs" />
+    <Compile Include="FeatureCoreConstants.cs" />
     <Compile Include="IgnitionFeatureCoreInstaller.cs" />
     <Compile Include="Models\IBootstrapColumns.cs" />
     <Compile Include="Models\IBreadcrumb.cs" />

@@ -113,18 +113,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\IgnoreAutomapAttribute.cs" />
-    <Compile Include="CoreConstants.cs" />
+    <Compile Include="Factories\ISitecoreSettingsFactory.cs" />
+    <Compile Include="Factories\SitecoreSettingsFactory.cs" />
+    <Compile Include="FoundationCoreConstants.cs" />
     <Compile Include="Factories\IAgentFactory.cs" />
     <Compile Include="Factories\IgnitionControllerContextFactory.cs" />
     <Compile Include="Factories\IIgnitionControllerContextFactory.cs" />
     <Compile Include="Factories\ISitecoreServiceFactory.cs" />
     <Compile Include="Factories\SimpleInjectorAgentFactory.cs" />
     <Compile Include="Factories\SitecoreServiceFactory.cs" />
-    <Compile Include="Installers\CoreInstaller.cs" />
+    <Compile Include="Installers\CoreGlassConfiguration.cs" />
     <Compile Include="ComponentBlock\ComponentBlock.cs" />
     <Compile Include="DynamicPlaceholders\DynamicPlaceholder.cs" />
     <Compile Include="DynamicPlaceholders\GetDynamicKeyAllowedRenderings.cs" />
     <Compile Include="DynamicPlaceholders\GetDynamicPlaceholderChromeData.cs" />
+    <Compile Include="Installers\IGlassConfiguration.cs" />
     <Compile Include="Models\BaseModels\IModelBase.cs" />
     <Compile Include="Models\BaseModels\IModelBaseWithMetadata.cs" />
     <Compile Include="Models\BaseModels\INeedsChildren.cs" />

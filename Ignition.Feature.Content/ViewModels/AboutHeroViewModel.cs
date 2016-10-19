@@ -7,9 +7,6 @@ namespace Ignition.Feature.Content.ViewModels
 {
     public class AboutHeroViewModel : BaseViewModel
     {
-        public IHeading Heading { get; set; }
-        public ICopy1 RichContext1 { get; set; }
-        public IImage Image { get; set; }
         public IEnumerable<ILinkedImage> LogoImages { get; set; }
     }
 }
