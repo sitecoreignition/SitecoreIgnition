@@ -1,0 +1,17 @@
+﻿---
+ID: "4675394e-7d66-46ba-93ac-672bc57e6c31"
+Parent: "22b9164a-b6fc-4e12-9cc4-ff54066b279e"
+Template: "5546a63f-aa8d-43c5-abae-c89518085558"
+Path: /sitecore/content/Ignition/IgnitionSiteSettings/Main/Theme/CompanyLogo
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1f4f6a33-9831-4323-b879-96af88745183"
+      Hint: ImageSetting
+      Value: "<image mediaid=\"{D8F43703-DAB5-4345-89AD-DF5A3BAD5283}\" alt=\"Ignition\" height=\"35\" width=\"157\" hspace=\"\" vspace=\"\" />"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160817T185818Z

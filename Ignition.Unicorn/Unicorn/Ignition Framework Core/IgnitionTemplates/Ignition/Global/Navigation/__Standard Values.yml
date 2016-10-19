@@ -1,0 +1,14 @@
+﻿---
+ID: "b51c44c9-91b2-4d36-aa36-69527802e082"
+Parent: "c2048728-aa1f-4389-8d71-ab758eca702a"
+Template: "c2048728-aa1f-4389-8d71-ab758eca702a"
+Path: /sitecore/templates/Ignition/Global/Navigation/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151109T205107Z

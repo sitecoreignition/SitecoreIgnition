@@ -1,0 +1,28 @@
+﻿---
+ID: "bd94f8fe-4ef4-4486-8cdb-a40c2d748778"
+Parent: "6be84aa4-bfeb-417b-bbd3-64fc42ea8583"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Ignition/Frames/PageLayout/ThreeColumnSidebars
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Control/32x32/splitter_ver_b.png
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: ~/Components/Frame/FiftyFiftyFrame.cshtml
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: "<image mediaid=\"{8D21EAAE-D6ED-4A8C-AE31-0626E54D92E0}\" />"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: 3 Column Content with Sidebars
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160822T190204Z

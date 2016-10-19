@@ -1,0 +1,21 @@
+﻿---
+ID: "0509fd54-6a8b-4752-8ef3-b810e848ac61"
+Parent: "2edd11c6-9515-48ee-86a1-83e135ea1f9e"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Ignition/Base Classes/Seo/Search Engine Optimization/RobotsNoIndexFollow
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Checkbox
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160304T205806Z

@@ -1,0 +1,14 @@
+﻿---
+ID: "b60c4bcc-a5fe-4f60-84a1-e37b8b0d51a0"
+Parent: "e3fdc87f-c68a-49ca-88ae-283a947709a1"
+Template: "e3fdc87f-c68a-49ca-88ae-283a947709a1"
+Path: /sitecore/templates/Ignition/Base Classes/Seo/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160304T203635Z

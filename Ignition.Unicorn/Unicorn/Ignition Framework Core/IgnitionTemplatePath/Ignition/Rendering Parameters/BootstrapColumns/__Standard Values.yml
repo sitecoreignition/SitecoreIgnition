@@ -1,0 +1,14 @@
+﻿---
+ID: "3774c9be-9677-4040-b3cd-aa5843f2e726"
+Parent: "6f674ef0-9e3a-4eff-a956-6f40da4afa36"
+Template: "6f674ef0-9e3a-4eff-a956-6f40da4afa36"
+Path: /sitecore/templates/Sites/Ignition/Rendering Parameters/BootstrapColumns/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160823T153351Z

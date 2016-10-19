@@ -1,0 +1,18 @@
+﻿---
+ID: "160f5afa-030e-4f5a-af6d-0374445aef13"
+Parent: "8ef8d892-1922-423c-8cb2-968eb5c64430"
+Template: "8ef8d892-1922-423c-8cb2-968eb5c64430"
+Path: /sitecore/templates/Ignition/Global/Header/__Standard Values
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 5
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160205T191701Z

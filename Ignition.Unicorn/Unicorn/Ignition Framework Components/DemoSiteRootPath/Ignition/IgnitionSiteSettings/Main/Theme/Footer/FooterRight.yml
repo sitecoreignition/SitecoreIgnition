@@ -1,0 +1,22 @@
+﻿---
+ID: "3d1a0212-9e86-4b70-995c-95718b330719"
+Parent: "9d2dd8a5-29f2-4bdc-87d5-b0e70f64c1a2"
+Template: "d2c513b3-9ca7-490f-a1ed-58505b7b9ca1"
+Path: /sitecore/content/Ignition/IgnitionSiteSettings/Main/Theme/Footer/FooterRight
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160817T203138Z
+    - ID: "7dd87307-f0d1-4c76-b9d2-bacaf51ae316"
+      Hint: Heading
+      Value: About our Company
+    - ID: "a3513117-630a-4830-86c0-a2f15164be04"
+      Hint: Copy1
+      Value: |
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+        

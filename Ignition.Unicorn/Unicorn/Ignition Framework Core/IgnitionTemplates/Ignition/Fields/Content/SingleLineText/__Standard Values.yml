@@ -1,0 +1,17 @@
+﻿---
+ID: "1739c027-c563-4fa7-b09c-e208962487d3"
+Parent: "d1aef8a0-99fc-4090-8f9b-79ec12b52116"
+Template: "d1aef8a0-99fc-4090-8f9b-79ec12b52116"
+Path: /sitecore/templates/Ignition/Fields/Content/SingleLineText/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160210T190322Z
+    - ID: "bb51faf2-0a09-47e0-ae5c-3d8da64c6c40"
+      Hint: SingleLineText
+      Value: Enter single line of text here.

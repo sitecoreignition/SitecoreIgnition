@@ -1,0 +1,14 @@
+﻿---
+ID: "8942e3cd-93d5-486c-b7da-74f5838c1447"
+Parent: "71305d8c-07cd-41c9-a046-40b5b3617bd0"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Role/Deleted/Remote
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142033Z

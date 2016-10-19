@@ -1,0 +1,29 @@
+﻿---
+ID: "97a78f81-bbbb-423d-857e-69f3270f3dcd"
+Parent: "66c6b50c-5568-4dfe-9aff-6e0c5d9adfc3"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Sites/Ignition/Components/News/LatestNewsItem
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/inbox_into.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {6CDD0A6B-9598-4504-89A6-FACD76D6AF29}
+    {AA715605-C3E3-46EC-BDCB-CBB1365E0D1B}
+    {F92858EF-FD23-4B23-91FF-5F2517DCF5BB}
+    {60A77BBE-C64E-4BD8-AAE1-31B5A8E8AFE5}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160819T132722Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
