@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.Composition;
 using Glass.Mapper.Sc;
 using Ignition.Foundation.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.BaseModels.Concrete;
 using Ignition.Foundation.Core.Models.Page;
 
 namespace Ignition.Foundation.Core.Mvc

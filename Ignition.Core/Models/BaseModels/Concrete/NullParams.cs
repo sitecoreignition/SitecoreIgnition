@@ -5,10 +5,10 @@ using Sitecore;
 using Sitecore.Data;
 using Sitecore.Globalization;
 
-namespace Ignition.Foundation.Core.Models.BaseModels
+namespace Ignition.Foundation.Core.Models.BaseModels.Concrete
 {
     [SitecoreType(AutoMap = false, TemplateId = "{00000000-0000-0000-0000-000000000000}")]
-    public class NullModel : IModelBase
+    public sealed class NullParams : IParamsBase
     {
         public string FullPath
         {
@@ -66,7 +66,7 @@ namespace Ignition.Foundation.Core.Models.BaseModels
 
         public int CompareTo(IModelBase other)
         {
-            return -0;
+            return 0;
         }
 
         public bool Equals(IModelBase other)
@@ -121,5 +121,7 @@ namespace Ignition.Foundation.Core.Models.BaseModels
             get { return string.Empty; }
             set { throw new NotImplementedException(); }
         }
+
+        public string PlaceHolderName { get; set; }
     }
 }

@@ -1,9 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Reflection;
-using Glass.Mapper;
-using Glass.Mapper.Configuration;
-using Glass.Mapper.Maps;
-using Glass.Mapper.Sc.Configuration.Attributes;
+﻿using System.Reflection;
 using Ignition.Foundation.Core.Factories;
 using Ignition.Foundation.Core.Mvc;
 using SimpleInjector;
@@ -11,7 +6,7 @@ using SimpleInjector.Packaging;
 
 namespace Ignition.Foundation.Core.Installers
 {
-	public class CoreGlassConfiguration : IGlassConfiguration, IPackage
+	public class CoreGlassConfiguration : IPackage
 	{
 		#region IPackage
 		public void RegisterServices(Container container)
@@ -24,15 +19,6 @@ namespace Ignition.Foundation.Core.Installers
 			container.Register<ISitecoreSettingsFactory,SitecoreSettingsFactory>(Lifestyle.Transient);
 			container.Register(typeof (SimpleAgent<>), new[] {assembly}, Lifestyle.Transient);
 		}
-		#endregion
-		#region IGlassConfiguration
-		public IEnumerable<IGlassMap> ConfigureGlass()
-		{
-			throw new System.NotImplementedException();
-		}
-
-		public IConfigurationLoader[] GetLoaders()
-			=> new IConfigurationLoader[] {new SitecoreAttributeConfigurationLoader("Ignition.Foundation.Core")};
 		#endregion
 	}
 }

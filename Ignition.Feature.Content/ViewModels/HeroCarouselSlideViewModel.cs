@@ -40,12 +40,6 @@ namespace Ignition.Feature.Content.ViewModels
 			set { Item.Language = value; }
 		}
 
-		public ItemUri Uri
-		{
-			get { return Item.Uri; }
-			set { Item.Uri = value; }
-		}
-
 		public string DisplayName
 		{
 			get { return Item.DisplayName; }

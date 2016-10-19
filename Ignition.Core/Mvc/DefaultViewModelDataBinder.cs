@@ -11,6 +11,7 @@ namespace Ignition.Foundation.Core.Mvc
 	{
 		public void DataBind(BaseViewModel viewModel, IModelBase dataSource)
 		{
+			if (dataSource.Id == viewModel.ContextPage.Id) return;
 			if (dataSource.GetType().GetCustomAttributes(typeof(IgnoreAutomapAttribute), true).Any()) return;
 
 			try

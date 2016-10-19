@@ -4,7 +4,7 @@ using Glass.Mapper.Sc.Fields;
 using Ignition.Foundation.Core.Models.Page;
 using Ignition.Foundation.Core.Models.Settings;
 
-namespace Ignition.Foundation.Core.Models.BaseModels
+namespace Ignition.Foundation.Core.Models.BaseModels.Concrete
 {
     public class NullPage : NullModel, IPage
     {
