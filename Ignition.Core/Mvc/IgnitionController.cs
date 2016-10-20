@@ -4,6 +4,7 @@ using System.Web.Mvc;
 using Glass.Mapper.Sc.Web.Mvc;
 using Ignition.Foundation.Core.Factories;
 using Ignition.Foundation.Core.Models.BaseModels;
+using Ignition.Foundation.Core.Models.BaseModels.Concrete;
 using Ignition.Foundation.Core.Models.Page;
 
 namespace Ignition.Foundation.Core.Mvc
@@ -84,7 +85,7 @@ namespace Ignition.Foundation.Core.Mvc
 
         protected IModelBase GetDataSourceItem()
         {
-            if (RouteData.Values.ContainsKey(CoreConstants.SitecoreFallThroughRoute))
+            if (RouteData.Values.ContainsKey(FoundationCoreConstants.SitecoreFallThroughRoute))
             {
                 return GetLayoutItem<IModelBase>(false, true) ?? new NullModel();
             }

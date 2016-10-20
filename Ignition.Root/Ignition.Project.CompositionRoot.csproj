@@ -206,6 +206,7 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.NewItemsOnly.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.example" />
+    <Content Include="App_Config\Include\Ignition\IgnitionGlassMaps.config" />
     <None Include="Properties\PublishProfiles\Ignition.Root.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
     <None Include="Web.CI.config">
@@ -253,9 +254,29 @@
       <Project>{a2a67cbb-5a2a-4207-bff6-0cd348379245}</Project>
       <Name>_Ignition.Foundation.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Ignition.Feature.Content\Ignition.Feature.Content.csproj">
+      <Project>{3d0f977f-ae32-465c-9eb4-c0fbf70803fd}</Project>
+      <Name>Ignition.Feature.Content</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignition.Feature.Core\_Ignition.Feature.Core.csproj">
+      <Project>{b1846bdb-5bbf-4482-ac05-57de7df04476}</Project>
+      <Name>_Ignition.Feature.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignition.Feature.News\Ignition.Feature.News.csproj">
+      <Project>{eefcbd25-2201-4229-a9a2-fa89b84fd3b1}</Project>
+      <Name>Ignition.Feature.News</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignition.Feature.Product\Ignition.Feature.Product.csproj">
+      <Project>{2c446dd2-da5c-49fa-a6c0-74af17a64f16}</Project>
+      <Name>Ignition.Feature.Product</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ignition.Infrastructure\_Ignition.Foundation.Infrastructure.csproj">
       <Project>{6301e806-d84b-4678-ab6e-aaca3689113a}</Project>
       <Name>_Ignition.Foundation.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignition.Mocks\Ignition.Mocks.csproj">
+      <Project>{a0fd44f8-8139-44dd-94ca-2b491f53c82c}</Project>
+      <Name>Ignition.Mocks</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ignition.Sc\Ignition.Project.IgnitionDemo.Sc.csproj">
       <Project>{6937D0B9-3F0C-4A2F-8B07-62A7809A2161}</Project>

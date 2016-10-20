@@ -1,6 +1,6 @@
 ﻿namespace Ignition.Foundation.Core
 {
-    public struct CoreConstants
+    public struct FoundationCoreConstants
     {
         public const string SitecoreFallThroughRoute = "scIsFallThrough";
     }

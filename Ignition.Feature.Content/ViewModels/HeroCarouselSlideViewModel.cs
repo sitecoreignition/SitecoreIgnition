@@ -18,10 +18,10 @@ namespace Ignition.Feature.Content.ViewModels
 			Item = item;
 		}
 		#region Decorator Overloads
-		public int CompareTo(IModelBase other)
-		{
-			return Item.CompareTo(other);
-		}
+		//public int CompareTo(IModelBase other)
+		//{
+		//	return Item.CompareTo(other);
+		//}
 
 		public bool Equals(IModelBase other)
 		{
@@ -38,12 +38,6 @@ namespace Ignition.Feature.Content.ViewModels
 		{
 			get { return Item.Language; }
 			set { Item.Language = value; }
-		}
-
-		public ItemUri Uri
-		{
-			get { return Item.Uri; }
-			set { Item.Uri = value; }
 		}
 
 		public string DisplayName

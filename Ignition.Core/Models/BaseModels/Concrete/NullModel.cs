@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using Glass.Mapper.Sc.Configuration.Attributes;
-using Sitecore;
-using Sitecore.Data;
 using Sitecore.Globalization;
 
-namespace Ignition.Foundation.Core.Models.BaseModels
+namespace Ignition.Foundation.Core.Models.BaseModels.Concrete
 {
-    [SitecoreType(AutoMap = false, TemplateId = "{00000000-0000-0000-0000-000000000000}")]
-    public sealed class NullParams : IParamsBase
+    public class NullModel : IModelBase
     {
         public string FullPath
         {
@@ -86,12 +83,6 @@ namespace Ignition.Foundation.Core.Models.BaseModels
             set { throw new NotImplementedException(); }
         }
 
-        public ItemUri Uri
-        {
-            get { return new ItemUri(new ID(Guid.Parse("{11111111-1111-1111-1111-111111111111}")), Context.Database); }
-            set { throw new NotImplementedException(); }
-        }
-
         public string DisplayName
         {
             get { return "Null Item"; }
@@ -121,7 +112,5 @@ namespace Ignition.Foundation.Core.Models.BaseModels
             get { return string.Empty; }
             set { throw new NotImplementedException(); }
         }
-
-        public string PlaceHolderName { get; set; }
     }
 }
