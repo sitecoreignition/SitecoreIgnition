@@ -67,6 +67,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mappers\AbstractMapper.cs" />
+    <Compile Include="Mappers\BackgroundImageAlternateMapper.cs" />
+    <Compile Include="Mappers\BackgroundImageMapper.cs" />
+    <Compile Include="Mappers\BooleanMapper.cs" />
+    <Compile Include="Mappers\Copy1Mapper.cs" />
+    <Compile Include="Mappers\Copy2Mapper.cs" />
+    <Compile Include="Mappers\Copy3Mapper.cs" />
+    <Compile Include="Mappers\DateField1Mapper.cs" />
+    <Compile Include="Mappers\DateField2Mapper.cs" />
+    <Compile Include="Mappers\EmailLinkMapper.cs" />
+    <Compile Include="Mappers\HeadingMapper.cs" />
     <Compile Include="Fields\IAbstract.cs" />
     <Compile Include="Fields\IBackgroundImage.cs" />
     <Compile Include="Fields\IBackgroundImageAlternate.cs" />
@@ -79,7 +90,9 @@
     <Compile Include="Fields\IImage2.cs" />
     <Compile Include="Fields\IInternalLink.cs" />
     <Compile Include="Fields\ILogo.cs" />
-    <Compile Include="Fields\IPlainText.cs" />
+    <Compile Include="Mappers\Image2Mapper.cs" />
+    <Compile Include="Mappers\ImageMapper.cs" />
+    <Compile Include="Mappers\InternalLinkMapper.cs" />
     <Compile Include="Fields\IPrimaryLink.cs" />
     <Compile Include="Fields\ICopy1.cs" />
     <Compile Include="Fields\ICopy2.cs" />
@@ -89,6 +102,13 @@
     <Compile Include="Fields\ISingleReference.cs" />
     <Compile Include="Fields\ISubtitle.cs" />
     <Compile Include="Fields\ITertiaryLink.cs" />
+    <Compile Include="Mappers\LogoMapper.cs" />
+    <Compile Include="Mappers\PrimaryLinkMapper.cs" />
+    <Compile Include="Mappers\SecondaryLinkMapper.cs" />
+    <Compile Include="Mappers\SingleLineTextMapper.cs" />
+    <Compile Include="Mappers\SingleReferenceMapper.cs" />
+    <Compile Include="Mappers\SubtitleLinkMapper.cs" />
+    <Compile Include="Mappers\TertiaryLinkMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -101,6 +121,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

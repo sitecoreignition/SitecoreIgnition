@@ -6,7 +6,7 @@ using Glass.Mapper.Maps;
 using Glass.Mapper.Sc;
 using Glass.Mapper.Sc.IoC;
 using Ignition.Foundation.Core.Factories;
-using Ignition.Foundation.Core.Models.Mappers;
+using Ignition.Foundation.Core.Installers.Mappers;
 using IDependencyResolver = Glass.Mapper.Sc.IoC.IDependencyResolver;
 
 namespace Ignition.Project.CompositionRoot

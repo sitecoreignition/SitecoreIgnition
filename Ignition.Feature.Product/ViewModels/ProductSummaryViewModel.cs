@@ -11,6 +11,6 @@ namespace Ignition.Feature.Product.ViewModels
 
         public ISingleLineText SingleLineText { get; set; }
 
-        public IPlainText PlainText { get; set; }
+        public ICopy1 PlainText { get; set; }
     }
 }
