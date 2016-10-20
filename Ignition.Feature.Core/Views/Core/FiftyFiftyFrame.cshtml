@@ -1,11 +1,10 @@
-﻿@using Ignition.Foundation.Core.DynamicPlaceholders
-@using Ignition.Foundation.Core.HtmlHelpers
-@using Ignition.Project.IgnitionDemo.Sc
+﻿@using Ignition.Feature.Core
+@using Ignition.Foundation.Core.DynamicPlaceholders
 <div class="row">
 	<div class="col-md-6">
-		@Html.Sitecore().DynamicPlaceholder(IgnitionConstants.Placeholders.Content.Left)
+		@Html.Sitecore().DynamicPlaceholder(FeatureConstants.Placeholders.Content.Left)
 	</div>
 	<div class="col-md-6">
-		@Html.Sitecore().DynamicPlaceholder(IgnitionConstants.Placeholders.Content.Right)
+		@Html.Sitecore().DynamicPlaceholder(FeatureConstants.Placeholders.Content.Right)
 	</div>
 </div>

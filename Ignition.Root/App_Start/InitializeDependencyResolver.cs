@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Web.Mvc;
 using Ignition.Foundation.Core.SimpleInjector;
 using SimpleInjector;
@@ -28,7 +29,7 @@ namespace Ignition.Project.CompositionRoot
 			container.Options.PropertySelectionBehavior = new ImportPropertySelectionBehavior();
             container.Options.ConstructorResolutionBehavior = new MostResolvableConstructorBehavior(container);
             container.RegisterMvcIntegratedFilterProvider();
-			container.RegisterPackages(AppDomain.CurrentDomain.GetAssemblies());
+			container.RegisterPackages(AppDomain.CurrentDomain.GetAssemblies().Where(x => x.FullName.Contains("Ignition")));
 
 			container.Verify();
 			return container;

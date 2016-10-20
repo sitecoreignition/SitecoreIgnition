@@ -10,7 +10,7 @@ using System.Resources;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Ignition.Infrastructure")]
+[assembly: AssemblyProduct("Ignition.Foundation.Infrastructure")]
 [assembly: AssemblyCopyright("Copyright © 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

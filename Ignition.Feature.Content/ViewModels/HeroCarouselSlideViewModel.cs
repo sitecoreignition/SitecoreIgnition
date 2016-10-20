@@ -18,10 +18,10 @@ namespace Ignition.Feature.Content.ViewModels
 			Item = item;
 		}
 		#region Decorator Overloads
-		public int CompareTo(IModelBase other)
-		{
-			return Item.CompareTo(other);
-		}
+		//public int CompareTo(IModelBase other)
+		//{
+		//	return Item.CompareTo(other);
+		//}
 
 		public bool Equals(IModelBase other)
 		{

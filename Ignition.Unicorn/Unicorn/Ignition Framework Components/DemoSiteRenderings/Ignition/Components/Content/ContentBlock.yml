@@ -7,7 +7,7 @@ DB: master
 SharedFields:
 - ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
   Hint: Path
-  Value: ~/Components/Content/ContentBlock.cshtml
+  Value: /Views/Content/ContentBlock.cshtml
 Languages:
 - Language: en
   Versions:

@@ -1,6 +1,6 @@
-﻿@using Ignition.Project.IgnitionDemo.Sc.Components.Shared
-@using Sitecore.Diagnostics
-@model Ignition.Project.IgnitionDemo.Sc.Components.Bookends.HeaderViewModel
+﻿@using Ignition.Feature.Core.Models
+@model Ignition.Feature.Core.ViewModels.HeaderViewModel
+
 @{ var headerClass = Html.Glass().IsInEditingMode ? "navbar-fixed-top" : string.Empty;}
 <header class="@Html.Raw($"navbar navbar-inverse {headerClass}")" role="banner">
 	<div class="container">
