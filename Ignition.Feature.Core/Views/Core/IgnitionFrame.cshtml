@@ -1,11 +1,11 @@
-﻿@using Ignition.Project.IgnitionDemo.Sc
-@model Ignition.Project.IgnitionDemo.Sc.Components.Frame.FrameViewModel
+﻿@using Ignition.Feature.Core
+@model Ignition.Feature.Core.ViewModels.FrameViewModel
 <body>
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-    @Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Layout.LayoutPageEditor)
-    @Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Layout.LayoutHeader)
-    @Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Layout.LayoutContent)
-    @Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Layout.LayoutFooter)
+    @Html.Sitecore().Placeholder(FeatureConstants.Placeholders.Layout.LayoutPageEditor)
+    @Html.Sitecore().Placeholder(FeatureConstants.Placeholders.Layout.LayoutHeader)
+    @Html.Sitecore().Placeholder(FeatureConstants.Placeholders.Layout.LayoutContent)
+    @Html.Sitecore().Placeholder(FeatureConstants.Placeholders.Layout.LayoutFooter)
 </body>

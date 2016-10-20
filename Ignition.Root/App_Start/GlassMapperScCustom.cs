@@ -20,9 +20,9 @@ namespace Ignition.Project.CompositionRoot
 		{
 			return new IConfigurationLoader[]
 			{
-				new SitecoreAttributeConfigurationLoader("Ignition.Core"),
-				new SitecoreAttributeConfigurationLoader("Ignition.Data"),
-				new SitecoreAttributeConfigurationLoader("Ignition.Sc")
+				new SitecoreAttributeConfigurationLoader("Ignition.Foundation.Core"),
+				new SitecoreAttributeConfigurationLoader("Ignition.Foundation.Data"),
+				new SitecoreAttributeConfigurationLoader("Ignition.Project.IgnitionDemo.Sc")
 			};
 		}
 

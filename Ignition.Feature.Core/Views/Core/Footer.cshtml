@@ -1,13 +1,9 @@
-﻿@using Ignition.Foundation.Core.HtmlHelpers
-@using Ignition.Project.IgnitionDemo.Sc
+﻿@using Ignition.Feature.Core
 <!-- Footer -->
 <div class="footer">
 	<div class="container">
-
-		<div class="row">
-
-
-			@Html.Sitecore().Placeholder("footerContent")
+        <div class="row">
+            @Html.Sitecore().Placeholder("footerContent")
 		</div>
 		<div class="row">
 			<div class="col-md-12">
@@ -18,5 +14,4 @@
 		</div>
 	</div>
 </div>
-@Html.RenderResources(ResourceType.Js)
-@Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Layout.LayoutFooterScript)
+@Html.Sitecore().Placeholder(FeatureConstants.Placeholders.Layout.LayoutFooterScript)
