@@ -14,7 +14,7 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 				ImportMap<IModelBase>();
 				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.File"));
 				x.AutoMap();
-				x.Field(a => a.MimeType).FieldName(SettingsFactory.GetAppSetting("Models.Fields.MineType"));
+				x.Field(a => a.MimeType).FieldName(SettingsFactory.GetAppSetting("Models.Fields.MimeType"));
 				x.Field(a => a.Icon).FieldName(SettingsFactory.GetAppSetting("Models.Fields.Icon"));
 			});
 		}
