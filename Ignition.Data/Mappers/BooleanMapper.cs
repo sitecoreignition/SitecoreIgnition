@@ -14,9 +14,9 @@ namespace Ignition.Foundation.Data.Mappers
 			Map(x =>
 			{
 				ImportMap<IModelBase>();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.Boolean"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.Boolean"));
 				x.Cachable();
-				x.Field(a => a.Checkbox).FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.Checkbox"));
+				x.Field(a => a.Checkbox).FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.Checkbox"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

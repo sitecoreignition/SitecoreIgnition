@@ -1,6 +1,6 @@
 ﻿using System;
 using Glass.Mapper.Sc.Fields;
-using Ignition.Feature.Content.Models;
+using Ignition.Feature.Content.DTOs;
 using Ignition.Foundation.Core.Models.BaseModels;
 using Ignition.Foundation.Core.Mvc;
 using Sitecore.Data;

@@ -1,6 +1,6 @@
 ﻿using Ignition.Foundation.Data.Fields;
 
-namespace Ignition.Feature.Core.Models
+namespace Ignition.Feature.Core.DTOs
 {
     public interface IBreadcrumb : IHeading
     {

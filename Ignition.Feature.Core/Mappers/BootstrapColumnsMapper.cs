@@ -1,9 +1,10 @@
 ﻿using Glass.Mapper.Sc.Maps;
+using Ignition.Feature.Core.DTOs;
 using Ignition.Foundation.Core.Contracts;
 using Ignition.Foundation.Core.Installers.Mappers;
 using Ignition.Foundation.Core.Models.BaseModels;
 
-namespace Ignition.Feature.Core.Models
+namespace Ignition.Feature.Core.Mappers
 {
 	public class BootstrapColumnsMapper : SitecoreGlassMap<IBootstrapColumns>, IGlassSettingsConsumer
 	{
@@ -12,7 +13,7 @@ namespace Ignition.Feature.Core.Models
 			Map(x =>
 			{
 				ImportMap<IParamsBase>();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Feature.Core.Map.Id.BootstrapColumns"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Feature.Core.Map.Id.BootstrapColumns"));
 				x.AutoMap().Cachable();
 			});
 		}

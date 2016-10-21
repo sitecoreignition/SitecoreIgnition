@@ -19,7 +19,7 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 				ImportMap<INeedsParent>();
 				ImportMap<IModelBaseWithMetadata>();
 				x.AutoMap().Cachable();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.Page"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.Page"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

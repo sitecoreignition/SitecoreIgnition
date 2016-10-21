@@ -13,9 +13,9 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 			Map(x =>
 			{
 				ImportMap<IModelBase>();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.DecimalSetting"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.DecimalSetting"));
 				x.Field(a => a.DecimalSetting)
-					.FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.DecimalSetting.DecimalSetting"));
+					.FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.DecimalSetting.DecimalSetting"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

@@ -15,8 +15,8 @@ namespace Ignition.Foundation.Data.Mappers
 			{
 				ImportMap<IModelBase>();
 				x.Cachable();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.SingleReference"));
-				x.Field(a => a.ReferencedItem).FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.SingleReference.ReferencedItem"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.SingleReference"));
+				x.Field(a => a.ReferencedItem).FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.SingleReference.ReferencedItem"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

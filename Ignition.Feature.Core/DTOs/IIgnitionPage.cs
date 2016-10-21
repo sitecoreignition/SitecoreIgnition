@@ -1,6 +1,6 @@
 ﻿using Ignition.Foundation.Core.Models.Page;
 
-namespace Ignition.Feature.Core.Models
+namespace Ignition.Feature.Core.DTOs
 {
 	public interface IIgnitionPage : IPage
 	{

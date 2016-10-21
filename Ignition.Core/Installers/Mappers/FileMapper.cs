@@ -13,10 +13,10 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 			Map(x =>
 			{
 				ImportMap<IModelBase>();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.File"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.File"));
 				x.AutoMap();
-				x.Field(a => a.MimeType).FieldName(SettingsFactory.GetAppSetting("Models.Fields.MimeType"));
-				x.Field(a => a.Icon).FieldName(SettingsFactory.GetAppSetting("Models.Fields.Icon"));
+				x.Field(a => a.MimeType).FieldName(SettingsFactory.GetSitecoreSetting("Models.Fields.MimeType"));
+				x.Field(a => a.Icon).FieldName(SettingsFactory.GetSitecoreSetting("Models.Fields.Icon"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

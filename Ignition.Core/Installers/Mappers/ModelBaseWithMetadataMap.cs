@@ -14,9 +14,9 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 			{
 				x.Cachable().AutoMap();
 				x.Info(a => a.FullUrl).InfoType(SitecoreInfoType.Url).UrlOptions(SitecoreInfoUrlOptions.AlwaysIncludeServerUrl);
-				x.Field(a => a.Created).FieldName(SettingsFactory.GetAppSetting("Models.Fields.Created"));
-				x.Field(a => a.Updated).FieldName(SettingsFactory.GetAppSetting("Models.Fields.Updated"));
-				x.Field(a => a.Sortorder).FieldName(SettingsFactory.GetAppSetting("Models.Fields.Sortorder"));
+				x.Field(a => a.Created).FieldName(SettingsFactory.GetSitecoreSetting("Models.Fields.Created"));
+				x.Field(a => a.Updated).FieldName(SettingsFactory.GetSitecoreSetting("Models.Fields.Updated"));
+				x.Field(a => a.Sortorder).FieldName(SettingsFactory.GetSitecoreSetting("Models.Fields.Sortorder"));
 				x.Info(a => a.TemplateId).InfoType(SitecoreInfoType.TemplateId);
 				x.Info(a => a.TemplateName).InfoType(SitecoreInfoType.TemplateName);
 			});

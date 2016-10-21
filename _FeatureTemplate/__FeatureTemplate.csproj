@@ -76,6 +76,8 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Views\Web.config" />
+    <Content Include="App_Config\Include\Ignition\Ignition.Feature.InsertProjectName\Ignition.GlassMaps.InsertProjectName.config" />
+    <Content Include="App_Config\Include\Ignition\Ignition.Feature.InsertProjectName\Ignition.Unicorn.InsertProjectName.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -87,13 +89,14 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IgnitionInsertProjectNameInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Agents\" />
-    <Folder Include="App_Config\Include\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Mappers\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <PropertyGroup>

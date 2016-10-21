@@ -14,8 +14,8 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 			{
 				ImportMap<IModelBase>();
 				x.AutoMap().Cachable();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.Taxonomy"));
-				x.Field(a => a.Tags).FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.Taxonomy.Tags"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.Taxonomy"));
+				x.Field(a => a.Tags).FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.Taxonomy.Tags"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

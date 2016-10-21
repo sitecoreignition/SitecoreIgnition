@@ -15,8 +15,8 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 				ImportMap<IModelBase>();
 				x.AutoMap().Cachable();
 				x.TemplateId("Ignition.Map.Id.Metadata");
-				x.Field(a => a.PageTitle).FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.Metadata.PageTitle"));
-				x.Field(a => a.PageDescription).FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.Metadata.PageDescription"));
+				x.Field(a => a.PageTitle).FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.Metadata.PageTitle"));
+				x.Field(a => a.PageDescription).FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.Metadata.PageDescription"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

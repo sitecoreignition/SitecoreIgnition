@@ -15,9 +15,9 @@ namespace Ignition.Foundation.Data.Mappers
 			Map(x =>
 			{
 				ImportMap<IModelBase>();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.Copy2"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.Copy2"));
 				x.Cachable();
-				x.Field(a => a.Copy2).FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.Copy2")).FieldType(SitecoreFieldType.RichText);
+				x.Field(a => a.Copy2).FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.Copy2")).FieldType(SitecoreFieldType.RichText);
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

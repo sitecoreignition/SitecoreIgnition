@@ -15,7 +15,7 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 				ImportMap<IModelBase>();
 				ImportMap<INeedsChildren>();
 				ImportMap<INeedsParent>();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.Folder"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.Folder"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

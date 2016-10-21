@@ -15,7 +15,7 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 			{
 				x.AutoMap();
 				x.Id(a => a.Id);
-				x.Config.TemplateId = new ID(SettingsFactory.GetAppSetting("Ignition.Map.Id.ModelBase"));
+				x.Config.TemplateId = new ID(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.ModelBase"));
 				x.Info(a => a.Language).InfoType(SitecoreInfoType.Language);
 				x.Info(a => a.Path).InfoType(SitecoreInfoType.Path);
 				x.Info(a => a.DisplayName).InfoType(SitecoreInfoType.DisplayName);

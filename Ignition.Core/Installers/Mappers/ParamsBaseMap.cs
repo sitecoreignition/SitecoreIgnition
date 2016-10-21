@@ -13,7 +13,7 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 			{
 				ImportMap<IModelBase>();
 				x.AutoMap().Cachable();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.ParamsBase"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.ParamsBase"));
 			});
 		}
 

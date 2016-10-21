@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Ignition.Feature.Content.Models;
+using Ignition.Feature.Content.DTOs;
 using Ignition.Foundation.Core.Mvc;
 using Ignition.Foundation.Data.Fields;
 

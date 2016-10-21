@@ -1,4 +1,4 @@
-﻿using Ignition.Feature.Core.Models;
+﻿using Ignition.Feature.Core.DTOs;
 using Ignition.Foundation.Core.Attributes;
 using Ignition.Foundation.Core.Models.Settings;
 using Ignition.Foundation.Core.Mvc;

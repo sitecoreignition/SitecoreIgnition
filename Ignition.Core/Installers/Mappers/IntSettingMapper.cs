@@ -13,9 +13,9 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 			Map(x =>
 			{
 				ImportMap<IModelBase>();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.IntSetting"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.IntSetting"));
 				x.Field(a => a.IntSetting)
-					.FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.IntSetting.IntSetting"));
+					.FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.IntSetting.IntSetting"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

@@ -14,7 +14,7 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 			{
 				ImportMap<IModelBase>();
 				x.AutoMap().Cachable();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.NavFolder"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.NavFolder"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

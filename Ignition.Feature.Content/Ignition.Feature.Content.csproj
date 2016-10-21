@@ -156,7 +156,8 @@
     <Content Include="Views\Content\_CarouselSlide.cshtml" />
     <Content Include="Views\Content\AboutHero.cshtml" />
     <Content Include="Views\Content\HeroCarousel.cshtml" />
-    <Content Include="App_Config\Include\Ignition.Feature\Unicorn.Ignition.Feature.Content.config" />
+    <Content Include="App_Config\Include\Ignition\Ignition.Feature.Content\Ignition.Unicorn.Content.config" />
+    <Content Include="App_Config\Include\Ignition\Ignition.Feature.Content\Ignition.GlassMaps.Content.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -173,13 +174,19 @@
     <Compile Include="Agents\AboutPeopleTileAgent.cs" />
     <Compile Include="Agents\HeroCarouselAgent.cs" />
     <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Mappers\CarouselSlideMapper.cs" />
+    <Compile Include="Mappers\ContentBlockMapper.cs" />
+    <Compile Include="Mappers\CarouselMapper.cs" />
     <Compile Include="IgnitionContentInstaller.cs" />
-    <Compile Include="Models\IAboutHero.cs" />
-    <Compile Include="Models\IAboutPeopleTile.cs" />
-    <Compile Include="Models\ICarousel.cs" />
-    <Compile Include="Models\ICarouselSlide.cs" />
-    <Compile Include="Models\IContentBlock.cs" />
-    <Compile Include="Models\ILinkedImage.cs" />
+    <Compile Include="Mappers\AboutHeroMapper.cs" />
+    <Compile Include="Mappers\AboutPeopleTileMapper.cs" />
+    <Compile Include="DTOs\IAboutHero.cs" />
+    <Compile Include="DTOs\IAboutPeopleTile.cs" />
+    <Compile Include="DTOs\ICarousel.cs" />
+    <Compile Include="DTOs\ICarouselSlide.cs" />
+    <Compile Include="DTOs\IContentBlock.cs" />
+    <Compile Include="DTOs\ILinkedImage.cs" />
+    <Compile Include="Mappers\LinkedImageMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AboutHeroViewModel.cs" />
     <Compile Include="ViewModels\AboutPeopleGridViewModel.cs" />

@@ -14,9 +14,9 @@ namespace Ignition.Foundation.Data.Mappers
 			Map(x =>
 			{
 				ImportMap<IModelBase>();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.EmailLink"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.EmailLink"));
 				x.Cachable();
-				x.Field(a => a.EmailLink).FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.EmailLink"));
+				x.Field(a => a.EmailLink).FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.EmailLink"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }

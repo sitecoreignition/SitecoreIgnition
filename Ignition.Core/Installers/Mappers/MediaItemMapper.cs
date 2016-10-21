@@ -15,7 +15,7 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 			{
 				ImportMap<IModelBase>();
 				ImportMap<IFile>();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.MediaItem"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.MediaItem"));
 				x.AutoMap().Cachable();
 				x.Info(a => a.MediaUrl).InfoType(SitecoreInfoType.MediaUrl);
 			});

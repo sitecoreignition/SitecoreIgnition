@@ -2,7 +2,7 @@
 {
 	public interface ISitecoreSettingsFactory
 	{
-		string GetAppSetting(string key);
-		string GetAppSetting(string key, string arg);
+		string GetSitecoreSetting(string key);
+		string GetSitecoreSetting(string key, string arg);
 	}
 }

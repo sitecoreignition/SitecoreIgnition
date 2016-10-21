@@ -168,8 +168,8 @@
     <Content Include="Views\Core\ThreeColumnSidebars.cshtml" />
     <Content Include="Views\Core\TwoColumnLeftFrame.cshtml" />
     <Content Include="Views\Core\TwoColumnRightFrame.cshtml" />
-    <Content Include="App_Config\Include\Ignition.Feature.Core\Unicorn.Ignition.Feature.Core.config" />
-    <Content Include="App_Config\Include\Ignition.Feature.Core\IgnitionGlassMaps.config" />
+    <Content Include="App_Config\Include\Ignition\Ignition.Feature.Core\Ignition.Unicorn.Core.config" />
+    <Content Include="App_Config\Include\Ignition\Ignition.Feature.Core\Ignition.GlassMaps.Core.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -186,12 +186,12 @@
     <Compile Include="Controllers\CoreController.cs" />
     <Compile Include="FeatureCoreConstants.cs" />
     <Compile Include="IgnitionFeatureCoreInstaller.cs" />
-    <Compile Include="Models\BootstrapColumnsMapper.cs" />
-    <Compile Include="Models\BreadcrumbMapper.cs" />
-    <Compile Include="Models\IBootstrapColumns.cs" />
-    <Compile Include="Models\IBreadcrumb.cs" />
-    <Compile Include="Models\IgnitionPageMapper.cs" />
-    <Compile Include="Models\IIgnitionPage.cs" />
+    <Compile Include="Mappers\BootstrapColumnsMapper.cs" />
+    <Compile Include="Mappers\BreadcrumbMapper.cs" />
+    <Compile Include="DTOs\IBootstrapColumns.cs" />
+    <Compile Include="DTOs\IBreadcrumb.cs" />
+    <Compile Include="Mappers\IgnitionPageMapper.cs" />
+    <Compile Include="DTOs\IIgnitionPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\BreadcrumbViewModel.cs" />
     <Compile Include="ViewModels\FrameViewModel.cs" />

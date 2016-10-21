@@ -152,9 +152,10 @@
     <Content Include="Views\Product\ProductDetail.cshtml" />
     <Content Include="Views\Product\ProductSummary.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="App_Config\Include\Ignition.Feature\Unicorn.Ignition.Feature.Product.config">
+    <Content Include="App_Config\Include\Ignition\Ignition.Feature.Product\Ignition.Unicorn.Product.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="App_Config\Include\Ignition\Ignition.Feature.Product\Ignition.GlassMaps.Product.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -168,8 +169,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IgnitionProductInstaller.cs" />
-    <Compile Include="Models\IProductDetail.cs" />
-    <Compile Include="Models\IProductSummary.cs" />
+    <Compile Include="DTOs\IProductDetail.cs" />
+    <Compile Include="DTOs\IProductSummary.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Agents\ProductDetailAgent.cs" />
     <Compile Include="ViewModels\ProductDetailsViewModel.cs" />

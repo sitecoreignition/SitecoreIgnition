@@ -14,13 +14,13 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 			{
 				ImportMap<IModelBase>();
 				x.AutoMap().Cachable();
-				x.TemplateId(SettingsFactory.GetAppSetting("Ignition.Map.Id.Navigation"));
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.Navigation"));
 				x.Field(a => a.NavigationTitle)
-					.FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.Navigation.NavigationTitle"));
+					.FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.Navigation.NavigationTitle"));
 				x.Field(a => a.HideFromNavigation)
-					.FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.Navigation.HideFromNavigation"));
+					.FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.Navigation.HideFromNavigation"));
 				x.Field(a => a.HideChildrenFromNavigation)
-					.FieldId(SettingsFactory.GetAppSetting("Models.Fields.Id.Navigation.HideChildrenFromNavigation"));
+					.FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.Navigation.HideChildrenFromNavigation"));
 			});
 		}
 		public ISitecoreSettingsFactory SettingsFactory { get; set; }
