@@ -3,7 +3,7 @@ using Ignition.Foundation.Data.Fields;
 
 namespace Ignition.Feature.Product.ViewModels
 {
-    public class ProductDetailsViewModel : BaseViewModel
+    public class ProductDetailsViewModel : IgnitionViewModel
     {
         public IImage Image { get; set; }
 

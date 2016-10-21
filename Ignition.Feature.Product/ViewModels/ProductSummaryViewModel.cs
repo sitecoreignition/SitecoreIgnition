@@ -3,7 +3,7 @@ using Ignition.Foundation.Data.Fields;
 
 namespace Ignition.Feature.Product.ViewModels
 {
-    public class ProductSummaryViewModel : BaseViewModel
+    public class ProductSummaryViewModel : IgnitionViewModel
     {
         public IHeading Heading { get; set; }
 

@@ -2,7 +2,7 @@
 
 namespace Ignition.Feature.News.ViewModels
 {
-    public class NewsGridViewModel : BaseViewModel
+    public class NewsGridViewModel : IgnitionViewModel
     {
     }
 }

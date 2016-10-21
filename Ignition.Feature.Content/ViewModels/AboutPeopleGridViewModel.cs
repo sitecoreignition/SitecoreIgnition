@@ -2,7 +2,7 @@
 
 namespace Ignition.Feature.Content.ViewModels
 {
-    public class AboutPeopleGridViewModel : BaseViewModel
+    public class AboutPeopleGridViewModel : IgnitionViewModel
     {
     }
 }

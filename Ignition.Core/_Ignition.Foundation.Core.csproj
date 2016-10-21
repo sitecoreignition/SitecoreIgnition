@@ -113,13 +113,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes\IgnoreAutomapAttribute.cs" />
-    <Compile Include="Factories\ISitecoreSettingsFactory.cs" />
+    <Compile Include="Contracts\ISitecoreSettingsFactory.cs" />
     <Compile Include="Factories\SitecoreSettingsFactory.cs" />
     <Compile Include="FoundationCoreConstants.cs" />
-    <Compile Include="Factories\IAgentFactory.cs" />
+    <Compile Include="Contracts\IAgentFactory.cs" />
     <Compile Include="Factories\IgnitionControllerContextFactory.cs" />
-    <Compile Include="Factories\IIgnitionControllerContextFactory.cs" />
-    <Compile Include="Factories\ISitecoreServiceFactory.cs" />
+    <Compile Include="Contracts\IIgnitionControllerContextFactory.cs" />
+    <Compile Include="Contracts\ISitecoreServiceFactory.cs" />
     <Compile Include="Factories\SimpleInjectorAgentFactory.cs" />
     <Compile Include="Factories\SitecoreServiceFactory.cs" />
     <Compile Include="Installers\CoreGlassConfiguration.cs" />
@@ -127,7 +127,7 @@
     <Compile Include="DynamicPlaceholders\DynamicPlaceholder.cs" />
     <Compile Include="DynamicPlaceholders\GetDynamicKeyAllowedRenderings.cs" />
     <Compile Include="DynamicPlaceholders\GetDynamicPlaceholderChromeData.cs" />
-    <Compile Include="Installers\IGlassConfiguration.cs" />
+    <Compile Include="Contracts\IGlassConfiguration.cs" />
     <Compile Include="Models\BaseModels\Concrete\ModelBase.cs" />
     <Compile Include="Models\BaseModels\Concrete\NullModel.cs" />
     <Compile Include="Models\BaseModels\Concrete\NullPage.cs" />
@@ -181,18 +181,17 @@
     <Compile Include="Models\System\IFolder.cs" />
     <Compile Include="Models\System\IMediaItem.cs" />
     <Compile Include="Mvc\IgnitionControllerContext.cs" />
-    <Compile Include="Mvc\IViewModelDataBinder.cs" />
+    <Compile Include="Contracts\IViewModelDataBinder.cs" />
     <Compile Include="Mvc\Routing\PublicRouteAttribute.cs" />
     <Compile Include="Mvc\Routing\PublicRouteProvider.cs" />
     <Compile Include="Mvc\SimpleAgent.cs" />
-    <Compile Include="Mvc\ViewEngines\ExperienceEditorViewEngine.cs" />
+    <Compile Include="Mvc\ExperienceEditorViewEngine.cs" />
     <Compile Include="Mvc\DefaultViewModelDataBinder.cs" />
-    <Compile Include="Repositories\CacheItem.cs" />
     <Compile Include="Mvc\AgentContext.cs" />
     <Compile Include="DeferredScriptLoader\DeferredScriptLoader.cs" />
     <Compile Include="Bases\IDatabaseType.cs" />
     <Compile Include="Mvc\Agent.cs" />
-    <Compile Include="Mvc\BaseViewModel.cs" />
+    <Compile Include="Mvc\IgnitionViewModel.cs" />
     <Compile Include="Mvc\IgnitionController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\MasterDatabaseType.cs" />

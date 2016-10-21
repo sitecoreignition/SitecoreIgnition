@@ -5,7 +5,7 @@ using Ignition.Foundation.Data.Fields;
 
 namespace Ignition.Feature.News.ViewModels
 {
-    public class LatestNewsViewModel : BaseViewModel
+    public class LatestNewsViewModel : IgnitionViewModel
     {
         public IHeading Heading { get; set; }
 

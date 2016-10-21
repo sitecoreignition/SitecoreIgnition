@@ -2,7 +2,7 @@
 
 namespace Ignition.Feature.Content.ViewModels
 {
-	public class HeroCarouselViewModel : BaseViewModel
+	public class HeroCarouselViewModel : IgnitionViewModel
 	{
 	}
 }

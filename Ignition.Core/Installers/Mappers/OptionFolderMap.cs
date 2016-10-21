@@ -1,4 +1,5 @@
 ﻿using Glass.Mapper.Sc.Maps;
+using Ignition.Foundation.Core.Contracts;
 using Ignition.Foundation.Core.Factories;
 using Ignition.Foundation.Core.Models.BaseModels;
 using Ignition.Foundation.Core.Models.Containers;

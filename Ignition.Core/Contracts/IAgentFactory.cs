@@ -1,11 +1,11 @@
 ﻿using Ignition.Foundation.Core.Mvc;
 
-namespace Ignition.Foundation.Core.Factories
+namespace Ignition.Foundation.Core.Contracts
 {
 	public interface IAgentFactory
 	{
 		TViewAgent CreateAgent<TViewAgent, TViewModel>(AgentContext agentContext)
 			where TViewAgent : Agent<TViewModel>
-			where TViewModel : BaseViewModel, new();
+			where TViewModel : IgnitionViewModel, new();
 	}
 }

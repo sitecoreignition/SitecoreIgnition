@@ -8,7 +8,7 @@ using Sitecore.Globalization;
 
 namespace Ignition.Feature.Content.ViewModels
 {
-	public class HeroCarouselSlideViewModel : BaseViewModel, ICarouselSlide
+	public class HeroCarouselSlideViewModel : IgnitionViewModel, ICarouselSlide
 	{
 		protected ICarouselSlide Item { get; set; }
 

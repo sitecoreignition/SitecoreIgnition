@@ -3,7 +3,7 @@ using Ignition.Foundation.Data.Fields;
 
 namespace Ignition.Feature.Content.ViewModels
 {
-    public class AboutPeopleTileViewModel : BaseViewModel
+    public class AboutPeopleTileViewModel : IgnitionViewModel
     {
         public IHeading Heading { get; set; }
         public ISubtitle Subtitle { get; set; }

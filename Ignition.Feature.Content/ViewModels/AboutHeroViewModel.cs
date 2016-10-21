@@ -5,7 +5,7 @@ using Ignition.Foundation.Data.Fields;
 
 namespace Ignition.Feature.Content.ViewModels
 {
-    public class AboutHeroViewModel : BaseViewModel
+    public class AboutHeroViewModel : IgnitionViewModel
     {
         public IEnumerable<ILinkedImage> LogoImages { get; set; }
     }

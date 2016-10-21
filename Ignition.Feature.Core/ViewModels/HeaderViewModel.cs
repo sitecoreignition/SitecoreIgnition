@@ -5,7 +5,7 @@ using Ignition.Foundation.Core.Mvc;
 
 namespace Ignition.Feature.Core.ViewModels
 {
-	public class HeaderViewModel : BaseViewModel
+	public class HeaderViewModel : IgnitionViewModel
 	{
 		public IIgnitionPage HomePage { get; set; }
         [IgnoreAutomap]

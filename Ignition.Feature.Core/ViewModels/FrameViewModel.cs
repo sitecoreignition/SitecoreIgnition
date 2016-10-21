@@ -2,7 +2,7 @@
 
 namespace Ignition.Feature.Core.ViewModels
 {
-	public class FrameViewModel : BaseViewModel
+	public class FrameViewModel : IgnitionViewModel
 	{
 	}
 }

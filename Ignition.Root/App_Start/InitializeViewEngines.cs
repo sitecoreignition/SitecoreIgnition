@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
-using Ignition.Foundation.Core.Mvc.ViewEngines;
+using Ignition.Foundation.Core.Mvc;
 using Sitecore.Pipelines;
 
 namespace Ignition.Project.CompositionRoot

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Ignition.Foundation.Core.Attributes;
+using Ignition.Foundation.Core.Contracts;
 using Ignition.Foundation.Core.Models.BaseModels;
 using Ignition.Foundation.Core.Models.Page;
 using Sitecore.Diagnostics;
@@ -9,7 +10,7 @@ namespace Ignition.Foundation.Core.Mvc
 {
 	public class DefaultViewModelDataBinder : IViewModelDataBinder
 	{
-		public void DataBind(BaseViewModel viewModel, IModelBase dataSource)
+		public void DataBind(IgnitionViewModel viewModel, IModelBase dataSource)
 		{
 			if (dataSource.Id == viewModel.ContextPage.Id) return;
 			if (dataSource.GetType().GetCustomAttributes(typeof(IgnoreAutomapAttribute), true).Any()) return;

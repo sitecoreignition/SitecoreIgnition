@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using Ignition.Foundation.Core.Contracts;
 using Ignition.Foundation.Core.Factories;
 using Ignition.Foundation.Core.Mvc;
 using SimpleInjector;

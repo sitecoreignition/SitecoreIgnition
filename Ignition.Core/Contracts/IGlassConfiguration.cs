@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
-using Glass.Mapper;
 using Glass.Mapper.Configuration;
 using Glass.Mapper.Maps;
-using SimpleInjector.Packaging;
 
-namespace Ignition.Foundation.Core.Installers
+namespace Ignition.Foundation.Core.Contracts
 {
 	public interface IGlassConfiguration
 	{

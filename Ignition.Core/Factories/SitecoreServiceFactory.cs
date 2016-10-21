@@ -1,5 +1,6 @@
 ﻿using Glass.Mapper.Sc;
 using Ignition.Foundation.Core.Bases;
+using Ignition.Foundation.Core.Contracts;
 
 namespace Ignition.Foundation.Core.Factories
 {

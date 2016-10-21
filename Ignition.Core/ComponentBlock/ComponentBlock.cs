@@ -2,7 +2,7 @@
 using System.IO;
 using System.Web.Mvc;
 
-namespace Ignition.Foundation.Core.HtmlHelpers
+namespace Ignition.Foundation.Core.ComponentBlock
 {
     public class ComponentBlock : IDisposable
     {

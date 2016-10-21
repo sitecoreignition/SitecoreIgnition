@@ -3,7 +3,7 @@ using Ignition.Foundation.Core.Models.Page;
 
 namespace Ignition.Foundation.Core.Mvc
 {
-    public class BaseViewModel
+    public class IgnitionViewModel
     {
         public virtual string ViewPath { get; set; }
         public IPage ContextPage { get; set; }

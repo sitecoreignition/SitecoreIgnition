@@ -1,13 +1,14 @@
 ﻿using System;
 using System.ComponentModel.Composition;
 using Glass.Mapper.Sc;
+using Ignition.Foundation.Core.Contracts;
 using Ignition.Foundation.Core.Factories;
 using Ignition.Foundation.Core.Models.BaseModels;
 using Ignition.Foundation.Core.Models.Page;
 
 namespace Ignition.Foundation.Core.Mvc
 {
-	public abstract class Agent<TViewModel> where TViewModel : BaseViewModel, new()
+	public abstract class Agent<TViewModel> where TViewModel : IgnitionViewModel, new()
 	{
         [Import]
         protected ISitecoreServiceFactory SitecoreServiceFactory { get; set; }

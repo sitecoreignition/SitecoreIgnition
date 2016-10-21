@@ -1,4 +1,6 @@
-﻿namespace Ignition.Foundation.Core.Factories
+﻿using Ignition.Foundation.Core.Contracts;
+
+namespace Ignition.Foundation.Core.Factories
 {
 	public class SitecoreSettingsFactory : ISitecoreSettingsFactory
 	{

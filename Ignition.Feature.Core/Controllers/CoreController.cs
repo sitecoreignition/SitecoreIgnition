@@ -8,8 +8,8 @@ namespace Ignition.Feature.Core.Controllers
     public class CoreController : IgnitionController
     {
         public ActionResult Header() => View<HeaderAgent, HeaderViewModel>();
-	    public ActionResult Footer() => View<BaseViewModel>();
-	    public ActionResult FooterScript() => View<BaseViewModel>();
+	    public ActionResult Footer() => View<IgnitionViewModel>();
+	    public ActionResult FooterScript() => View<IgnitionViewModel>();
 	    public ActionResult Breadcrumb() => View<BreadcrumbViewModel>();
 		public ActionResult IgnitionFrame() => View<FrameViewModel>();
     }
