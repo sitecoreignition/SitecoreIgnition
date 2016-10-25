@@ -18,7 +18,7 @@ namespace Ignition.Project.CompositionRoot
 	{
 		public void Process(PipelineArgs args)
 		{
-			GlassMapperSc.Start();
+			Start();
 		}
 
 		public static void Start()

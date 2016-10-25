@@ -206,7 +206,10 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.NewItemsOnly.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.example" />
-    <Content Include="App_Config\Include\Ignition\IgnitionGlassMaps.config" />
+    <Content Include="App_Config\Include\Ignition\IgnitionGlassMaps.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\Ignition.Project.CompositionRoot.pubxml" />
     <None Include="Properties\PublishProfiles\Ignition.Root.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
     <None Include="Web.CI.config">

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Web.Mvc;
+using Glass.Mapper;
 using Ignition.Foundation.Core.SimpleInjector;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
@@ -29,8 +30,10 @@ namespace Ignition.Project.CompositionRoot
 			container.Options.PropertySelectionBehavior = new ImportPropertySelectionBehavior();
             container.Options.ConstructorResolutionBehavior = new MostResolvableConstructorBehavior(container);
             container.RegisterMvcIntegratedFilterProvider();
-			container.RegisterPackages(AppDomain.CurrentDomain.GetAssemblies().Where(x => x.FullName.Contains("Ignition")));
-
+			//Load referenced assemblies
+			container.RegisterPackages(System.Reflection.Assembly.GetExecutingAssembly().GetReferencedAssemblies().Select(System.Reflection.Assembly.Load));
+			//load possible standalone assemblies
+			//TODO: Add code here
 			container.Verify();
 			return container;
 		}

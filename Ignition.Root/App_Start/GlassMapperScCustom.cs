@@ -19,17 +19,18 @@ namespace Ignition.Project.CompositionRoot
 		public static void AddMaps(IConfigFactory<IGlassMap> mapsConfigFactory)
 		{
 			var factory = new SitecoreSettingsFactory();
-			AppDomain.CurrentDomain.GetAssemblies()
-				.SelectMany(s => s.GetTypes())
-				.Where(p => typeof (IGlassMap).IsAssignableFrom(p))
-				.ToList()
-				.ForEach(a => mapsConfigFactory.Add(() =>
+			var assemblies = AppDomain.CurrentDomain.GetAssemblies().Where(a => a.FullName.Contains("Ignition"));
+			var manyTypes = assemblies.SelectMany(s => s.GetTypes());
+			var filteredTypes = manyTypes.Where(p => typeof (IGlassMap).IsAssignableFrom(p))
+				.ToList();
+			filteredTypes.ForEach(a => mapsConfigFactory.Add(() =>
 				{
 					var mapper= (IGlassMap) Activator.CreateInstance(a);
 					var setting = mapper as IGlassSettingsConsumer;
 					if (setting != null) setting.SettingsFactory = factory;
-					return mapper;
+					return (IGlassMap)setting ?? mapper;
 				}));
+			
 		}
 	}
 }

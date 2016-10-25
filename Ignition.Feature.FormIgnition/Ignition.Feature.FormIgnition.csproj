@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3D0F977F-AE32-465C-9EB4-C0FBF70803FD}</ProjectGuid>
+    <ProjectGuid>{38E30617-7F9C-4E0D-8336-4CCD80F86EAF}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ignition.Feature.Content</RootNamespace>
-    <AssemblyName>Ignition.Feature.Content</AssemblyName>
+    <RootNamespace>Ignition.FormIgnition.Sc</RootNamespace>
+    <AssemblyName>Ignition.FormIgnition.Sc</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -51,14 +51,20 @@
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.188\lib\net45\Glass.Mapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Glass.Mapper.Sc">
+    <Reference Include="Glass.Mapper.Sc, Version=4.2.1.188, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.188\lib\100\Glass.Mapper.Sc.dll</HintPath>
     </Reference>
-    <Reference Include="Glass.Mapper.Sc.Mvc">
+    <Reference Include="Glass.Mapper.Sc.Mvc, Version=4.2.1.188, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.188\lib\Mvc52\Glass.Mapper.Sc.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -66,20 +72,16 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SimpleInjector, Version=3.2.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleInjector.3.2.3\lib\net45\SimpleInjector.dll</HintPath>
+    <Reference Include="SimpleInjector, Version=3.2.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.3.2.2\lib\net45\SimpleInjector.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SimpleInjector.Integration.Web, Version=3.2.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleInjector.Integration.Web.3.2.3\lib\net40\SimpleInjector.Integration.Web.dll</HintPath>
+    <Reference Include="SimpleInjector.Integration.Web, Version=3.2.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.3.2.2\lib\net40\SimpleInjector.Integration.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SimpleInjector.Integration.Web.Mvc, Version=3.2.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleInjector.Integration.Web.Mvc.3.2.3\lib\net40\SimpleInjector.Integration.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="SimpleInjector.Packaging, Version=3.2.3.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleInjector.Packaging.3.2.3\lib\net40-client\SimpleInjector.Packaging.dll</HintPath>
+    <Reference Include="SimpleInjector.Integration.Web.Mvc, Version=3.2.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.Mvc.3.2.2\lib\net40\SimpleInjector.Integration.Web.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics">
@@ -106,6 +108,7 @@
     <Reference Include="Sitecore.Mvc.Analytics">
       <HintPath>..\_lib\Sitecore.Mvc.Analytics.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -149,17 +152,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Views\Web.config" />
-    <Content Include="Views\Content\ContentBlock.cshtml" />
-    <Content Include="Views\Content\AboutPeopleGrid.cshtml" />
-    <Content Include="Views\Content\AboutPeopleTile.cshtml" />
-    <Content Include="Views\Content\_CarouselSlide.cshtml" />
-    <Content Include="Views\Content\AboutHero.cshtml" />
-    <Content Include="Views\Content\HeroCarousel.cshtml" />
-    <Content Include="App_Config\Include\Ignition\Ignition.Feature.Content\Ignition.Unicorn.Content.config" />
-    <Content Include="App_Config\Include\Ignition\Ignition.Feature.Content\Ignition.GlassMaps.Content.config" />
-    <None Include="Properties\PublishProfiles\Ignition.Feature.Content.pubxml" />
-    <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -171,35 +163,23 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Agents\AboutHeroAgent.cs" />
-    <Compile Include="Agents\AboutPeopleTileAgent.cs" />
-    <Compile Include="Agents\HeroCarouselAgent.cs" />
-    <Compile Include="Controllers\ContentController.cs" />
-    <Compile Include="Mappers\CarouselSlideMapper.cs" />
-    <Compile Include="Mappers\ContentBlockMapper.cs" />
-    <Compile Include="Mappers\CarouselMapper.cs" />
-    <Compile Include="IgnitionContentInstaller.cs" />
-    <Compile Include="Mappers\AboutHeroMapper.cs" />
-    <Compile Include="Mappers\AboutPeopleTileMapper.cs" />
-    <Compile Include="DTOs\IAboutHero.cs" />
-    <Compile Include="DTOs\IAboutPeopleTile.cs" />
-    <Compile Include="DTOs\ICarousel.cs" />
-    <Compile Include="DTOs\ICarouselSlide.cs" />
-    <Compile Include="DTOs\IContentBlock.cs" />
-    <Compile Include="DTOs\ILinkedImage.cs" />
-    <Compile Include="Mappers\LinkedImageMapper.cs" />
+    <Compile Include="Bases\IgnitionFormCondition.cs" />
+    <Compile Include="Bases\IgnitionFormAction.cs" />
+    <Compile Include="Contracts\Form\IFormEndpoint.cs" />
+    <Compile Include="Contracts\Form\IFormGetProcessor.cs" />
+    <Compile Include="Contracts\Form\IFormPostProcessor.cs" />
+    <Compile Include="Contracts\Form\IFormAuthentication.cs" />
+    <Compile Include="Contracts\Form\IFormConfiguration.cs" />
+    <Compile Include="Contracts\Personalization\IFormRuleAction.cs" />
+    <Compile Include="Contracts\Personalization\IFormRuleCondition.cs" />
+    <Compile Include="Mvc\IgnitionFormController.cs" />
+    <Compile Include="Mvc\IgnitionFormViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\AboutHeroViewModel.cs" />
-    <Compile Include="ViewModels\AboutPeopleGridViewModel.cs" />
-    <Compile Include="ViewModels\AboutPeopleTileViewModel.cs" />
-    <Compile Include="ViewModels\HeroCarouselSlideViewModel.cs" />
-    <Compile Include="ViewModels\HeroCarouselViewModel.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Ignition.Core\_Ignition.Foundation.Core.csproj">
       <Project>{a11adf09-8215-4a20-8edd-894c969e0669}</Project>
-      <Name>_Ignition.Foundation.Core</Name>
+      <Name>Ignition.Foundation.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ignition.Data\_Ignition.Foundation.Data.csproj">
       <Project>{a2a67cbb-5a2a-4207-bff6-0cd348379245}</Project>
@@ -227,9 +207,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>30306</DevelopmentServerPort>
+          <DevelopmentServerPort>34061</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:30306/</IISUrl>
+          <IISUrl>http://localhost:34061/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -243,8 +223,8 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

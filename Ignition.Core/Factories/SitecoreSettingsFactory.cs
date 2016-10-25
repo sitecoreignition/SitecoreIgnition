@@ -6,12 +6,12 @@ namespace Ignition.Foundation.Core.Factories
 	{
 		public string GetSitecoreSetting(string key)
 		{
-			return Sitecore.Configuration.Settings.GetAppSetting(key);
+			return Sitecore.Configuration.Settings.GetSetting(key);
 		}
 
 		public string GetSitecoreSetting(string key, string arg)
 		{
-			return Sitecore.Configuration.Settings.GetAppSetting(key, arg);
+			return Sitecore.Configuration.Settings.GetSetting(key, arg);
 		}
 	}
 }
