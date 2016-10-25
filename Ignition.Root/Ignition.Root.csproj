@@ -204,10 +204,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ignition.Core\Ignition.Core.csproj">
-      <Project>{a11adf09-8215-4a20-8edd-894c969e0669}</Project>
-      <Name>Ignition.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Ignition.Data\Ignition.Data.csproj">
       <Project>{a2a67cbb-5a2a-4207-bff6-0cd348379245}</Project>
       <Name>Ignition.Data</Name>

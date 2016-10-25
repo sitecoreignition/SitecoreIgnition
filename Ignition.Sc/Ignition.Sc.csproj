@@ -360,6 +360,8 @@
     <Compile Include="Components\EloquaForm\EloquaFormSubmissionSubmitProcessor.cs" />
     <Compile Include="Components\EloquaForm\EloquaFormViewModel.cs" />
     <Compile Include="Components\EloquaForm\IEloquaForm.cs" />
+    <Compile Include="Components\EloquaForm\IFormSubmissionDataProcessor.cs" />
+    <Compile Include="Components\EloquaForm\IFormSubmissionProvider.cs" />
     <Compile Include="Components\Frame\FrameAgent.cs" />
     <Compile Include="Components\Frame\FrameController.cs" />
     <Compile Include="Components\Frame\FrameViewModel.cs" />
@@ -399,9 +401,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Ignition.Core\Ignition.Core.csproj">
-      <Project>{a11adf09-8215-4a20-8edd-894c969e0669}</Project>
-      <Name>Ignition.Core</Name>
+    <ProjectReference Include="..\Ignition.Core\Ignition.Foundation.Core.csproj">
+      <Project>{A11ADF09-8215-4A20-8EDD-894C969E0669}</Project>
+      <Name>Ignition.Foundation.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ignition.Data\Ignition.Data.csproj">
       <Project>{a2a67cbb-5a2a-4207-bff6-0cd348379245}</Project>
