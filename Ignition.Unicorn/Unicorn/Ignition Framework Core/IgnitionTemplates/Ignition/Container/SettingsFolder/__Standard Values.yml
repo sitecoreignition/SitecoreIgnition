@@ -1,0 +1,31 @@
+﻿---
+ID: "28da7bbc-7707-40b9-b89f-4d6437b4c56c"
+Parent: "19bea9fa-08c7-4d8f-b1b8-08ca5d288b87"
+Template: "19bea9fa-08c7-4d8f-b1b8-08ca5d288b87"
+Path: /sitecore/templates/Ignition/Container/SettingsFolder/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {9BF079D5-5B92-4F52-B327-D7AFC2C711E8}
+    {3B08A675-8C97-4D5F-BAFF-D50D8DF30CC0}
+    {19BEA9FA-08C7-4D8F-B1B8-08CA5D288B87}
+    {978C9A93-78C3-431D-9431-C6315FAE127F}
+    {9A7616B4-3CB5-4351-9561-E363C7100154}
+    {4DCC294F-D5EC-4607-917A-E4A3B80EC624}
+    {60A77BBE-C64E-4BD8-AAE1-31B5A8E8AFE5}
+    {4D84AA17-E31D-4684-9395-8AF10FF82803}
+    {5546A63F-AA8D-43C5-ABAE-C89518085558}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150325T192046Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

@@ -1,0 +1,17 @@
+﻿---
+ID: "bdf54e74-e902-47da-adeb-2f7b56acd439"
+Parent: "7e31c746-7af6-485f-9437-bd4ade415ea3"
+Template: "7e31c746-7af6-485f-9437-bd4ade415ea3"
+Path: /sitecore/templates/Ignition/Fields/Content/Abstract/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "13ba7de9-6997-44aa-ba9f-36b16d41ce45"
+      Hint: Abstract
+      Value: <p>Enter Abstract/Summary content here</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150326T151454Z

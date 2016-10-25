@@ -1,0 +1,14 @@
+﻿---
+ID: "365fb713-8390-4dab-ae50-1fb89c31e4f6"
+Parent: "0dc24bc6-7641-4403-89c5-d4ba9b07fbcd"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Content Editor/Ribbon/Home/Rename
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142007Z

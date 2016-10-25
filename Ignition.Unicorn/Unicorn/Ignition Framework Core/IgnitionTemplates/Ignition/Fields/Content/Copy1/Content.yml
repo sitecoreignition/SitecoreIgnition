@@ -1,0 +1,17 @@
+﻿---
+ID: "3032cfb5-47d1-480b-aa83-829a9c0fb562"
+Parent: "0f38d202-d47c-4e9a-93e5-3b535ab63cf0"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Ignition/Fields/Content/Copy1/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150326T140910Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

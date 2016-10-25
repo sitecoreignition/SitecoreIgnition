@@ -1,0 +1,42 @@
+﻿---
+ID: "ebc5c5f3-20f9-41f0-8ad2-c0f28785bc9e"
+Parent: "1017f6e5-62fc-4031-bcd8-c955e1064056"
+Template: "0ed048af-e431-40e0-a8a5-3028367fc756"
+Path: /sitecore/content/Ignition/Home/FormDemo/ThankYou
+DB: master
+BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{08C21DEB-E298-4269-84B7-7E53A53C0996}"
+              p:before="*"
+              s:ds="{527B599A-7F6D-47A8-993D-9E7418D18192}"
+              s:id="{B7268EBB-C5C5-41E6-AB09-29EAE63F4A9D}"
+              s:ph="/layoutFrame/layoutContent/contentLeft_d7ff5f6d-4d0a-440e-9660-85ce08fac54e" />
+            <r
+              uid="{77B1792B-09BB-422E-B09A-C4C3E1C2BAFB}"
+              p:after="r[@uid='{08C21DEB-E298-4269-84B7-7E53A53C0996}']"
+              s:ds="{C79D3B4C-7E77-4708-A605-8D11B2190B1B}"
+              s:id="{C71A046B-3CE2-4FA0-863D-A22B5FB9F263}"
+              s:ph="/layoutFrame/layoutContent/contentRight_d7ff5f6d-4d0a-440e-9660-85ce08fac54e" />
+            <r
+              uid="{D7FF5F6D-4D0A-440E-9660-85CE08FAC54E}"
+              p:after="r[@uid='{77B1792B-09BB-422E-B09A-C4C3E1C2BAFB}']"
+              s:id="{C0871359-9431-4E6E-847C-0C040A182C31}"
+              s:ph="/layoutFrame/layoutContent" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160927T163414Z

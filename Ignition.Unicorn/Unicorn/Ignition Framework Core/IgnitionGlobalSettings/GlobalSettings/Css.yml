@@ -1,0 +1,14 @@
+﻿---
+ID: "c715df69-6ba6-482b-87d7-bbd9b714941c"
+Parent: "5e2e4cb9-792e-4d76-808a-e1a22d42acd9"
+Template: "19bea9fa-08c7-4d8f-b1b8-08ca5d288b87"
+Path: /sitecore/content/GlobalSettings/Css
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160822T172252Z

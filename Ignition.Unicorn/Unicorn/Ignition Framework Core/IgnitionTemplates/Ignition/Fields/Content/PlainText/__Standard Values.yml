@@ -1,0 +1,17 @@
+﻿---
+ID: "690144a3-9ad3-4339-911a-456fcadbed84"
+Parent: "f92858ef-fd23-4b23-91ff-5f2517dcf5bb"
+Template: "f92858ef-fd23-4b23-91ff-5f2517dcf5bb"
+Path: /sitecore/templates/Ignition/Fields/Content/PlainText/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150326T151446Z
+    - ID: "a5ed8087-86d9-47be-86dc-1f9c607164c0"
+      Hint: PlainText
+      Value: Enter plain text content here

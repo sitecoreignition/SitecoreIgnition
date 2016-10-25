@@ -1,0 +1,17 @@
+﻿---
+ID: "628ce038-71f5-4d11-a4cf-20ab9f33a70f"
+Parent: "5daffcd0-540f-4e75-948f-6f89f26999f6"
+Template: "2251dd1d-6255-428f-b751-9afb34f20afa"
+Path: /sitecore/system/Modules/Ignition/Configuration/SetupSite/SiteName
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T135012Z
+    - ID: "ec72e24f-7c28-4e95-8d0b-f165d1004792"
+      Hint: Value
+      Value: Ignition

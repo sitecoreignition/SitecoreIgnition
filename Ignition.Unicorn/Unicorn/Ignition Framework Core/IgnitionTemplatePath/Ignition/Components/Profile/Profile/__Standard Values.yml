@@ -1,0 +1,14 @@
+﻿---
+ID: "71be002e-1139-43dc-8a66-12bb5d401d2d"
+Parent: "93f2a988-52dd-41a9-926b-bfc7391e8a70"
+Template: "93f2a988-52dd-41a9-926b-bfc7391e8a70"
+Path: /sitecore/templates/Sites/Ignition/Components/Profile/Profile/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160613T203803Z

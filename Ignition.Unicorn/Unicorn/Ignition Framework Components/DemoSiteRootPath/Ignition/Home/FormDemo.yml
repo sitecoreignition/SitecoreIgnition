@@ -1,0 +1,49 @@
+﻿---
+ID: "1017f6e5-62fc-4031-bcd8-c955e1064056"
+Parent: "4a442a3d-4fec-4743-abbe-621d8a869095"
+Template: "0ed048af-e431-40e0-a8a5-3028367fc756"
+Path: /sitecore/content/Ignition/Home/FormDemo
+DB: master
+BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{28C22A58-960F-4713-9CAD-204F4C9060FD}"
+              p:before="*"
+              s:id="{D691FE75-388D-4CBB-8C51-40B237FE0423}"
+              s:ph="/layoutFrame/layoutContent/contentRight_5a390200-ec55-4d32-a8c7-62d48ee2dce7" />
+            <r
+              uid="{76F691F4-FDC3-43BA-B840-11AF3231C251}"
+              p:after="r[@uid='{28C22A58-960F-4713-9CAD-204F4C9060FD}']"
+              s:ds="{F374A27E-D148-4BD9-ABB2-0A9DA879A32F}"
+              s:id="{A0F32EF0-4E79-4DF1-9AA6-2D2C9E042FFB}"
+              s:ph="/layoutFrame/layoutContent/contentLeft_5a390200-ec55-4d32-a8c7-62d48ee2dce7" />
+            <r
+              uid="{5A390200-EC55-4D32-A8C7-62D48EE2DCE7}"
+              p:after="r[@uid='{76F691F4-FDC3-43BA-B840-11AF3231C251}']"
+              s:id="{6ECF58D9-DBD9-4DBF-95DC-161F303CD683}"
+              s:ph="/layoutFrame/layoutContent" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160927T163405Z
+    - ID: "786a89d2-ae2b-4c3c-9855-58a64a204e02"
+      Hint: HideFromNavigation
+      Type: Checkbox
+      Value: 1
+    - ID: "a0537a65-7327-4bb3-acab-ed22e739debe"
+      Hint: HideChildrenFromNavigation
+      Type: Checkbox
+      Value: 1

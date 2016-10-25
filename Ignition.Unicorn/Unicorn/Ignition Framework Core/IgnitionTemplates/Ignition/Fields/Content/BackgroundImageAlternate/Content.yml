@@ -1,0 +1,17 @@
+﻿---
+ID: "3e43d828-3189-42dd-a8a8-9b3625ab0cfc"
+Parent: "d5bf5e98-55f0-4da4-aa17-14e56e2af263"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Ignition/Fields/Content/BackgroundImageAlternate/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160622T235821Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

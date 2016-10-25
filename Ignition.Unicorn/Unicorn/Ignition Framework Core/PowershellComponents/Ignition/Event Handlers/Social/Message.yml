@@ -1,0 +1,14 @@
+﻿---
+ID: "b57a723f-3f0c-4dfb-b2bf-e658293d819a"
+Parent: "afe79706-a7b4-4636-bd6a-fe5526b24117"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Social/Message
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142050Z

@@ -1,0 +1,19 @@
+﻿---
+ID: "87548eb0-e3f4-405d-8ce8-054733bd855d"
+Parent: "b26fd8db-84d5-4c57-b092-fde37a0ac553"
+Template: "b26fd8db-84d5-4c57-b092-fde37a0ac553"
+Path: /sitecore/templates/Sites/Ignition/Components/News/LatestNews/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{97A78F81-BBBB-423D-857E-69F3270F3DCD}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160819T133030Z

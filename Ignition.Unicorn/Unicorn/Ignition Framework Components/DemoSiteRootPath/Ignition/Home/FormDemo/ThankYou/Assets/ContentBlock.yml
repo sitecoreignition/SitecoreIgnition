@@ -1,0 +1,20 @@
+﻿---
+ID: "02345016-c1d9-474f-8472-3f72819753df"
+Parent: "f84e0883-e7a6-46c4-95a2-d35d6c6332f8"
+Template: "d2c513b3-9ca7-490f-a1ed-58505b7b9ca1"
+Path: /sitecore/content/Ignition/Home/FormDemo/ThankYou/Assets/ContentBlock
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160927T210448Z
+    - ID: "7dd87307-f0d1-4c76-b9d2-bacaf51ae316"
+      Hint: Heading
+      Value: "We got it!"
+    - ID: "a3513117-630a-4830-86c0-a2f15164be04"
+      Hint: Copy1
+      Value: Your submission has been successfully processed.

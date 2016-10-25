@@ -1,0 +1,14 @@
+﻿---
+ID: "3faceb6f-49b4-4b02-a7ae-82be4a07eb7f"
+Parent: "ca13f381-3ec5-49e1-8dd8-57ca34549f09"
+Template: "ca13f381-3ec5-49e1-8dd8-57ca34549f09"
+Path: /sitecore/templates/Ignition/Global/Site Container/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151109T190524Z

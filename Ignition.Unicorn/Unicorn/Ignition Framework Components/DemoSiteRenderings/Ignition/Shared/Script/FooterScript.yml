@@ -1,0 +1,14 @@
+﻿---
+ID: "8c180113-6d0f-4811-ac41-98aff4f3fc52"
+Parent: "b3b67abf-af44-48af-9ca9-b8c939d5ea7f"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Ignition/Shared/Script/FooterScript
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160515T201749Z
