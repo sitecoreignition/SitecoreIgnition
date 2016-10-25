@@ -171,6 +171,7 @@
     <Content Include="App_Config\Include\Ignition\Ignition.Feature.Core\Ignition.Unicorn.Core.config" />
     <Content Include="App_Config\Include\Ignition\Ignition.Feature.Core\Ignition.GlassMaps.Core.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <None Include="Properties\PublishProfiles\_Ignition.Feature.Core.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

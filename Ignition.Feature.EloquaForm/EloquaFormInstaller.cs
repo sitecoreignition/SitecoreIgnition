@@ -1,4 +1,6 @@
+using System.ComponentModel;
 using System.Reflection;
+using Ignition.Foundation.Core.Mvc;
 
 namespace _FeatureTemplate
 {

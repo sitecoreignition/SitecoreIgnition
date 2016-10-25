@@ -1,6 +1,5 @@
 ﻿using Glass.Mapper.Sc.Maps;
 using Ignition.Foundation.Core.Contracts;
-using Ignition.Foundation.Core.Factories;
 using Ignition.Foundation.Core.Models.BaseModels;
 using Ignition.Foundation.Core.Models.Page;
 
@@ -14,7 +13,7 @@ namespace Ignition.Foundation.Core.Installers.Mappers
 			{
 				ImportMap<IModelBase>();
 				x.AutoMap().Cachable();
-				x.TemplateId("Ignition.Map.Id.Metadata");
+				x.TemplateId(SettingsFactory.GetSitecoreSetting("Ignition.Map.Id.Metadata"));
 				x.Field(a => a.PageTitle).FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.Metadata.PageTitle"));
 				x.Field(a => a.PageDescription).FieldId(SettingsFactory.GetSitecoreSetting("Models.Fields.Id.Metadata.PageDescription"));
 			});
