@@ -1,10 +1,13 @@
-using System.ComponentModel;
+using System;
 using System.Reflection;
 using Ignition.Foundation.Core.Mvc;
+using Ignition.Foundation.Core.SimpleInjector;
+using SimpleInjector;
+using SimpleInjector.Packaging;
 
-namespace _FeatureTemplate
+namespace Ignition.Feature.EloquaForm
 {
-	public class IgnitionFeatureCoreInstaller : IPackage
+	public class EloquaFormInstaller : IPackage
 	{
 		public void RegisterServices(Container container)
 		{

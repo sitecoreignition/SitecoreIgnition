@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Linq;
+using System.Reflection;
 using System.Web.Mvc;
-using Glass.Mapper;
+using Ignition.Foundation.Core.Attributes;
 using Ignition.Foundation.Core.SimpleInjector;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
@@ -31,9 +32,13 @@ namespace Ignition.Project.CompositionRoot
             container.Options.ConstructorResolutionBehavior = new MostResolvableConstructorBehavior(container);
             container.RegisterMvcIntegratedFilterProvider();
 			//Load referenced assemblies
-			container.RegisterPackages(System.Reflection.Assembly.GetExecutingAssembly().GetReferencedAssemblies().Select(System.Reflection.Assembly.Load));
+			var assemblies = Assembly.GetExecutingAssembly().GetReferencedAssemblies().Select(Assembly.Load).ToList();
 			//load possible standalone assemblies
-			//TODO: Add code here
+			assemblies.AddRange(AppDomain.CurrentDomain.GetAssemblies()
+					.Where(assembly => assembly.GetCustomAttributes(typeof(IgnitionAutomapAttribute)).Any())
+					.Where(a=>!assemblies.Contains(a))
+					.Select(a => Assembly.Load(a.FullName)));
+			container.RegisterPackages(assemblies);
 			container.Verify();
 			return container;
 		}

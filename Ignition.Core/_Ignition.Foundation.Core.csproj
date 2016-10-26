@@ -112,6 +112,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\IgnitionAutomapAttribute.cs" />
     <Compile Include="Attributes\IgnoreAutomapAttribute.cs" />
     <Compile Include="Contracts\ISitecoreSettingsFactory.cs" />
     <Compile Include="Factories\SitecoreSettingsFactory.cs" />

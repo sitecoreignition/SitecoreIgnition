@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
-using Ignition.Core.Mvc;
 using Ignition.FormIgnition.Sc.Contracts.Form;
 using Ignition.Foundation.Core.Mvc;
 
