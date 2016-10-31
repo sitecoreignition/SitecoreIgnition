@@ -153,8 +153,9 @@
     <Content Include="Views\News\FeaturedNews.cshtml" />
     <Content Include="Views\News\LatestNews.cshtml" />
     <Content Include="Views\News\NewsGrid.cshtml" />
-    <Content Include="App_Config\Include\Ignition\Ignition.Feature\Ignition.Unicorn.News.config" />
-    <Content Include="App_Config\Include\Ignition\Ignition.Feature\Ignition.GlassMaps.News.config" />
+    <Content Include="App_Config\Include\Ignition\Ignition.Feature.News\Ignition.Unicorn.News.config" />
+    <Content Include="App_Config\Include\Ignition\Ignition.Feature.News\Ignition.GlassMaps.News.config" />
+    <None Include="Properties\PublishProfiles\Ignition.Feature.News.pubxml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
