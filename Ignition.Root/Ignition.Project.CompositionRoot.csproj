@@ -184,7 +184,6 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="App_Config\Include\SiteDefinition.config" />
     <Content Include="App_Config\Include\Ignition.ContentEditor.config">
       <SubType>Designer</SubType>
     </Content>

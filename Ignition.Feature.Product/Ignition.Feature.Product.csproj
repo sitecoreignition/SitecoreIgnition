@@ -156,6 +156,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Config\Include\Ignition\Ignition.Feature.Product\Ignition.GlassMaps.Product.config" />
+    <None Include="Properties\PublishProfiles\Ignition.Feature.Product.pubxml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

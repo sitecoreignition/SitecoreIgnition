@@ -304,6 +304,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config" />
+    <Content Include="App_Config\Include\Ignition\IgnitionDemo.Sc\SiteDefinition.config" />
     <None Include="Properties\PublishProfiles\Ignition.Project.IgnitionDemo.Sc.pubxml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
