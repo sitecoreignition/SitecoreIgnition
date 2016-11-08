@@ -202,6 +202,10 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.DataProvider.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
     <Content Include="App_Config\Include\Rainbow.config" />
+    <None Include="App_Config\Include\Ignition\Folders.config">
+      <TransformOnBuild>true</TransformOnBuild>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="App_Config\Include\Unicorn\Unicorn.SharedSecret.config">
       <SubType>Designer</SubType>
     </None>
