@@ -4,6 +4,11 @@ Parent: "0e8c5372-cc4a-4b72-9f53-e380c3a106d0"
 Template: "bb912290-fbc3-427b-b807-67d53b576eb3"
 Path: "/sitecore/content/Ignition/Home/about-us/Assets/Ricks CallTo Action"
 DB: master
+SharedFields:
+- ID: "a0cb3965-8884-4c7a-8815-b6b2e5ced162"
+  Hint: __Editors
+  Type: TreelistEx
+  Value: 
 Languages:
 - Language: en
   Versions:

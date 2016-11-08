@@ -4,6 +4,11 @@ Parent: "f84e0883-e7a6-46c4-95a2-d35d6c6332f8"
 Template: "1ee6b463-ab7d-4364-8526-2a2477928e4e"
 Path: /sitecore/content/Ignition/Home/FormDemo/ThankYou/Assets/Thanks
 DB: master
+SharedFields:
+- ID: "a0cb3965-8884-4c7a-8815-b6b2e5ced162"
+  Hint: __Editors
+  Type: TreelistEx
+  Value: 
 Languages:
 - Language: en
   Versions:

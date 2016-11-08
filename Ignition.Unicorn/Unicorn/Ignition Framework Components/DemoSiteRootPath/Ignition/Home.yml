@@ -11,6 +11,10 @@ SharedFields:
   Value: |
     {981DE9BA-D3E1-41EC-BFE5-44FC2A08113D}
     {F714C9A4-CBC3-48F3-9FC9-5C130C7019F1}
+- ID: "a0cb3965-8884-4c7a-8815-b6b2e5ced162"
+  Hint: __Editors
+  Type: TreelistEx
+  Value: 
 - ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
   Hint: __Security
   Value: "ar|sitecore\Analytics Management Reporting|pe|+item:read|"

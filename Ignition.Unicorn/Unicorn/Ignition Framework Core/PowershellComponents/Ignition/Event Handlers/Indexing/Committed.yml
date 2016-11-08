@@ -1,0 +1,14 @@
+﻿---
+ID: "1bd0beb3-36bf-4a16-b69d-e89908cf8fb5"
+Parent: "71680e5e-812f-4f4d-bd61-98abe2f6994f"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Indexing/Committed
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142048Z

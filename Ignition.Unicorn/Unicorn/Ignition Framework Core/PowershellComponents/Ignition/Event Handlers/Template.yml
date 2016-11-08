@@ -1,0 +1,14 @@
+﻿---
+ID: "abd4e760-5726-4e42-a1e1-446f4a57c2e0"
+Parent: "aeab20bb-6570-46ec-9a54-aeff02c56396"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Event Handlers/Template
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142030Z

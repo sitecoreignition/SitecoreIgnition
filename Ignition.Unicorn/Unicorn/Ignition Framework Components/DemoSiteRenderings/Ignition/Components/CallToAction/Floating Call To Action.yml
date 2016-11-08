@@ -16,7 +16,7 @@ SharedFields:
   Value: 1
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: ./Assets
+  Value: "./Assets|{C715DF69-6BA6-482B-87D7-BBD9B714941C}"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: Floating

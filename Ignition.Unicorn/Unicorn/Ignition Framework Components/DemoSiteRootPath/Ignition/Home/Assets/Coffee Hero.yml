@@ -4,6 +4,11 @@ Parent: "3b027135-26ed-49b7-bf07-dba84d281ef5"
 Template: "6538ab6d-3016-4708-8800-0735967ea67f"
 Path: /sitecore/content/Ignition/Home/Assets/Coffee Hero
 DB: master
+SharedFields:
+- ID: "a0cb3965-8884-4c7a-8815-b6b2e5ced162"
+  Hint: __Editors
+  Type: TreelistEx
+  Value: 
 Languages:
 - Language: en
   Versions:
