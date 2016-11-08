@@ -1,0 +1,10 @@
+﻿@using Ignition.Feature.Core
+@using Sitecore.Mvc.Analytics.Extensions
+<head>
+	@Html.Sitecore().VisitorIdentification() 
+	@Html.Sitecore().Placeholder(FeatureCoreConstants.Placeholders.Head.HeadMetadata)
+	@Html.Sitecore().Placeholder(FeatureCoreConstants.Placeholders.Head.HeadStyle)
+	@Html.Sitecore().Placeholder(FeatureCoreConstants.Placeholders.Head.HeadScript)
+	@Html.Sitecore().Placeholder(FeatureCoreConstants.Placeholders.Head.HeadSeo)
+	@Html.Sitecore().Placeholder(FeatureCoreConstants.Placeholders.Head.HeadTaxonomy)
+</head>

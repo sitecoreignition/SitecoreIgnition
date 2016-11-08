@@ -1,0 +1,20 @@
+@model Ignition.Foundation.Core.Mvc.IgnitionViewModel
+@if (Html.Glass().IsInEditingMode)
+{
+    <div class="container">
+        @using (Html.Glass().BeginEditFrame(Model.ContextPage, "Edit Page Properties",
+                        a => a.PageTitle, a => a.PageDescription,
+                        a => a.HideFromNavigation,
+                        a => a.HideChildrenFromNavigation, a => a.NavigationTitle,
+                        a => a.Tags))
+        {
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Click here to edit page properties</h5>
+                </div>
+            </div>
+
+        }
+    </div>
+}
