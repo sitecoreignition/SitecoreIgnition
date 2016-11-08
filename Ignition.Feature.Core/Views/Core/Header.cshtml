@@ -18,33 +18,43 @@
 			<ul class="nav navbar-nav navbar-right">
 
 				<li class="@(Model.ContextPage.Id == Model.HomePage.Id ? "active" : string.Empty)"><a href="/">Home</a></li>
-				@foreach (var item in Model.HomePage.BaseChildren.OfType<IIgnitionPage>())
+				@if (Model.HomePage.BaseChildren != null)
 				{
+					foreach (var item in Model.HomePage.BaseChildren?.OfType<IIgnitionPage>())
+					{
 
-					var hasChildren = !item.HideChildrenFromNavigation && item.BaseChildren.OfType<IIgnitionPage>().Any(a => !a.HideFromNavigation);
-					<li @(hasChildren ? @"class=""dropdown""" : string.Empty)>
+						var hasChildren = !item.HideChildrenFromNavigation && item.BaseChildren != null && item.BaseChildren.OfType<IIgnitionPage>().Any(a => !a.HideFromNavigation);
+						<li @(hasChildren ? @"class=""dropdown""" : string.Empty)>
 
-						@if (hasChildren)
-						{
-							<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty) dropdown-toggle" data-toggle="dropdown" href="#">
-								@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name)<i class="icon-angle-down"></i>
-							</a>
-							<ul class="dropdown-menu">
-								@foreach (var subitem in item.BaseChildren.OfType<IIgnitionPage>())
-								{
-									<li><a href="@subitem.Url">@(!string.IsNullOrEmpty(subitem.NavigationTitle) ? subitem.NavigationTitle : subitem.Name)</a></li>
-								}
-								<li class="divider"></li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Terms of Use</a></li>
-							</ul>
-						}
-						else
-						{
-							<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty)" href="@(item.Url)">@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name)</a>
-						}
-					</li>
+							@if (hasChildren)
+							{
+								<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty) dropdown-toggle" data-toggle="dropdown" href="#">
+									@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name)<i class="icon-angle-down"></i>
+								</a>
+								<ul class="dropdown-menu">
+
+									@{
+										var ignitionPages = item.BaseChildren?.OfType<IIgnitionPage>();
+									}
+									@if (ignitionPages != null)
+									{
+										foreach (var subitem in ignitionPages)
+										{
+											<li><a href="@subitem.Url">@(!string.IsNullOrEmpty(subitem.NavigationTitle) ? subitem.NavigationTitle : subitem.Name)</a></li>
+										}
+									}
+									<li class="divider"></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Terms of Use</a></li>
+								</ul>
+										}
+										else
+										{
+											<a class="@(Model.ContextPage.Id == item.Id ? "active" : string.Empty)" href="@(item.Url)">@(!string.IsNullOrEmpty(item.NavigationTitle) ? item.NavigationTitle : item.Name)</a>
+										}
+						</li>
 				}
+										}
 			</ul>
 		</div>
 	</div>
