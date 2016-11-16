@@ -1,9 +1,7 @@
 using Glass.Mapper.Sc.Configuration;
 using Glass.Mapper.Sc.Maps;
 using Ignition.Foundation.Core.Contracts;
-using Ignition.Foundation.Core.Factories;
 using Ignition.Foundation.Core.Models.BaseModels;
-using Sitecore.Data;
 
 namespace Ignition.Foundation.Core.Installers.Mappers
 {
