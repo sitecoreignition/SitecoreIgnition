@@ -1,0 +1,27 @@
+﻿---
+ID: "97f58184-24c4-4296-979e-288aa210bc69"
+Parent: "b741e81b-98c7-4d3e-b958-3b929af6ef3d"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Sites/Ignition/Components/Hero/Linked Image
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/photo_landscape.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {85308FC9-E558-4B44-96BA-036C7FDA356C}
+    {60A77BBE-C64E-4BD8-AAE1-31B5A8E8AFE5}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160808T190724Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

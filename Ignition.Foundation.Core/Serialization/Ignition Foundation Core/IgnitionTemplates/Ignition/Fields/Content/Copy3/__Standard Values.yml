@@ -1,0 +1,17 @@
+﻿---
+ID: "ddfd26c4-0cbc-4f4e-a7c0-db929123c44a"
+Parent: "5f8d5e76-8178-43aa-be0d-aa8f34472fec"
+Template: "5f8d5e76-8178-43aa-be0d-aa8f34472fec"
+Path: /sitecore/templates/Ignition/Fields/Content/Copy3/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150326T151433Z
+    - ID: "8475e803-d40b-4ae3-8443-beb1c047412d"
+      Hint: Copy3
+      Value: <p>Enter section 3 of the rich content</p>

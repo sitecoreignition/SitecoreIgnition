@@ -1,0 +1,22 @@
+﻿---
+ID: "2d06d0c0-960f-421a-8273-33af09632d16"
+Parent: "60a77bbe-c64e-4bd8-aae1-31b5a8e8afe5"
+Template: "60a77bbe-c64e-4bd8-aae1-31b5a8e8afe5"
+Path: /sitecore/templates/Ignition/Fields/Related/PrimaryLink/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{60A77BBE-C64E-4BD8-AAE1-31B5A8E8AFE5}"
+- ID: "6fd695e7-7f6d-4ca5-8b49-a829e5950ae9"
+  Hint: __Subitems Sorting
+  Value: "{C1FF011E-B02A-44E3-8444-9FC89CFC28CE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150326T151449Z

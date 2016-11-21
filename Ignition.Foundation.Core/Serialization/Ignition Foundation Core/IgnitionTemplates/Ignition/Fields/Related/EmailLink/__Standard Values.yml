@@ -1,0 +1,14 @@
+﻿---
+ID: "bdf70f8a-1ea5-4d55-bfe1-1551953cab2a"
+Parent: "51d2d2e9-5c3f-4839-80f6-fd5601369633"
+Template: "51d2d2e9-5c3f-4839-80f6-fd5601369633"
+Path: /sitecore/templates/Ignition/Fields/Related/EmailLink/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151109T214954Z

@@ -1,0 +1,22 @@
+﻿---
+ID: "4cbd83ae-5bef-4201-8ed0-d6b253340b32"
+Parent: "4c3cdc24-1610-4808-92a3-a221768ae3b2"
+Template: "4c3cdc24-1610-4808-92a3-a221768ae3b2"
+Path: /sitecore/templates/Ignition/ItemBase/__Standard Values
+DB: master
+SharedFields:
+- ID: "a0cb3965-8884-4c7a-8815-b6b2e5ced162"
+  Hint: __Editors
+  Type: TreelistEx
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160515T203216Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

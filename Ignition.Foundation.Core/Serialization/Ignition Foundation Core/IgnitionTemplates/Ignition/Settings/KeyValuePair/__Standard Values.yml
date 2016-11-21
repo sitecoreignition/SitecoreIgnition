@@ -1,0 +1,20 @@
+﻿---
+ID: "156978aa-04b1-40c2-a500-45159488ae7d"
+Parent: "4d84aa17-e31d-4684-9395-8af10ff82803"
+Template: "4d84aa17-e31d-4684-9395-8af10ff82803"
+Path: /sitecore/templates/Ignition/Settings/KeyValuePair/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160302T190819Z
+    - ID: "56751822-5cd1-44c2-94fa-66690612eeec"
+      Hint: Key
+      Value: $name
+    - ID: "f7aac0de-1482-4528-a2bd-5b5196cdb40f"
+      Hint: Value
+      Value: $name

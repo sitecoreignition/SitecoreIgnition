@@ -180,24 +180,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ignition.Core\_Ignition.Foundation.Core.csproj">
+    <ProjectReference Include="..\Ignition.Foundation.Core\_Ignition.Foundation.Core.csproj">
       <Project>{a11adf09-8215-4a20-8edd-894c969e0669}</Project>
       <Name>_Ignition.Foundation.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ignition.Data\_Ignition.Foundation.Data.csproj">
+    <ProjectReference Include="..\Ignition.Foundation.Data\_Ignition.Foundation.Data.csproj">
       <Project>{a2a67cbb-5a2a-4207-bff6-0cd348379245}</Project>
       <Name>_Ignition.Foundation.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Ignition.Feature.Core\_Ignition.Feature.Core.csproj">
-      <Project>{b1846bdb-5bbf-4482-ac05-57de7df04476}</Project>
-      <Name>_Ignition.Feature.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ignition.Infrastructure\_Ignition.Foundation.Infrastructure.csproj">
-      <Project>{6301e806-d84b-4678-ab6e-aaca3689113a}</Project>
-      <Name>_Ignition.Foundation.Infrastructure</Name>
-    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

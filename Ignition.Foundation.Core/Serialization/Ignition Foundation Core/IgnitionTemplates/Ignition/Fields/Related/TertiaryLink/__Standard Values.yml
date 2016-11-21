@@ -1,0 +1,14 @@
+﻿---
+ID: "50b7f8d7-c514-41c1-bf1b-d344bdfe4c3e"
+Parent: "2f5eb1f5-e5da-46b2-9ae4-8824501bb81a"
+Template: "2f5eb1f5-e5da-46b2-9ae4-8824501bb81a"
+Path: /sitecore/templates/Ignition/Fields/Related/TertiaryLink/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20151211T015816Z

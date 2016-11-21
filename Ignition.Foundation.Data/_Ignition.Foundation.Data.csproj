@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2A67CBB-5A2A-4207-BFF6-0CD348379245}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ignition.Foundation.Data</RootNamespace>
+    <AssemblyName>Ignition.Foundation.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Glass.Mapper, Version=4.2.1.188, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.188\lib\net45\Glass.Mapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc">
+      <HintPath>..\packages\Glass.Mapper.Sc.Core.4.2.1.188\lib\100\Glass.Mapper.Sc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_lib\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_lib\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\_lib\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_lib\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mappers\AbstractMapper.cs" />
+    <Compile Include="Mappers\BackgroundImageAlternateMapper.cs" />
+    <Compile Include="Mappers\BackgroundImageMapper.cs" />
+    <Compile Include="Mappers\BooleanMapper.cs" />
+    <Compile Include="Mappers\Copy1Mapper.cs" />
+    <Compile Include="Mappers\Copy2Mapper.cs" />
+    <Compile Include="Mappers\Copy3Mapper.cs" />
+    <Compile Include="Mappers\DateField1Mapper.cs" />
+    <Compile Include="Mappers\DateField2Mapper.cs" />
+    <Compile Include="Mappers\EmailLinkMapper.cs" />
+    <Compile Include="Mappers\HeadingMapper.cs" />
+    <Compile Include="Fields\IAbstract.cs" />
+    <Compile Include="Fields\IBackgroundImage.cs" />
+    <Compile Include="Fields\IBackgroundImageAlternate.cs" />
+    <Compile Include="Fields\IBoolean.cs" />
+    <Compile Include="Fields\IDateField1.cs" />
+    <Compile Include="Fields\IDateField2.cs" />
+    <Compile Include="Fields\IEmailLink.cs" />
+    <Compile Include="Fields\IHeading.cs" />
+    <Compile Include="Fields\IImage.cs" />
+    <Compile Include="Fields\IImage2.cs" />
+    <Compile Include="Fields\IInternalLink.cs" />
+    <Compile Include="Fields\ILogo.cs" />
+    <Compile Include="Mappers\Image2Mapper.cs" />
+    <Compile Include="Mappers\ImageMapper.cs" />
+    <Compile Include="Mappers\InternalLinkMapper.cs" />
+    <Compile Include="Fields\IPrimaryLink.cs" />
+    <Compile Include="Fields\ICopy1.cs" />
+    <Compile Include="Fields\ICopy2.cs" />
+    <Compile Include="Fields\ICopy3.cs" />
+    <Compile Include="Fields\ISecondaryLink.cs" />
+    <Compile Include="Fields\ISingleLineText.cs" />
+    <Compile Include="Fields\ISingleReference.cs" />
+    <Compile Include="Fields\ISubtitle.cs" />
+    <Compile Include="Fields\ITertiaryLink.cs" />
+    <Compile Include="Mappers\LogoMapper.cs" />
+    <Compile Include="Mappers\PrimaryLinkMapper.cs" />
+    <Compile Include="Mappers\SecondaryLinkMapper.cs" />
+    <Compile Include="Mappers\SingleLineTextMapper.cs" />
+    <Compile Include="Mappers\SingleReferenceMapper.cs" />
+    <Compile Include="Mappers\SubtitleLinkMapper.cs" />
+    <Compile Include="Mappers\TertiaryLinkMapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ignition.Foundation.Core\_Ignition.Foundation.Core.csproj">
+      <Project>{A11ADF09-8215-4A20-8EDD-894C969E0669}</Project>
+      <Name>_Ignition.Foundation.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

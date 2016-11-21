@@ -1,0 +1,14 @@
+﻿---
+ID: "74e1d863-e629-4aa6-8969-028e727ec56f"
+Parent: "1b9c4d82-f825-4bc8-b5ff-0774d0c575c7"
+Template: "ab154d3d-1126-4ab4-ac21-8b86e6bd70ea"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Ignition/Control Panel/Database
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160727T142016Z

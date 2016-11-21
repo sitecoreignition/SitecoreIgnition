@@ -1,0 +1,21 @@
+﻿---
+ID: "2432a341-f6a8-44f8-991a-df2a8a049185"
+Parent: "08477468-d438-43d4-9d6a-6d84a611971c"
+Template: "19bea9fa-08c7-4d8f-b1b8-08ca5d288b87"
+Path: /sitecore/system/Modules/Ignition
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/candle.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160531T202641Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin
