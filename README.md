@@ -1,5 +1,7 @@
 # Sitecore Ignition
 
+## Hi! :wave: You've found Sitecore Ignition. This repository is no longer being maintained as it is what we'll call "Ignition 1.0". Come check out the new stuff we're doing at https://github.com/sitecoreignition/Ignition.Foundation!
+
 Ignition is an open source development accelerator designed by the team at [Perficient](http://www.perficient.com) and released to the Sitecore community as a quick-start tool for beginning Sitecore projects. It has two primary components: the Sitecore Information Architecture piece and the .NET MVC Solution. All along the way, the team has set things up so that we're using best practices for Sitecore development as well as good development practices and patterns. We embrace SOLID, and our code is designed to enable you, the consumer, to quickly extend, add onto, and test your own code.
 
 Please note that Ignition is in beta and may still be a bit rough around the edges. We are diligently adding new features and polish to the project and we happily accept your thoughts, feature requests, and pull requests.
